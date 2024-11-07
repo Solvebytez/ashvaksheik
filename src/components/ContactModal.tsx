@@ -60,7 +60,8 @@ const ContactModal = () => {
       const data = await response.json();
       console.log(data)
 
-    } catch (err:unknown) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    } catch (err:any) {
       setError(err?.message ?? 'An error occurred');
     } finally {
       setIsLoading(false);
