@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+ 
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.video-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.montserrat {
+  font-family: var(--font-montserrat);
+}
+
+.tenor_Sans {
+  font-family: var(--font-tenor-sans);
+}
+
+.slick-prev, .slick-next {
+  z-index: 40;
+}
+
+.slick-slider .slick-prev:before,.slick-slider .slick-next:before {
+  font-size: 30px;
+}
+
+.slick-slider .slick-prev {
+  left: 53px;
+}
+
+.slick-slider .slick-next {
+  right: 53px;
+}
+.BlogDetails * {
+  color: white;
+  font-family: var(--font-tenor-sans);
+}
+.BlogDetails p {
+  margin-bottom: 20px;
+  font-family: var(--font-tenor-sans);
+  line-height: 2rem /* 32px */;
+  
+}
+
+.BlogDetails h2 {
+  margin-top: 32px;
+  margin-bottom: 8px;
+  font-size: 40px;
+}
+
+.BlogDetails p:first-child::first-letter {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: .75;
+}
+
+
+/* Essential */
+
+.BlogDetails ul {
+  display: table-row;
+  list-style: none;
+}
+
+.BlogDetails li {
+  display: table-row;
+  color: #ddd;
+}
+  
+.BlogDetails li::before {
+  display: table-cell;
+  text-align: right;
+  content: "+";
+  font-size: 1em;
+  font-weight: bold;
+  color: #FFF;
+  padding-right: 12px;
+  line-height: 38px;
+}
+
+
+.BlogDetails ul {
+  margin: 0;
+  padding: 0;
+}
+
+.BlogDetails li:hover {
+  background-color: rgba(256,256,256,0.1);
+}
+.BlogDetails li:before:hover {
+  background-color: rgba(256,256,256,0.1);
+}
+.BlogDetails li:not(:first-of-type)::before {
+  padding-top: 32px;
+}
+
+
+.modalForm:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1px;
+  background: #999999;
+  height: calc(100% + 50px);
+  left: -48px;
+  top: -20px;
+}
