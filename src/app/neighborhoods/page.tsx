@@ -1,5 +1,5 @@
 import BreadcumBanner from "@/components/Global/BreadcumBanner";
-import Container from "@/components/Global/Container";
+
 import ImageCard2 from "@/components/ImageCard2";
 
 const cards = [

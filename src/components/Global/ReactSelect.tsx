@@ -7,8 +7,9 @@ type SelectPropsType = {
 
 
 const customStyles = {
-    control: (provided: any) => ({
-      ...provided,
+    control: (provided: unknown) => ({
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      ...provided as any,
       background: 'transparent',
       display: 'flex',
       flexWrap: 'nowrap',
@@ -19,18 +20,21 @@ const customStyles = {
       borderColor: '#fff',
       width: '100%'
     }),
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     menu: (provided: any) => ({
       ...provided,
       background: 'black',
       width: '100%',
    
     }),
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     option: (provided: any, state: { isFocused: any; }) => ({
         ...provided,
         backgroundColor: state.isFocused ? '#333' : 'black',
         color: 'white',
         cursor: 'pointer',
       }),
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       singleValue: (provided: any) => ({
         ...provided,
         color: 'white',

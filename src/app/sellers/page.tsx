@@ -1,5 +1,4 @@
 import BreadcumBanner from "@/components/Global/BreadcumBanner";
-import LinkButton from "@/components/Global/Button";
 import Container from "@/components/Global/Container";
 import SubmitButton from "@/components/Global/SubmitButton";
 import Clwantail from "@/components/Home/Clwantail";
@@ -56,7 +55,7 @@ const SellersPage = () => {
       <div className="bg-black text-white py-16 text-center mb-16">
         <Container>
           <h2 className="text-5xl tracking-[5px] font-tenor_Sans uppercase">
-          A Step-by-Step First Time Seller's Guide
+          A Step-by-Step First Time {"Seller's"} Guide
           </h2>
           <p className="px-10 my-10">
           Putting your home on the market can be a stressful process, especially when you don’t know what to expect. Fortunately, with the help of an experienced agent  and this easy to follow  guide, you can smoothly complete the process. Following these steps  will help you prepare so you can get organized and sell your home for  the best price possible.​​​​​​​
@@ -129,7 +128,7 @@ const SellersPage = () => {
           <div className="lg:grid grid-cols-10 pb-10 items-center justify-center gap-20">
             <div className="col-span-5">
               <h2 className="text-3xl uppercase tracking-[5px] font-tenor_Sans mb-8">
-                Please complete the following form to download our Home Buyer's
+                Please complete the following form to download our Home {"Buyer's"}
                 Guide.
               </h2>
               <form>

@@ -4,12 +4,12 @@ import { Mail, NotebookTabs,Map } from "lucide-react";
 import SocialProfile from "./Global/SocialProfile";
 import SubmitButton from "./Global/SubmitButton";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 
 const ContactModal = () => {
 
 
-  const [userData, setUserData] = useState(null);
+  const [ setUserData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -24,7 +24,7 @@ const ContactModal = () => {
    // console.log(e.currentTarget);
 
     const formData = new FormData(e.currentTarget as HTMLFormElement);
-    const data = Object.fromEntries(formData.entries());
+ 
 
     const name = formData.get('name');
     const email = formData.get('email');
@@ -60,8 +60,8 @@ const ContactModal = () => {
       const data = await response.json();
       console.log(data)
 
-    } catch (err:any) {
-      setError(err?.message);
+    } catch (err:unknown) {
+      setError(err?.message ?? 'An error occurred');
     } finally {
       setIsLoading(false);
     }
@@ -224,7 +224,8 @@ const ContactModal = () => {
                     </span>
                   </div>
                 </div>
-                <SubmitButton btnText="SUBMIT" />   
+                {isLoading}
+                <SubmitButton btnText="SUBMIT"  />   
           </form>
         </div>
       </div>

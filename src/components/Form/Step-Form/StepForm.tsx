@@ -1,7 +1,7 @@
 "use client";
 
 import LinkButton from "@/components/Global/Button";
-import Input from "@/components/Global/Input";
+// import Input from "@/components/Global/Input";
 import ReactSelect from "@/components/Global/ReactSelect";
 import SubmitButton from "@/components/Global/SubmitButton";
 import Steps from "@/components/HomeValuation/Steps";
@@ -26,9 +26,7 @@ export enum STEPS {
 const StepForm = () => {
   const [currentStep, setCurrentStep] = useState<number>(STEPS.LOCATION_SEARCH);
 
-  const {register,handleSubmit,watch, setValue, formState:{
-    errors
-  }} = useForm<FieldValues>({
+  const {register,handleSubmit,watch, setValue, } = useForm<FieldValues>({
     defaultValues:{
       propertyname:'',
       name:'',

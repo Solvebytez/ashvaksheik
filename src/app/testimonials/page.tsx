@@ -34,7 +34,7 @@ const TestimonialsPage = () => {
 
       <div className="bg-white-100 py-8 px-4 md:px-8 lg:px-16 xl:px-36 2xl:px-72">
         <Container className="">
-          {testimonialsData.map((testimonial, index) => (
+          {testimonialsData.map((testimonial) => (
             <TestimonialCard
               key={testimonial.name}
               initials={testimonial.initials}
