@@ -3,7 +3,6 @@ import LinkButton from "@/components/Global/Button";
 import Container from "@/components/Global/Container";
 import SubmitButton from "@/components/Global/SubmitButton";
 import Clwantail from "@/components/Home/Clwantail";
-import SettingStandrad from "@/components/Home/SettingStandrad";
 import WorkWith from "@/components/Home/WorkWith";
 import ImageCard1 from "@/components/ImageCard1";
 import Image from "next/image";
@@ -54,7 +53,7 @@ const BuyersPage = () => {
       <div className="bg-black text-white py-16 text-center mb-16">
         <Container>
           <h2 className="text-5xl tracking-[5px] font-tenor_Sans uppercase">
-            A Step-by-Step First Time <br /> Buyer's Guide
+            A Step-by-Step First Time <br /> {"Buyer's"} Guide
           </h2>
           <p className="px-10 my-10">
             Buying a home is one of the most exciting milestones of your life.
@@ -174,7 +173,7 @@ const BuyersPage = () => {
           <div className="lg:grid grid-cols-10 pb-10 items-center justify-center gap-20">
             <div className="col-span-5">
               <h2 className="text-3xl uppercase tracking-[5px] font-tenor_Sans mb-8">
-                Please complete the following form to download our Home Buyer's
+                Please complete the following form to download our Home {"s"}
                 Guide.
               </h2>
               <form>
