@@ -1,6 +1,6 @@
 import Select from "react-select";
 
-type SelectPropsType = {
+export type OptioPropsType = {
     value:string;
     label:string;    
 }
@@ -42,14 +42,20 @@ const customStyles = {
       }),
 };
 
-const ReactSelect = ({options,name}:{options:SelectPropsType[];name:string}) => {
+type SelectPropsType ={ value: OptioPropsType  ; onChange: (value:OptioPropsType)=>void;name:string;options:OptioPropsType[] }
+
+
+
+const ReactSelect = ({options,name,value,onChange}:SelectPropsType) => {
   return (
     
     <Select
     name={name}
     options={options}
     placeholder=""
+    value={value}
     styles={customStyles}
+    onChange={(value)=>onChange(value as OptioPropsType)}
     isClearable
   />
   )

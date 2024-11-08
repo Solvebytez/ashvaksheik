@@ -60,29 +60,29 @@ const SlideMenu = ({ isMenuOpen, onCLick }: subMenuProps) => {
           {pages.map((item) => {
            
             return (
-              <>
+              <span key={item.label} className="py-3 text-[21px] text-black tenor_Sans border-b w-full text-center">
                 <Link
                   onClick={()=>item.subMenu && handleSubmenuToggle(item.label)}
                   href={item.url || "#"}
                   key={item.label}
-                  className="py-3 text-[21px] text-black tenor_Sans border-b w-full text-center"
+                  className="py-3 text-[21px] text-black tenor_Sans  w-full text-center"
                 >
                   {item.label}
                 </Link>
                 {item.subMenu && isSubmenuOpen === item.label  && (
                   <div className="mt-2 space-y-1">
-                    {item.subMenu.map((subItem, subIndex) => (
+                    {item.subMenu.map((subItem) => (
                       <Link
-                        key={subIndex}
+                        key={subItem.label}
                         href={subItem.url}
-                        className="block text-md text-gray-700"
+                        className="block text-sm text-gray-700"
                       >
                         {subItem.label}
                       </Link>
                     ))}
                   </div>
                 )}
-              </>
+              </span>
             );
           })}
         </nav>

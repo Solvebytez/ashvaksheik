@@ -2,7 +2,7 @@
 
 import LinkButton from "@/components/Global/Button";
 // import Input from "@/components/Global/Input";
-import ReactSelect from "@/components/Global/ReactSelect";
+import ReactSelect, { OptioPropsType } from "@/components/Global/ReactSelect";
 import SubmitButton from "@/components/Global/SubmitButton";
 import Steps from "@/components/HomeValuation/Steps";
 import { useState } from "react";
@@ -24,6 +24,7 @@ export enum STEPS {
 }
 
 const StepForm = () => {
+  const [isPending, setIspending] = useState(false as boolean);
   const [currentStep, setCurrentStep] = useState<number>(STEPS.LOCATION_SEARCH);
 
   const {register,handleSubmit,watch, setValue, } = useForm<FieldValues>({
@@ -32,13 +33,14 @@ const StepForm = () => {
       name:'',
       email:'',
       phone:'',
-      time:'',
+      time:null,
       terms:false
     }
   })
 
 
   const placeName=watch('propertyname');
+  const time=watch('time');
 
   const onPlaceSelected=(address:string)=>{
    setValue('propertyname',address,{
@@ -46,11 +48,39 @@ const StepForm = () => {
     shouldDirty: true,
     shouldTouch: true,
    });
-
   }
 
-  const onSubmit:SubmitHandler<FieldValues>=(data)=>{
-      console.log(data)
+  const onTimeSelected=(value:OptioPropsType)=>{
+    setValue('time',value,{
+     shouldValidate: true,
+     shouldDirty: true,
+     shouldTouch: true,
+    });
+   }
+
+  const onSubmit:SubmitHandler<FieldValues>=async (data)=>{
+    setIspending(true);
+     try {
+      const response = await fetch('/api/form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+      if (response.status === 200) {
+        const result = await response.json();
+        console.log('API Response:', result);
+        setIspending(false);
+        // Handle success, e.g., show a success message or move to the next step
+        setCurrentStep(STEPS.LAST_MESSAGE);
+      } else {
+        console.error('API call failed:', response.statusText);
+        // Handle failure, e.g., show an error message
+      }
+     } catch (error) {
+      console.error('Error submitting form:', error);
+     }
   }
 
   const formNext = () => {
@@ -60,7 +90,7 @@ const StepForm = () => {
     return null;
   };
 
-  console.log(placeName)
+    
 
 
   return (
@@ -84,7 +114,7 @@ const StepForm = () => {
                   <GooglePlacesAutocomplete onPlaceSelected={onPlaceSelected}/>
                   <input
                   {...register("propertyname",{required:true})}
-                    type="text"
+                    type="hidden"
                     id="propertyname"
                     name="propertyname"
                     value={placeName}
@@ -153,7 +183,8 @@ const StepForm = () => {
                   <label className="uppercase text-white text-md font-bold">
                     TIME FRAME: (Optional):
                   </label>
-                  <ReactSelect options={options}  {...register("time")}  />
+                  <ReactSelect options={options}  {...register("time")} value={time} onChange={(value)=>onTimeSelected(value)}  />
+
                 </div>
 
                 <div className="w-2/4 flex-col flex">
@@ -185,7 +216,7 @@ const StepForm = () => {
                   </div>
                 </div>
 
-                <SubmitButton btnText="GET MY VALUATION" />
+                <SubmitButton btnText="GET MY VALUATION" disabled={isPending} />
               </div>
             </div>
           )}
