@@ -5,6 +5,8 @@ import SubmitButton from "../Global/SubmitButton";
 import Copyright from "./Copyright";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 type FormValue = {
   email: string;
@@ -48,8 +50,8 @@ const Footer = () => {
   return (
     <div className="bg-black text-white p-8">
       <Container>
-        <h1 className="text-3xl my-14 font-tenor_Sans tracking-[2px]">
-          RAHUL LUTHRA
+        <h1 className="text-3xl my-14 font-tenor_Sans tracking-[2px] uppercase">
+        Ashvak Sheik
         </h1>
         <div className="flex flex-col items-center md:flex-row md:justify-between md:items-start">
           {/* Left Section */}
@@ -62,7 +64,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Information */}
-          <div className="text-center md:text-left mb-8 md:mb-0 space-y-0 w-2/4 flex flex-wrap gap-6">
+          <div className="text-center md:text-left mb-8 md:mb-0 space-y-3 w-2/4 flex flex-wrap gap-6 2xl:mr-[3rem]">
             <div className="flex items-start justify-center md:justify-start space-x-2 gap-4">
               <span className="material-icons">
                 {" "}
@@ -73,7 +75,7 @@ const Footer = () => {
                   EMAIL
                 </p>
                 <p className="text-sm tracking-[2px] font-bold uppercase underline">
-                  RAHUL@THELUTHRAGROUP.COM
+                ashvak.realtor07@gmail.com
                 </p>
               </div>
             </div>
@@ -87,7 +89,7 @@ const Footer = () => {
                   PHONE NUMBER
                 </p>
                 <p className="text-sm tracking-[2px] font-bold uppercase underline">
-                  (519) 829-6165
+                647-890-0982
                 </p>
               </div>
             </div>
@@ -100,8 +102,7 @@ const Footer = () => {
                   ADDRESS
                 </p>
                 <p className="text-sm tracking-[2px] font-bold uppercase">
-                  238 SPEEDVALE AVE W<br />
-                  GUELPH, ON N1H 1C4
+                25 Van Kirk Dr Brampton,<br/> ON L7A 1A4
                 </p>
               </div>
             </div>
@@ -127,12 +128,12 @@ const Footer = () => {
                   required
                   {...register("terms", { required: true })}
                 />
-                <span className="font-bold !text-justify">
+                <p className="font-semibold !text-justify text-[14px] leading-5 tracking-[3px] text-white">
                   By providing Rahul Luthra your contact information, you
                   acknowledge and agree to our{" "}
-                  <a href="/privacy-policy" className="text-gray-300 underline">
+                  <Link href="/privacy-policy" className="text-gray-300 underline">
                     Privacy Policy
-                  </a>{" "}
+                  </Link>{" "}
                   and consent to receiving marketing communications, including
                   through automated calls, texts, and emails, some of which may
                   use artificial or prerecorded voices. This consent isn’t
@@ -141,12 +142,19 @@ const Footer = () => {
                   ‘stop’ at any time. To opt out from emails, you can click on
                   the unsubscribe link in the emails. Message and data rates may
                   apply.
-                </span>
+                </p>
               </div>
               <SubmitButton btnText="Subscribe" disabled={isPending} />
               </form>
             </div>
           
+        </div>
+        <div className="flex items-center gap-10 mt-[7rem]">
+          <Image src="/21_logo2.png" width={90} height={250} priority alt="century 21 logo" />
+         <div className="space-y-12">
+         <p>All information deemed reliable but not guaranteed and should be independently reviewed and verified.</p>
+         <Image src="/Realtor-logo.png" width={90} height={250} priority alt="century 21 logo" />
+         </div>
         </div>
         <Copyright />
       </Container>
