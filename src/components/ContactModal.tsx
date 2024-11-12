@@ -7,6 +7,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import LinkButton from "./Global/Button";
+import { toast } from "react-toastify";
 
 type FormValues = {
   name: string;
@@ -37,6 +38,7 @@ const ContactModal = () => {
         console.log("API Response:", result);
         setIspending(false); // Handle success, e.g., show a success message or move to the next step
         setisShowForm(true);
+        toast("Thank You for your Interest!");
       } else {
         console.error("API call failed:", response.statusText);
         // Handle failure, e.g., show an error message

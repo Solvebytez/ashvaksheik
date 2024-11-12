@@ -8,6 +8,7 @@ import Steps from "@/components/HomeValuation/Steps";
 import { useState } from "react";
 import { useForm,SubmitHandler, FieldValues} from "react-hook-form";
 import GooglePlacesAutocomplete from "../MapAddress";
+import { toast } from "react-toastify";
 
 
 const options = [
@@ -74,6 +75,7 @@ const StepForm = () => {
         setIspending(false);
         // Handle success, e.g., show a success message or move to the next step
         setCurrentStep(STEPS.LAST_MESSAGE);
+        toast("Thank You for your Interest!");
       } else {
         console.error('API call failed:', response.statusText);
         // Handle failure, e.g., show an error message

@@ -16,12 +16,11 @@ export const POST = async (req: Request) => {
           message = 'For Email Subscribe';
         }       
        
-        const name = formData.name || '';
+        const name = formData.name || 'For Email Subscribe';
         const email = formData.email || '';
-        const phone = formData.phone || '';
+        const phone = formData.phone || 'For Email Subscribe';
 
-       
-        
+               
         // Sending request to FollowUpBoss
         const response = await fetch('https://api.followupboss.com/v1/events', {
             method: 'POST',

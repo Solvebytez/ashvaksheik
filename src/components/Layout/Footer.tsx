@@ -7,6 +7,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import {  toast } from 'react-toastify';
 
 type FormValue = {
   email: string;
@@ -36,6 +37,7 @@ const Footer = () => {
      if (response.status === 200) {
        const result = await response.json();
        console.log('API Response:', result);
+       toast("Thank Your for your Interest!");
        setIspending(false);       // Handle success, e.g., show a success message or move to the next step   
        
      } else {
@@ -49,6 +51,7 @@ const Footer = () => {
 
   return (
     <div className="bg-black text-white p-8">
+    
       <Container>
         <h1 className="text-3xl my-14 font-tenor_Sans tracking-[2px] uppercase">
         Ashvak Sheik

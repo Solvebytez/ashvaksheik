@@ -5,6 +5,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "@/components/Layout/Footer";
 
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
+
 const montserrat = Montserrat({ 
   subsets: ['latin','cyrillic',"latin-ext"],
   variable:'--font-montserrat' }
@@ -33,6 +36,7 @@ export default async function RootLayout({
           {children}
           <Footer/>
           </div>
+          <ToastContainer />
       </body>
     </html>
   );

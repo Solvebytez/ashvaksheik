@@ -5,6 +5,7 @@ import Input from "../Global/Input";
 import SubmitButton from "../Global/SubmitButton";
 import { useState } from "react";
 import LinkButton from "../Global/Button";
+import { toast } from "react-toastify";
 
 interface FormValue {
   name: string;
@@ -39,7 +40,7 @@ const UseNewslaterForm = () => {
        console.log('API Response:', result);
        setIspending(false);       // Handle success, e.g., show a success message or move to the next step
        setisShowForm(true)
-       
+       toast("Thank You for your Interest!");
      } else {
        console.error('API call failed:', response.statusText);
        // Handle failure, e.g., show an error message
