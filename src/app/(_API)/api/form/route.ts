@@ -6,12 +6,22 @@ export const POST = async (req: Request) => {
         // Parse the incoming JSON data
         const formData = await req.json();
 
-        const message = formData.message || `${formData.propertyname}. ${formData.time?.label ?? ""}` || 'No message provided';
+        let message;
+        message = 'For Email Subscribe';
+        if(formData.message){
+          message = formData.message;
+        }else if(formData.propertyname && formData.time?.label){
+            message = `Property: ${formData.propertyname}, Time: ${formData.time?.label}`;
+        }else{
+          message = 'For Email Subscribe';
+        }       
+       
         const name = formData.name || '';
         const email = formData.email || '';
         const phone = formData.phone || '';
 
-    
+       
+        
         // Sending request to FollowUpBoss
         const response = await fetch('https://api.followupboss.com/v1/events', {
             method: 'POST',
@@ -22,7 +32,7 @@ export const POST = async (req: Request) => {
             body: JSON.stringify({
               "source": "ashvaksheik.com",
               "type": "General Inquiry",
-                "message": `Here is the message: ${message}`,
+                "message": `Here is the message: ${message??'ForEmail Subscribe'}`,
                 "person": {
                     "firstName": name,
                     "lastName": name,

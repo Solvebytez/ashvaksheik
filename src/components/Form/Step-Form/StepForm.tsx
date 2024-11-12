@@ -223,15 +223,15 @@ const StepForm = () => {
 
           {currentStep === STEPS.LAST_MESSAGE && (
             <div className="flex flex-col space-y-5 justify-center items-center">
-              <h3 className="text-xl font-bold tracking-[4px] uppercase">
+              {/* <h3 className="text-xl font-bold tracking-[4px] uppercase">
                 Thank You
-              </h3>
+              </h3> */}
               <h1 className="text-4xl font-tenor_Sans tracking-[4px] uppercase my-1 text-center">
                 I’m gathering your property information. I will be in touch with
                 you soon!
               </h1>
               <div className="md:flex gap-4 w-full items-center justify-center">
-                <LinkButton href="#" btnText="VIEW LISTINGS FOR SALE"/>
+                <LinkButton href="#" btnText=" Thank You"/>
               </div>
             </div>
           )}
