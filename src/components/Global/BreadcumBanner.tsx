@@ -1,7 +1,7 @@
 
 const BreadcumBanner = ({bgLogo,pageTitle,description}:{bgLogo?:string;pageTitle:string;description?:string}) => {
     const sectionStyle = {
-        background: `url(${bgLogo?bgLogo:'https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/gyommycouuod40setpi0/rl-bg'})`,
+        background: bgLogo? `url(${bgLogo?bgLogo:'https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/gyommycouuod40setpi0/rl-bg'})`:'#000',
         WebkitBackgroundSize: 'cover',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',

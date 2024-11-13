@@ -24,8 +24,8 @@ const SettingStandrad = () => {
     <Container>
       <SectionTitle
         titleNumber={0.1}
-        title="SETTING THE STANDARD IN REAL ESTATE"
-        description="REPRESENTING GUELPH AND TRI-CITY HOMEOWNERS, BOTH CURRENT AND FUTURE, RAHUL HAS AN UNMATCHED DEVOTION TO HIS CLIENTS."
+        title="SETTING THE STANDARD IN GTA REAL ESTATE"
+        description="REPRESENTING GTA HOMEOWNERS, BOTH CURRENT AND FUTURE, ASHVAK BRINGS AN UNMATCHED COMMITMENT TO EXCELLENCE IN REAL ESTATE."
         bgLogo="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/gyommycouuod40setpi0/rl-bg"
       />
        <div className="flex flex-col md:grid grid-cols-3 gap-6 mb-10">

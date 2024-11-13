@@ -10,14 +10,12 @@ const ReceiveInbox = () => {
           "url('https://res.cloudinary.com/luxuryp/images/w_2560,c_limit,f_auto,q_auto/ddubo2udq7mhcpbvgt9q/rahul-36-1')",
       }}
     >
-      <div className="bg-black bg-opacity-70 text-white flex flex-col items-center justify-center py-16 w-full space-y-7">
-        <h2 className="font-tenor_Sans tracking-[6px] text-4xl">
-          RECEIVE EXCLUSIVE OFF MARKET LISTINGS IN YOUR INBOX.
+      <div className="bg-black bg-opacity-70 text-white flex flex-col items-center justify-center py-16 w-full space-y-7 px-4 md:px-8 lg:px-16 xl:px-36 2xl:px-72">
+        <h2 className="font-tenor_Sans tracking-[6px] text-4xl text-center">
+        RECEIVE EXCLUSIVE OFF-MARKET LISTINGS IN YOUR INBOX.
         </h2>
-        <p>
-          Are you interested in buying a home? Look no further than working with{" "}
-          {"Guelph's"} Real Estate Expert. Rahul works with estate sales, first
-          time home buyers, multifamily investment and luxury leases.
+        <p className="text-center">
+        Are you interested in buying a home? Discover exclusive listings before they hit the market by working with one of {"GTA's"} top real estate professionals. Ashvak specializes in estate sales, first-time homebuyers, multifamily investments, and luxury leases.
         </p>
 
       

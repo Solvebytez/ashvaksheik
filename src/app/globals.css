@@ -134,3 +134,11 @@ body {
   left: -48px;
   top: -20px;
 }
+
+.slider-container .slick-slider .slick-prev {
+  left: -6%;
+}
+
+.slider-container .slick-slider .slick-next {
+  right: -6%;
+}

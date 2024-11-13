@@ -9,7 +9,7 @@ const AboutHome = () => {
     <Container>
       <SectionTitle
         titleNumber={0.2}
-        title="RAHUL LUTHRA"
+        title="Ashvak Sheik"
         description="MEET"
         bgLogo="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/gyommycouuod40setpi0/rl-bg"
       />
@@ -25,18 +25,11 @@ const AboutHome = () => {
         </div>
         <div className="flex flex-col items-center justify-center text-center space-y-5 text-white px-8">
           <p className="text-[16px] leading-7 tracking-wide">
-            He prides himself on being resourceful and empathetic to your needs
-            and desires, all whilst focusing on the small details that matter
-            most. Dedication, integrity, and honesty are at the forefront of
-            Rahul’s business and are fundamental in ensuring you receive the
-            best care every step of the way.{" "}
+          Ashvak prides himself on being highly resourceful and deeply attuned to his {"clients'"} unique needs and aspirations. With a meticulous focus on every detail that matters most, he ensures a seamless experience from start to finish. Dedication, integrity, and honesty are the cornerstones of Ashvak’s business, guiding him in providing exceptional care and building long-lasting relationships with clients.{" "}
           </p>
           <p className="text-[16px] leading-7 tracking-wide">
-            In the world of customer service, Rahul is a seasoned professional.
-            Through his several managerial positions previously held in the
-            hospitality sector, Rahul always knew a transition into Real Estate
-            would allow him to utilize his strengths in the most meaningful way
-            possible.
+          With over a decade of experience in IT and real estate, Ashvak brings a unique blend of technical expertise and market insight. His analytical skills, honed through years in data-driven roles, empower his clients with informed decisions and innovative solutions. {"Ashvak’s"} transition into real estate was a natural progression, allowing him to leverage his strengths to deliver exceptional results for every client.
+
           </p>
           <div className="flex flex-col relative">
             <Image
@@ -44,7 +37,7 @@ const AboutHome = () => {
               className="object-cover"
               width={300}
               height={200}
-              src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/xjqsphatl7ffgt7n1tw9/rahul-luthra"
+              src="/signature.png"
             />
           </div>
           <div className="flex flex-col md:flex-row gap-4 items-center justify-center">

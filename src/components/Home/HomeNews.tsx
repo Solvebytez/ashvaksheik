@@ -8,27 +8,27 @@ import WorkWith from "./WorkWith";
 const cardsData = [
   {
     id: 1,
-    title: "Celebrating a Milestone Together:",
-    subtitle: "Guelph's #1 REMAX Broker",
+    title: "Celebrating a Milestone Together: GTA’s #1 Realtor",
+    subtitle: " GTA’s #1 Realtor",
     date: "03/31/24",
-    author: "Rahul Luthra",
+    author: "Ashvak Sheik",
     imageUrl: "https://images.pexels.com/photos/27781517/pexels-photo-27781517/free-photo-of-the-building-is-surrounded-by-trees-and-a-fountain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", // Replace with actual image URL
     isFullWidth: true,
   },
   {
     id: 2,
-    title: "Ready to Buy Your First Home?",
-    subtitle: "Guelph's #1 REMAX Broker",
+    title: "How to Generate Passive Income From Your Primary Residence?",
+    subtitle: " GTA’s #1 Realtor",
     date: "09/1/22",
-    author: "Rahul Luthra",
+    author: "Ashvak Sheik",
     imageUrl: "https://images.pexels.com/photos/27781517/pexels-photo-27781517/free-photo-of-the-building-is-surrounded-by-trees-and-a-fountain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", // Replace with actual image URL
     isFullWidth: false,
   },
   {
     id: 3,
-    title: "How to Generate Passive Income From...",
-    date: "03/14/22",
-    author: "Rahul Luthra",
+    title: "Ready to Buy Your First Home in the GTA?",
+    date: "11/12/24",
+    author: "Ashvak Sheik",
     imageUrl: "https://images.pexels.com/photos/27781517/pexels-photo-27781517/free-photo-of-the-building-is-surrounded-by-trees-and-a-fountain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", // Replace with actual image URL
     isFullWidth: false,
   },
@@ -96,7 +96,7 @@ const HomeNews = () => {
         </div>
       </div>
       <div className="flex justify-center items-center mb-[5rem]">
-        <LinkButton href="#" btnText="Veiw All" className="text-white mt-14" />
+        <LinkButton href="/blog" btnText="Veiw All" className="text-white mt-14" />
       </div>
     </div>
       </Container>    

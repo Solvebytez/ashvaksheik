@@ -8,6 +8,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {  toast } from 'react-toastify';
+import ContactWidget from "../Global/ContactWidget";
 
 type FormValue = {
   email: string;
@@ -60,9 +61,9 @@ const Footer = () => {
           {/* Left Section */}
           <div className="mb-8 md:mb-0 md:text-left w-1/4 font-tenor_Sans">
             <div className="space-y-1">
-              <p className="text-xl tracking-[2px]">GUELPH</p>
-              <p className="text-xl tracking-[2px]">REAL</p>
-              <p className="text-xl tracking-[2px]">ESTATE</p>
+              <p className="text-2xl tracking-[4px]">GTA</p>
+              <p className="text-2xl tracking-[4px]">REAL</p>
+              <p className="text-2xl tracking-[4px]">ESTATE</p>
             </div>
           </div>
 
@@ -161,6 +162,7 @@ const Footer = () => {
         </div>
         <Copyright />
       </Container>
+      <ContactWidget/>
     </div>
   );
 };

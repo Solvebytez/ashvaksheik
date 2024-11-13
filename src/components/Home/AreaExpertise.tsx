@@ -6,32 +6,37 @@ const cards = [
   {
     imageSrc:
       "https://images.pexels.com/photos/259950/pexels-photo-259950.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "PINERIDGE / WESTMINSTER WOODS",
+    title: "Mississauga City Centre – Known for its vibrant urban lifestyle with plenty of shopping, dining, and entertainment.",
   },
   {
     imageSrc:
       "https://images.pexels.com/photos/280221/pexels-photo-280221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "CLAIRFIELDS / HANLON BUSINESS PARK",
+    title: "Meadowvale – Family-friendly with plenty of parks, trails, and schools",
   },
   {
     imageSrc:
       "https://images.pexels.com/photos/27781512/pexels-photo-27781512/free-photo-of-the-palace-of-the-royal-palace-of-madrid.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "KORTRIGHT HILLS",
+    title: "Pickering Village – A historic area with a mix of quaint shops, cafes, and restaurants",
   },
   {
     imageSrc:
       "https://images.pexels.com/photos/259950/pexels-photo-259950.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "PINERIDGE / WESTMINSTER WOODS",
+    title: "Brooklin – A charming small town within Whitby, featuring a historic main street",
   },
   {
     imageSrc:
       "https://images.pexels.com/photos/280221/pexels-photo-280221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "CLAIRFIELDS / HANLON BUSINESS PARK",
+    title: "Markham Unionville – Famous for its heritage buildings, upscale shops, and a lively main street",
   },
   {
     imageSrc:
       "https://images.pexels.com/photos/27781512/pexels-photo-27781512/free-photo-of-the-palace-of-the-royal-palace-of-madrid.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "KORTRIGHT HILLS",
+    title: "Oakville Downtown – A picturesque lakeside community with upscale shopping and dining",
+  },
+  {
+    imageSrc:
+      "https://images.pexels.com/photos/27781512/pexels-photo-27781512/free-photo-of-the-palace-of-the-royal-palace-of-madrid.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Milton Escarpment View – A serene area with breathtaking views and great outdoor activities.",
   },
 ];
 

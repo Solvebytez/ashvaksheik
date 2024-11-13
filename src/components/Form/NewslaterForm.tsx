@@ -6,6 +6,7 @@ import SubmitButton from "../Global/SubmitButton";
 import { useState } from "react";
 import LinkButton from "../Global/Button";
 import { toast } from "react-toastify";
+import Link from "next/link";
 
 interface FormValue {
   name: string;
@@ -89,8 +90,8 @@ const UseNewslaterForm = () => {
               </div>
             </div>
             <span className="flex-1">
-              By providing Rahul Luthra your contact information, you acknowledge and agree to our{' '}
-              <a href="#" className="underline">Privacy Policy</a> and consent to receiving marketing communications, including through automated calls, texts, and emails, some of which may use artificial or prerecorded voices. This consent {"isn't"} necessary for purchasing any products or services and you may opt out at any time. To opt out from texts, you can reply {'stop'} at any time. To opt out from emails, you can click on the unsubscribe link in the emails. Message and data rates may apply.
+            By providing Ashvak with your contact information, you acknowledge and agree to our{' '}
+              <Link href="#" className="underline">Privacy Policy</Link>and consent to receive marketing communications, including automated calls, texts, and emails. You may opt out at any time. To stop receiving texts, reply ‘STOP’ at any time. Message and data rates may apply.
             </span>
           </label>
         </div>
