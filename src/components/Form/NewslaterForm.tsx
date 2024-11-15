@@ -54,7 +54,7 @@ const UseNewslaterForm = () => {
   return (
     <>
        {
-          !isShowForm?( <form  onSubmit={handleSubmit(submitSubscribe)} className="w-full lg:w-2/5 px-4 md:px-0 space-y-4" >
+          !isShowForm?( <form  onSubmit={handleSubmit(submitSubscribe)} className="w-full lg:w-3/5 px-4 md:px-0 space-y-4" >
           <div className="flex flex-col md:flex-row gap-3 items-end justify-center ">
          
           <div className="w-2/5"> {/* Adjust width as needed */}

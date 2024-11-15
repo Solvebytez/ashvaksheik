@@ -12,7 +12,7 @@ const cardsData = [
     subtitle: " GTA’s #1 Realtor",
     date: "03/31/24",
     author: "Ashvak Sheik",
-    imageUrl: "https://images.pexels.com/photos/27781517/pexels-photo-27781517/free-photo-of-the-building-is-surrounded-by-trees-and-a-fountain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", // Replace with actual image URL
+    imageUrl: "https://images.pexels.com/photos/280221/pexels-photo-280221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", // Replace with actual image URL
     isFullWidth: true,
   },
   {
@@ -21,7 +21,7 @@ const cardsData = [
     subtitle: " GTA’s #1 Realtor",
     date: "09/1/22",
     author: "Ashvak Sheik",
-    imageUrl: "https://images.pexels.com/photos/27781517/pexels-photo-27781517/free-photo-of-the-building-is-surrounded-by-trees-and-a-fountain.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", // Replace with actual image URL
+    imageUrl: "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", // Replace with actual image URL
     isFullWidth: false,
   },
   {

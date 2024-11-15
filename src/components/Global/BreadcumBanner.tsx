@@ -1,5 +1,5 @@
 
-const BreadcumBanner = ({bgLogo,pageTitle,description}:{bgLogo?:string;pageTitle:string;description?:string}) => {
+const BreadcumBanner = ({bgLogo,pageTitle,description,className}:{bgLogo?:string;pageTitle:string;description?:string;className?:string}) => {
     const sectionStyle = {
         background: bgLogo? `url(${bgLogo?bgLogo:'https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/gyommycouuod40setpi0/rl-bg'})`:'#000',
         WebkitBackgroundSize: 'cover',
@@ -14,7 +14,7 @@ const BreadcumBanner = ({bgLogo,pageTitle,description}:{bgLogo?:string;pageTitle
   return (
     <div
     style={sectionStyle}
-    className="relative  text-white h-[calc(70vh)]"
+    className={`relative  text-white h-[calc(70vh)] bg-cover ${className}`}
   >
     <div className="flex items-center justify-center h-full bg-black bg-opacity-40 w-full px-6 pt-16 pb-16">
       <div className="flex flex-col items-center space-y-6">

@@ -18,7 +18,7 @@ const pages = [
       { url: "/sellers", label: "SELLER'S GUIDE" },
     ],
   },
-  { url: "/press", label: "PRESS & MEDIA" },
+  { url: "/blog", label: "Blog" },
   { url: "/testimonials", label: "TESTIMONIALS" },
   { url: "/lets-connect", label: "LET'S CONNECT" },
   { url: "/my-search-portal", label: "MY SEARCH PORTAL" },
@@ -65,7 +65,7 @@ const SlideMenu = ({ isMenuOpen, onCLick }: subMenuProps) => {
                   onClick={()=>item.subMenu && handleSubmenuToggle(item.label)}
                   href={item.url || "#"}
                   key={item.label}
-                  className="py-3 text-[21px] text-black tenor_Sans  w-full text-center"
+                  className="py-3 text-[21px] text-black tenor_Sans  w-full text-center uppercase"
                 >
                   {item.label}
                 </Link>

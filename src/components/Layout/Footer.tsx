@@ -133,19 +133,7 @@ const Footer = () => {
                   {...register("terms", { required: true })}
                 />
                 <p className="font-semibold !text-justify text-[14px] leading-5 tracking-[3px] text-white">
-                  By providing Rahul Luthra your contact information, you
-                  acknowledge and agree to our{" "}
-                  <Link href="/privacy-policy" className="text-gray-300 underline">
-                    Privacy Policy
-                  </Link>{" "}
-                  and consent to receiving marketing communications, including
-                  through automated calls, texts, and emails, some of which may
-                  use artificial or prerecorded voices. This consent isn’t
-                  necessary for purchasing any products or services and you may
-                  opt out at any time. To opt out from texts, you can reply,
-                  ‘stop’ at any time. To opt out from emails, you can click on
-                  the unsubscribe link in the emails. Message and data rates may
-                  apply.
+                By providing Ashvak with your contact information, you acknowledge and agree to our <Link className="underline" href="#">Privacy Policy</Link> and consent to receive marketing communications, including automated calls, texts, and emails. You may opt out at any time. To stop receiving texts, reply ‘STOP’ at any time. Message and data rates may apply.
                 </p>
               </div>
               <SubmitButton btnText="Subscribe" disabled={isPending} />
@@ -153,11 +141,11 @@ const Footer = () => {
             </div>
           
         </div>
-        <div className="flex items-center gap-10 mt-[7rem]">
-          <Image src="/21_logo2.png" width={90} height={250} priority alt="century 21 logo" />
-         <div className="space-y-12">
+        <div className="flex items-start gap-4 mt-[7rem]">
+          <Image src="/21_logo2.png" width={60} height={250} priority alt="century 21 logo" />
+         <div className="space-y-3">
          <p>All information deemed reliable but not guaranteed and should be independently reviewed and verified.</p>
-         <Image src="/Realtor-logo.png" width={90} height={250} priority alt="century 21 logo" />
+         <Image src="/Realtor-logo.png" width={40} height={250} priority alt="century 21 logo" />
          </div>
         </div>
         <Copyright />

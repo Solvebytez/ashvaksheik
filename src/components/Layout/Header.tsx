@@ -94,7 +94,7 @@ const Header = () => {
                       href="/about"
                       className="block md:px-4 transition hover:underline text-white tracking-[3px]"
                     >
-                      <span>About Ashfaq</span>
+                      <span>About Ashvak</span>
                     </Link>
                   </li>
                   <li>
@@ -130,7 +130,7 @@ const Header = () => {
       <FullScreenModal
         isOpen={isOpen}
         closeModal={closeModal}
-        bgImage="https://res.cloudinary.com/luxuryp/images/w_1920,c_limit,f_auto,q_auto/u1sxmj3pbwxwzzuw7zf8/rahull"
+        bgImage="https://images.pexels.com/photos/842811/pexels-photo-842811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       >
        <ContactModal/>
       </FullScreenModal>

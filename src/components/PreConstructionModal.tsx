@@ -6,8 +6,8 @@ import SubmitButton from "./Global/SubmitButton";
 import Link from "next/link";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import LinkButton from "./Global/Button";
 import { toast } from "react-toastify";
+import Container from "./Global/Container";
 
 type FormValues = {
   name: string;
@@ -17,7 +17,7 @@ type FormValues = {
   terms: boolean; // Add new field to FormValues
 };
 
-const ContactModal = () => {
+const ContactModal = ({prijectName}:{prijectName:string}) => {
   const [isPending, setIspending] = useState(false as boolean);
   const [isShowForm, setisShowForm] = useState(false as boolean);
 
@@ -47,6 +47,8 @@ const ContactModal = () => {
       console.error("Error submitting form:", error);
     }
   };
+
+  console.log('prijectName',prijectName)
 
   return (
     <div className="text-white flex items-start justify-center p-4">
@@ -155,12 +157,12 @@ const ContactModal = () => {
 
               <div className="flex flex-col mt-10">
                 <label className="uppercase text-white text-md font-bold">
-                  Message:
+                Additional comments or questions:
                 </label>
                 <textarea
                   placeholder="Message"
                   rows={4}
-                  {...register("message", { required: true })}
+                  {...register("message")}
                   className="w-full bg-transparent p-3 mt-3 focus:outline-none ring-1 ring-white"
                 ></textarea>
               </div>
@@ -184,18 +186,24 @@ const ContactModal = () => {
           </div>
         </div>
       ) : (
-        <div className="flex flex-col space-y-5 justify-center items-center h-[100vh]">
-          <h3 className="text-xl font-bold tracking-[4px] uppercase">
-            Thank You
+        <Container>
+        <div className="h-full">
+         
+         <div className="flex flex-col space-y-5 justify-center items-center h-[calc(100vh)]">
+         <h3 className="text-xl font-bold tracking-[4px] uppercase">
+          Thank You for Your Interest!
           </h3>
           <h1 className="text-xl font-tenor_Sans tracking-[4px] uppercase my-1 text-center">
-            I’m gathering your property information. I will be in touch with you
-            soon!
+          Thank you for expressing interest in <b className="underline">{prijectName}</b>. We’ve received your request, and our team will contact you shortly with personalized details and next steps. Keep an eye on your inbox or phone for updates!
           </h1>
-          <div className="md:flex gap-4 w-full items-center justify-center">
-            <LinkButton href="#" btnText="VIEW LISTINGS FOR SALE" />
+          <div className="md:flex gap-4 w-full items-center justify-center italic">
+          If you have any further questions, feel free to reach out directly.
+
           </div>
+         </div>
+        
         </div>
+        </Container>
       )}
     </div>
   );

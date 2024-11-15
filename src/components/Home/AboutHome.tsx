@@ -20,7 +20,7 @@ const AboutHome = () => {
             sizes="25vw"
             fill
             className="object-cover"
-            src="https://res.cloudinary.com/luxuryp/images/w_960,c_limit,f_auto,q_auto/dk3wq2r0ykydqls8pdhb/dsc09335"
+            src="https://images.pexels.com/photos/5313175/pexels-photo-5313175.jpeg"
           />
         </div>
         <div className="flex flex-col items-center justify-center text-center space-y-5 text-white px-8">

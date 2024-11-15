@@ -10,27 +10,27 @@ const cards = [
   },
   {
     imageSrc:
-      "https://images.pexels.com/photos/280221/pexels-photo-280221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Meadowvale – Family-friendly with plenty of parks, trails, and schools",
   },
   {
     imageSrc:
-      "https://images.pexels.com/photos/27781512/pexels-photo-27781512/free-photo-of-the-palace-of-the-royal-palace-of-madrid.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Pickering Village – A historic area with a mix of quaint shops, cafes, and restaurants",
   },
   {
     imageSrc:
-      "https://images.pexels.com/photos/259950/pexels-photo-259950.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Brooklin – A charming small town within Whitby, featuring a historic main street",
   },
   {
     imageSrc:
-      "https://images.pexels.com/photos/280221/pexels-photo-280221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/87223/pexels-photo-87223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Markham Unionville – Famous for its heritage buildings, upscale shops, and a lively main street",
   },
   {
     imageSrc:
-      "https://images.pexels.com/photos/27781512/pexels-photo-27781512/free-photo-of-the-palace-of-the-royal-palace-of-madrid.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/1546166/pexels-photo-1546166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Oakville Downtown – A picturesque lakeside community with upscale shopping and dining",
   },
   {

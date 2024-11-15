@@ -1,6 +1,6 @@
 import BreadcumBanner from "@/components/Global/BreadcumBanner";
 import Container from "@/components/Global/Container";
-import Pagination from "@/components/Global/Pagination";
+// import Pagination from "@/components/Global/Pagination";
 import PropertyCard from "@/components/PropertyCard";
 
 const properties = [
@@ -59,7 +59,7 @@ const ProPertiesPage = () => {
           
         </Container>
        <div className="flex items-center justify-center mt-20">
-       <Pagination pageNumber={8}/>
+       {/* <Pagination pageNumber={8}/> */}
        </div>
       </div>
      

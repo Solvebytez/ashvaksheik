@@ -5,8 +5,8 @@ import Container from '../Global/Container'
 const Numbers = () => {
   return (
     <div 
-    className="relative w-full bg-cover bg-center bg-no-repeat" 
-    style={{backgroundImage: "url('https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/zplo68n8zvcle5hkia7o/by-the-numbers')"}}
+    className="relative w-full bg-cover bg-center bg-no-repeat bg-fixed" 
+    style={{backgroundImage: "url('https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')"}}
     role="img"
     aria-label="Wooden structure over water"
   >

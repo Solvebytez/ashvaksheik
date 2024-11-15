@@ -2,7 +2,7 @@ import BreadcumBanner from "@/components/Global/BreadcumBanner";
 import Container from "@/components/Global/Container";
 import SocialProfile from "@/components/Global/SocialProfile";
 import Brand from "@/components/Home/Brand";
-import ExclusiveList from "@/components/Home/ExclusiveList";
+import Builders from "@/components/Home/Builders";
 import WorkWith from "@/components/Home/WorkWith";
 import Image from "next/image";
 
@@ -11,7 +11,8 @@ const AboutPage = () => {
     <div>
       <BreadcumBanner
         pageTitle="About Ashfaq"
-        bgLogo="https://res.cloudinary.com/luxuryp/images/w_2560,c_limit,f_auto,q_auto/swtxreapht0btdonzuh9/dsc09636"
+        bgLogo="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        className="bg-cover bg-no-repeat"
       />
       <Container>
         <div className="lg:grid grid-cols-12 gap-28 py-20">
@@ -19,18 +20,18 @@ const AboutPage = () => {
             <div className="relative w-full" style={{ aspectRatio: "16 / 20" }}>
               <Image
                 alt=""
-                src="https://res.cloudinary.com/luxuryp/images/w_960,c_limit,f_auto,q_auto/twdhe35e2omkntpirxju/rahul"
+                src="https://images.pexels.com/photos/1270076/pexels-photo-1270076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 layout="fill"
                 className="object-cover"
               />
             </div>
           </div>
           <div className="col-span-6 text-white">
-            <h1 className="text-5xl font-tenor_Sans tracking-[4px] mb-4 pt-16 lg:pt-0">
-              RAHUL LUTHRA
+            <h1 className="text-5xl font-tenor_Sans tracking-[4px] mb-4 pt-16 lg:pt-0 uppercase">
+            Ashvak Sheik
             </h1>
             <h2 className="text-lg font-tenor_Sans tracking-[3px] mb-8">
-              BROKER
+            REALTOR
             </h2>
 
             <div className="mb-6">
@@ -41,7 +42,7 @@ const AboutPage = () => {
                 href="tel:5198296165"
                 className="text-lg font-bold underline hover:text-gray-300"
               >
-                (519) 829-6165
+                647-890-0982
               </a>
             </div>
 
@@ -53,15 +54,15 @@ const AboutPage = () => {
                 href="mailto:rahul@theluthragroup.com"
                 className="text-lg font-bold underline hover:text-gray-300"
               >
-                rahul@theluthragroup.com
+                ashvak.realtor07@gmail.com
               </a>
             </div>
 
             <div className="mb-14">
               <h3 className="text-md tracking-wider mb-1">ADDRESS</h3>
               <p className="text-lg font-bold">
-                238 Speedvale Ave W, <br />
-                Guelph, ON N1H 1C4
+              25 Van Kirk Dr Brampton, <br />
+              ON L7A 1A4
               </p>
             </div>
             <SocialProfile />
@@ -75,33 +76,19 @@ const AboutPage = () => {
           <hr className=" border-white/10 my-6" />
           <div>
             <p className="mb-4">
-              As a first-generation born and raised Guelphite, Rahul has
-              witnessed Guelph transform from a small town to a highly
-              sought-after community for families and young working
-              professionals.
+            As a dedicated realtor in the Greater Toronto Area, I’ve had the privilege of witnessing our vibrant city grow and evolve, attracting families, professionals, and newcomers from all walks of life. I’m honored to be part of this journey, helping clients find not just a property, but a place they can truly call home.
+
             </p>
             <p className="mb-4">
-              Home is a feeling, rather than a place, and Rahul is committed to
-              helping you find that feeling, in the city which he has had the
-              pleasure of calling home for years on end.
+            For me, home is more than just a location; {"it's"} a sense of comfort and belonging. I’m here to help you find that feeling, whether {"you're"} looking to plant roots or invest in your future within this diverse community.
             </p>
             <p className="mb-4">
-              Representing Guelph and Tri-city homeowners, both current and
-              future, Rahul has an unmatched devotion to his clients. He prides
-              himself on being resourceful and empathetic to your needs and
-              desires, all whilst focusing on the small details that matter
-              most. Dedication, integrity, and honesty are at the forefront of
-              Rahul’s business and are fundamental in ensuring you receive the
-              best care every step of the way.
+            Representing GTA homeowners and future residents, I bring a commitment to integrity, resourcefulness, and understanding of my clients’ unique needs. I pride myself on listening carefully, paying attention to the details that matter most to you, and ensuring your real estate journey is as smooth and rewarding as possible.
+
             </p>
             <p className="mb-4">
-              In the world of customer service, Rahul is a seasoned
-              professional. Through his several managerial positions previously
-              held in the hospitality sector, Rahul always knew a transition
-              into Real Estate would allow him to utilize his strengths in the
-              most meaningful way possible. Nothing means more to Rahul than
-              putting a smile on his clients’ faces, only now it is a smile that
-              comes from helping his clients find their feeling of home.
+            With a background rooted in customer service, I have a deep appreciation for the importance of clear communication and exceptional service. Transitioning into real estate allowed me to combine my skills and passion for helping others. {"There's"} nothing more fulfilling than seeing the satisfaction of clients who have found their ideal home, and {"I'm"} here to make that experience as positive as it can be for you.
+
             </p>
           </div>
           <hr className=" border-white/10 my-6" />
@@ -126,7 +113,7 @@ const AboutPage = () => {
         </div>
       </Container>
       <Brand />
-      <ExclusiveList />
+      <Builders/>
       <WorkWith />
     </div>
   );
