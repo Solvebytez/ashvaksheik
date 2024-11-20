@@ -39,7 +39,7 @@ const AboutPage = () => {
                 PRIMARY PHONE
               </h3>
               <a
-                href="tel:5198296165"
+                href="tel:6478900982"
                 className="text-lg font-bold underline hover:text-gray-300"
               >
                 647-890-0982
@@ -51,7 +51,7 @@ const AboutPage = () => {
                 EMAIL
               </h3>
               <a
-                href="mailto:rahul@theluthragroup.com"
+                href="mailto:ashvak.realtor07@gmail.com"
                 className="text-lg font-bold underline hover:text-gray-300"
               >
                 ashvak.realtor07@gmail.com

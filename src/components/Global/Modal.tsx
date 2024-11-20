@@ -30,7 +30,7 @@ const FullScreenModal = ({ isOpen, closeModal,children,bgImage }: ModalType) => 
           backgroundImage:
             `url(${bgImage})`,
         }}>
-          <div className="relative w-[100%]  p-6 bg-black bg-opacity-85 text-white h-full">
+          <div className="relative w-[100%] p-0 md:p-6 bg-black bg-opacity-85 text-white h-auto md:h-full">
             <button
               onClick={closeModal}
               className="absolute top-4 right-4 text-white hover:text-gray-900 text-5xl"

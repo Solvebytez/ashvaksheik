@@ -4,39 +4,34 @@ import SectionTitle from "../Global/SectionTitle";
 import ImageCard2 from "../ImageCard2";
 const cards = [
   {
-    imageSrc:
-      "https://images.pexels.com/photos/259950/pexels-photo-259950.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "Mississauga City Centre – Known for its vibrant urban lifestyle with plenty of shopping, dining, and entertainment.",
+    title: "Mississauga City Centre",
+    description: "Known for its vibrant urban lifestyle with plenty of shopping, dining, and entertainment.",
+    imageURL: "https://images.pexels.com/photos/8142972/pexels-photo-8142972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
-    imageSrc:
-      "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "Meadowvale – Family-friendly with plenty of parks, trails, and schools",
+    title: "Port Credit",
+    description: "A beautiful lakeside community with a charming, small-town feel and a popular waterfront.",
+    imageURL: "https://images.pexels.com/photos/1643384/pexels-photo-1643384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
-    imageSrc:
-      "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "Pickering Village – A historic area with a mix of quaint shops, cafes, and restaurants",
+    title: "Streetsville",
+    description: "Known as 'The Village in the City,' it offers a cozy, community vibe with historic charm.",
+    imageURL: "https://images.pexels.com/photos/2089698/pexels-photo-2089698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
-    imageSrc:
-      "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "Brooklin – A charming small town within Whitby, featuring a historic main street",
+    title: "Meadowvale",
+    description: "Family-friendly with plenty of parks, trails, and schools.",
+    imageURL: "https://images.pexels.com/photos/2968141/pexels-photo-2968141.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
-    imageSrc:
-      "https://images.pexels.com/photos/87223/pexels-photo-87223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "Markham Unionville – Famous for its heritage buildings, upscale shops, and a lively main street",
+    title: "Brampton Downtown",
+    description: "A rapidly growing urban area with diverse communities and cultural events.",
+    imageURL: "https://images.pexels.com/photos/7937225/pexels-photo-7937225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
-    imageSrc:
-      "https://images.pexels.com/photos/1546166/pexels-photo-1546166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "Oakville Downtown – A picturesque lakeside community with upscale shopping and dining",
-  },
-  {
-    imageSrc:
-      "https://images.pexels.com/photos/27781512/pexels-photo-27781512/free-photo-of-the-palace-of-the-royal-palace-of-madrid.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "Milton Escarpment View – A serene area with breathtaking views and great outdoor activities.",
+    title: "Pickering Village",
+    description: "A historic area with a mix of quaint shops, cafes, and restaurants.",
+    imageURL: "https://images.pexels.com/photos/2462015/pexels-photo-2462015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
 ];
 
@@ -51,9 +46,9 @@ const AreaExpertise = () => {
           bgLogo="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/gyommycouuod40setpi0/rl-bg"
         />
       </Container>
-      <div className="grid grid-cols-3 gap-0">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
         {cards.map((card, index) => (
-          <ImageCard2 key={index} imageSrc={card.imageSrc} title={card.title} />
+          <ImageCard2 key={index} imageSrc={card.imageURL} title={card.title} description={card.description} />
         ))}
       </div>
       <div className="flex justify-center items-center">

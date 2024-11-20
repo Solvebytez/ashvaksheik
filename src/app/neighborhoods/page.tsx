@@ -151,7 +151,7 @@ const NeighborhoodsPage = () => {
         </div>
         <div className="grid grid-cols-3 gap-0">
         {neighborhoods.map((card, index) => (
-          <ImageCard2 key={index} imageSrc={card.imageURL} title={`${card.title} - ${card.description}`} />
+          <ImageCard2 key={index} imageSrc={card.imageURL} description={card.description} title={card.title} />
         ))}
       </div>
       </div>

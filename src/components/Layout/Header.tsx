@@ -83,10 +83,18 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      href="#features"
+                      href="/home-search"
                       className="block md:px-4 transition hover:underline text-white tracking-[3px]"
                     >
                       <span>Home Search</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/pre-construction"
+                      className="block md:px-4 transition hover:underline text-white tracking-[3px]"
+                    >
+                      <span>Pre Construction</span>
                     </Link>
                   </li>
                   <li>
@@ -135,6 +143,7 @@ const Header = () => {
        <ContactModal/>
       </FullScreenModal>
       <SlideMenu
+       openModal={openModal}
         isMenuOpen={isMenuOpen}
         onCLick={() => setIsMenuOpen(!isMenuOpen)}
       />

@@ -14,7 +14,7 @@ const Numbers = () => {
     <Container>
     <div className=" text-white py-[4rem] flex flex-col justify-center items-center text-center">
       <h1 className="text-4xl mb-4 tenor_Sans tracking-[6px]">BY THE NUMBERS</h1>
-      <p className="text-md mb-8 mt-4">Rahul is reliable, consistent, and a successful negotiator. He is highly valued by his clients for his integrity and tenacity.</p>
+      {/* <p className="text-md mb-8 mt-4">Ashvak is reliable, consistent, and a successful negotiator. He is highly valued by his clients for his integrity and tenacity.</p> */}
       <p className="text-md mb-8 mt-4">Ashvak is known for his dedication, professionalism, and exceptional negotiation skills. Clients value his integrity, persistence, and commitment to achieving the best results.
       </p>
       <div className="grid grid-cols-3 gap-4 mt-8">

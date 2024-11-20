@@ -1,27 +1,13 @@
+import ConsultationModal from "@/components/ConsultationModal";
 import BreadcumBanner from "@/components/Global/BreadcumBanner";
-import LinkButton from "@/components/Global/Button";
 import Container from "@/components/Global/Container";
 import SubmitButton from "@/components/Global/SubmitButton";
 import Clwantail from "@/components/Home/Clwantail";
 import WorkWith from "@/components/Home/WorkWith";
 import ImageCard1 from "@/components/ImageCard1";
+import { seTtingsData } from "@/lib/Data/SettingSData";
 import Image from "next/image";
 
-
-const images = [
-    {
-      title: 'HOME SEARCH',
-      image: 'https://images.pexels.com/photos/1370704/pexels-photo-1370704.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-    },
-    {
-      title: 'HOME VALUATION',
-      image: 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-    },
-    {
-      title: 'CONTACT US',
-      image: 'https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-    },
-  ];
 
 const buyersSteps = [
   {
@@ -36,10 +22,78 @@ const buyersSteps = [
     id: 2,
     title: "DECIDE ON YOUR BUDGET",
     description:
-      "Do you already know where you want to buy? If you want a condo, townhome, or single-family home? Which features do you like and dislike? What’s available on the market now? If you answered no to any of these questions, now is the time to start researching. In addition to looking for homes that interest you, also take note of any changes in asking prices. This could give you valuable insight into housing trends in specific neighborhoods and help you when the time comes to make an offer.",
+      "Notice I said to decide on your budget—not determine how much the mortgage company will give you. In many cases, a mortgage company will pre-approve you for more than you’re comfortable spending, which is why you need to determine the monthly payment you feel comfortable with before talking to a lender. This likely includes doing a full household budget and taking into consideration what changes other than a mortgage payment will occur once you move into your new home. If you’ve lived in an apartment or with roommates, you may overlook new expenses like garbage, water, or HOA fees that could easily blow your budget.",
     image:
       "https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/qrsgawei2jqspwpmi3vm/buyers2", // replace with the actual image path
   },
+  {
+    id: 3,
+    title: "Get Prequalified",
+    description:
+      "Just because you think you can afford a certain payment every month doesn’t mean the mortgage company will agree. Just as they may approve you for too large of an amount, they may also approve you for a lesser amount or deny you a mortgage altogether. Lack of time at a job, insufficient credit, past bankruptcies, or other financial issues can cause major problems when trying to secure a mortgage. Before you get your heart set on a home, talk to a mortgage professional to find out what amount you can qualify for. This will also be an advantage when you make an offer on a home, as some sellers won’t entertain offers from those who aren’t already prequalified for a loan.",
+    image:
+      "https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/qrsgawei2jqspwpmi3vm/buyers2", // replace with the actual image path
+  },
+  {
+    id: 4,
+    title: "Choose a Real Estate Agent",
+    description:
+      "Can you shop for, look at, and ultimately make an offer on a home without a real estate agent? Technically yes, but why would you when it costs you nothing for an agent like me to take much of the stress off your shoulders? Not only will I help identify properties you might be interested in, arrange showings, and ultimately handle the offer process, but I also have a knowledge of the market that you don’t possess. I may be able to steer you away from certain homes or neighborhoods, suggest hidden gems, or give you pointers that will help you find your dream home for the right price.",
+    image:
+      "https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/qrsgawei2jqspwpmi3vm/buyers2", // replace with the actual image path
+  },
+];
+
+const buyersSteps2 = [
+  {
+    id: 1,
+    title: "Find the Right Home",
+    description:
+      "This should be the most enjoyable step of the entire process (other than moving in!). I will arrange showings of homes you’re interested in that are within your price range. Take notes about what you like and don’t like, and make sure to pay attention to details. Turn light switches on and off, open and close doors, and run the faucets in various rooms. Don’t limit your inspection to the home itself. Make sure to take time to explore the neighborhood and keep an eye on traffic at certain times of the day, the parking situation, and how close it is to necessities like schools and grocery stores.",
+    image:
+      "https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/z2slyi8lfqzvap2ihwav/buyers1", // replace with the actual image path
+  },
+  {
+    id: 2,
+    title: "Make an Offer",
+    description:
+      "Once you have selected the perfect home, work with your agent to craft a fair offer based on the value of comparable homes on the market. Depending on what the home is listed at and whether the current environment is a buyer’s or seller’s market, your offer may be below, at, or even above the asking price. I will be able to help you negotiate if you receive a counteroffer and reach an agreement. At this point, the house will go into escrow.",
+    image:
+      "https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/qrsgawei2jqspwpmi3vm/buyers2", // replace with the actual image path
+  },
+  {
+    id: 3,
+    title: "Have the Home Inspected",
+    description:
+      "In most cases, your offer will be contingent on having the home inspected to ensure there is no major structural damage or large repairs needed. I can help you arrange this, and you can schedule it within days of making an offer. If there are no major issues, the process goes to step eight. If there is, you can renegotiate your offer based on what needs to be fixed, or you can withdraw it.",
+    image:
+      "https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/qrsgawei2jqspwpmi3vm/buyers2", // replace with the actual image path
+  },
+  {
+    id: 4,
+    title: "Select Your Loan",
+    description:
+      "Can you shop for, look at, and ultimately make an offer on a home without a real estate agent? Technically yes, but why would you when it costs you nothing for an agent like me to take much of the stress off your shoulders? Not only will I help identify properties you might be interested in, arrange showings, and ultimately handle the offer process, but I also have a knowledge of the market that you don’t possess. I may be able to steer you away from certain homes or neighborhoods, suggest hidden gems, or give you pointers that will help you find your dream home for the right price.",
+    image:
+      "https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/qrsgawei2jqspwpmi3vm/buyers2", // replace with the actual image path
+  },
+  {
+    id: 5,
+    title: "Get a Home Appraisal",
+    description:
+      "Your lender will have your new home appraised so they have their independent value of it. The appraisal is to ensure that all parties involved are paying a fair price for the house.",
+    image:
+      "https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/z2slyi8lfqzvap2ihwav/buyers1", // replace with the actual image path
+  },
+  {
+    id: 6,
+    title: "Finish Paperwork",
+    description:
+      "No one looks forward to all the paperwork involved in buying a home, but it’s a necessary part of the process. Fortunately, everything will be arranged by your lender and title company and, when you’re finished, you’ll know you are the legal owner of your new home.",
+    image:
+      "https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/qrsgawei2jqspwpmi3vm/buyers2", // replace with the actual image path
+  },
+  
 ];
 
 const BuyersPage = () => {
@@ -48,7 +102,8 @@ const BuyersPage = () => {
       <BreadcumBanner
         pageTitle="Buyer's Guide"
         description="Everything you need to know about the process of buying a new home."
-        bgLogo="https://res.cloudinary.com/luxuryp/images/w_2560,c_limit,f_auto,q_auto/kmoxkafe9anaey0gulzc/5heedurq"
+        bgLogo="https://images.pexels.com/photos/1121796/pexels-photo-1121796.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        className="bg-cover"
       />
       <div className="bg-black text-white py-16 text-center mb-16">
         <Container>
@@ -97,33 +152,11 @@ const BuyersPage = () => {
           ))}
         </div>
       </Container>
-      <div
-        className=" text-white bg-[center_top_8rem] bg-fixed relative bg-cover bg-no-repeat my-24"
-        style={{
-          backgroundImage:
-            "url('https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/tl4a7tfvrx6vjrdwnzgc/buyers-goal')",
-        }}
-      >
-        <div className="bg-black bg-opacity-70 text-white flex flex-col items-center justify-center py-16 w-full space-y-7 text-center">
-          <Container>
-            <div className="flex flex-col space-y-10 items-center justify-center">
-              <h2 className="text-4xl tracking-[4px] font-tenor_Sans uppercase leading-[45px]">
-                MY GOAL IS TO PROVIDE YOU WITH THE MOST PERSONALIZED SERVICE
-                THAT IS DESIGNED TO HELP YOU BUY YOUR DREAM HOME.
-              </h2>
-              <LinkButton
-                href="#"
-                btnText="Schedule A Consultation"
-                className="w-max"
-              />
-            </div>
-          </Container>
-        </div>
-      </div>
+     <ConsultationModal/>
 
       <Container>
         <div className="flex flex-col space-y-12 md:space-y-16">
-          {buyersSteps.map((step, index) => (
+          {buyersSteps2.map((step, index) => (
             <div
               key={step.id}
               className={`flex flex-col md:flex-row items-center ${
@@ -143,7 +176,7 @@ const BuyersPage = () => {
                 }`}
               >
                 <h2 className="text-2xl tracking-[4px] font-tenor_Sans uppercase">
-                  STEP {step.id}:
+                  STEP {step.id+4}:
                 </h2>
                 <h3 className="text-4xl tracking-[4px] font-tenor_Sans uppercase">
                   {step.title}
@@ -190,7 +223,7 @@ const BuyersPage = () => {
                 <div className="text-xs text-black mb-4">
                   <input type="checkbox" className="mr-2" />
                   <span className="!text-justify">
-                    By providing Rahul Luthra your contact information, you
+                    By providing Ashvak Sheika your contact information, you
                     acknowledge and agree to our{" "}
                     <a href="/privacy-policy" className=" underline">
                       Privacy Policy
@@ -229,8 +262,8 @@ const BuyersPage = () => {
       </div>     
      <Container className="mb-20">
      <div className="flex flex-col md:grid grid-cols-3 gap-6 mb-10 my-16">
-      {images.map((item) => (
-        <ImageCard1 key={item.title} imageUrl={item.image} title={item.title} />
+      {seTtingsData.map((item) => (
+        <ImageCard1 key={item.title} imageUrl={item.image} title={item.title} link={item.link} />
       ))}
       </div>
     </Container>    

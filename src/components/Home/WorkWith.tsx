@@ -1,7 +1,11 @@
-
+'use client'
+import ContactModal from '../ContactModal';
 import LinkButton from '../Global/Button'
+import FullScreenModal from '../Global/Modal';
+import useFullscreenhook from '../Hook/useFullscreenhook';
 
 const WorkWith = () => {
+  const {closeModal,isOpen,openModal} = useFullscreenhook()
   return (
     <div
         className=" text-white bg-fixed relative bg-cover bg-no-repeat"
@@ -20,9 +24,16 @@ const WorkWith = () => {
           Serving the Greater Toronto Area, including Peel, Durham,<br/> Halton, York, and surrounding areas.
           </p>
           <div className="flex justify-center items-center mb-[5rem]">
-        <LinkButton href="#" btnText="LET'S CONNECT" className="text-white mt-10" />
+        <LinkButton onClick={openModal} href="#" btnText="LET'S CONNECT" className="text-white mt-10" />
       </div>
         </div>
+        <FullScreenModal
+        isOpen={isOpen}
+        closeModal={closeModal}
+        bgImage="https://images.pexels.com/photos/842811/pexels-photo-842811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      >
+       <ContactModal/>
+      </FullScreenModal>
       </div>
   )
 }

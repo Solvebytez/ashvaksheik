@@ -51,15 +51,15 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-black text-white p-8">
+    <div className="bg-black text-white  p-0 md:p-8">
     
       <Container>
-        <h1 className="text-3xl my-14 font-tenor_Sans tracking-[2px] uppercase">
+        <h1 className="text-3xl text-center md:text-left my-14 font-tenor_Sans tracking-[2px] uppercase">
         Ashvak Sheik
         </h1>
         <div className="flex flex-col items-center md:flex-row md:justify-between md:items-start">
           {/* Left Section */}
-          <div className="mb-8 md:mb-0 md:text-left w-1/4 font-tenor_Sans">
+          <div className="mb-8 md:mb-0 w-full text-center md:text-left md:w-1/4 font-tenor_Sans">
             <div className="space-y-1">
               <p className="text-2xl tracking-[4px]">GTA</p>
               <p className="text-2xl tracking-[4px]">REAL</p>
@@ -68,8 +68,8 @@ const Footer = () => {
           </div>
 
           {/* Contact Information */}
-          <div className="text-center md:text-left mb-8 md:mb-0 space-y-3 w-2/4 flex flex-wrap gap-6 2xl:mr-[3rem]">
-            <div className="flex items-start justify-center md:justify-start space-x-2 gap-4">
+          <div className="text-center md:text-left mb-8 md:mb-0 space-y-3 md:w-2/4 flex flex-wrap gap-6 2xl:mr-[3rem]">
+            <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start space-x-2 gap-4">
               <span className="material-icons">
                 {" "}
                 <Mail size={30} />
@@ -83,7 +83,7 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-start justify-center md:justify-start  gap-4">
+            <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start space-x-2 gap-4 w-full md:w-auto">
               <span className="material-icons">
                 {" "}
                 <NotebookTabs size={30} />
@@ -97,7 +97,7 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-start justify-center md:justify-start gap-4">
+            <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start space-x-2 gap-4 w-full md:w-auto">
               <span className="material-icons">
                 <Map size={30} />
               </span>
@@ -114,7 +114,7 @@ const Footer = () => {
 
           {/* Newsletter Signup */}
          
-            <div className="text-center md:text-left w-1/4">
+            <div className="text-center md:text-left md:w-1/4">
             <form onSubmit={handleSubmit(onSubmit)}>
               <h2 className="text-sm tracking-[2px] font-bold uppercase flex gap-4 mb-6">
                 <Milestone size={30} /> SIGN UP FOR EXCLUSIVE NEWS

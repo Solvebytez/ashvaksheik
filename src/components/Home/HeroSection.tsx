@@ -9,7 +9,7 @@ const HeroSection = () => {
         <h1 className="text-[40px] leading-[3.5rem] md:text-[70px] tenor_Sans tracking-[6px] text-center my-0 md:my-8 uppercase">Ashvak Sheik</h1>
         <strong className="italic">#1 Century 21 Agent in GTA      </strong>
         <p className="!my-6 text-center">Setting the standard in Real Estate. Just as intended.</p>
-        <LinkButton btnText="Home Search" href="#" className="!mt-14"/>
+        <LinkButton btnText="Home Search" href="/home-search" className="!mt-14"/>
       </div>
       </div>
       <div

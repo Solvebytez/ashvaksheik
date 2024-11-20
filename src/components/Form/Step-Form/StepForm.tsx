@@ -198,7 +198,7 @@ const StepForm = () => {
   {...register("terms", { required: true })} 
 />  
                     <span className="font-bold !text-justify">
-                      By providing Rahul Luthra your contact information, you
+                      By providing Ashvak Sheik your contact information, you
                       acknowledge and agree to our{" "}
                       <a
                         href="/privacy-policy"

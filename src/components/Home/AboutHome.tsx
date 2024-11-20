@@ -4,7 +4,7 @@ import SectionTitle from "../Global/SectionTitle";
 import Image from "next/image";
 import LinkButton from "../Global/Button";
 
-const AboutHome = () => {
+const AboutHome = ({openModal}:{openModal:()=>void;}) => {
   return (
     <Container>
       <SectionTitle
@@ -42,7 +42,7 @@ const AboutHome = () => {
           </div>
           <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
             <LinkButton btnText="Learn More" href="#" />
-            <LinkButton btnText="Let's Connect" href="#" className="bg-white text-black hover:bg-black hover:text-black" />
+            <LinkButton onClick={openModal} btnText="Let's Connect" href="#" className="bg-white text-black hover:bg-black hover:text-black" />
           </div>
         </div>
       </div>

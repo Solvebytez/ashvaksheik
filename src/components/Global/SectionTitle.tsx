@@ -13,7 +13,7 @@ const SectionTitle = ({ bgLogo, description, title,titleNumber }: SectionTitlePr
     const sectionStyle = {
         background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url(${bgLogo?bgLogo:'https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/gyommycouuod40setpi0/rl-bg'})`,
         WebkitBackgroundSize: 'contain',
-        backgroundSize: 'contain',
+        backgroundSize: '90%',
         backgroundRepeat: 'no-repeat',
         WebkitBackgroundPosition: '100% 60%',
         backgroundPosition: '100% 60%',

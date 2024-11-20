@@ -4,9 +4,11 @@ import LinkButton from "./Global/Button";
 const ImageCard2 = ({
   imageSrc,
   title,
+  description
 }: {
   imageSrc: string;
   title: string;
+  description: string;
 }) => {
   return (
     <div className="group relative overflow-hidden h-96">
@@ -20,9 +22,11 @@ const ImageCard2 = ({
       <div className="absolute inset-0 flex flex-col justify-center items-center  transition duration-500 ease-in-out text-center px-12">
         <h2 className="text-white text-3xl mb-4 transform group-hover:translate-y-[-30px] transition duration-500 tenor_Sans tracking-[6px]">
           {title}
+          <span className="text-white text-lg block">{description}</span>
         </h2>
+       
         <LinkButton
-          href="#"
+          href="/neighborhoods"
           btnText="Learn More"
           className="text-white border border-white py-2 px-4 opacity-0 group-hover:opacity-100 hover:bg-white hover:text-black transform group-hover:translate-y-[-30px] transition duration-500"
         ></LinkButton>

@@ -1,11 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Tenor+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
  
+}
+
+:root {
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-tenor-sans: 'Tenor Sans', sans-serif;
+}
+
+.font-tenor_Sans{
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+body {
+  font-family: var(--font-montserrat), sans-serif; /* Or switch to --font-tenor-sans */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,7 +59,7 @@ body {
   font-family: var(--font-montserrat);
 }
 
-.tenor_Sans {
+.tenor_Sans,.font-tenor_Sans {
   font-family: var(--font-tenor-sans);
 }
 

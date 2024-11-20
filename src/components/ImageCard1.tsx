@@ -1,13 +1,16 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 type ImageCardType={
     imageUrl: string;
     title: string;
+    link?: string;
 }
 
-const ImageCard1 = ({ imageUrl, title }:ImageCardType) => {
+const ImageCard1 = ({ imageUrl, title,link }:ImageCardType) => {
     return (
+      <Link href={link??'#'}>
       <div className="group relative overflow-hidden h-80">
         <Image
           src={imageUrl}
@@ -22,6 +25,7 @@ const ImageCard1 = ({ imageUrl, title }:ImageCardType) => {
           <span className="border-t border-white w-12 mr-2 border-2 inline-block opacity-100 group-hover:opacity-35"></span>
         </div>
       </div>
+      </Link>
     );
   };
 

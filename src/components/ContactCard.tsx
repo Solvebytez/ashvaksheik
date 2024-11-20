@@ -1,9 +1,13 @@
+'use client'
 import Image from "next/image";
+import FullScreenModal from "./Global/Modal";
+import ContactModal from "./ContactModal";
+import useFullscreenhook from "./Hook/useFullscreenhook";
 
 
 
 const ContactCard = ({cardType}:{cardType?:string}) => {
-
+  const { closeModal, isOpen, openModal } = useFullscreenhook();
     const IsWhite = cardType?"text-white":"text-gray-800";
 
   return (
@@ -11,7 +15,7 @@ const ContactCard = ({cardType}:{cardType?:string}) => {
       <div className="flex items-center mb-4 gap-4">
        <div className="relative w-16 h-16">
        <Image
-          src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          src="/profile_pic.jpg"
           alt="Agent"
        fill
         sizes="15vw"
@@ -19,22 +23,29 @@ const ContactCard = ({cardType}:{cardType?:string}) => {
         /> 
        </div>
         <div>
-          <h2 className={`font-bold ${IsWhite} font-tenor_Sans`}>RE/MAX</h2>
-          <p className={`text-sm ${IsWhite} font-tenor_Sans`}>Rahul Luthra</p>
+          <h2 className={`font-bold ${IsWhite} font-tenor_Sans`}>REALTOR</h2>
+          <p className={`text-sm ${IsWhite} font-tenor_Sans`}>Ashvak Sheik</p>
         </div>
       </div>
       <div className="flex justify-between mb-2 py-3">
         <span className={`text-sm ${IsWhite}`}>Mobile number</span>
-        <span className={`text-sm ${IsWhite}`}>(519) 829-6165</span>
+        <span className={`text-sm ${IsWhite}`}>647-890-0982</span>
       </div>
       <hr className="my-2 border-white/10"  />
       <div className="mb-4 py-3 flex justify-between">
         <span className={`text-sm ${IsWhite}`}>Email</span>
-        <p className={`text-sm ${IsWhite}`}>rahul@theluthragroup.com</p>
+        <p className={`text-sm ${IsWhite}`}>ashvak.realtor07@gmail.com</p>
       </div>
-      <button className="w-full bg-black text-white font-tenor_Sans py-3 uppercase tracking-[2px]">
+      <button onClick={openModal} className="w-full bg-black text-white font-tenor_Sans py-3 uppercase tracking-[2px]">
         Contact agent
-      </button>     
+      </button>   
+      <FullScreenModal
+        isOpen={isOpen}
+        closeModal={closeModal}
+        bgImage="https://images.pexels.com/photos/842811/pexels-photo-842811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      >
+       <ContactModal/>
+      </FullScreenModal>  
     </div>
   );
 };

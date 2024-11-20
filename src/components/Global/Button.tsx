@@ -5,11 +5,12 @@ type LinkButtonPropsType = {
     btnText:string;
     title?:string;
     className?:string;
+    onClick?:() => void;
 }
 
-const LinkButton = ({btnText,href='#',title,className}:LinkButtonPropsType) => {
+const LinkButton = ({btnText,href='#',title,className,onClick}:LinkButtonPropsType) => {
   return (
-    <Link href={href} title={title} className={`hover:bg-white hover:text-black border-2 border-white font-bold tracking-[1.5px] text-[14px] uppercase px-11 py-4 ${className}`}>{btnText}</Link>
+    <Link href={href} title={title} onClick={onClick} className={`hover:bg-white hover:text-black border-2 border-white font-bold tracking-[1.5px] text-[14px] uppercase px-11 py-4 ${className}`}>{btnText}</Link>
   )
 }
 
