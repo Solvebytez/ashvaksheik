@@ -131,7 +131,7 @@ const SellersPage = () => {
       </Container>
       <div className="bg-black text-white py-16 text-center mt-16">
         <Container>
-          <h2 className="text-5xl tracking-[5px] font-tenor_Sans uppercase">
+          <h2 className="md:text-5xl tracking-[5px] font-tenor_Sans uppercase">
             Congratulations!
           </h2>
           <p className="px-10 my-10">

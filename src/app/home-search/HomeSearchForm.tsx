@@ -104,7 +104,7 @@ const HomeSearchForm = () => {
         className="flex flex-col space-y-10 "
         onSubmit={handleSubmit(onSubmit)}
       >
-        <div className="w-full h-[4rem] flex  gap-6 justify-between">
+        <div className="w-full md:h-[4rem] flex md:flex-row flex-col  gap-6 justify-between">
           <div className="w-full">
             <label className="text-lg font-bold flex gap-3 items-center">
               Name:{" "}
@@ -138,7 +138,7 @@ const HomeSearchForm = () => {
             />
           </div>
         </div>
-        <div className="w-full h-[4rem] flex  gap-6 justify-between">
+        <div className="w-full md:h-[4rem] flex md:flex-row flex-col  gap-6 justify-between">
           <div className="w-full">
             <label className="text-lg font-bold flex gap-3 items-center">
               Location:{" "}
@@ -176,7 +176,7 @@ const HomeSearchForm = () => {
             />
           </div>
         </div>
-        <div className="w-full h-[4rem] flex  gap-6 justify-between">
+        <div className="w-full md:h-[4rem] flex md:flex-row flex-col  gap-6 justify-between">
           <div className="w-full">
             <label className="text-lg font-bold flex gap-3 items-center">
               Bedroom:{" "}
@@ -214,7 +214,7 @@ const HomeSearchForm = () => {
             />
           </div>
         </div>
-        <div className="w-full h-[4rem] flex  gap-6 justify-between">
+        <div className="w-full md:h-[4rem] flex md:flex-row flex-col  gap-6 justify-between">
           <div className="w-full">
             <label className="text-lg font-bold flex gap-3 items-center">
               Square Footage (Sq Ft):{" "}
@@ -252,11 +252,11 @@ const HomeSearchForm = () => {
             />
           </div>
         </div>
-        <div className="w-full h-[4rem] flex  gap-6 justify-between">
+        <div className="w-full md:h-[4rem] flex md:flex-row flex-col  gap-6 justify-between">
           <div className="w-full">
             <label className="text-lg font-bold flex gap-3 items-center">
               {" "}
-              How Soon Are You Planning to Buy? :{" "}
+              How Soon Are You Planning to Buy?{" "}
               {errors.planningToBuy?.type === "required" && (
                 <p role="alert" className="text-sm font-normal text-red-600">
                   Required
@@ -292,7 +292,7 @@ const HomeSearchForm = () => {
             />
           </div>
         </div>
-        <div className="w-full h-[10rem] flex  gap-6 justify-between">
+        <div className="w-full md:h-[4rem] flex md:flex-row flex-col  gap-6 justify-between">
           <div className="w-full">
             <label className="text-lg font-bold flex gap-3 items-center">
               {" "}
@@ -332,7 +332,7 @@ const HomeSearchForm = () => {
             />
           </div>
         </div>
-        <div className="w-full h-[10rem] flex  gap-6 justify-between">
+        <div className="w-full md:h-[4rem] flex md:flex-row flex-col  gap-6 justify-between">
           <div className="w-full">
             <label className="text-lg font-bold flex gap-3 items-center">
               {" "}

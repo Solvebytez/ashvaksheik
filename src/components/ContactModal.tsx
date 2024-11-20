@@ -54,60 +54,60 @@ const ContactModal = () => {
         <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-12 gap-16 py-12">
           {/* Contact Details Section */}
           <div className="space-y-8 col-span-6">
-            <h1 className="text-4xl font-tenor_Sans tracking-[4px] mb-4 pt-16 lg:pt-0 text-nowrap">
+            <h1 className="text-4xl font-tenor_Sans tracking-[4px] mb-4 pt-16 lg:pt-0 md:text-nowrap text-center md:text-left">
               CONTACT DETAILS
             </h1>
-            <h2 className="text-2xl font-tenor_Sans tracking-[5px] mb-8 uppercase">
+            <h2 className="text-2xl font-tenor_Sans tracking-[5px] mb-8 uppercase text-center md:text-left">
             Ashvak Sheik
             </h2>
-            <div className="flex items-start justify-center md:justify-start  gap-4">
+            <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start  gap-4">
               <span className="material-icons">
                 {" "}
                 <NotebookTabs size={30} />
               </span>
               <div>
-                <p className="text-sm tracking-[2px] font-bold uppercase">
+                <p className="text-sm tracking-[2px] font-bold uppercase text-center md:text-left">
                   PHONE NUMBER
                 </p>
-                <p className="text-sm tracking-[2px] font-bold uppercase underline">
+                <p className="text-sm tracking-[2px] font-bold uppercase underline text-center md:text-left">
                 647-890-0982
                 </p>
               </div>
             </div>
-            <div className="flex items-start justify-center md:justify-start space-x-1 gap-4">
+            <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start  gap-4">
               <span className="material-icons">
                 {" "}
                 <Mail size={30} />
               </span>
               <div>
-                <p className="text-sm tracking-[2px] font-bold uppercase">
+                <p className="text-sm tracking-[2px] font-bold uppercase text-center md:text-left">
                   EMAIL
                 </p>
-                <p className="text-sm tracking-[2px] font-bold uppercase underline">
+                <p className="text-sm tracking-[2px] font-bold uppercase underline text-center md:text-left">
                 ashvak.realtor07@gmail.com
                 </p>
               </div>
             </div>
-            <h3 className="text-2xl tracking-[4px] font-tenor_Sans uppercase">
+            <h3 className="text-2xl tracking-[4px] font-tenor_Sans uppercase text-center md:text-left">
             The Alliance Realty Group | Century 21 Property Zone Realty Inc
             </h3>
 
-            <div className="flex items-start justify-center md:justify-start gap-4">
+            <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start  gap-4">
               <span className="material-icons">
                 <Map size={30} />
               </span>
               <div>
-                <p className="text-sm tracking-[2px] font-bold uppercase">
+                <p className="text-sm tracking-[2px] font-bold uppercase text-center md:text-left">
                   ADDRESS
                 </p>
-                <p className="text-sm tracking-[2px] font-bold uppercase">
+                <p className="text-sm tracking-[2px] font-bold uppercase text-center md:text-left">
                 25 Van Kirk Dr Brampton,<br />
                 ON L7A 1A4
                 </p>
               </div>
             </div>
             {/* Social Media Links */}
-            <SocialProfile />
+           <div className="flex flex-col items-center md:items-start"> <SocialProfile /></div>
           </div>
 
           {/* Submit a Message Section */}
@@ -188,7 +188,7 @@ const ContactModal = () => {
           <h3 className="text-xl font-bold tracking-[4px] uppercase">
             Thank You
           </h3>
-          <h1 className="text-xl font-tenor_Sans tracking-[4px] uppercase my-1 text-center">
+          <h1 className="text-xl font-tenor_Sans tracking-[4px] uppercase my-1 text-center md:text-left">
             I’m gathering your property information. I will be in touch with you
             soon!
           </h1>

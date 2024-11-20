@@ -44,7 +44,7 @@ const Clwantail = () => {
     
   return (
    <Container>
-     <section className="bg-black text-white py-16 px-8 overflow-hidden md:overflow-auto">
+     <section className="bg-black text-white py-16 px-8 overflow-hidden md:overflow-visible">
     <h2 className="text-center text-5xl  mb-12 tenor_Sans tracking-[6px]">FROM MY CLIENTELE</h2>
     <div className=" text-center">
     <div className="slider-container">

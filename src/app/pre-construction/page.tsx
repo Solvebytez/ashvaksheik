@@ -19,18 +19,13 @@ const PreConstructionPage = () => {
         style={sectionStyle}
         className={`relative  text-white h-[calc(70vh)] bg-cover bg-no-repeat`}
       >
-        <div className="flex items-center justify-center h-full bg-black bg-opacity-70 w-full px-6 pt-16 pb-16">
+        <div className="flex items-center justify-center h-full bg-black bg-opacity-70 w-full px-0 md:px-6 pt-16 pb-16">
           <div className="flex flex-col items-center space-y-6">
-            <h1 className="text-7xl font-tenor_Sans tracking-[6px] uppercase text-center">
-              EXCLUSIVE PRECONSTRUCTION OPPORTUNITIES
-            </h1>
+           
             <Container>
-              <p className="font-tenor_Sans text-xl text-center">
-                As a Diamond Agent, I provide my clients with privileged access
-                to premier preconstruction projects across the GTA, offering
-                exclusive opportunities and priority access to top developments
-                from trusted builders.
-              </p>
+            <h1 className="text-xl md:text-6xl font-tenor_Sans tracking-[6px] uppercase text-center">
+              EXCLUSIVE PRECONSTRUCTION
+            </h1>
             </Container>
           </div>
         </div>
@@ -41,6 +36,12 @@ const PreConstructionPage = () => {
         </h2>
         <p className="text-center text-white">Browse our selection of premier preconstruction developments and find your next investment. Express your interest to receive personalized project details.
         </p>
+        <p className="font-tenor_Sans text-xl text-center">
+                As a Diamond Agent, I provide my clients with privileged access
+                to premier preconstruction projects across the GTA, offering
+                exclusive opportunities and priority access to top developments
+                from trusted builders.
+              </p>
       </div>
       <div>
        <Container>

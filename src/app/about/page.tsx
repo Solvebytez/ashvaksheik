@@ -93,7 +93,7 @@ const AboutPage = () => {
           </div>
           <hr className=" border-white/10 my-6" />
         </div>
-        <div className="py-16 bg-black text-white w-full flex justify-between">
+        <div className="py-16 bg-black text-white w-full flex flex-col md:flex-row justify-between">
           <h2 className="text-2xl font-tenor_Sans tracking-wider text-right mr-24 mb-6 w-1/4">
             EXPERTISE
           </h2>

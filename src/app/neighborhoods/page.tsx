@@ -144,12 +144,12 @@ const NeighborhoodsPage = () => {
         bgLogo="https://res.cloudinary.com/luxuryp/images/w_1920,c_limit,f_auto,q_auto/dndgngvjmvkv5j6l3nkt/shutterstock_1834368658"
       />
       <div className="bg-white pb-20">
-        <div className="flex flex-col justify-center py-10 items-center ">
-          <h2 className="text-center text-5xl font-tenor_Sans tracking-[5px] text-black py-10 uppercase">
+        <div className="flex flex-col justify-center py-10 items-center flex-wrap">
+          <h2 className="text-center md:text-5xl font-tenor_Sans tracking-[5px] text-black py-10 uppercase">
             Neighborhoods
           </h2>
         </div>
-        <div className="grid grid-cols-3 gap-0">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
         {neighborhoods.map((card, index) => (
           <ImageCard2 key={index} imageSrc={card.imageURL} description={card.description} title={card.title} />
         ))}
