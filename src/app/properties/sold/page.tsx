@@ -62,7 +62,7 @@ const SoldProperties = () => {
           
         </Container>
        <div className="flex items-center justify-center mt-20">
-       <Pagination pageNumber={8}/>
+       {/* <Pagination pageNumber={8}/> */}
        </div>
       </div>
      
