@@ -1,6 +1,5 @@
 import BreadcumBanner from "@/components/Global/BreadcumBanner";
 import Container from "@/components/Global/Container";
-import Pagination from "@/components/Global/Pagination";
 import PropertyCard from "@/components/PropertyCard";
 
 const properties = [
