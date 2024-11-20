@@ -252,7 +252,7 @@ const HomeSearchForm = () => {
             />
           </div>
         </div>
-        <div className="w-full md:h-[4rem] flex md:flex-row flex-col  gap-6 justify-between">
+        <div className="w-full flex md:flex-row flex-col  gap-6 justify-between">
           <div className="w-full">
             <label className="text-lg font-bold flex gap-3 items-center">
               {" "}
@@ -292,7 +292,7 @@ const HomeSearchForm = () => {
             />
           </div>
         </div>
-        <div className="w-full md:h-[4rem] flex md:flex-row flex-col  gap-6 justify-between">
+        <div className="w-full flex md:flex-row flex-col  gap-6 justify-between">
           <div className="w-full">
             <label className="text-lg font-bold flex gap-3 items-center">
               {" "}
@@ -332,7 +332,7 @@ const HomeSearchForm = () => {
             />
           </div>
         </div>
-        <div className="w-full md:h-[4rem] flex md:flex-row flex-col  gap-6 justify-between">
+        <div className="w-full flex md:flex-row flex-col  gap-6 justify-between">
           <div className="w-full">
             <label className="text-lg font-bold flex gap-3 items-center">
               {" "}
