@@ -41,9 +41,9 @@ const HomeSearchForm = () => {
       priceRange: null,
       planningToBuy: null,
       purposeForBuying: null,
-      mortgageApproval: "yes",
+      mortgageApproval: "",
       communicationMethod: ["email"],
-      realtor: "yes",
+      realtor: "",
       phone: "",
     },
   });
@@ -56,7 +56,7 @@ const HomeSearchForm = () => {
   const priceRangeValue = watch("priceRange");
   const planningToBuyValue = watch("planningToBuy");
   const purposeForBuyingValue = watch("purposeForBuying");
-  const mortgageApprovalValue = watch("mortgageApproval", "yes");
+  const mortgageApprovalValue = watch("mortgageApproval", "");
   const communicationMethodValue = watch("communicationMethod");
   const realtorValue = watch("realtor");
 
@@ -106,7 +106,7 @@ const HomeSearchForm = () => {
       >
         <div className="w-full md:h-[4rem] flex md:flex-row flex-col  gap-6 justify-between">
           <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center">
+            <label className="text-lg font-bold flex gap-3 items-center text-white">
               Name:{" "}
               {errors.name?.type === "required" && (
                 <p role="alert" className="text-sm font-normal text-red-600">
@@ -117,12 +117,12 @@ const HomeSearchForm = () => {
             <input
               placeholder="Name"
               {...register("name", { required: true })}
-              className="w-full bg-white border border-black  p-2 text-black mb-4 focus:outline-none"
+              className="w-full bg-transparent border border-white  p-2 text-black mb-4 focus:outline-none"
               type="name"
             />
           </div>
           <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center">
+            <label className="text-lg font-bold flex gap-3 items-center text-white">
               Email:{" "}
               {errors.email?.type === "required" && (
                 <p role="alert" className="text-sm font-normal text-red-600">
@@ -133,14 +133,14 @@ const HomeSearchForm = () => {
             <input
               placeholder="test@gmail.com"
               {...register("email", { required: true })}
-              className="w-full bg-white border border-black  p-2 text-black mb-4 focus:outline-none"
+              className="w-full bg-transparent border border-white  p-2 text-black mb-4 focus:outline-none"
               type="email"
             />
           </div>
         </div>
         <div className="w-full md:h-[4rem] flex md:flex-row flex-col  gap-6 justify-between">
           <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center">
+            <label className="text-lg font-bold flex gap-3 items-center text-white">
               Location:{" "}
               {errors.location?.type === "required" && (
                 <p role="alert" className="text-sm font-normal text-red-600">
@@ -158,7 +158,7 @@ const HomeSearchForm = () => {
             />
           </div>
           <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center">
+            <label className="text-lg font-bold flex gap-3 items-center text-white">
               Property:{" "}
               {errors.property?.type === "required" && (
                 <p role="alert" className="text-sm font-normal text-red-600">
@@ -178,7 +178,7 @@ const HomeSearchForm = () => {
         </div>
         <div className="w-full md:h-[4rem] flex md:flex-row flex-col  gap-6 justify-between">
           <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center">
+            <label className="text-lg font-bold flex gap-3 items-center text-white">
               Bedroom:{" "}
               {errors.bedroom?.type === "required" && (
                 <p role="alert" className="text-sm font-normal text-red-600">
@@ -196,7 +196,7 @@ const HomeSearchForm = () => {
             />
           </div>
           <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center">
+            <label className="text-lg font-bold flex gap-3 items-center text-white">
               Bathroom:{" "}
               {errors.bedroom?.type === "required" && (
                 <p role="alert" className="text-sm font-normal text-red-600">
@@ -216,7 +216,7 @@ const HomeSearchForm = () => {
         </div>
         <div className="w-full md:h-[4rem] flex md:flex-row flex-col  gap-6 justify-between">
           <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center">
+            <label className="text-lg font-bold flex gap-3 items-center text-white">
               Square Footage (Sq Ft):{" "}
               {errors.squareFootage?.type === "required" && (
                 <p role="alert" className="text-sm font-normal text-red-600">
@@ -234,7 +234,7 @@ const HomeSearchForm = () => {
             />
           </div>
           <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center">
+            <label className="text-lg font-bold flex gap-3 items-center text-white">
               Price Range:{" "}
               {errors.priceRange?.type === "required" && (
                 <p role="alert" className="text-sm font-normal text-red-600">
@@ -254,7 +254,7 @@ const HomeSearchForm = () => {
         </div>
         <div className="w-full flex md:flex-row flex-col  gap-6 justify-between">
           <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center">
+            <label className="text-lg font-bold flex gap-3 items-center text-white">
               {" "}
               How Soon Are You Planning to Buy?{" "}
               {errors.planningToBuy?.type === "required" && (
@@ -273,7 +273,7 @@ const HomeSearchForm = () => {
             />
           </div>
           <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center">
+            <label className="text-lg font-bold flex gap-3 items-center text-white">
               {" "}
               What’s Your Purpose for Buying?{" "}
               {errors.purposeForBuying?.type === "required" && (
@@ -294,7 +294,7 @@ const HomeSearchForm = () => {
         </div>
         <div className="w-full flex md:flex-row flex-col  gap-6 justify-between">
           <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center">
+            <label className="text-lg font-bold flex gap-3 items-center text-white">
               {" "}
               Have You Been Pre-Approved for a Mortgage?{" "}
               {errors.mortgageApproval?.type === "required" && (
@@ -313,7 +313,7 @@ const HomeSearchForm = () => {
             />
           </div>
           <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center">
+            <label className="text-lg font-bold flex gap-3 items-center text-white">
               {" "}
               Preferred Communication Method:{" "}
               {errors.communicationMethod?.type === "required" && (
@@ -334,7 +334,7 @@ const HomeSearchForm = () => {
         </div>
         <div className="w-full flex md:flex-row flex-col  gap-6 justify-between">
           <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center">
+            <label className="text-lg font-bold flex gap-3 items-center text-white">
               {" "}
               Are You Working with a Realtor?{" "}
               {errors.realtor?.type === "required" && (
@@ -351,7 +351,7 @@ const HomeSearchForm = () => {
             />
           </div>
           <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center">
+            <label className="text-lg font-bold flex gap-3 items-center text-white">
               {" "}
               Phone:{" "}
               {errors.phone?.type === "required" && (
@@ -363,7 +363,7 @@ const HomeSearchForm = () => {
             <input
               placeholder="000-000-0000"
               {...register("phone", { required: true })}
-              className="w-full bg-white border border-black  p-2 text-black mb-4 focus:outline-none"
+              className="w-full bg-transparent border border-white  p-2 text-black mb-4 focus:outline-none"
               type="text"
             />
           </div>
@@ -371,7 +371,7 @@ const HomeSearchForm = () => {
         <div className="w-full h-[4rem] flex flex-col  gap-6 justify-between ">
           <SubmitButton
             btnText="Submit Your Queires"
-            className="!bottom-black !bg-black !text-white mb-10"
+            className="!bottom-black text-white"
             disabled={isPending}
           />
         </div>

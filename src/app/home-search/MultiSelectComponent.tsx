@@ -34,7 +34,8 @@ const customStyles = {
     control: (provided:any) => ({
       ...provided,
       borderColor: provided.isFocused ? 'black' : 'black',  
-      borderRadius:'0'     
+      borderRadius:'0',
+      backgroundColor:'transparent'    
     }),
     
   }

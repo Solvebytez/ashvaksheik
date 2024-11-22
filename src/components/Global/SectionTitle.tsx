@@ -9,11 +9,11 @@ type SectionTitleProps = {
   titleNumber: number;
 };
 
-const SectionTitle = ({ bgLogo, description, title,titleNumber }: SectionTitleProps) => {
+const SectionTitle = ({  description, title,titleNumber }: SectionTitleProps) => {
     const sectionStyle = {
-        background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url(${bgLogo?bgLogo:'https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/gyommycouuod40setpi0/rl-bg'})`,
+        background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url(${'/titleBg.png'})`,
         WebkitBackgroundSize: 'contain',
-        backgroundSize: '90%',
+        backgroundSize: '180px',
         backgroundRepeat: 'no-repeat',
         WebkitBackgroundPosition: '100% 60%',
         backgroundPosition: '100% 60%',
@@ -26,7 +26,7 @@ const SectionTitle = ({ bgLogo, description, title,titleNumber }: SectionTitlePr
   
      <div
       style={sectionStyle}
-      className="relative bg-black text-white  px-6 pt-16 pb-12"
+      className="relative bg-black text-white  px-6 pt-16 pb-12 bg-no-repeat"
     >
       {/* Top line with numbering and description */}
       <div className="flex items-center text-sm mb-4 tracking-[1px] leading-6">

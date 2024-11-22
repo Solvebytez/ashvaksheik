@@ -51,23 +51,23 @@ const Header = () => {
       >
         <nav
           className={`z-10 w-full absolute px-4 md:px-6 top-0 md:top-0 ${
-            showHeader ? "bg-black/40" : ""
+            showHeader ? "bg-black/40" : "md:top-6"
           }`}
         >
           <div className="flex items-center justify-between py-2 gap-6 md:py-4 md:gap-0 relative">
             <div className="relative z-20 w-full flex justify-between lg:w-max md:px-0">
-              <a
+              <Link
                 href="/"
                 aria-label="logo"
                 className="flex space-x-2 items-center"
               >
                 <Image
-                  src="https://res.cloudinary.com/luxuryp/images/w_320,c_limit,f_auto,q_auto/sbjlmdqh1ta31qz2k1rq/rl-logo-light"
+                  src="/logo3.png"
                   width="100"
                   height="100"
                   alt=""
                 />
-              </a>
+              </Link>
             </div>
 
             <div className="flex items-center gap-6">

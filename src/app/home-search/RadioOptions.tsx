@@ -34,7 +34,7 @@ const RadioOptions = ({allRadioOptions,value,...props}:RadioOptonProps) => {
               className={`block ms-2 text-sm font-medium ${
                 option.disabled 
                   ? 'text-gray-300 dark:text-gray-700' 
-                  : 'text-gray-900 dark:text-gray-300'
+                  : 'text-white dark:text-gray-300'
               }`}
             >
               {option.label}

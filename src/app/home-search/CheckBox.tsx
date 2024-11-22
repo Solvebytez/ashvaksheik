@@ -46,7 +46,7 @@ console.log("communicationMethodValue",value)
           <label
             htmlFor={option.id}
             className={`ms-2 text-sm font-medium ${
-              option.disabled ? 'text-gray-400 dark:text-gray-500' : 'text-gray-900 dark:text-gray-300'
+              option.disabled ? 'text-gray-400 dark:text-gray-500' : 'text-white dark:text-gray-300'
             }`}
           >
             {option.label}
