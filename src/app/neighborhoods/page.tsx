@@ -128,11 +128,11 @@ const neighborhoods:NeighborhoodsTypes[] = [
     description: "Known for its art galleries, coffee shops, and a family-friendly atmosphere.",
     imageURL: "https://images.pexels.com/photos/1642125/pexels-photo-1642125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
-  {
-    title: "High Park",
-    description: "A green oasis with a mix of historic homes, modern condos, and Toronto’s largest park.",
-    imageURL: "https://images.pexels.com/photos/7078851/pexels-photo-7078851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  }
+  // {
+  //   title: "High Park",
+  //   description: "A green oasis with a mix of historic homes, modern condos, and Toronto’s largest park.",
+  //   imageURL: "https://images.pexels.com/photos/7078851/pexels-photo-7078851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  // }
   ];
 
 const NeighborhoodsPage = () => {

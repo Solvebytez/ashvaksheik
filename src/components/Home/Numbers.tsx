@@ -24,7 +24,7 @@ const Numbers = () => {
         </div>
         <div className="text-center">
           <h2 className="text-3xl mb-2 tenor_Sans">$10M</h2>
-          <p className="text-md">Sales Volume 2025</p>
+          <p className="text-md">Sales Volume 2024</p>
         </div>
         <div className="text-center ">
           <h2 className="text-3xl mb-2 tenor_Sans">#1</h2>

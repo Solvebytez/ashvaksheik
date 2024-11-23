@@ -29,11 +29,13 @@ const HeroSection = () => {
           width: '100%',   // Full width
           objectFit: 'cover', // Ensures video covers container without losing aspect ratio
         }}
+        
         loop
         muted
         autoPlay
         playsInline
       >       
+       <source src="/realState.mp4" type="video/mp4" />
       </video>
     </div>
            

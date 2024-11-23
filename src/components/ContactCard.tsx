@@ -13,29 +13,37 @@ const ContactCard = ({cardType}:{cardType?:string}) => {
   return (
     <div className="max-w-sm mx-auto  rounded-lg shadow-md p-4">
       <div className="flex items-center mb-4 gap-4">
-       <div className="relative w-16 h-16">
+       <div className="relative w-32 h-20">
        <Image
           src="/profile_pic.jpg"
           alt="Agent"
        fill
-        sizes="15vw"
+        sizes="17vw"
           className=" object-cover z-0 rounded-full"
         /> 
        </div>
         <div>
           <h2 className={`font-bold ${IsWhite} font-tenor_Sans`}>REALTOR</h2>
-          <p className={`text-sm ${IsWhite} font-tenor_Sans`}>Ashvak Sheik</p>
+          <p className={`text-sm font-bold ${IsWhite} font-tenor_Sans mb-2`}>Ashvak Sheik </p>
+          <p className="text-white text-xs">The Alliance Realty Group | Century 21 Property Zone Realty Inc</p>
         </div>
-      </div>
+      </div>     
       <div className="flex justify-between mb-2 py-3">
-        <span className={`text-sm ${IsWhite}`}>Mobile number</span>
+        <span className={`text-sm ${IsWhite}`}>Mobile number:</span>
         <span className={`text-sm ${IsWhite}`}>647-890-0982</span>
       </div>
       <hr className="my-2 border-white/10"  />
-      <div className="mb-4 py-3 flex justify-between">
-        <span className={`text-sm ${IsWhite}`}>Email</span>
+      <div className="mb-0 py-3 flex justify-between">
+        <span className={`text-sm ${IsWhite}`}>Email:</span>
         <p className={`text-sm ${IsWhite}`}>ashvak.realtor07@gmail.com</p>
       </div>
+      <div className="mb-4 py-3 flex justify-between">
+        <span className={`text-sm ${IsWhite}`}>Address:</span>
+        <p className={`text-xs ${IsWhite}`}>
+          25 Van Kirk Dr Brampton, ON L7A 1A4
+          </p>
+      </div>
+     
       <button onClick={openModal} className="w-full bg-black text-white font-tenor_Sans py-3 uppercase tracking-[2px]">
         Contact agent
       </button>   

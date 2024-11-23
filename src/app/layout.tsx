@@ -4,11 +4,11 @@ import { Montserrat, Tenor_Sans } from "next/font/google";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "@/components/Layout/Footer";
-
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import { Metadata } from "next";
 import { ApolloWrapper } from "./ApolloProvider";
+
 
 const montserrat = Montserrat({
   subsets: ["latin", "cyrillic", "latin-ext"],
@@ -29,6 +29,7 @@ export const metadata: Metadata = {
   },
   description:
     "Serving the Greater Toronto Area (GTA), including Peel, Durham, Halton, York, and other surrounding regions.",
+    keywords:["Hyderabadi realtor in Mississauga,  Experienced Hyderabadi realtor in Mississauga, Telugu realtor in Mississauga, Telugu realtor in Brampton,  Best South Indian property consultant in Mississauga, Telugu realtor in Burlington, Telugu realtor in Milton, Telugu realtor in Oakville, Top Telugu realtor in GTA, Best Hyderabadi real estate agent in GTA, Top Telugu realtor in Durham Region, Telugu realtor in Whitby, Hyderabadi real estate agent in Whitby, Telugu realtor in Oshawa"]
 };
 
 export default async function RootLayout({
@@ -38,7 +39,7 @@ export default async function RootLayout({
 }>) {
   // Fetching the messages server-side
   return (
-    <html>
+    <html>       
       <ApolloWrapper>
         <body
           className={`${montserrat.variable} ${tenor_Sans.variable} ${montserrat.className} montserrat`}
