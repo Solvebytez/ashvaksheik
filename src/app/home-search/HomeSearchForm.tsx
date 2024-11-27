@@ -117,7 +117,7 @@ const HomeSearchForm = () => {
             <input
               placeholder="Name"
               {...register("name", { required: true })}
-              className="w-full bg-transparent border border-white  p-2 text-black mb-4 focus:outline-none"
+              className="w-full bg-transparent border border-white  p-2 text-white mb-4 focus:outline-none"
               type="name"
             />
           </div>
@@ -133,7 +133,7 @@ const HomeSearchForm = () => {
             <input
               placeholder="test@gmail.com"
               {...register("email", { required: true })}
-              className="w-full bg-transparent border border-white  p-2 text-black mb-4 focus:outline-none"
+              className="w-full bg-transparent border border-white  p-2 text-white mb-4 focus:outline-none"
               type="email"
             />
           </div>
@@ -363,7 +363,7 @@ const HomeSearchForm = () => {
             <input
               placeholder="000-000-0000"
               {...register("phone", { required: true })}
-              className="w-full bg-transparent border border-white  p-2 text-black mb-4 focus:outline-none"
+              className="w-full bg-transparent border border-white  p-2 text-white mb-4 focus:outline-none"
               type="text"
             />
           </div>
