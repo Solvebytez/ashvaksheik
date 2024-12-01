@@ -11,7 +11,7 @@ const ContactWidget = () => {
 
   return (
     isVisible ? (
-      <div className="fixed bottom-4 right-4 bg-white shadow-lg rounded-lg p-4 max-w-xs z-50">
+      <div className="fixed bottom-10 right-10 bg-white shadow-lg rounded-lg p-4 max-w-xs z-50">
         <div className="flex justify-center items-center text-center space-y-4 relative">
           <h2 className="text-gray-800 text-sm font-semibold">
             Do you have questions?
@@ -32,7 +32,7 @@ const ContactWidget = () => {
         </p>
       </div>
     ):(
-        <div onClick={handleClose} className='fixed bottom-4 right-4 bg-[#40a2d9] shadow-lg p-4 w-[55px] h-[55px] rounded-full z-50 cursor-pointer'>
+        <div onClick={handleClose} className='fixed bottom-10 right-10 bg-[#40a2d9] shadow-lg p-4 w-[55px] h-[55px] rounded-full z-50 cursor-pointer'>
             <div> <Phone className="h-6 w-6 mr-1" /></div>
         </div>
     )

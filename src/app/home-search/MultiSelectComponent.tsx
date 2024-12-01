@@ -35,7 +35,8 @@ const customStyles = {
       ...provided,
       borderColor: provided.isFocused ? 'black' : 'black',  
       borderRadius:'0',
-      backgroundColor:'transparent'    
+      backgroundColor:'transparent',
+      color:'red'  
     }),
     
   }
@@ -81,8 +82,8 @@ export default function MultiSelectOptions({value,...props}:selectPropsType) {
               isMulti={optionsTypeFilter}
               onChange={props.onChangeSelect}
               value={value}
-              className="mt-1 border "
-              classNamePrefix="react-select"
+              className={`mt-1 border`}
+              classNamePrefix={`react-select ${!optionsTypeFilter&&'single'}`}
               placeholder={props.placeholder}
               styles={customStyles}             
             />

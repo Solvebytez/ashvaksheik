@@ -28,6 +28,7 @@ const HomeSearchForm = () => {
     handleSubmit,
     watch,
     setValue,
+    reset,
     formState: { errors },
   } = useForm({
     defaultValues: {
@@ -87,7 +88,7 @@ const HomeSearchForm = () => {
         console.log("API Response:", result);
         setIspending(false);
         // Handle success, e.g., show a success message or move to the next step
-
+        reset()
         toast("Thank You for your Interest!");
       } else {
         console.error("API call failed:", response.statusText);
@@ -279,7 +280,7 @@ const HomeSearchForm = () => {
               {errors.purposeForBuying?.type === "required" && (
                 <p role="alert" className="text-sm font-normal text-red-600">
                   Required
-                </p>
+                </p> 
               )}
             </label>
             <MultiSelectOptions
@@ -370,7 +371,7 @@ const HomeSearchForm = () => {
         </div>
         <div className="w-full h-[4rem] flex flex-col  gap-6 justify-between ">
           <SubmitButton
-            btnText="Submit Your Queires"
+            btnText="Submit Your QUERIES"
             className="!bottom-black text-white"
             disabled={isPending}
           />

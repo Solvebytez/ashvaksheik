@@ -160,3 +160,7 @@ body {
 .slider-container .slick-slider .slick-next {
   right: -6%;
 }
+
+.single__single-value {
+  color: #fff!important;
+}
