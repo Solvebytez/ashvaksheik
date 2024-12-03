@@ -31,7 +31,7 @@ export default function Home() {
       <AreaExpertise/>
       {/* <ExclusiveList/> */}
       <ReceiveInbox/>
-      <HomeNews/>
+      {/* <HomeNews/> */}
       <WorkWith/>
       <FullScreenModal
         isOpen={isOpen}
