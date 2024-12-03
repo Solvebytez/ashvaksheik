@@ -9,7 +9,7 @@ import AreaExpertise from "@/components/Home/AreaExpertise";
 
 
 import ReceiveInbox from "@/components/Home/ReceiveInbox";
-import HomeNews from "@/components/Home/HomeNews";
+// import HomeNews from "@/components/Home/HomeNews";
 import Builders from "@/components/Home/Builders";
 import useFullscreenhook from "@/components/Hook/useFullscreenhook";
 import FullScreenModal from "@/components/Global/Modal";
