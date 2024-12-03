@@ -1,30 +1,30 @@
 "use client"
 
-import { Blog, BlogsResponse } from "@/@types/blog";
-import LinkButton from "../Global/Button";
-import Container from "../Global/Container";
-import SectionTitle from "../Global/SectionTitle";
-import { useQuery } from "@apollo/client";
-import { HOME_PAGE_BLOG } from "@/lib/article-queries/queries";
-import { formatDate } from "@/lib/utils";
-import { BASE_URL } from "@/env";
+// import { Blog, BlogsResponse } from "@/@types/blog";
+// import LinkButton from "../Global/Button";
+// import Container from "../Global/Container";
+// import SectionTitle from "../Global/SectionTitle";
+// import { useQuery } from "@apollo/client";
+// import { HOME_PAGE_BLOG } from "@/lib/article-queries/queries";
+// import { formatDate } from "@/lib/utils";
+// import { BASE_URL } from "@/env";
 
 
 const HomeNews = () => {
 
-  const { loading, error, data } = useQuery<BlogsResponse>(HOME_PAGE_BLOG);
+  // const { loading, error, data } = useQuery<BlogsResponse>(HOME_PAGE_BLOG);
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error.message}</p>;
-  const blogs: Blog[] = data?.blogs.data ?? [];
+  // if (loading) return <p>Loading...</p>;
+  // if (error) return <p>Error: {error.message}</p>;
+  // const blogs: Blog[] = data?.blogs.data ?? [];
 
 
-  const firstItem = blogs[0].attributes;
-  const lastTwo= blogs.slice(1);
+  // const firstItem = blogs[0].attributes;
+  // const lastTwo= blogs.slice(1);
  
   return (
     <div className="">
-      <Container>
+      {/* <Container>
         <SectionTitle
           description="BROWSE MY AVAILABLE PROPERTIES"
           titleNumber={0.4}
@@ -33,7 +33,7 @@ const HomeNews = () => {
         />
  <div className="text-white px-0 md:p-4 min-h-max">
       <div className="space-y-4">
-        {/* Full-width card */}
+      
         {blogs.length && (
           <div
             key={firstItem.Title}
@@ -56,7 +56,7 @@ const HomeNews = () => {
           </div>
         )}
 
-        {/* Half-width cards with horizontal gap */}
+    
         <div className="flex-col flex md:flex-row gap-y-4 md:gap-y-4 md:gap-x-4">
           {lastTwo.map((card) => (
             <div
@@ -85,7 +85,7 @@ const HomeNews = () => {
         <LinkButton href="/blog" btnText="Veiw All" className="text-white mt-14" />
       </div>
     </div>
-      </Container>    
+      </Container>     */}
     </div>
   );
 };
