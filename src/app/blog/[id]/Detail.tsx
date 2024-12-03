@@ -1,6 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
 
-import { BlogPostData } from "@/@types/SingleBlog";
 import Breadcrumb from "@/components/Global/BreadcrumbLinks";
 import LinkButton from "@/components/Global/Button";
 import Sidebar from "@/components/Global/Sidebar";

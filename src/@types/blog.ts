@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // Exporting the Thumbnail media object type
 export interface ThumbnailAttributes {
   url: string;
