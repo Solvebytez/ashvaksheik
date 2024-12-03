@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
+      domains: ['rl-backend-6c6af7ff6474.herokuapp.com'],
+      
         remotePatterns: [
           {
             protocol: 'https',

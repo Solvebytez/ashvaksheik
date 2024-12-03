@@ -1,11 +1,13 @@
 import Link from "next/link";
 
 type LinkButtonPropsType = {
-    href:string;
-    btnText:string;
-    title?:string;
-    className?:string;
-    onClick?:() => void;
+  href: string;
+  btnText?: string;  // Make btnText optional
+  title?: string;
+  className?: string;
+  onClick?: () => void;
+  variant?: string;
+  children?: React.ReactNode;  // Allow children
 }
 
 const LinkButton = ({btnText,href='#',title,className,onClick}:LinkButtonPropsType) => {

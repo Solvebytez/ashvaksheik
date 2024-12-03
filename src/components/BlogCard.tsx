@@ -1,58 +1,122 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Image from "next/image";
 import LinkButton from "./Global/Button";
-import { GET_BLOGS } from "@/lib/article-queries/queries";
-import { useQuery } from "@apollo/client";
-import { Blog, BlogsResponse } from "@/@types/blog";
-import { BASE_URL } from "@/env";
+import { useEffect, useState } from "react";
 import { formatDate } from "@/lib/utils";
+import { BASE_URL } from "@/env";
+
+export interface BlogResponse {
+  data: Blog[];
+  meta: {
+    pagination: {
+      page: number;
+      pageSize: number;
+      pageCount: number;
+      total: number;
+    };
+  };
+}
+
+export interface Blog {
+  id: number;
+  documentId: string;
+  title: string;
+  slug: string;
+  ShortDescription: string;
+  content: any[];
+  createdAt: string;
+  updatedAt: string;
+  publishedAt: string;
+  thumbnail: {
+    id: number;
+    formats: {
+      medium: {
+        url: string;
+      };
+    };
+    alternativeText: string | null;
+  }[];
+  categories: any[];
+}
 
 const BlogCard = () => {
-  const { loading, error, data } = useQuery<BlogsResponse>(GET_BLOGS);
+  const [blogs, setBlogs] = useState<Blog[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      try {
+        const response = await fetch(`${BASE_URL}/api/blogs?populate=*`);
+        if (!response.ok) {
+          throw new Error("Failed to fetch blogs");
+        }
+        const data: BlogResponse = await response.json();
+        setBlogs(data.data);
+      } catch (err) {
+        setError((err as Error).message);
+        console.error('Error fetching blogs:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBlogs();
+  }, []);
 
   if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error.message}</p>;
-  const blogs: Blog[] = data?.blogs.data ?? [];
- 
+  if (error) return <p>Error: {error}</p>;
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-      {blogs.map(({ id,attributes }: Blog) => (
+      {blogs?.map((blog) => (
         <div
-          key={attributes.Title}
+          key={blog.id}
           className="relative group overflow-hidden shadow-md bg-white"
         >
           <div className={`relative w-full h-[20rem] overflow-hidden`}>
             <Image
-              src={`${BASE_URL}${attributes.Thumbnail.data.attributes.url}`}
-              alt={attributes.Title}
+              src={
+                blog.thumbnail?.[0]?.formats?.medium?.url
+                  ? `${BASE_URL}${blog.thumbnail[0].formats.medium.url}`
+                  : "/default-thumbnail.jpg"
+              }
+              alt={blog.thumbnail?.[0]?.alternativeText || blog.title}
               fill
               className="transition-transform duration-500 ease-in-out transform group-hover:scale-110 object-cover z-0"
             />
           </div>
           {/* Info Section */}
           <div className="p-10 relative z-1 bg-white text-center flex flex-col items-center justify-center space-y-2 ">
-            <h3 className="text-2xl tracking-[2px] track font-tenor_Sans text-black">
-              {attributes.Title}
+          <h3 className="text-2xl tracking-[2px] track font-tenor_Sans text-black">
+              {blog.title}
             </h3>
-
             <p className="text-sm text-black font-bold tracking-[1px]">
-              {attributes.ShortDescription.slice(0, 100)}
+              {blog.ShortDescription.slice(0, 100)}
             </p>
-
-            {attributes.publishedAt && (
+            {blog.publishedAt && (
               <p className="text-sm mt-2 tracking-[2px] text-black">
-                Publish at: {formatDate(attributes.publishedAt)}
+                Publish at: {formatDate(blog.publishedAt)}
               </p>
             )}
-          </div>
-          {/* Hover Overlay */}
-          <div className="absolute inset-0 bg-white/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-            {attributes.Slug && (
-              <LinkButton
-                href={`blog/${id}`}
+            </div>
+          {/* <div className="p-4">
+            <div className="mb-2">
+              <span className="text-sm text-gray-500">
+                {formatDate(blog.publishedAt)}
+              </span>
+            </div>
+            <h3 className="text-xl text-black font-semibold mb-2">{blog.title}</h3>
+            <p className="text-gray-600 mb-4">{blog.ShortDescription}</p>
+         
+          </div> */}
+           {/* Hover Overlay */}
+           <div className="absolute inset-0 bg-white/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+           <LinkButton
+                href={`/blog/${blog.slug}`}
                 btnText="View Post"
                 className="border-2 border-black px-4 py-2 font-semibold  transition-colors duration-300 transform translate-y-full group-hover:translate-y-0   hover:bg-black"
               />
-            )}
           </div>
         </div>
       ))}

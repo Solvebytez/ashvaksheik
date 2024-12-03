@@ -1,33 +1,22 @@
 import { gql } from "@apollo/client";
 
 export const GET_BLOGS = gql`
-  query {
-    blogs(sort: "publishedAt:desc") {
+  query GET_BLOGS {
+    blogs {
       data {
-        id
         id
         attributes {
           Title
-          publishedAt
-          Slug
           ShortDescription
-          Content
+          Slug
+          publishedAt
           Thumbnail {
             data {
-              id
               attributes {
                 url
-                alternativeText
-                caption
               }
             }
           }
-        }
-      }
-      meta {
-        pagination {
-          total
-          page
         }
       }
     }
@@ -67,7 +56,7 @@ export const SIDEBAR_LIST = gql`
   }
 `;
 
-export const HOME_PAGE_BLOG= gql`
+export const HOME_PAGE_BLOG = gql`
   query {
     blogs(pagination: { page: 1, pageSize: 3 }) {
       data {
@@ -100,14 +89,12 @@ export const HOME_PAGE_BLOG= gql`
   }
 `;
 
-
-
 export const GET_BLOG_BY_ID = gql`
   query GetBlogById($id: ID!) {
     blog(id: $id) {
       data {
         id
-        
+
         attributes {
           Title
           Content

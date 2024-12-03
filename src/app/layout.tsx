@@ -1,6 +1,6 @@
 import Header from "@/components/Layout/Header";
 import "./globals.css";
-import { Montserrat, Tenor_Sans } from "next/font/google";
+import {  Tenor_Sans,Montserrat } from "next/font/google";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "@/components/Layout/Footer";
