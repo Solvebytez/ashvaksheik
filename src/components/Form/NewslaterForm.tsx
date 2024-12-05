@@ -54,13 +54,13 @@ const UseNewslaterForm = () => {
   return (
     <>
        {
-          !isShowForm?( <form  onSubmit={handleSubmit(submitSubscribe)} className="w-full lg:w-3/5 px-0  md:px-0 space-y-4" >
-          <div className="flex flex-col md:flex-row gap-3 items-end justify-center ">
+          !isShowForm?( <form  onSubmit={handleSubmit(submitSubscribe)} className="w-full lg:w-4/5 px-0  md:px-0 space-y-4" >
+          <div className="flex flex-col md:flex-col lg:flex-row gap-3 items-end justify-center ">
          
-          <div className="w-full md:w-2/5"> {/* Adjust width as needed */}
+          <div className="w-full md:w-full"> {/* Adjust width as needed */}
           <Input type="text" id="name" placeholder="Name" register={register} />
           </div>
-          <div className="w-full md:w-2/5">
+          <div className="w-full md:w-full">
           <Input
               type="email"
               id="email"
@@ -68,7 +68,7 @@ const UseNewslaterForm = () => {
               register={register}
             />
           </div>
-          <SubmitButton btnText="Submit" disabled={isPending} className="w-full md:w-1/5" />
+          <SubmitButton btnText="Submit" disabled={isPending} className="w-full lg:w-1/5" />
           </div>
           <div className="w-2xl p-4 bg-opacity-80 text-white text-sm">
           <label className="flex items-start space-x-3 cursor-pointer">
