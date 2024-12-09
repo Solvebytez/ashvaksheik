@@ -24,6 +24,10 @@ const nextConfig = {
             protocol: 'http',
             hostname: 'localhost',       
           },
+          {
+            protocol: 'https',
+            hostname: 'rl-backend-6c6af7ff6474.herokuapp.comhttps',       
+          },
         ],
       },
 };

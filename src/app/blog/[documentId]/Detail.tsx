@@ -8,21 +8,24 @@ import ReceiveInbox from "@/components/Home/ReceiveInbox";
 import { BASE_URL } from "@/env";
 import { formatDate } from "@/lib/utils";
 import Image from "next/image";
-import Markdown from "react-markdown";
+// import Markdown from "react-markdown";
 import { useEffect, useState } from "react";
+import RenderContent from "./renderContent";
 
-const BlogDetails = ({ params }: { params: { id: string } }) => {
-  const { id } = params;
+const BlogDetails = ({ params }: { params: { documentId: string } }) => {
+  const { documentId } = params;
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [data, setData] = useState<any>(null);
+
+  console.log("paramssssssssssssss..............................",params)
 
   useEffect(() => {
     const fetchBlogPost = async () => {
       try {
         setLoading(true);
         // Using the exact API endpoint structure
-        const response = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_BASE_URL}/api/blogs?id=${id}&populate=*`);
+        const response = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_BASE_URL}/api/blogs/${params.documentId}?populate=*`);
         
         if (!response.ok) {
           throw new Error(`Failed to fetch blog post: ${response.statusText}`);
@@ -30,39 +33,39 @@ const BlogDetails = ({ params }: { params: { id: string } }) => {
         
         const jsonData = await response.json();
         console.log('API Response:', jsonData);
-
+        console.log("jsonData",jsonData)
         // Check if we have data
         if (!jsonData.data || jsonData.data.length === 0) {
           throw new Error('Blog post not found');
         }
+        setData(jsonData)
+        // const post = jsonData.data[0]; // Get the first post since we're querying by ID
+        // const blogData = {
+        //   blog: {
+        //     data: {
+        //       id: post.id,
+        //       attributes: {
+        //         Title: post.title,
+        //         Content: post.content,
+        //         ShortDescription: post.ShortDescription,
+        //         Slug: post.slug,
+        //         publishedAt: post.publishedAt,
+        //         Thumbnail: {
+        //           data: {
+        //             id: post.thumbnail?.[0]?.id,
+        //             attributes: {
+        //               url: post.thumbnail?.[0]?.formats?.medium?.url || post.thumbnail?.[0]?.url,
+        //               alternativeText: post.thumbnail?.[0]?.alternativeText
+        //             }
+        //           }
+        //         }
+        //       }
+        //     }
+        //   }
+        // };
 
-        const post = jsonData.data[0]; // Get the first post since we're querying by ID
-        const blogData = {
-          blog: {
-            data: {
-              id: post.id,
-              attributes: {
-                Title: post.title,
-                Content: post.content,
-                ShortDescription: post.ShortDescription,
-                Slug: post.slug,
-                publishedAt: post.publishedAt,
-                Thumbnail: {
-                  data: {
-                    id: post.thumbnail?.[0]?.id,
-                    attributes: {
-                      url: post.thumbnail?.[0]?.formats?.medium?.url || post.thumbnail?.[0]?.url,
-                      alternativeText: post.thumbnail?.[0]?.alternativeText
-                    }
-                  }
-                }
-              }
-            }
-          }
-        };
-
-        console.log('Transformed Blog Data:', blogData);
-        setData(blogData);
+        // console.log('Transformed Blog Data:', blogData);
+        // setData(blogData);
         
       } catch (err) {
         console.error('Error fetching blog:', err);
@@ -73,12 +76,14 @@ const BlogDetails = ({ params }: { params: { id: string } }) => {
     };
   
     fetchBlogPost();
-  }, [id]);
+  }, [documentId, params.documentId]);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
 
-  if (!data?.blog.data) return (
+
+
+  if (!data?.data) return (
     <div className="h-[calc(90vh-50px)] relative z-0 px-4 md:px-8 lg:px-16 xl:px-36 2xl:px-72 lg:pt-32 overflow-hidden">
       <div className="flex flex-col items-center h-full justify-center text-white gap-4">
         Blog post not found.
@@ -97,31 +102,34 @@ const BlogDetails = ({ params }: { params: { id: string } }) => {
       href: "/blog",
     },
     {
-      name: data.blog.data.attributes.Title,
+      name: data.data.Title,
       href: "#",   
     },
   ];
+
+  console.log("data...........",data)
 
   return (
     <>
       <div className="h-[calc(90vh-50px)] relative z-0 px-4 md:px-8 lg:px-16 xl:px-36 2xl:px-72 lg:pt-32 overflow-hidden">
         <Breadcrumb LinkItem={breadrcum} />
         <h1 className="text-white font-tenor_Sans text-4xl tracking-[2px] mt-8">
-          {data.blog.data.attributes.Title}
+          {data.data.title}
         </h1>
         <p className="text-white my-5">
-          {data.blog.data.attributes.ShortDescription}
+          {data.data.ShortDescription}
         </p>
         <div className="h-full xl:w-full xl:h-full relative">
-          {data.blog.data.attributes.Thumbnail?.data?.attributes?.url && (
+          fds
+          {data.data.thumbnail[0]?.formats?.large?.url && (
             <Image
-              src={data.blog.data.attributes.Thumbnail.data.attributes.url.startsWith('http') 
-                ? data.blog.data.attributes.Thumbnail.data.attributes.url 
-                : `${BASE_URL}${data.blog.data.attributes.Thumbnail.data.attributes.url}`}
+              src={data.data.thumbnail[0]?.formats?.large?.url.startsWith('http') 
+                ? data.data.thumbnail[0]?.formats?.large?.url 
+                : `${BASE_URL}${data.data.thumbnail[0]?.formats?.large?.url}`}
               fill
               priority
               className="object-cover"
-              alt={data.blog.data.attributes.Thumbnail.data.attributes.alternativeText || data.blog.data.attributes.Title}
+              alt={ data.data.title || data.data.title}
             />
           )}
         </div>
@@ -130,19 +138,13 @@ const BlogDetails = ({ params }: { params: { id: string } }) => {
         <div className="col-span-8 pl-3 md:pl-7">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-6">
-              <p className="text-xs text-white">{formatDate(data.blog.data.attributes.publishedAt)}</p>
+              <p className="text-xs text-white">{formatDate(data.data.publishedAt)}</p>
               <p className="text-xs text-white">by Admin</p>
             </div>
           </div>
           <hr className="my-2 border-white/10 mt-4 font-tenor_Sans"></hr>
           <div className="BlogDetails">
-            <Markdown className="prose prose-invert max-w-none">
-              {Array.isArray(data.blog.data.attributes.Content) 
-                ? data.blog.data.attributes.Content.map((block: { children: any[]; }) => 
-                    block.children?.map((child: { text: any; }) => child.text).join('')
-                  ).join('\n\n')
-                : data.blog.data.attributes.Content}
-            </Markdown>
+          {data.data.content && <RenderContent content={data.data.content} />} 
           </div>
         </div>
         <div className="col-span-4">

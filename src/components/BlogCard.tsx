@@ -67,18 +67,20 @@ const BlogCard = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
 
+  console.log("blogs",blogs)
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       {blogs?.map((blog) => (
         <div
-          key={blog.id}
+          key={blog.documentId}
           className="relative group overflow-hidden shadow-md bg-white"
         >
           <div className={`relative w-full h-[20rem] overflow-hidden`}>
             <Image
               src={
                 blog.thumbnail?.[0]?.formats?.medium?.url
-                  ? `${BASE_URL}${blog.thumbnail[0].formats.medium.url}`
+                  ? `${blog.thumbnail[0].formats.medium.url}`
                   : "/default-thumbnail.jpg"
               }
               alt={blog.thumbnail?.[0]?.alternativeText || blog.title}
@@ -113,7 +115,7 @@ const BlogCard = () => {
            {/* Hover Overlay */}
            <div className="absolute inset-0 bg-white/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
            <LinkButton
-                href={`/blog/${blog.slug}`}
+                href={`/blog/${blog.documentId}`}
                 btnText="View Post"
                 className="border-2 border-black px-4 py-2 font-semibold  transition-colors duration-300 transform translate-y-full group-hover:translate-y-0   hover:bg-black"
               />

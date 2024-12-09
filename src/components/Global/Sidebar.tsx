@@ -51,11 +51,11 @@ const Sidebar = () => {
       
       <div>
       {blogs.map((blog) => (
-          <Link key={blog.id}  href={`/blog/${blog.slug}`}>
+          <Link key={blog.id}  href={`/blog/${blog.documentId}`}>
               <div  className="flex items-start relative mb-8">
             <Image
               src={ blog.thumbnail?.[0]?.formats?.medium?.url
-                ? `${BASE_URL}${blog.thumbnail[0].formats.medium.url}`
+                ? `${blog.thumbnail[0].formats.medium.url}`
                 : "/default-thumbnail.jpg"}
                 alt={blog.thumbnail?.[0]?.alternativeText || blog.title}
               width={100}
