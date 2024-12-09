@@ -1,7 +1,7 @@
 
 import BlogDetails from "./Detail";
 
-const BlogDetailsPage = ({ params }: { params: { id: string } }) => {
+const BlogDetailsPage = ({ params }: { params: { documentId: string } }) => {
   console.log("params", params);
 
   
