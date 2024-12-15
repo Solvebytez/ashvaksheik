@@ -102,7 +102,7 @@ const BlogDetails = ({ params }: { params: { documentId: string } }) => {
       href: "/blog",
     },
     {
-      name: data.data.Title,
+      name: data.data.title,
       href: "#",   
     },
   ];
