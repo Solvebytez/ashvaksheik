@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import ContactCard from '../ContactCard';
 
 
-import { BASE_URL } from '@/env';
+import { API_TOKEN, BASE_URL } from '@/env';
 import { formatDate } from '@/lib/utils';
 import Link from 'next/link';
 import { Blog, BlogResponse } from '../BlogCard';
@@ -20,7 +20,12 @@ const Sidebar = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch(`${BASE_URL}/api/blogs?populate=*`);
+        const response = await fetch(`${BASE_URL}/api/blogs?populate=*`,{
+                  headers: {
+                    "Authorization": `Bearer ${API_TOKEN}`, // Include the JWT token in the Authorization header
+                    "Content-Type": "application/json", // Optional, but good practice
+                  },
+                });
         if (!response.ok) {
           throw new Error("Failed to fetch blogs");
         }

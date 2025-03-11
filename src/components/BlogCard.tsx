@@ -3,7 +3,7 @@ import Image from "next/image";
 import LinkButton from "./Global/Button";
 import { useEffect, useState } from "react";
 import { formatDate } from "@/lib/utils";
-import { BASE_URL } from "@/env";
+import { API_TOKEN, BASE_URL } from "@/env";
 
 export interface BlogResponse {
   data: Blog[];
@@ -47,7 +47,12 @@ const BlogCard = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch(`${BASE_URL}/api/blogs?populate=*`);
+        const response = await fetch(`${BASE_URL}/api/blogs?populate=*`,{
+          headers: {
+            "Authorization": `Bearer ${API_TOKEN}`, // Include the JWT token in the Authorization header
+            "Content-Type": "application/json", // Optional, but good practice
+          },
+        });
         if (!response.ok) {
           throw new Error("Failed to fetch blogs");
         }

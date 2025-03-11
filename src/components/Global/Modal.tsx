@@ -26,7 +26,7 @@ const FullScreenModal = ({ isOpen, closeModal,children,bgImage }: ModalType) => 
   return (
     <>
     {isOpen && (
-        <div className="fixed inset-0 z-50 left-0 top-0 overflow-y-auto bg-cover"  style={{
+        <div className="fixed inset-0 z-[100] left-0 top-0 overflow-y-auto bg-cover"  style={{
           backgroundImage:
             `url(${bgImage})`,
         }}>

@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Global/BreadcrumbLinks";
 import LinkButton from "@/components/Global/Button";
 import Sidebar from "@/components/Global/Sidebar";
 import ReceiveInbox from "@/components/Home/ReceiveInbox";
-import { BASE_URL } from "@/env";
+import { API_TOKEN, BASE_URL } from "@/env";
 import { formatDate } from "@/lib/utils";
 import Image from "next/image";
 // import Markdown from "react-markdown";
@@ -25,7 +25,12 @@ const BlogDetails = ({ params }: { params: { documentId: string } }) => {
       try {
         setLoading(true);
         // Using the exact API endpoint structure
-        const response = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_BASE_URL}/api/blogs/${params.documentId}?populate=*`);
+        const response = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_BASE_URL}/api/blogs/${params.documentId}?populate=*`,{
+                  headers: {
+                    "Authorization": `Bearer ${API_TOKEN}`, // Include the JWT token in the Authorization header
+                    "Content-Type": "application/json", // Optional, but good practice
+                  },
+                });
         
         if (!response.ok) {
           throw new Error(`Failed to fetch blog post: ${response.statusText}`);
