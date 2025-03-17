@@ -18,14 +18,14 @@ const BlogDetails = ({ params }: { params: { documentId: string } }) => {
   const [error, setError] = useState<string | null>(null);
   const [data, setData] = useState<any>(null);
 
-  console.log("paramssssssssssssss..............................",params)
+  console.log("paramssssssssssssss..............................",params.documentId)
 
   useEffect(() => {
     const fetchBlogPost = async () => {
       try {
         setLoading(true);
         // Using the exact API endpoint structure
-        const response = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_BASE_URL}/api/blogs/${params.documentId}?populate=*`,{
+        const response = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_BASE_URL}/api/blogs?filters[slug][$eq]=${params.documentId}&populate=*`,{
                   headers: {
                     "Authorization": `Bearer ${API_TOKEN}`, // Include the JWT token in the Authorization header
                     "Content-Type": "application/json", // Optional, but good practice
@@ -38,12 +38,12 @@ const BlogDetails = ({ params }: { params: { documentId: string } }) => {
         
         const jsonData = await response.json();
         console.log('API Response:', jsonData);
-        console.log("jsonData",jsonData)
+        console.log("jsonData",!jsonData.data)
         // Check if we have data
         if (!jsonData.data || jsonData.data.length === 0) {
           throw new Error('Blog post not found');
         }
-        setData(jsonData)
+        setData(jsonData.data)
         // const post = jsonData.data[0]; // Get the first post since we're querying by ID
         // const blogData = {
         //   blog: {
@@ -86,9 +86,9 @@ const BlogDetails = ({ params }: { params: { documentId: string } }) => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
 
+  console.log("data...........",data)
 
-
-  if (!data?.data) return (
+  if (!data.length) return (
     <div className="h-[calc(90vh-50px)] relative z-0 px-4 md:px-8 lg:px-16 xl:px-36 2xl:px-72 lg:pt-32 overflow-hidden">
       <div className="flex flex-col items-center h-full justify-center text-white gap-4">
         Blog post not found.
@@ -107,34 +107,34 @@ const BlogDetails = ({ params }: { params: { documentId: string } }) => {
       href: "/blog",
     },
     {
-      name: data.data.title,
+      name: data[0].title,
       href: "#",   
     },
   ];
 
-  console.log("data...........",data)
+
 
   return (
     <>
       <div className="h-[calc(90vh-50px)] relative z-0 px-4 md:px-8 lg:px-16 xl:px-36 2xl:px-72 lg:pt-32 overflow-hidden">
         <Breadcrumb LinkItem={breadrcum} />
         <h1 className="text-white font-tenor_Sans text-4xl tracking-[2px] mt-8">
-          {data.data.title}
+          {data[0].title}
         </h1>
         <p className="text-white my-5">
-          {data.data.ShortDescription}
+          {data[0].ShortDescription}
         </p>
         <div className="h-full xl:w-full xl:h-full relative">
-          fds
-          {data.data.thumbnail[0]?.formats?.large?.url && (
+         
+          {data[0].thumbnail[0]?.formats?.large?.url && (
             <Image
-              src={data.data.thumbnail[0]?.formats?.large?.url.startsWith('http') 
-                ? data.data.thumbnail[0]?.formats?.large?.url 
-                : `${BASE_URL}${data.data.thumbnail[0]?.formats?.large?.url}`}
+              src={data[0].thumbnail[0]?.formats?.large?.url.startsWith('http') 
+                ? data[0].thumbnail[0]?.formats?.large?.url 
+                : `${BASE_URL}${data[0].thumbnail[0]?.formats?.large?.url}`}
               fill
               priority
               className="object-cover"
-              alt={ data.data.title || data.data.title}
+              alt={ data[0].title || ""}
             />
           )}
         </div>
@@ -143,13 +143,13 @@ const BlogDetails = ({ params }: { params: { documentId: string } }) => {
         <div className="col-span-8 pl-3 md:pl-7">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-6">
-              <p className="text-xs text-white">{formatDate(data.data.publishedAt)}</p>
+              <p className="text-xs text-white">{formatDate(data[0].publishedAt)}</p>
               <p className="text-xs text-white">by Admin</p>
             </div>
           </div>
           <hr className="my-2 border-white/10 mt-4 font-tenor_Sans"></hr>
           <div className="BlogDetails">
-          {data.data.content && <RenderContent content={data.data.content} />} 
+          {data[0].content && <RenderContent content={data[0].content} />} 
           </div>
         </div>
         <div className="col-span-4">

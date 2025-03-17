@@ -120,7 +120,7 @@ const BlogCard = () => {
            {/* Hover Overlay */}
            <div className="absolute inset-0 bg-white/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
            <LinkButton
-                href={`/blog/${blog.documentId}`}
+                href={`/blog/${blog.slug}`}
                 btnText="View Post"
                 className="border-2 border-black px-4 py-2 font-semibold  transition-colors duration-300 transform translate-y-full group-hover:translate-y-0   hover:bg-black"
               />
