@@ -61,8 +61,7 @@ const AboutPage = () => {
             <div className="mb-14">
               <h3 className="text-md tracking-wider mb-1">ADDRESS</h3>
               <p className="text-lg font-bold">
-              25 Van Kirk Dr Brampton, <br />
-              ON L7A 1A4
+              155 Salvation Rd, Brampton, ON L7A 0W7
               </p>
             </div>
             <SocialProfile />

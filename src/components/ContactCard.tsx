@@ -40,7 +40,7 @@ const ContactCard = ({cardType}:{cardType?:string}) => {
       <div className="mb-4 py-3 flex justify-between">
         <span className={`text-sm ${IsWhite}`}>Address:</span>
         <p className={`text-xs ${IsWhite}`}>
-          25 Van Kirk Dr Brampton, ON L7A 1A4
+        155 Salvation Rd, Brampton, ON L7A 0W7
           </p>
       </div>
      

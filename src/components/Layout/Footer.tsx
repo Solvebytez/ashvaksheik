@@ -106,7 +106,7 @@ const Footer = () => {
                   ADDRESS
                 </p>
                 <p className="text-sm tracking-[2px] font-bold uppercase">
-                25 Van Kirk Dr Brampton,<br/> ON L7A 1A4
+                155 Salvation Rd, Brampton, ON L7A 0W7
                 </p>
               </div>
             </div>
@@ -132,8 +132,8 @@ const Footer = () => {
                   required
                   {...register("terms", { required: true })}
                 />
-                <p className="font-semibold !text-justify text-[14px] leading-5 tracking-[3px] text-white">
-                By providing Ashvak with your contact information, you acknowledge and agree to our <Link className="underline" href="#">Privacy Policy</Link> and consent to receive marketing communications, including automated calls, texts, and emails. You may opt out at any time. To stop receiving texts, reply ‘STOP’ at any time. Message and data rates may apply.
+                <p className="font-semibold !text-left text-[14px] leading-5 tracking-[3px] text-white">
+                By providing Ashvak with your contact information, you acknowledge and agree to our <Link className="underline" href="/privacy">Privacy Policy</Link> and consent to receive marketing communications, including automated calls, texts, and emails. You may opt out at any time. To stop receiving texts, reply ‘STOP’ at any time. Message and data rates may apply.
                 </p>
               </div>
               <SubmitButton btnText="Subscribe" disabled={isPending} />
@@ -141,8 +141,8 @@ const Footer = () => {
             </div>
           
         </div>
-        <div className="flex items-start gap-4 mt-[7rem]">
-          <Image src="/21_logo2.png" width={60} height={250} priority alt="century 21 logo" />
+        <div className="flex items-center gap-4 mt-[7rem]">
+          <Image src="/REMAX_logo.png" width={180} height={250} priority alt="century 21 logo" />
          <div className="space-y-3">
          <p>All information deemed reliable but not guaranteed and should be independently reviewed and verified.</p>
          <Image src="/Realtor-logo.png" width={40} height={250} priority alt="century 21 logo" />

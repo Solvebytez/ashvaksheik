@@ -80,7 +80,7 @@ const PrivacyPage = () => {
       <p className="mb-4">For questions regarding this Privacy Policy, contact:</p>
       <ul className="list-disc list-inside mb-6 space-y-2 pb-[6rem]">
         <li><strong>Ashvak Sheik</strong></li>
-        <li>CENTURY 21 Property Zone Realty Inc.</li>
+        <li>Re/Max President Realty Brokerage</li>
         <li>Email: ashvak.realtor07@gmail.com</li>
         <li>Phone: 647-890-0982</li>
       </ul>

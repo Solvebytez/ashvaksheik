@@ -103,8 +103,7 @@ const ContactModal = ({prijectName}:{prijectName:string}) => {
                   ADDRESS
                 </p>
                 <p className="text-sm tracking-[2px] font-bold uppercase text-center md:text-left">
-                25 Van Kirk Dr Brampton,<br />
-                ON L7A 1A4
+                155 Salvation Rd, Brampton, ON L7A 0W7
                 </p>
               </div>
             </div>
