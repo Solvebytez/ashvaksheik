@@ -22,28 +22,30 @@ const ContactCard = ({cardType}:{cardType?:string}) => {
           className=" object-cover z-0 rounded-full"
         /> 
        </div>
+      
         <div>
           <h2 className={`font-bold ${IsWhite} font-tenor_Sans`}>REALTOR</h2>
           <p className={`text-sm font-bold ${IsWhite} font-tenor_Sans mb-2`}>Ashvak Sheik </p>
-          <p className="text-white text-xs">The Alliance Realty Group | Century 21 Property Zone Realty Inc</p>
+          <p className="text-white text-xs">The Alliance Realty Group | Re/Max President Realty Brokerage</p>
         </div>
       </div>     
-      <div className="flex justify-between mb-2 py-3">
-        <span className={`text-sm ${IsWhite}`}>Mobile number:</span>
-        <span className={`text-sm ${IsWhite}`}>647-890-0982</span>
-      </div>
       <hr className="my-2 border-white/10"  />
-      <div className="mb-0 py-3 flex justify-between">
-        <span className={`text-sm ${IsWhite}`}>Email:</span>
-        <p className={`text-sm ${IsWhite}`}>ashvak.realtor07@gmail.com</p>
+      <div className="flex justify-between mb-0 py-2">
+        <span className={`text-xs ${IsWhite}`}>Mobile number:</span>
+        <span className={`text-xs ${IsWhite}`}>647-890-0982</span>
       </div>
-      <div className="mb-4 py-3 flex justify-between">
-        <span className={`text-sm ${IsWhite}`}>Address:</span>
+     
+      <div className="mb-0 py-2 flex justify-between">
+        <span className={`text-xs ${IsWhite}`}>Email:</span>
+        <p className={`text-xs ${IsWhite}`}>ashvak.realtor07@gmail.com</p>
+      </div>
+      <div className="mb-4 py-2 flex justify-between">
+        <span className={`text-xs ${IsWhite}`}>Address:</span>
         <p className={`text-xs ${IsWhite}`}>
         155 Salvation Rd, Brampton, ON L7A 0W7
           </p>
       </div>
-     
+      <hr className="my-2 border-white/10"  />
       <button onClick={openModal} className="w-full bg-black text-white font-tenor_Sans py-3 uppercase tracking-[2px]">
         Contact agent
       </button>   
