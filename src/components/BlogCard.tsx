@@ -57,7 +57,7 @@ const BlogCard = () => {
           throw new Error("Failed to fetch blogs");
         }
         const data: BlogResponse = await response.json();
-        setBlogs(data.data);
+        setBlogs(data.data.reverse());
       } catch (err) {
         setError((err as Error).message);
         console.error('Error fetching blogs:', err);

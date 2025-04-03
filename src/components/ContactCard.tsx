@@ -46,7 +46,7 @@ const ContactCard = ({cardType}:{cardType?:string}) => {
           </p>
       </div>
       <hr className="my-2 border-white/10"  />
-      <button onClick={openModal} className="w-full bg-black text-white font-tenor_Sans py-3 uppercase tracking-[2px]">
+      <button onClick={openModal} className="w-full bg-white text-black font-tenor_Sans py-3 uppercase tracking-[2px]">
         Contact agent
       </button>   
       <FullScreenModal

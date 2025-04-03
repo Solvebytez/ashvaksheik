@@ -71,7 +71,7 @@ export default function MultiSelectOptions({value,...props}:selectPropsType) {
     : [];
 
   return (
-    <div className="w-full max-w-2xl mx-auto">
+    <div className="w-full max-w-2xl">
 
         <div className="space-y-4">
           <div>

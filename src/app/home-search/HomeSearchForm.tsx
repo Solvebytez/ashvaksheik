@@ -132,7 +132,7 @@ const HomeSearchForm = () => {
               )}
             </label>
             <input
-              placeholder="test@gmail.com"
+              placeholder="example@gmail.com"
               {...register("email", { required: true })}
               className="w-full bg-transparent border border-white  p-2 text-white mb-4 focus:outline-none"
               type="email"
