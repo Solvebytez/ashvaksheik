@@ -41,7 +41,7 @@ const ContactCard = ({cardType}:{cardType?:string}) => {
       </div>
       <div className="mb-4 py-2 flex justify-between">
         <span className={`text-xs ${IsWhite}`}>Address:</span>
-        <p className={`text-xs ${IsWhite}`}>
+        <p className={`text-xs ${IsWhite} text-right`}>
         155 Salvation Rd, Brampton, ON L7A 0W7
           </p>
       </div>
