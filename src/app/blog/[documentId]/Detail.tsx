@@ -18,7 +18,7 @@ const BlogDetails = ({ params }: { params: { documentId: string } }) => {
   const [error, setError] = useState<string | null>(null);
   const [data, setData] = useState<any>(null);
 
-  console.log("paramssssssssssssss..............................",params.documentId)
+
 
   useEffect(() => {
     const fetchBlogPost = async () => {
@@ -26,19 +26,17 @@ const BlogDetails = ({ params }: { params: { documentId: string } }) => {
         setLoading(true);
         // Using the exact API endpoint structure
         const response = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_BASE_URL}/api/blogs?filters[slug][$eq]=${params.documentId}&populate=*`,{
-                  headers: {
-                    "Authorization": `Bearer ${API_TOKEN}`, // Include the JWT token in the Authorization header
-                    "Content-Type": "application/json", // Optional, but good practice
-                  },
+                  // headers: {
+                  //   "Authorization": `Bearer ${API_TOKEN}`, // Include the JWT token in the Authorization header
+                  //   "Content-Type": "application/json", // Optional, but good practice
+                  // },
                 });
         
         if (!response.ok) {
           throw new Error(`Failed to fetch blog post: ${response.statusText}`);
         }
         
-        const jsonData = await response.json();
-        console.log('API Response:', jsonData);
-        console.log("jsonData",!jsonData.data)
+        const jsonData = await response.json();      
         // Check if we have data
         if (!jsonData.data || jsonData.data.length === 0) {
           throw new Error('Blog post not found');
