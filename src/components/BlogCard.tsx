@@ -83,16 +83,15 @@ const BlogCard = () => {
           className="relative group overflow-hidden shadow-md bg-white"
         >
           <div className={`relative w-full h-[20rem] overflow-hidden`}>
-            <Image
-              src={
-                blog.thumbnail?.[0]?.formats?.medium?.url
-                  ? `${blog.thumbnail[0].formats.medium.url}`
-                  : "/default-thumbnail.jpg"
-              }
-              alt={blog.thumbnail?.[0]?.alternativeText || blog.title}
+           <div className="w-full h-full">
+           <Image
+              alt={blog.title}
+              src={blog.thumbnail[0].formats.medium.url}
               fill
-              className="transition-transform duration-500 ease-in-out transform group-hover:scale-110 object-cover z-0"
+              priority
+              className="object-contain"
             />
+           </div>
           </div>
           {/* Info Section */}
           <div className="p-10 relative z-1 bg-white text-center flex flex-col items-center justify-center space-y-2 ">
