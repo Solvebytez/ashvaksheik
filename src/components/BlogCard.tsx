@@ -29,6 +29,7 @@ export interface Blog {
   updatedAt: string;
   publishedAt: string;
   thumbnail: {
+    url: string;
     id: number;
     formats: {
       medium: {
@@ -73,7 +74,7 @@ const BlogCard = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
 
-  console.log("blogs",blogs)
+  console.log("blogs",blogs[0]?.thumbnail[0]?.url)
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -85,7 +86,7 @@ const BlogCard = () => {
   <div className="w-full overflow-hidden">
     <Image
       alt={blog.title}
-      src="https://sahil-machines-web.s3.ap-south-1.amazonaws.com/CNC_s_Double_Column_Milling_and_VTL_Machines_9fda17c2df.jpg"
+      src={blog.thumbnail[0]?.url|| ""}
       width={800} // Or the actual image width
       height={500} // Or the actual image height
       priority

@@ -85,7 +85,7 @@ const BlogDetails = ({ params }: { params: { documentId: string } }) => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
 
-  console.log("data...........",data)
+
 
   if (!data.length) return (
     <div className="h-[calc(90vh-50px)] relative z-0 px-4 md:px-8 lg:px-16 xl:px-36 2xl:px-72 lg:pt-32 overflow-hidden">
@@ -124,17 +124,17 @@ const BlogDetails = ({ params }: { params: { documentId: string } }) => {
           {data[0].ShortDescription}
         </p>
         <div className="h-full xl:w-full xl:h-full relative">
-  {data[0]?.attributes?.thumbnail?.data?.attributes?.url && (
+  {data[0]?.thumbnail?.[0]?.url && (
     <Image
       src={
-        data[0].attributes.thumbnail.data.attributes.url.startsWith('http')
-          ? data[0].attributes.thumbnail.data.attributes.url
-          : `${BASE_URL}${data[0].attributes.thumbnail.data.attributes.url}`
+        data[0].thumbnail[0].url.startsWith('http')
+          ? data[0].thumbnail[0].url
+          : `${BASE_URL}${data[0].thumbnail[0].url}`
       }
       fill
       priority
       className="object-cover"
-      alt={data[0]?.attributes?.thumbnail?.data?.attributes?.alternativeText || data[0]?.attributes?.title || ""}
+      alt={data[0]?.title || ""}
     />
   )}
 </div>
