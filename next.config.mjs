@@ -28,6 +28,10 @@ const nextConfig = {
             protocol: 'https',
             hostname: 'rl-backend-6c6af7ff6474.herokuapp.comhttps',       
           },
+          {
+            protocol: 'https',
+            hostname: 'sahil-machines-web.s3.ap-south-1.amazonaws.com',       
+          },
         ],
       },
 };

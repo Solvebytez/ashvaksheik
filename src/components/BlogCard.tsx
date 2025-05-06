@@ -79,53 +79,44 @@ const BlogCard = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       {blogs?.map((blog) => (
         <div
-          key={blog.documentId}
-          className="relative group overflow-hidden shadow-md bg-white"
-        >
-          <div className={`relative w-full h-[20rem] overflow-hidden`}>
-           <div className="w-full h-full">
-           <Image
-              alt={blog.title}
-              src={blog.thumbnail[0].formats.medium.url}
-              fill
-              priority
-              className="object-contain"
-            />
-           </div>
-          </div>
-          {/* Info Section */}
-          <div className="p-10 relative z-1 bg-white text-center flex flex-col items-center justify-center space-y-2 ">
-          <h3 className="text-2xl tracking-[2px] track font-tenor_Sans text-black">
-              {blog.title}
-            </h3>
-            <p className="text-sm text-black font-bold tracking-[1px]">
-              {blog.ShortDescription.slice(0, 100)}
-            </p>
-            {blog.publishedAt && (
-              <p className="text-sm mt-2 tracking-[2px] text-black">
-                Publish at: {formatDate(blog.publishedAt)}
-              </p>
-            )}
-            </div>
-          {/* <div className="p-4">
-            <div className="mb-2">
-              <span className="text-sm text-gray-500">
-                {formatDate(blog.publishedAt)}
-              </span>
-            </div>
-            <h3 className="text-xl text-black font-semibold mb-2">{blog.title}</h3>
-            <p className="text-gray-600 mb-4">{blog.ShortDescription}</p>
-         
-          </div> */}
-           {/* Hover Overlay */}
-           <div className="absolute inset-0 bg-white/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-           <LinkButton
-                href={`/blog/${blog.slug}`}
-                btnText="View Post"
-                className="border-2 !border-black px-4 py-2 font-semibold bg-black transition-colors duration-300 transform translate-y-full group-hover:translate-y-0   hover:bg-black"
-              />
-          </div>
-        </div>
+  key={blog.documentId}
+  className="relative group overflow-hidden shadow-md bg-white"
+>
+  <div className="w-full overflow-hidden">
+    <Image
+      alt={blog.title}
+      src="https://sahil-machines-web.s3.ap-south-1.amazonaws.com/CNC_s_Double_Column_Milling_and_VTL_Machines_9fda17c2df.jpg"
+      width={800} // Or the actual image width
+      height={500} // Or the actual image height
+      priority
+      className="w-full h-auto object-contain"
+    />
+  </div>
+
+  {/* Info Section */}
+  <div className="p-10 relative z-1 bg-white text-center flex flex-col items-center justify-center space-y-2">
+    <h3 className="text-2xl tracking-[2px] font-tenor_Sans text-black">
+      {blog.title}
+    </h3>
+    <p className="text-sm text-black font-bold tracking-[1px]">
+      {blog.ShortDescription.slice(0, 100)}
+    </p>
+    {blog.publishedAt && (
+      <p className="text-sm mt-2 tracking-[2px] text-black">
+        Publish at: {formatDate(blog.publishedAt)}
+      </p>
+    )}
+  </div>
+
+  {/* Hover Overlay */}
+  <div className="absolute inset-0 bg-white/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+    <LinkButton
+      href={`/blog/${blog.slug}`}
+      btnText="View Post"
+      className="border-2 !border-black px-4 py-2 font-semibold bg-black transition-colors duration-300 transform translate-y-full group-hover:translate-y-0 hover:bg-black"
+    />
+  </div>
+</div>
       ))}
     </div>
   );
