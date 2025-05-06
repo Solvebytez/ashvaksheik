@@ -124,19 +124,20 @@ const BlogDetails = ({ params }: { params: { documentId: string } }) => {
           {data[0].ShortDescription}
         </p>
         <div className="h-full xl:w-full xl:h-full relative">
-         
-          {data[0].thumbnail[0]?.formats?.large?.url && (
-            <Image
-              src={data[0].thumbnail[0]?.formats?.large?.url.startsWith('http') 
-                ? data[0].thumbnail[0]?.formats?.large?.url 
-                : `${BASE_URL}${data[0].thumbnail[0]?.formats?.large?.url}`}
-              fill
-              priority
-              className="object-cover"
-              alt={ data[0].title || ""}
-            />
-          )}
-        </div>
+  {data[0]?.attributes?.thumbnail?.data?.attributes?.url && (
+    <Image
+      src={
+        data[0].attributes.thumbnail.data.attributes.url.startsWith('http')
+          ? data[0].attributes.thumbnail.data.attributes.url
+          : `${BASE_URL}${data[0].attributes.thumbnail.data.attributes.url}`
+      }
+      fill
+      priority
+      className="object-cover"
+      alt={data[0]?.attributes?.thumbnail?.data?.attributes?.alternativeText || data[0]?.attributes?.title || ""}
+    />
+  )}
+</div>
       </div>
       <div className="lg:grid lg:grid-cols-12 gap-5 mb-10  px-4 md:px-8 lg:px-14 xl:px-32 2xl:px-64 lg:pt-[2rem]">
         <div className="col-span-8 pl-3 md:pl-7">
