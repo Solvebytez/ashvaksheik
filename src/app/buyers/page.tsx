@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import ConsultationModal from "@/components/ConsultationModal";
 import BreadcumBanner from "@/components/Global/BreadcumBanner";
 import Container from "@/components/Global/Container";
@@ -140,10 +141,10 @@ const BuyersPage = () => {
                   index % 2 === 0 ? "lg:pl-28" : "lg:pr-28"
                 }`}
               >
-                <h2 className="text-2xl tracking-[4px] font-tenor_Sans uppercase">
+                <h2 className="text-2xl text-black tracking-[4px] font-tenor_Sans uppercase">
                   STEP {step.id}:
                 </h2>
-                <h3 className="text-4xl tracking-[4px] font-tenor_Sans uppercase">
+                <h3 className="text-4xl text-black tracking-[4px] font-tenor_Sans uppercase">
                   {step.title}
                 </h3>
                 <p className="text-black">{step.description}</p>
@@ -175,10 +176,10 @@ const BuyersPage = () => {
                   index % 2 === 0 ? "lg:pl-28" : "lg:pr-28"
                 }`}
               >
-                <h2 className="text-2xl tracking-[4px] font-tenor_Sans uppercase">
+                <h2 className="text-2xl text-black tracking-[4px] font-tenor_Sans uppercase">
                   STEP {step.id+4}:
                 </h2>
-                <h3 className="text-4xl tracking-[4px] font-tenor_Sans uppercase">
+                <h3 className="text-4xl text-black tracking-[4px] font-tenor_Sans uppercase">
                   {step.title}
                 </h3>
                 <p className="text-black">{step.description}</p>
@@ -205,7 +206,7 @@ const BuyersPage = () => {
         <div className="flex flex-col justify-center">
           <div className="lg:grid grid-cols-10 pb-10 items-center justify-center gap-20">
             <div className="col-span-5">
-              <h2 className="text-3xl uppercase tracking-[5px] font-tenor_Sans mb-8">
+              <h2 className="text-3xl text-black uppercase tracking-[5px] font-tenor_Sans mb-8">
                 Please complete the following form to download our Home {"s"}
                 Guide.
               </h2>
@@ -238,7 +239,7 @@ const BuyersPage = () => {
                     data rates may apply.
                   </span>
                 </div>
-                <SubmitButton btnText="Send" className="!border-black" />
+                <SubmitButton btnText="Send" className="!border-black text-black" />
               </form>
             </div>
             <div className="col-span-4">
