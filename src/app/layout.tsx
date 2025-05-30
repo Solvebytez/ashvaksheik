@@ -10,7 +10,8 @@ import { Metadata } from "next";
 import { ApolloWrapper } from "./ApolloProvider";
 import Script from "next/script";
 
-
+ {/* Google Tag Manager - Head */}
+   <meta name="google-site-verification" content="afTMMpDhrclb2UVVXLKFnSbbLlaqh1zBgHArdam4PcU" />
 const montserrat = Montserrat({
   subsets: ["latin", "cyrillic", "latin-ext"],
   variable: "--font-montserrat",
@@ -41,8 +42,7 @@ export default async function RootLayout({
   // Fetching the messages server-side
   return (
     <html>       
-      {/* Google Tag Manager - Head */}
-   <meta name="google-site-verification" content="afTMMpDhrclb2UVVXLKFnSbbLlaqh1zBgHArdam4PcU" />
+     
       <Script
         
         id="gtm-script"
