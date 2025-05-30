@@ -30,9 +30,7 @@ export const metadata: Metadata = {
   description:
     "Serving the Greater Toronto Area (GTA), including Peel, Durham, Halton, York, and other surrounding regions.",
     keywords:["Hyderabadi realtor in Mississauga,  Experienced Hyderabadi realtor in Mississauga, Telugu realtor in Mississauga, Telugu realtor in Brampton,  Best South Indian property consultant in Mississauga, Telugu realtor in Burlington, Telugu realtor in Milton, Telugu realtor in Oakville, Top Telugu realtor in GTA, Best Hyderabadi real estate agent in GTA, Top Telugu realtor in Durham Region, Telugu realtor in Whitby, Hyderabadi real estate agent in Whitby, Telugu realtor in Oshawa"]
-  verification: {
-    google: "afTMMpDhrclb2UVVXLKFnSbbLlaqh1zBgHArdam4PcU",
-  },
+  
 };
 
 export default async function RootLayout({
