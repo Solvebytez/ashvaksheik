@@ -44,8 +44,7 @@ export default async function RootLayout({
      
  <head>
         {/* Google Tag Manager - Head */}
-    <meta name="google-site-verification" content="afTMMpDhrclb2UVVXLKFnSbbLlaqh1zBgHArdam4PcU" />
-   
+   <meta name="google-site-verification" content="GjX6gHbLyBIDJ8ylCsxc994yiwb7pskrtcpY0FWBSOw" />
       <Script
         id="gtm-script"
         strategy="afterInteractive"
