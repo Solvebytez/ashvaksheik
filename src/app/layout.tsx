@@ -41,7 +41,8 @@ export default async function RootLayout({
   // Fetching the messages server-side
   return (
     <html>       
-      {/* Google Tag Manager - Head */}
+    <head>
+        {/* Google Tag Manager - Head */}
        <meta
       name="google-site-verification"
       content="GjX6gHbLyBIDJ8ylCsxc994yiwb7pskrtcpY0FWBSOw"
@@ -57,6 +58,7 @@ export default async function RootLayout({
           })(window,document,'script','dataLayer','GTM-5PR8C8D7');`,
         }}
       />
+    </head>
       <ApolloWrapper>
       
         <body
