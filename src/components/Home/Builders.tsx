@@ -65,7 +65,7 @@ const Builders = () => {
       className="bg-[center_top_8rem] bg-fixed relative bg-cover bg-no-repeat "
       style={{
         backgroundImage:
-          "url('https://images.pexels.com/photos/874158/pexels-photo-874158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
+          "url('/bg-ashvaik.jpg')",
       }}
     >
       <div className="bg-black/90 text-white py-[7rem] flex flex-col ">

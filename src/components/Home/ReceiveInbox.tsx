@@ -6,7 +6,7 @@ const ReceiveInbox = () => {
       className=" text-white bg-[center_top_8rem] bg-fixed relative bg-cover bg-no-repeat"
       style={{
         backgroundImage:
-          "url('https://res.cloudinary.com/luxuryp/images/w_2560,c_limit,f_auto,q_auto/ddubo2udq7mhcpbvgt9q/rahul-36-1')",
+          "url('/bg-ashvaik.jpg')",
       }}
     >
       <div className="bg-black bg-opacity-70 text-white flex flex-col items-center justify-center py-16 w-full space-y-7 px-4 md:px-8 lg:px-16 xl:px-36 2xl:px-72">

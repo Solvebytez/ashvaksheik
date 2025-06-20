@@ -1,12 +1,12 @@
 
-const BreadcumBanner = ({bgLogo,pageTitle,description,className}:{bgLogo?:string;pageTitle:string;description?:string;className?:string}) => {
+const BreadcumBanner = ({bgLogo,pageTitle,description,className,backGroundPostion}:{bgLogo?:string;pageTitle:string;description?:string;className?:string;backGroundPostion?:string}) => {
     const sectionStyle = {
         background: bgLogo? `url(${bgLogo?bgLogo:'https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/gyommycouuod40setpi0/rl-bg'})`:'#000',
         WebkitBackgroundSize: 'cover',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        WebkitBackgroundPosition: '100% 60%',
-        backgroundPosition: '100% 60%',
+       WebkitBackgroundPosition: backGroundPostion || '100% 60%',
+  backgroundPosition: backGroundPostion || '100% 60%',
         color: 'rgba(255, 255, 255, 1)',
         backgroundColor: 'rgba(0, 0, 0, 1)',
 

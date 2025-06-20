@@ -12,8 +12,9 @@ const AboutPage = () => {
     <div>
       <BreadcumBanner
         pageTitle="About ASHVAK"
-        bgLogo="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        className="bg-cover bg-no-repeat"
+        bgLogo="/bg-ashvaik.jpg"
+        className="bg-contain bg-no-repeat"
+        backGroundPostion="center top"
       />
       <Container>
         <div className="lg:grid grid-cols-12 gap-28 py-20">
