@@ -17,10 +17,10 @@ const AboutHome = ({openModal}:{openModal:()=>void;}) => {
         <div className="flex flex-col relative">
           <Image
             alt=""
-            sizes="25vw"
+            sizes="23vw"
             fill
-            className="object-cover"
-            src="https://images.pexels.com/photos/5313175/pexels-photo-5313175.jpeg"
+            className="object-cover object-top"
+            src="/profile.jpeg"
           />
         </div>
         <div className="flex flex-col items-center justify-center text-center space-y-5 text-white px-8">
