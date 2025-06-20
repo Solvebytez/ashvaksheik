@@ -6,6 +6,7 @@ import Builders from "@/components/Home/Builders";
 import WorkWith from "@/components/Home/WorkWith";
 import Image from "next/image";
 
+
 const AboutPage = () => {
   return (
     <div>
@@ -20,7 +21,7 @@ const AboutPage = () => {
             <div className="relative w-full" style={{ aspectRatio: "16 / 20" }}>
               <Image
                 alt=""
-                src="https://images.pexels.com/photos/1270076/pexels-photo-1270076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src={"/profile.jpeg"}
                 layout="fill"
                 className="object-cover"
               />

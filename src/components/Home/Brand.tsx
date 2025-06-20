@@ -58,7 +58,7 @@ const Brand = () => {
 
   return (
     <section  className="bg-[center_top_8rem] bg-fixed relative bg-cover bg-no-repeat " 
-    style={{backgroundImage: "url('https://images.pexels.com/photos/5313175/pexels-photo-5313175.jpeg')"}}>
+    style={{backgroundImage: "url('/bg-ashvaik.jpg')"}}>
          <div className="bg-black bg-opacity-70 text-white py-[7rem] flex flex-col">
     <h2 className="text-center text-5xl  mb-12 tenor_Sans tracking-[6px]">As Seen In</h2>
     <Container>

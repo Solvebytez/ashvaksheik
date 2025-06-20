@@ -11,7 +11,7 @@ const WorkWith = () => {
         className=" text-white bg-fixed relative bg-cover bg-no-repeat"
         style={{
           backgroundImage:
-            "url('https://images.pexels.com/photos/5313175/pexels-photo-5313175.jpeg')",
+            "url('/bg-ashvaik.jpg')",
             backgroundPosition: 'center top '
         }}
       >
