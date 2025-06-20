@@ -10,7 +10,6 @@ import { Metadata } from "next";
 import { ApolloWrapper } from "./ApolloProvider";
 import Script from "next/script";
 
-
 const montserrat = Montserrat({
   subsets: ["latin", "cyrillic", "latin-ext"],
   variable: "--font-montserrat",
@@ -31,6 +30,7 @@ export const metadata: Metadata = {
   description:
     "Serving the Greater Toronto Area (GTA), including Peel, Durham, Halton, York, and other surrounding regions.",
     keywords:["Hyderabadi realtor in Mississauga,  Experienced Hyderabadi realtor in Mississauga, Telugu realtor in Mississauga, Telugu realtor in Brampton,  Best South Indian property consultant in Mississauga, Telugu realtor in Burlington, Telugu realtor in Milton, Telugu realtor in Oakville, Top Telugu realtor in GTA, Best Hyderabadi real estate agent in GTA, Top Telugu realtor in Durham Region, Telugu realtor in Whitby, Hyderabadi real estate agent in Whitby, Telugu realtor in Oshawa"]
+  
 };
 
 export default async function RootLayout({
@@ -41,12 +41,10 @@ export default async function RootLayout({
   // Fetching the messages server-side
   return (
     <html>       
-    <head>
+     
+ <head>
         {/* Google Tag Manager - Head */}
-       <meta
-      name="google-site-verification"
-      content="GjX6gHbLyBIDJ8ylCsxc994yiwb7pskrtcpY0FWBSOw"
-    />
+   <meta name="google-site-verification" content="GjX6gHbLyBIDJ8ylCsxc994yiwb7pskrtcpY0FWBSOw" />
       <Script
         id="gtm-script"
         strategy="afterInteractive"
