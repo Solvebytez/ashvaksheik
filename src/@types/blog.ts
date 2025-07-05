@@ -83,6 +83,8 @@ export interface BlogAttributes {
   Thumbnail: ThumbnailImage[];
   Categories: Category[];
   publishedAt: string;
+  createdAt: string;
+  updatedAt: string;
 }
 
 export interface Blog {
