@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Head from "next/head";
 import { Tenor_Sans, Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({
@@ -15,17 +16,17 @@ const tenor_Sans = Tenor_Sans({
 
 const MaintenanceMode = () => {
   return (
-    <html>
-      <head>
+    <>
+      <Head>
         <title>Site Maintenance | Ashvak Sheik</title>
         <meta
           name="description"
-          content="We're currently performing maintenance on our website. Please check back soon."
+          content="We&apos;re currently performing maintenance on our website. Please check back soon."
         />
         <meta name="robots" content="noindex, nofollow" />
-      </head>
-      <body
-        className={`${montserrat.variable} ${tenor_Sans.variable} ${montserrat.className} montserrat bg-black text-white`}
+      </Head>
+      <div
+        className={`${montserrat.variable} ${tenor_Sans.variable} ${montserrat.className} montserrat bg-black text-white min-h-screen`}
       >
         <div className="min-h-screen flex items-center justify-center px-4">
           <div className="max-w-4xl mx-auto text-center">
@@ -49,11 +50,11 @@ const MaintenanceMode = () => {
               <div className="w-24 h-1 bg-white mx-auto"></div>
 
               <h2 className="text-2xl md:text-3xl font-tenor_Sans tracking-[4px] uppercase">
-                We'll Be Back Soon
+                We&apos;ll Be Back Soon
               </h2>
 
               <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-                We're currently performing scheduled maintenance to improve your
+                We&apos;re currently performing scheduled maintenance to improve your
                 experience. Our website will be back online shortly.
               </p>
 
@@ -97,8 +98,8 @@ const MaintenanceMode = () => {
             <div className="fixed inset-0 -z-10 bg-black"></div>
           </div>
         </div>
-      </body>
-    </html>
+      </div>
+    </>
   );
 };
 
