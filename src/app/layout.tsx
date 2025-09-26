@@ -9,8 +9,6 @@ import { ToastContainer } from "react-toastify";
 import { Metadata } from "next";
 import { ApolloWrapper } from "./ApolloProvider";
 import Script from "next/script";
-import MaintenanceMode from "@/components/MaintenanceMode";
-import { env } from "@/env";
 
 const montserrat = Montserrat({
   subsets: ["latin", "cyrillic", "latin-ext"],
@@ -41,11 +39,6 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Check if maintenance mode is enabled
-  if (env.NEXT_PUBLIC_MAINTENANCE_MODE === "true") {
-    return <MaintenanceMode />;
-  }
-
   // Fetching the messages server-side
   return (
     <html>
