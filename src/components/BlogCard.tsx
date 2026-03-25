@@ -59,7 +59,8 @@ const BlogCard = () => {
           throw new Error("Failed to fetch blogs");
         }
         const data: BlogResponse = await response.json();
-        setBlogs(data.data.reverse());
+        const list = Array.isArray(data.data) ? data.data : [];
+        setBlogs([...list].reverse());
       } catch (err) {
         setError((err as Error).message);
         console.error('Error fetching blogs:', err);
@@ -74,8 +75,6 @@ const BlogCard = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
 
-  console.log("blogs",blogs[0]?.thumbnail[0]?.url)
-
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       {blogs?.map((blog) => (
@@ -84,14 +83,26 @@ const BlogCard = () => {
   className="relative group overflow-hidden shadow-md bg-white"
 >
   <div className="w-full overflow-hidden">
+    {(() => {
+      const raw =
+        blog.thumbnail?.[0]?.formats?.medium?.url ?? blog.thumbnail?.[0]?.url;
+      const src =
+        raw && (raw.startsWith("http") ? raw : `${BASE_URL}${raw}`);
+      return src ? (
     <Image
       alt={blog.title}
-      src={blog.thumbnail[0]?.url|| ""}
+      src={src}
       width={800} // Or the actual image width
       height={500} // Or the actual image height
       priority
       className="w-full h-auto object-contain"
     />
+      ) : (
+        <div className="flex aspect-[8/5] w-full items-center justify-center bg-neutral-200 text-sm text-neutral-600">
+          No image
+        </div>
+      );
+    })()}
   </div>
 
   {/* Info Section */}
@@ -100,7 +111,7 @@ const BlogCard = () => {
       {blog.title}
     </h3>
     <p className="text-sm text-black font-bold tracking-[1px]">
-      {blog.ShortDescription.slice(0, 100)}
+      {(blog.ShortDescription ?? "").slice(0, 100)}
     </p>
     {blog.publishedAt && (
       <p className="text-sm mt-2 tracking-[2px] text-black">

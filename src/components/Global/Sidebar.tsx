@@ -31,7 +31,8 @@ const Sidebar = () => {
           throw new Error("Failed to fetch blogs");
         }
         const data: BlogResponse = await response.json();
-        setBlogs(data.data.reverse());
+        const list = Array.isArray(data.data) ? data.data : [];
+        setBlogs([...list].reverse());
       } catch (err) {
         setError((err as Error).message);
         console.error('Error fetching blogs:', err);
@@ -61,7 +62,7 @@ const Sidebar = () => {
               <div  className="flex items-start relative mb-8">
             <Image
               src={ blog.thumbnail?.[0]?.formats?.medium?.url
-                ? `${blog.thumbnail[0].formats.medium.url}`
+                ? `${blog.thumbnail?.[0]?.formats?.medium?.url}`
                 : "/default-thumbnail.jpg"}
                 alt={blog.thumbnail?.[0]?.alternativeText || blog.title}
               width={100}

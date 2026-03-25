@@ -19,7 +19,6 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      console.log("currentScrollY", currentScrollY);
       setCurrentScroll(currentScrollY);
       if (currentScrollY === 0) {
         // When at the top of the page, hide the header

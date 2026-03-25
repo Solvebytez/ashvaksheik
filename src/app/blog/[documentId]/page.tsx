@@ -10,27 +10,24 @@ export async function generateMetadata({ params }: { params: { documentId: strin
     throw new Error('Failed to fetch data');
   }
   
-   const jsonData = await res.json(); 
-   
-   console.log("jsonData", jsonData.data[0].thumbnail[0].url);
+   const jsonData = await res.json();
+   const post = Array.isArray(jsonData.data) ? jsonData.data[0] : undefined;
+   const thumbRaw =
+     post?.thumbnail?.[0]?.formats?.medium?.url ?? post?.thumbnail?.[0]?.url;
+   const ogImage =
+     thumbRaw &&
+     (thumbRaw.startsWith("http") ? thumbRaw : `${BASE_URL}${thumbRaw}`);
 
   return {
-    title: jsonData.data[0].title,
-    description: jsonData.data[0].ShortDescription,
-    openGraph:{
-      images:[
-        jsonData.data[0].thumbnail[0].url.startsWith('http')
-                  ? jsonData.data[0].thumbnail[0].url
-                  : `${BASE_URL}${jsonData.data[0].thumbnail[0].url}`
-      ]
-    }
-  }
+    title: post?.title ?? "Blog",
+    description: post?.ShortDescription ?? undefined,
+    openGraph: ogImage
+      ? { images: [ogImage] }
+      : undefined,
+  };
 }
 
 const BlogDetailsPage = ({ params }: { params: { documentId: string } }) => {
-  console.log("params", params);
-
-  
   return (
     <>
      <BlogDetails params={params}/>
