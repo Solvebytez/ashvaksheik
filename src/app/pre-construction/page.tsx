@@ -34,7 +34,10 @@ const PreConstructionPage = () => {
         <h2 className="text-center text-5xl font-tenor_Sans tracking-[5px] text-white py-10 uppercase">
           EXPLORE OUR EXCLUSIVE PROJECTS
         </h2>
-        <p className="text-center text-white">Browse our selection of premier preconstruction developments and find your next investment. Express your interest to receive personalized project details.
+        <p className="text-center text-white max-w-3xl px-4">
+          Browse current GTA pre-construction developments. Occupancy dates and
+          availability change — click Interested and I will confirm what is still
+          open and send you the latest packages.
         </p>
         <p className="font-tenor_Sans text-xl text-center">
                 As a Diamond Agent, I provide my clients with privileged access

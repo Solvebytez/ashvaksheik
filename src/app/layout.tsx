@@ -23,15 +23,37 @@ const tenor_Sans = Tenor_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ashvaksheik.com"),
   title: {
     template: "%s | Ashvak Sheik",
-    absolute: "Ashvak Sheik",
+    absolute: "Ashvak Sheik | Re/Max President Realty Brokerage",
   },
   description:
     "Ashvak Sheik, Realtor with Re/Max President Realty Brokerage. Serving the Greater Toronto Area, including Peel, Durham, Halton, York, and surrounding regions.",
-  keywords: [
-    "Hyderabadi realtor in Mississauga,  Experienced Hyderabadi realtor in Mississauga, Telugu realtor in Mississauga, Telugu realtor in Brampton,  Best South Indian property consultant in Mississauga, Telugu realtor in Burlington, Telugu realtor in Milton, Telugu realtor in Oakville, Top Telugu realtor in GTA, Best Hyderabadi real estate agent in GTA, Top Telugu realtor in Durham Region, Telugu realtor in Whitby, Hyderabadi real estate agent in Whitby, Telugu realtor in Oshawa",
-  ],
+  openGraph: {
+    title: "Ashvak Sheik | Re/Max President Realty Brokerage",
+    description:
+      "GTA realtor helping buyers and sellers across Peel, Durham, Halton, and York.",
+    url: "https://ashvaksheik.com",
+    siteName: "Ashvak Sheik",
+    images: [
+      {
+        url: "/profile.jpeg",
+        width: 800,
+        height: 1000,
+        alt: "Ashvak Sheik, Realtor at Re/Max President Realty Brokerage",
+      },
+    ],
+    locale: "en_CA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ashvak Sheik | Re/Max President Realty Brokerage",
+    description:
+      "GTA realtor helping buyers and sellers across Peel, Durham, Halton, and York.",
+    images: ["/profile.jpeg"],
+  },
 };
 
 export default async function RootLayout({

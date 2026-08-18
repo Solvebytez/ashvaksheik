@@ -19,7 +19,7 @@ const pages = [
     ],
   },
   { url: "/blog", label: "Blog" },
-  // { url: "/testimonials", label: "TESTIMONIALS" },
+  { url: "/testimonials", label: "TESTIMONIALS" },
   // { url: "/lets-connect", label: "LET'S CONNECT" },
   // { url: "/my-search-portal", label: "MY SEARCH PORTAL" },
 ];

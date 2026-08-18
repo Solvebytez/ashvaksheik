@@ -70,9 +70,9 @@ const buyersSteps = [
   },
   {
     id: 8,
-    title: "Accept an Offer",
+    title: "Close on Your Home",
     description:
-      "You’ve reached the last step in the seller’s process. When you close on a home you are selling, you are legally transferring ownership of the property to the new buyer. We will meet with the company closing the transaction to sign the final paperwork and go over any issues that have not yet been taken care of. During this time, you can also make plans with your realtor to handle final details such as canceling utilities, cable, and lawn or trash services, changing the name on accounts that the new owner is retaining and ensuring the new owner has instructions for all appliances that will remain in the home.",
+      "Closing is the legal transfer of ownership to the buyer. We meet with the lawyer or closing officer to sign the final paperwork, confirm outstanding items are complete, and hand over keys, garage remotes, and appliance manuals. You can also cancel utilities in your name and update accounts the new owner will keep.",
     image:
       "https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/qrsgawei2jqspwpmi3vm/buyers2", // replace with the actual image path
   },
@@ -136,11 +136,9 @@ const SellersPage = () => {
             Congratulations!
           </h2>
           <p className="px-10 my-10">
-            After signing the final paperwork to complete the purchase, you are
-            now the owner of a new house. It may take a few days for your loan
-            to be funded once the paperwork has been returned to the lender, but
-            once that check is delivered to the seller, you’ll be all set to
-            move into the home of your dreams.
+            After signing the final paperwork, ownership of your home transfers
+            to the buyer. Cancel utilities in your name, leave appliance
+            instructions, and keep keys and garage remotes ready for closing day.
           </p>
         </Container>
       </div>

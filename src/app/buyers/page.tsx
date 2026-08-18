@@ -74,7 +74,7 @@ const buyersSteps2 = [
     id: 4,
     title: "Select Your Loan",
     description:
-      "Can you shop for, look at, and ultimately make an offer on a home without a real estate agent? Technically yes, but why would you when it costs you nothing for an agent like me to take much of the stress off your shoulders? Not only will I help identify properties you might be interested in, arrange showings, and ultimately handle the offer process, but I also have a knowledge of the market that you don’t possess. I may be able to steer you away from certain homes or neighborhoods, suggest hidden gems, or give you pointers that will help you find your dream home for the right price.",
+      "Work with your lender to lock in a mortgage that fits your budget and closing timeline. Compare rates, review conditions, and send any documents they request quickly so financing does not delay your deal.",
     image:
       "https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/qrsgawei2jqspwpmi3vm/buyers2", // replace with the actual image path
   },
