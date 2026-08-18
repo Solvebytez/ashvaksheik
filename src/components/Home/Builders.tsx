@@ -70,7 +70,7 @@ const Builders = () => {
     >
       <div className="bg-black/90 text-white py-[7rem] flex flex-col ">
         <div className="flex flex-col items-center justify-center py-16 w-full space-y-7 px-4 md:px-8 lg:px-16 xl:px-36 2xl:px-72">
-          <h2 className="font-tenor_Sans tracking-[6px] text-4xl text-center">
+          <h2 className="font-tenor_Sans tracking-[2px] md:tracking-[6px] text-2xl md:text-4xl text-center leading-tight">
             RECEIVE EXCLUSIVE OFF-MARKET LISTINGS IN YOUR INBOX.
           </h2>
           <p className="text-center">

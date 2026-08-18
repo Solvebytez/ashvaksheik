@@ -88,7 +88,7 @@ const UseNewslaterForm = () => {
                 )}
               </div>
             </div>
-            <span className="flex-1">
+          <span className="flex-1 text-[13px] leading-5 tracking-[0.4px]">
             By providing Ashvak with your contact information, you acknowledge and agree to our{' '}
               <Link href="/privacy" className="underline">Privacy Policy</Link> and consent to receive marketing communications, including automated calls, texts, and emails. You may opt out at any time. To stop receiving texts, reply ‘STOP’ at any time. Message and data rates may apply.
             </span>

@@ -30,10 +30,11 @@ const FullScreenModal = ({ isOpen, closeModal,children,bgImage }: ModalType) => 
           backgroundImage:
             `url(${bgImage})`,
         }}>
-          <div className="relative w-[100%] p-0 md:p-6 bg-black bg-opacity-85 text-white h-auto md:h-full">
+          <div className="relative w-full px-4 pt-16 pb-10 md:p-6 bg-black bg-opacity-85 text-white h-auto min-h-full">
             <button
               onClick={closeModal}
-              className="absolute top-4 right-4 text-white hover:text-gray-900 text-5xl"
+              className="absolute top-3 right-4 z-10 text-white hover:text-gray-300 text-3xl md:text-5xl p-2"
+              aria-label="Close"
             >
               ✕
             </button>

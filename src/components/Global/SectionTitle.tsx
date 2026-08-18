@@ -29,16 +29,16 @@ const SectionTitle = ({  description, title,titleNumber }: SectionTitleProps) =>
       className="relative bg-black text-white  px-6 pt-16 pb-12 bg-no-repeat"
     >
       {/* Top line with numbering and description */}
-      <div className="flex items-center text-sm mb-4 tracking-[1px] leading-6">
-       <p className="text-[16px] mb-0 md:mb-5">
+      <div className="flex items-start text-sm mb-4 tracking-[1px] leading-6">
+       <p className="text-sm md:text-[16px] mb-0 md:mb-5">
        <span className="mr-2">{titleNumber}</span>
-       <span className="border-t border-white w-16 mr-2 borer-3 inline-block"></span> {description}
+       <span className="border-t border-white w-10 md:w-16 mr-2 borer-3 inline-block align-middle"></span> {description}
        </p>
        
       </div>
 
       {/* Main heading */}
-      <h1 className="text-3xl sm:text-3xl md:text-[43px] font-light tracking-[6px] uppercase mb-4 tenor_Sans">
+      <h1 className="text-2xl sm:text-3xl md:text-[43px] font-light tracking-[2px] md:tracking-[6px] uppercase mb-4 tenor_Sans leading-tight">
         {title}
       </h1>
     </div>

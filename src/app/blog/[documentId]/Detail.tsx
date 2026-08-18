@@ -115,9 +115,9 @@ const BlogDetails = ({ params }: { params: { documentId: string } }) => {
 
   return (
     <>
-      <div className="h-[calc(90vh-50px)] relative z-0 px-4 md:px-8 lg:px-16 xl:px-36 2xl:px-72 lg:pt-32 overflow-hidden">
+      <div className="min-h-[55vh] md:h-[calc(90vh-50px)] relative z-0 px-4 md:px-8 lg:px-16 xl:px-36 2xl:px-72 pt-24 md:pt-32 pb-8 overflow-hidden">
         <Breadcrumb LinkItem={breadrcum} />
-        <h1 className="text-white font-tenor_Sans text-4xl tracking-[2px] mt-8">
+        <h1 className="text-white font-tenor_Sans text-2xl md:text-4xl tracking-[1px] md:tracking-[2px] mt-6 md:mt-8 leading-tight">
           {data[0].title}
         </h1>
         <p className="text-white my-5">
@@ -140,7 +140,7 @@ const BlogDetails = ({ params }: { params: { documentId: string } }) => {
 </div>
       </div>
       <div className="lg:grid lg:grid-cols-12 gap-5 mb-10  px-4 md:px-8 lg:px-14 xl:px-32 2xl:px-64 lg:pt-[2rem]">
-        <div className="col-span-8 pl-3 md:pl-7">
+        <div className="col-span-8 pl-0 md:pl-7">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-6">
               <p className="text-xs text-white">{formatDate(data[0].publishedAt)}</p>

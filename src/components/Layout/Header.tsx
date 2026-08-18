@@ -54,7 +54,7 @@ const Header = () => {
           }`}
         >
           <div className="flex items-center justify-between py-2 gap-6 md:py-4 md:gap-0 relative">
-            <div className="relative z-20 w-full flex justify-between lg:w-max md:px-0">
+            <div className="relative z-20 w-auto shrink-0 flex justify-between lg:w-max md:px-0">
               <Link
                 href="/"
                 aria-label="logo"
@@ -64,7 +64,8 @@ const Header = () => {
                   src="/logo3.png"
                   width="100"
                   height="100"
-                  alt=""
+                  alt="Ashvak Sheik"
+                  className="h-12 w-auto md:h-[100px]"
                 />
               </Link>
             </div>
@@ -126,9 +127,10 @@ const Header = () => {
               <div className="mt-0 lg:mt-0 z-40">
                 <button
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
-                  className="p-0 text-white"
+                  className="p-2 text-white shrink-0"
+                  aria-label="Open menu"
                 >
-                  <AlignRight size={32} />
+                  <AlignRight size={28} className="md:h-8 md:w-8" />
                 </button>
               </div>
             </div>

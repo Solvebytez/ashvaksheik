@@ -11,7 +11,7 @@ const ProPertiesPage = () => {
         bgLogo="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/gg5lqgxfs8n9uajak0pp/portfolio"
       />
       <div className="flex flex-col justify-center py-10 items-center ">
-        <h2 className="text-center text-5xl font-tenor_Sans tracking-[5px] text-white py-10 uppercase">
+        <h2 className="text-center text-2xl md:text-5xl font-tenor_Sans tracking-[2px] md:tracking-[5px] text-white py-6 md:py-10 uppercase px-4 leading-tight">
           Featured Properties
         </h2>
       </div>

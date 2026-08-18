@@ -12,23 +12,22 @@ const Numbers = () => {
   >
     <div className='bg-black bg-opacity-70'>
     <Container>
-    <div className=" text-white py-[4rem] flex flex-col justify-center items-center text-center">
-      <h1 className="text-4xl mb-4 tenor_Sans tracking-[6px]">BY THE NUMBERS</h1>
-      {/* <p className="text-md mb-8 mt-4">Ashvak is reliable, consistent, and a successful negotiator. He is highly valued by his clients for his integrity and tenacity.</p> */}
-      <p className="text-md mb-8 mt-4">Ashvak is known for his dedication, professionalism, and exceptional negotiation skills. Clients value his integrity, persistence, and commitment to achieving the best results.
+    <div className=" text-white py-[3rem] md:py-[4rem] flex flex-col justify-center items-center text-center">
+      <h1 className="text-2xl md:text-4xl mb-4 tenor_Sans tracking-[2px] md:tracking-[6px]">BY THE NUMBERS</h1>
+      <p className="text-sm md:text-md mb-8 mt-4 px-1">Ashvak is known for his dedication, professionalism, and exceptional negotiation skills. Clients value his integrity, persistence, and commitment to achieving the best results.
       </p>
-      <div className="grid grid-cols-3 gap-4 mt-8">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-4 w-full max-w-3xl">
         <div className="text-center ">
-          <h2 className="text-3xl mb-2 tenor_Sans">#1</h2>
-          <p className="text-md">GTA Realtor 2023    </p>
+          <h2 className="text-3xl md:text-4xl mb-2 tenor_Sans">#1</h2>
+          <p className="text-sm md:text-md">GTA Realtor 2023    </p>
         </div>
         <div className="text-center">
-          <h2 className="text-3xl mb-2 tenor_Sans">$10M</h2>
-          <p className="text-md">Sales Volume 2024</p>
+          <h2 className="text-3xl md:text-4xl mb-2 tenor_Sans">$10M</h2>
+          <p className="text-sm md:text-md">Sales Volume 2024</p>
         </div>
         <div className="text-center ">
-          <h2 className="text-3xl mb-2 tenor_Sans">#1</h2>
-          <p className="text-md">Brokerage in Canada</p>
+          <h2 className="text-3xl md:text-4xl mb-2 tenor_Sans">#1</h2>
+          <p className="text-sm md:text-md">Brokerage in Canada</p>
         </div>
       </div>
     </div>

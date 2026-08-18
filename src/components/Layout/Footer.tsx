@@ -76,7 +76,7 @@ const Footer = () => {
                 <p className="text-sm tracking-[2px] font-bold uppercase">
                   EMAIL
                 </p>
-                <a href="mailto:ashvak.realtor07@gmail.com" className="text-sm tracking-[2px] font-bold uppercase underline">
+                <a href="mailto:ashvak.realtor07@gmail.com" className="text-sm tracking-[1px] md:tracking-[2px] font-bold uppercase underline break-all">
                 ashvak.realtor07@gmail.com
                 </a>
               </div>
@@ -114,8 +114,8 @@ const Footer = () => {
          
             <div className="text-center md:text-left md:w-1/4">
             <form onSubmit={handleSubmit(onSubmit)}>
-              <h2 className="text-sm tracking-[2px] font-bold uppercase flex gap-4 mb-6">
-                <Milestone size={30} /> SIGN UP FOR EXCLUSIVE NEWS
+              <h2 className="text-sm tracking-[2px] font-bold uppercase flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start gap-3 mb-6">
+                <Milestone size={30} className="shrink-0" /> <span>SIGN UP FOR EXCLUSIVE NEWS</span>
               </h2>
               <input
                 type="email"
@@ -130,7 +130,7 @@ const Footer = () => {
                   required
                   {...register("terms", { required: true })}
                 />
-                <p className="font-semibold !text-left text-[14px] leading-5 tracking-[3px] text-white">
+                <p className="font-semibold !text-left text-[13px] leading-5 tracking-[0.5px] md:tracking-[2px] text-white">
                 By providing Ashvak with your contact information, you acknowledge and agree to our <Link className="underline" href="/privacy">Privacy Policy</Link> and consent to receive marketing communications, including automated calls, texts, and emails. You may opt out at any time. To stop receiving texts, reply ‘STOP’ at any time. Message and data rates may apply.
                 </p>
               </div>
@@ -139,11 +139,11 @@ const Footer = () => {
             </div>
           
         </div>
-        <div className="flex items-center gap-4 mt-[7rem]">
-          <Image src="/REMAX_logo.png" width={180} height={250} priority alt="RE/MAX logo" />
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-4 mt-12 md:mt-[7rem] pb-24 md:pb-0 text-center md:text-left">
+          <Image src="/REMAX_logo.png" width={180} height={250} priority alt="RE/MAX logo" className="h-auto w-[140px] md:w-[180px]" />
          <div className="space-y-3">
-         <p>All information deemed reliable but not guaranteed and should be independently reviewed and verified.</p>
-         <Image src="/Realtor-logo.png" width={40} height={250} priority alt="Realtor logo" />
+         <p className="text-sm leading-6">All information deemed reliable but not guaranteed and should be independently reviewed and verified.</p>
+         <Image src="/Realtor-logo.png" width={40} height={250} priority alt="Realtor logo" className="mx-auto md:mx-0" />
          </div>
         </div>
         <Copyright />

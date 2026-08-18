@@ -17,7 +17,7 @@ const AboutPage = () => {
         backGroundPostion="center top"
       />
       <Container>
-        <div className="lg:grid grid-cols-12 gap-28 py-20">
+        <div className="lg:grid grid-cols-12 gap-8 lg:gap-28 py-10 md:py-20">
           <div className="col-span-5 ">
             <div className="relative w-full" style={{ aspectRatio: "16 / 20" }}>
               <Image
@@ -29,7 +29,7 @@ const AboutPage = () => {
             </div>
           </div>
           <div className="col-span-6 text-white">
-            <h1 className="text-5xl font-tenor_Sans tracking-[4px] mb-4 pt-16 lg:pt-0 uppercase">
+            <h1 className="text-3xl md:text-5xl font-tenor_Sans tracking-[2px] md:tracking-[4px] mb-4 pt-8 lg:pt-0 uppercase">
             Ashvak Sheik
             </h1>
             <h2 className="text-lg font-tenor_Sans tracking-[3px] mb-8">
@@ -71,7 +71,7 @@ const AboutPage = () => {
         </div>
 
         <div className="text-white">
-          <h1 className="text-4xl font-tenor_Sans tracking-[6px] mb-4 uppercase">
+          <h1 className="text-2xl md:text-4xl font-tenor_Sans tracking-[2px] md:tracking-[6px] mb-4 uppercase">
             Get To Know Me
           </h1>
           <hr className=" border-white/10 my-6" />
@@ -94,12 +94,12 @@ const AboutPage = () => {
           </div>
           <hr className=" border-white/10 my-6" />
         </div>
-        <div className="py-16 bg-black text-white w-full flex flex-col md:flex-row justify-between">
-          <h2 className="text-2xl font-tenor_Sans tracking-wider text-right mr-24 mb-6 w-1/4">
+        <div className="py-10 md:py-16 bg-black text-white w-full flex flex-col md:flex-row justify-between">
+          <h2 className="text-2xl font-tenor_Sans tracking-wider text-left md:text-right md:mr-12 mb-6 w-full md:w-1/4">
             EXPERTISE
           </h2>
-          <div className=" w-3/4">
-            <div className="grid grid-cols-2 gap-y-8 gap-x-16 ">
+          <div className="w-full md:w-3/4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-8">
               <div className="text-sm font-bold">CONDOMINIUMS</div>
               <div className="text-sm font-bold">FORECLOSURE PROPERTY</div>
               <div className="text-sm font-bold">INVESTMENTS</div>

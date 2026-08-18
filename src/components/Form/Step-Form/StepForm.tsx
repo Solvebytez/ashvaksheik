@@ -97,8 +97,8 @@ const StepForm = () => {
       <div className="mt-16 flex flex-col items-center justify-center">
         <form className="w-full px-4" onSubmit={handleSubmit(onSubmit)}>
           {currentStep === STEPS.LOCATION_SEARCH && (
-            <div className="flex flex-col mt-[4rem] space-y-16 justify-center items-center">
-              <h1 className="text-4xl font-tenor_Sans tracking-[4px] uppercase">
+            <div className="flex flex-col mt-8 md:mt-[4rem] space-y-8 md:space-y-16 justify-center items-center">
+              <h1 className="text-2xl md:text-4xl font-tenor_Sans tracking-[2px] md:tracking-[4px] uppercase text-center leading-tight px-2">
                 Custom Tailored Pricing Proposal
               </h1>
               <div className="md:flex gap-4 w-full items-center justify-center">
@@ -120,7 +120,7 @@ const StepForm = () => {
                   type="button"
                   onClick={formNext}
                   disabled={placeName ? false : true}
-                  className={`hover:bg-white hover:text-black border-2 border-white font-bold tracking-[1.5px] text-[14px] uppercase mt-4 px-11 py-4 ${
+                  className={`hover:bg-white hover:text-black border-2 border-white font-bold tracking-[1.5px] text-[12px] md:text-[14px] uppercase mt-4 px-6 md:px-11 py-3 md:py-4 ${
                     placeName.length < 5 ? "cursor-not-allowed" : ""
                   }`}
                 >
@@ -132,10 +132,10 @@ const StepForm = () => {
 
           {currentStep === STEPS.MAIN_FORM && (
             <div className="flex flex-col mt-[0rem] justify-center items-center">
-              <h3 className="text-xl font-bold tracking-[4px] uppercase">
+              <h3 className="text-lg md:text-xl font-bold tracking-[2px] md:tracking-[4px] uppercase">
                 CONTACT INFORMATION
               </h3>
-              <h1 className="text-4xl font-tenor_Sans tracking-[4px] uppercase my-8">
+              <h1 className="text-2xl md:text-4xl font-tenor_Sans tracking-[2px] md:tracking-[4px] uppercase my-6 md:my-8 text-center leading-tight px-2">
                 Almost There! You’re 1 Step Away
               </h1>
               <div className="md:flex flex-col space-y-6 gap-4 w-full items-center justify-center !mt-10">
@@ -227,7 +227,7 @@ const StepForm = () => {
               {/* <h3 className="text-xl font-bold tracking-[4px] uppercase">
                 Thank You
               </h3> */}
-              <h1 className="text-4xl font-tenor_Sans tracking-[4px] uppercase my-1 text-center">
+              <h1 className="text-xl md:text-4xl font-tenor_Sans tracking-[2px] md:tracking-[4px] uppercase my-1 text-center leading-tight px-2">
                 I’m gathering your property information. I will be in touch with
                 you soon!
               </h1>

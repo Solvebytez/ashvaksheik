@@ -8,7 +8,7 @@ const PrivacyPage = () => {
       <BreadcumBanner pageTitle="Privacy Policy" bgLogo="/bg-ashvaik.jpg" />
       <Container>
         <div className="legal-copy max-w-4xl mx-auto py-20">
-          <h2 className="text-left text-3xl md:text-4xl font-tenor_Sans tracking-[6px] text-white pb-8 uppercase">
+          <h2 className="text-left text-2xl md:text-4xl font-tenor_Sans tracking-[2px] md:tracking-[6px] text-white pb-8 uppercase leading-tight">
             Privacy Policy for Individuals Interacting with Ashvak Sheik’s Real
             Estate Services
           </h2>
@@ -178,7 +178,7 @@ const PrivacyPage = () => {
             For questions regarding this Privacy Policy, contact:
           </p>
           <ul className="list-none mb-24 space-y-2 text-white">
-            <li className="font-tenor_Sans tracking-[3px] uppercase">
+            <li className="font-tenor_Sans tracking-[1px] md:tracking-[3px] uppercase">
               Ashvak Sheik
             </li>
             <li>Re/Max President Realty Brokerage</li>

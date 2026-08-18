@@ -11,7 +11,7 @@ const PressMediaPage = () => {
     />
     <Container>
       <div className="py-20 text-center max-w-2xl mx-auto space-y-6">
-        <h2 className="text-3xl font-tenor_Sans tracking-[5px] uppercase">As Seen With Ashvak</h2>
+        <h2 className="text-2xl md:text-3xl font-tenor_Sans tracking-[2px] md:tracking-[5px] uppercase px-2 leading-tight">As Seen With Ashvak</h2>
         <p className="text-white/70 leading-7">
           Media features and interviews will appear here. For press inquiries, email{" "}
           <a href="mailto:ashvak.realtor07@gmail.com" className="underline text-white">

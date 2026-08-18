@@ -45,8 +45,8 @@ const PropertyCard = ({
       
 
       {/* Info Section */}
-      <div className="p-10 relative z-1 bg-black text-center flex flex-col items-center justify-center space-y-2 ">
-        <h3 className="text-xl tracking-[4px] track font-tenor_Sans text-white">
+      <div className="p-6 md:p-10 relative z-1 bg-black text-center flex flex-col items-center justify-center space-y-2 ">
+        <h3 className="text-lg md:text-xl tracking-[2px] md:tracking-[4px] font-tenor_Sans text-white leading-snug">
           {title}
         </h3>
         {address && (
@@ -69,10 +69,16 @@ const PropertyCard = ({
             Publish At: {date}
           </p>
         )}
+        {proPertylink && (
+          <LinkButton href={proPertylink} btnText="View Property" className="mt-4 md:hidden" />
+        )}
+        {postlink && (
+          <LinkButton href={postlink} btnText="View Post" className="mt-4 md:hidden" />
+        )}
       </div>
 
       {/* Hover Overlay */}
-      <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+      <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 items-center justify-center hidden md:flex">
       {proPertylink&& <LinkButton
           href={proPertylink}
           btnText=" View Property"

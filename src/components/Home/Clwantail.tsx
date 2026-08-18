@@ -44,15 +44,15 @@ const Clwantail = () => {
     
   return (
    <Container>
-     <section className="bg-black text-white py-16 px-8 overflow-hidden md:overflow-visible">
-    <h2 className="text-center text-5xl  mb-12 tenor_Sans tracking-[6px]">FROM MY CLIENTELE</h2>
+     <section className="bg-black text-white py-12 md:py-16 px-2 md:px-8 overflow-hidden md:overflow-visible">
+    <h2 className="text-center text-3xl md:text-5xl mb-8 md:mb-12 tenor_Sans tracking-[2px] md:tracking-[6px] px-2">FROM MY CLIENTELE</h2>
     <div className=" text-center">
     <div className="slider-container">
     <Slider {...settings}>
       {testimonials.slice(0, 12).map((testimonial, index) => (
         <div key={index} className="flex flex-col items-center justify-center my-5">
-          <div className="text-6xl text-gray-400 mb-4 w-full text-center"> <Quote size={85} className="m-auto" /></div>
-          <p className="text-md leading-relaxed tracking-[1px] italic mb-6">{testimonial.quote}</p>
+          <div className="text-6xl text-gray-400 mb-4 w-full text-center"> <Quote size={48} className="m-auto md:h-[85px] md:w-[85px]" /></div>
+          <p className="text-sm md:text-md leading-relaxed tracking-[1px] italic mb-6 px-2">{testimonial.quote}</p>
           <p className="tracking-[2px] tenor_Sans text-xl">- {testimonial.name}</p>
         </div>
       ))}

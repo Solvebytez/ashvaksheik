@@ -92,15 +92,32 @@ const PreConstruction = () => {
     ];
 
   return (
-   <div className="relative overflow-x-auto">
+   <div className="relative pb-8">
+      <div className="md:hidden space-y-4">
+        {preProject.map((project, index) => (
+          <div
+            key={`${project.projectName}-${index}`}
+            className="border border-white/15 p-4 space-y-2"
+          >
+            <h3 className="font-tenor_Sans tracking-[1.5px] uppercase text-lg">{project.projectName}</h3>
+            <p className="text-sm text-white/70">{project.location} · {project.type}</p>
+            <p className="text-sm">Occupancy: {project.occupancy}</p>
+            <button type="button" onClick={()=>{
+                    setSelectProject(project.projectName)
+                    openModal()
+                }} className="font-medium bg-white text-black py-2 px-4 border hover:text-white hover:bg-black mt-2">Interested?</button>
+          </div>
+        ))}
+      </div>
+      <div className="relative overflow-x-auto hidden md:block">
       <table className="w-full text-sm text-left text-white dark:text-white">
         <thead className="text-xs text-white-700 uppercase  dark:text-white bg-white bg-opacity-[.1]">
           <tr>
-            <th scope="col" className="px-6 py-6">PROJECT NAME</th>
-            <th scope="col" className="px-6 py-6">OCCUPANCY</th>
-            <th scope="col" className="px-6 py-6">Type</th>
-            <th scope="col" className="px-6 py-6">Location</th>
-            <th scope="col" className="px-6 py-6">Interested</th>
+            <th scope="col" className="px-4 lg:px-6 py-6">PROJECT NAME</th>
+            <th scope="col" className="px-4 lg:px-6 py-6">OCCUPANCY</th>
+            <th scope="col" className="px-4 lg:px-6 py-6">Type</th>
+            <th scope="col" className="px-4 lg:px-6 py-6">Location</th>
+            <th scope="col" className="px-4 lg:px-6 py-6">Interested</th>
           </tr>
         </thead>
         <tbody>
@@ -109,13 +126,13 @@ const PreConstruction = () => {
               key={index}
               className=" border-b border-white border-opacity-[.1]"
             >
-              <th scope="row" className="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+              <th scope="row" className="px-4 lg:px-6 py-4 font-medium text-white">
                 {project.projectName}
               </th>
-              <td className="px-6 py-4">{project.occupancy}</td>
-              <td className="px-6 py-4">{project.type}</td>
-              <td className="px-6 py-4">{project.location}</td>
-              <td className="px-6 py-4">
+              <td className="px-4 lg:px-6 py-4">{project.occupancy}</td>
+              <td className="px-4 lg:px-6 py-4">{project.type}</td>
+              <td className="px-4 lg:px-6 py-4">{project.location}</td>
+              <td className="px-4 lg:px-6 py-4">
                 <button type="button" onClick={()=>{
                     setSelectProject(project.projectName)
                     openModal()
@@ -125,6 +142,7 @@ const PreConstruction = () => {
           ))}
         </tbody>
       </table>
+      </div>
       <FullScreenModal
         isOpen={isOpen}
         closeModal={closeModal}

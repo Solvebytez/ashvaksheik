@@ -10,7 +10,7 @@ const TestimonialCard = ({ initials, name, text, image }:{initials:string;name:s
         )}
       </div>
 
-      <h3 className="text-3xl md:text-4xl tracking-[4px] text-white uppercase">
+      <h3 className="text-xl md:text-4xl tracking-[2px] md:tracking-[4px] text-white uppercase leading-tight">
         {name}
       </h3>
      </div>

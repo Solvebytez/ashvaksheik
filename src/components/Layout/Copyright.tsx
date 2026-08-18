@@ -6,7 +6,7 @@ import SocialProfile from '../Global/SocialProfile';
 const Copyright = () => {
   return (
     <footer className="bg-black text-white py-8 border-t mt-14">
-      <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
         
         <div className="text-gray-400 text-sm mt-4 md:mt-0">
           <span>Copyright © 2026 | </span>

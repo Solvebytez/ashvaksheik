@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
 import { Phone } from 'lucide-react';
@@ -10,7 +11,7 @@ const ContactWidget = () => {
 
   return (
     isVisible ? (
-      <div className="fixed bottom-10 right-10 bg-black border border-white/30 p-5 max-w-xs z-50">
+      <div className="fixed bottom-4 right-4 bg-black border border-white/30 p-4 md:p-5 w-[calc(100vw-2rem)] max-w-xs z-50">
         <div className="flex justify-center items-center text-center space-y-4 relative">
           <h2 className="text-white text-sm font-tenor_Sans tracking-[2px] uppercase">
             Do you have questions?
@@ -31,8 +32,8 @@ const ContactWidget = () => {
         </p>
       </div>
     ):(
-        <div onClick={handleClose} className='fixed bottom-10 right-10 bg-black border border-white text-white p-4 w-[55px] h-[55px] z-50 cursor-pointer flex items-center justify-center'>
-            <Phone className="h-6 w-6" />
+        <div onClick={handleClose} className='fixed bottom-4 right-4 bg-black border border-white text-white p-4 w-[48px] h-[48px] md:w-[55px] md:h-[55px] z-50 cursor-pointer flex items-center justify-center'>
+            <Phone className="h-5 w-5 md:h-6 md:w-6" />
         </div>
     )
   );

@@ -89,10 +89,10 @@ const SellersPage = () => {
       />
       <div className="bg-black text-white py-16 text-center mb-16">
         <Container>
-          <h2 className="text-5xl tracking-[5px] font-tenor_Sans uppercase">
+          <h2 className="text-2xl md:text-5xl tracking-[2px] md:tracking-[5px] font-tenor_Sans uppercase leading-tight px-2">
           A Step-by-Step First Time {"Seller's"} Guide
           </h2>
-          <p className="px-10 my-10">
+          <p className="px-2 md:px-10 my-8 md:my-10 text-sm md:text-base leading-7">
           Putting your home on the market can be a stressful process, especially when you don’t know what to expect. Fortunately, with the help of an experienced agent  and this easy to follow  guide, you can smoothly complete the process. Following these steps  will help you prepare so you can get organized and sell your home for  the best price possible.​​​​​​​
           </p>
         </Container>
@@ -118,10 +118,10 @@ const SellersPage = () => {
                   index % 2 === 0 ? "lg:pl-28" : "lg:pr-28"
                 }`}
               >
-                <h2 className="text-2xl text-white tracking-[4px] font-tenor_Sans uppercase">
+                <h2 className="text-xl md:text-2xl text-white tracking-[2px] md:tracking-[4px] font-tenor_Sans uppercase">
                   STEP {step.id}:
                 </h2>
-                <h3 className="text-4xl text-white tracking-[4px] font-tenor_Sans uppercase">
+                <h3 className="text-2xl md:text-4xl text-white tracking-[2px] md:tracking-[4px] font-tenor_Sans uppercase leading-tight">
                   {step.title}
                 </h3>
                 <p className="text-white/80 leading-7">{step.description}</p>
@@ -132,10 +132,10 @@ const SellersPage = () => {
       </Container>
       <div className="bg-black text-white py-16 text-center mt-16">
         <Container>
-          <h2 className="md:text-5xl tracking-[5px] font-tenor_Sans uppercase">
+          <h2 className="text-2xl md:text-5xl tracking-[2px] md:tracking-[5px] font-tenor_Sans uppercase">
             Congratulations!
           </h2>
-          <p className="px-10 my-10">
+          <p className="px-2 md:px-10 my-8 md:my-10 text-sm md:text-base leading-7">
             After signing the final paperwork, ownership of your home transfers
             to the buyer. Cancel utilities in your name, leave appliance
             instructions, and keep keys and garage remotes ready for closing day.
@@ -150,8 +150,8 @@ const SellersPage = () => {
           "url('https://res.cloudinary.com/luxuryp/images/w_2560,c_limit,f_auto,q_auto/xqkagi4absou6ymnzlbs/shutterstock_1315328237')",
       }}
     >
-      <div className="bg-black bg-opacity-70 text-white py-[4rem] flex flex-col justify-center items-center h-full">
-      <div className="flex flex-col items-center justify-center h-full mt-[120px]">
+      <div className="bg-black bg-opacity-70 text-white py-[4rem] flex flex-col justify-center items-center h-full px-4">
+      <div className="flex flex-col items-center justify-center h-full mt-[80px] md:mt-[120px] w-full">
         <StepForm />
       </div>
       </div>
@@ -160,7 +160,7 @@ const SellersPage = () => {
         <div className="flex flex-col justify-center">
           <div className="lg:grid grid-cols-10 pb-10 items-center justify-center gap-20">
             <div className="col-span-5">
-              <h2 className="text-3xl uppercase tracking-[5px] text-white font-tenor_Sans mb-8">
+              <h2 className="text-2xl md:text-3xl uppercase tracking-[2px] md:tracking-[5px] text-white font-tenor_Sans mb-8 leading-tight">
                 Please complete the following form to download our Home Seller{"'"}s
                 Guide.
               </h2>

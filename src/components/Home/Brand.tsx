@@ -60,7 +60,7 @@ const Brand = () => {
     <section  className="bg-[center_top_8rem] bg-fixed relative bg-cover bg-no-repeat " 
     style={{backgroundImage: "url('/bg-ashvaik.jpg')"}}>
          <div className="bg-black bg-opacity-70 text-white py-[7rem] flex flex-col">
-    <h2 className="text-center text-5xl  mb-12 tenor_Sans tracking-[6px]">As Seen In</h2>
+    <h2 className="text-center text-3xl md:text-5xl mb-8 md:mb-12 tenor_Sans tracking-[2px] md:tracking-[6px] px-4">As Seen In</h2>
     <Container>
     <div className="slider-container">
       <Slider {...settings}>

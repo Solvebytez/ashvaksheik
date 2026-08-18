@@ -103,7 +103,7 @@ const HomeSearchForm = () => {
         className="flex flex-col space-y-10 "
         onSubmit={handleSubmit(onSubmit)}
       >
-        <div className="w-full md:h-[4rem] flex md:flex-row flex-col  gap-6 justify-between">
+        <div className="w-full flex md:flex-row flex-col  gap-6 justify-between">
           <div className="w-full">
             <label className="text-lg font-bold flex gap-3 items-center text-white">
               Name:{" "}
@@ -137,7 +137,7 @@ const HomeSearchForm = () => {
             />
           </div>
         </div>
-        <div className="w-full md:h-[4rem] flex md:flex-row flex-col  gap-6 justify-between">
+        <div className="w-full flex md:flex-row flex-col  gap-6 justify-between">
           <div className="w-full">
             <label className="text-lg font-bold flex gap-3 items-center text-white">
               Location:{" "}
@@ -175,7 +175,7 @@ const HomeSearchForm = () => {
             />
           </div>
         </div>
-        <div className="w-full md:h-[4rem] flex md:flex-row flex-col  gap-6 justify-between">
+        <div className="w-full flex md:flex-row flex-col  gap-6 justify-between">
           <div className="w-full">
             <label className="text-lg font-bold flex gap-3 items-center text-white">
               Bedroom:{" "}
@@ -213,7 +213,7 @@ const HomeSearchForm = () => {
             />
           </div>
         </div>
-        <div className="w-full md:h-[4rem] flex md:flex-row flex-col  gap-6 justify-between">
+        <div className="w-full flex md:flex-row flex-col  gap-6 justify-between">
           <div className="w-full">
             <label className="text-lg font-bold flex gap-3 items-center text-white">
               Square Footage (Sq Ft):{" "}
@@ -367,7 +367,7 @@ const HomeSearchForm = () => {
             />
           </div>
         </div>
-        <div className="w-full h-[4rem] flex flex-col  gap-6 justify-between ">
+        <div className="w-full flex flex-col gap-6 justify-between pb-8">
           <SubmitButton
             btnText="Submit Your QUERIES"
             className="!bottom-black text-white"

@@ -108,10 +108,10 @@ const BuyersPage = () => {
       />
       <div className="bg-black text-white py-16 text-center mb-16">
         <Container>
-          <h2 className="text-5xl tracking-[5px] font-tenor_Sans uppercase">
-            A Step-by-Step First Time <br /> {"Buyer's"} Guide
+          <h2 className="text-2xl md:text-5xl tracking-[2px] md:tracking-[5px] font-tenor_Sans uppercase leading-tight px-2">
+            A Step-by-Step First Time <br className="hidden md:block" /> {"Buyer's"} Guide
           </h2>
-          <p className="px-10 my-10">
+          <p className="px-2 md:px-10 my-8 md:my-10 text-sm md:text-base leading-7">
             Buying a home is one of the most exciting milestones of your life.
             To prepare yourself for this moment, you need to know what to expect
             during the process. This step-by-step first time buyer’s guide
@@ -141,10 +141,10 @@ const BuyersPage = () => {
                   index % 2 === 0 ? "lg:pl-28" : "lg:pr-28"
                 }`}
               >
-                <h2 className="text-2xl text-white tracking-[4px] font-tenor_Sans uppercase">
+                <h2 className="text-xl md:text-2xl text-white tracking-[2px] md:tracking-[4px] font-tenor_Sans uppercase">
                   STEP {step.id}:
                 </h2>
-                <h3 className="text-4xl text-white tracking-[4px] font-tenor_Sans uppercase">
+                <h3 className="text-2xl md:text-4xl text-white tracking-[2px] md:tracking-[4px] font-tenor_Sans uppercase leading-tight">
                   {step.title}
                 </h3>
                 <p className="text-white/80 leading-7">{step.description}</p>
@@ -176,10 +176,10 @@ const BuyersPage = () => {
                   index % 2 === 0 ? "lg:pl-28" : "lg:pr-28"
                 }`}
               >
-                <h2 className="text-2xl text-white tracking-[4px] font-tenor_Sans uppercase">
+                <h2 className="text-xl md:text-2xl text-white tracking-[2px] md:tracking-[4px] font-tenor_Sans uppercase">
                   STEP {step.id+4}:
                 </h2>
-                <h3 className="text-4xl text-white tracking-[4px] font-tenor_Sans uppercase">
+                <h3 className="text-2xl md:text-4xl text-white tracking-[2px] md:tracking-[4px] font-tenor_Sans uppercase leading-tight">
                   {step.title}
                 </h3>
                 <p className="text-white/80 leading-7">{step.description}</p>
@@ -190,10 +190,10 @@ const BuyersPage = () => {
       </Container>
       <div className="bg-black text-white py-16 text-center my-16">
         <Container>
-          <h2 className="md:text-5xl tracking-[5px] font-tenor_Sans uppercase">
+          <h2 className="text-2xl md:text-5xl tracking-[2px] md:tracking-[5px] font-tenor_Sans uppercase">
             Congratulations!
           </h2>
-          <p className="px-10 my-10">
+          <p className="px-2 md:px-10 my-8 md:my-10 text-sm md:text-base leading-7">
             After signing the final paperwork to complete the purchase, you are
             now the owner of a new house. It may take a few days for your loan
             to be funded once the paperwork has been returned to the lender, but
@@ -206,7 +206,7 @@ const BuyersPage = () => {
         <div className="flex flex-col justify-center">
           <div className="lg:grid grid-cols-10 pb-10 items-center justify-center gap-20">
             <div className="col-span-5">
-              <h2 className="text-3xl text-white uppercase tracking-[5px] font-tenor_Sans mb-8">
+              <h2 className="text-2xl md:text-3xl text-white uppercase tracking-[2px] md:tracking-[5px] font-tenor_Sans mb-8 leading-tight">
                 Please complete the following form to download our Home Buyer{"'"}s
                 Guide.
               </h2>

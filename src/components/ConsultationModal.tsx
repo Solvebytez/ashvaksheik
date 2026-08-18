@@ -19,11 +19,11 @@ const ConsultationModal = () => {
         <div className="bg-black bg-opacity-70 text-white flex flex-col items-center justify-center py-16 w-full space-y-7 text-center">
           <Container>
             <div className="flex flex-col space-y-10 items-center justify-center">
-              <h2 className="text-4xl tracking-[4px] font-tenor_Sans uppercase leading-[45px]">
+              <h2 className="text-2xl md:text-4xl tracking-[2px] md:tracking-[4px] font-tenor_Sans uppercase leading-tight px-2">
                 MY GOAL IS TO PROVIDE YOU WITH THE MOST PERSONALIZED SERVICE
                 THAT IS DESIGNED TO HELP YOU BUY YOUR DREAM HOME.
               </h2>
-              <button type='button' onClick={openModal} className={`hover:bg-white hover:text-black border-2 border-white font-bold tracking-[1.5px] text-[14px] uppercase px-11 py-4`}>Schedule A Consultation</button>
+              <button type='button' onClick={openModal} className={`hover:bg-white hover:text-black border-2 border-white font-bold tracking-[1.5px] text-[12px] md:text-[14px] uppercase px-6 md:px-11 py-3 md:py-4`}>Schedule A Consultation</button>
             </div>
           </Container>
         </div>

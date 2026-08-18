@@ -1,13 +1,12 @@
 "use client";
 import { X } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const pages = [
   { url: "/", label: "HOME" },
   { url: "/about", label: "ABOUT Ashvak" },
   { url: "/pre-construction", label: "Pre Construction" },
-  // { url: "/properties/sold", label: "PAST TRANSACTIONS" },
   { url: "/home-search", label: "HOME SEARCH" },
   { url: "/home-valuation", label: "HOME VALUATION" },
   { url: "/neighborhoods", label: "NEIGHBORHOODS" },
@@ -20,8 +19,6 @@ const pages = [
   },
   { url: "/blog", label: "Blog" },
   { url: "/testimonials", label: "TESTIMONIALS" },
-  // { url: "/lets-connect", label: "LET'S CONNECT" },
-  // { url: "/my-search-portal", label: "MY SEARCH PORTAL" },
 ];
 
 type subMenuProps = {
@@ -34,53 +31,69 @@ const SlideMenu = ({ isMenuOpen, onCLick, openModal }: subMenuProps) => {
   const [isSubmenuOpen, setSubmenuOpen] = useState<string | null>(null);
 
   const handleSubmenuToggle = (label: string) => {
-    console.log(label);
     setSubmenuOpen(isSubmenuOpen === label ? null : label);
   };
 
+  useEffect(() => {
+    document.body.classList.toggle("overflow-hidden", isMenuOpen);
+    return () => document.body.classList.remove("overflow-hidden");
+  }, [isMenuOpen]);
+
   return (
     <div className="relative">
-      {/* Menu Icon */}
-
-      {/* Slide Navigation */}
+      {isMenuOpen && (
+        <button
+          type="button"
+          aria-label="Close menu overlay"
+          className="fixed inset-0 z-30 bg-black/60"
+          onClick={onCLick}
+        />
+      )}
       <div
-        className={`fixed top-0 right-0 h-full w-[400px] bg-black text-white border-l border-white/20 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-full w-full max-w-[320px] sm:max-w-[400px] bg-black text-white border-l border-white/20 transform transition-transform duration-300 ease-in-out overflow-y-auto ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         } z-40`}
       >
-        {/* Close Button */}
         <button
-          className="p-4 bg-transparent text-white absolute top-4 right-4"
+          className="p-4 bg-transparent text-white absolute top-2 right-2"
           onClick={onCLick}
+          aria-label="Close menu"
         >
-          <X size={32} />
+          <X size={28} />
         </button>
 
-        {/* Navigation Links */}
-        <nav className="flex flex-col items-center mt-20 pr-0 md:pr-10  pl-10 h-full">
+        <nav className="flex flex-col items-center mt-16 px-6 pb-24 h-auto">
           {pages.map((item) => {
             return (
               <span
                 key={item.label}
-                className="py-3 text-[21px] text-white tenor_Sans border-b border-white/15 w-full text-center"
+                className="py-3 text-lg md:text-[21px] text-white tenor_Sans border-b border-white/15 w-full text-center"
               >
-                <Link
-                  onClick={() =>
-                    item.subMenu && handleSubmenuToggle(item.label)
-                  }
-                  href={item.url || "#"}
-                  key={item.label}
-                  className="py-3 text-[21px] text-white tenor_Sans  w-full text-center uppercase"
-                >
-                  {item.label}
-                </Link>
+                {item.subMenu ? (
+                  <button
+                    type="button"
+                    onClick={() => handleSubmenuToggle(item.label)}
+                    className="py-3 text-lg md:text-[21px] text-white tenor_Sans w-full text-center uppercase"
+                  >
+                    {item.label}
+                  </button>
+                ) : (
+                  <Link
+                    onClick={onCLick}
+                    href={item.url || "/"}
+                    className="py-3 text-lg md:text-[21px] text-white tenor_Sans w-full text-center uppercase"
+                  >
+                    {item.label}
+                  </Link>
+                )}
                 {item.subMenu && isSubmenuOpen === item.label && (
-                  <div className="mt-2 space-y-1">
+                  <div className="mt-2 space-y-1 pb-2">
                     {item.subMenu.map((subItem) => (
                       <Link
                         key={subItem.label}
                         href={subItem.url}
-                        className="block text-sm text-white/70 tracking-[2px] uppercase"
+                        onClick={onCLick}
+                        className="block text-sm text-white/70 tracking-[2px] uppercase py-2"
                       >
                         {subItem.label}
                       </Link>
@@ -90,14 +103,17 @@ const SlideMenu = ({ isMenuOpen, onCLick, openModal }: subMenuProps) => {
               </span>
             );
           })}
-          <span className="py-3 text-[21px] text-white tenor_Sans border-b border-white/15 w-full text-center">
-            <Link
-              onClick={openModal}
-              href={"#"}
-              className="py-3 text-[21px] text-white tenor_Sans  w-full text-center uppercase"
+          <span className="py-3 text-lg md:text-[21px] text-white tenor_Sans border-b border-white/15 w-full text-center">
+            <button
+              type="button"
+              onClick={() => {
+                onCLick();
+                openModal();
+              }}
+              className="py-3 text-lg md:text-[21px] text-white tenor_Sans w-full text-center uppercase"
             >
               {"Let's"} Connect
-            </Link>
+            </button>
           </span>
         </nav>
       </div>

@@ -11,7 +11,7 @@ const Pagination = ({totalPages,currentPage,setCurrentPage}:PaginationProps) => 
 
    
   return (
-    <div className="flex items-center space-x-4">
+    <div className="flex items-center justify-center flex-wrap space-x-2 md:space-x-4">
     <button
       className={`p-2 ${currentPage === 1 ? 'text-white/30' : 'text-white'}`}
       onClick={() => setCurrentPage(currentPage - 1)}

@@ -145,7 +145,7 @@ const NeighborhoodsPage = () => {
       />
       <div className="bg-black pb-20">
         <div className="flex flex-col justify-center py-10 items-center flex-wrap">
-          <h2 className="text-center md:text-5xl font-tenor_Sans tracking-[5px] text-white py-10 uppercase">
+          <h2 className="text-center text-2xl md:text-5xl font-tenor_Sans tracking-[2px] md:tracking-[5px] text-white py-6 md:py-10 uppercase px-4">
             Neighborhoods
           </h2>
         </div>

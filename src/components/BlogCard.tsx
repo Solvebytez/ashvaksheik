@@ -106,8 +106,8 @@ const BlogCard = () => {
   </div>
 
   {/* Info Section */}
-  <div className="p-10 relative z-1 bg-black text-center flex flex-col items-center justify-center space-y-2">
-    <h3 className="text-2xl tracking-[2px] font-tenor_Sans text-white">
+  <div className="p-6 md:p-10 relative z-1 bg-black text-center flex flex-col items-center justify-center space-y-2">
+    <h3 className="text-xl md:text-2xl tracking-[1px] md:tracking-[2px] font-tenor_Sans text-white leading-snug">
       {blog.title}
     </h3>
     <p className="text-sm text-white/70 font-bold tracking-[1px]">
@@ -118,10 +118,15 @@ const BlogCard = () => {
         Publish at: {formatDate(blog.publishedAt)}
       </p>
     )}
+    <LinkButton
+      href={`/blog/${blog.slug}`}
+      btnText="View Post"
+      className="mt-4 md:hidden"
+    />
   </div>
 
   {/* Hover Overlay */}
-  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 items-center justify-center hidden md:flex">
     <LinkButton
       href={`/blog/${blog.slug}`}
       btnText="View Post"

@@ -13,7 +13,7 @@ const ContactCard = ({cardType}:{cardType?:string}) => {
   return (
     <div className="max-w-sm mx-auto  rounded-lg shadow-md p-4">
       <div className="flex items-center mb-4 gap-4">
-       <div className="relative w-32 h-20">
+       <div className="relative w-20 h-20 shrink-0">
        <Image
           src="/profile_pic.jpg"
           alt="Agent"
@@ -35,13 +35,13 @@ const ContactCard = ({cardType}:{cardType?:string}) => {
         <a href="tel:6478900982" className={`text-xs ${IsWhite} underline`}>647-890-0982</a>
       </div>
      
-      <div className="mb-0 py-2 flex justify-between">
+      <div className="mb-0 py-2 flex flex-col gap-1 sm:flex-row sm:justify-between">
         <span className={`text-xs ${IsWhite}`}>Email:</span>
-        <a href="mailto:ashvak.realtor07@gmail.com" className={`text-xs ${IsWhite} underline`}>ashvak.realtor07@gmail.com</a>
+        <a href="mailto:ashvak.realtor07@gmail.com" className={`text-xs ${IsWhite} underline break-all sm:text-right`}>ashvak.realtor07@gmail.com</a>
       </div>
-      <div className="mb-4 py-2 flex justify-between">
+      <div className="mb-4 py-2 flex flex-col gap-1 sm:flex-row sm:justify-between">
         <span className={`text-xs ${IsWhite}`}>Address:</span>
-        <p className={`text-xs ${IsWhite} text-right`}>
+        <p className={`text-xs ${IsWhite} sm:text-right`}>
         155 Salvation Rd, Brampton, ON L7A 0W7
           </p>
       </div>
