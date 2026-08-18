@@ -42,7 +42,7 @@ const AboutHome = ({openModal}:{openModal:()=>void;}) => {
           </div>
           <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
             <LinkButton btnText="Learn More" href="/about" />
-            <LinkButton onClick={openModal} btnText="Let's Connect" href="#" className="bg-white text-black hover:bg-black hover:text-black" />
+            <LinkButton onClick={openModal} btnText="Let's Connect" href="#" className="bg-white text-black hover:bg-transparent hover:text-white" />
           </div>
         </div>
       </div>

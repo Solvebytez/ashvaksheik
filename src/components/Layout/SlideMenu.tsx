@@ -44,13 +44,13 @@ const SlideMenu = ({ isMenuOpen, onCLick, openModal }: subMenuProps) => {
 
       {/* Slide Navigation */}
       <div
-        className={`fixed top-0 right-0 h-full w-[400px] bg-white text-black transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-full w-[400px] bg-black text-white border-l border-white/20 transform transition-transform duration-300 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         } z-40`}
       >
         {/* Close Button */}
         <button
-          className="p-4 bg-transparent text-black absolute top-4 right-4"
+          className="p-4 bg-transparent text-white absolute top-4 right-4"
           onClick={onCLick}
         >
           <X size={32} />
@@ -62,7 +62,7 @@ const SlideMenu = ({ isMenuOpen, onCLick, openModal }: subMenuProps) => {
             return (
               <span
                 key={item.label}
-                className="py-3 text-[21px] text-black tenor_Sans border-b w-full text-center"
+                className="py-3 text-[21px] text-white tenor_Sans border-b border-white/15 w-full text-center"
               >
                 <Link
                   onClick={() =>
@@ -70,7 +70,7 @@ const SlideMenu = ({ isMenuOpen, onCLick, openModal }: subMenuProps) => {
                   }
                   href={item.url || "#"}
                   key={item.label}
-                  className="py-3 text-[21px] text-black tenor_Sans  w-full text-center uppercase"
+                  className="py-3 text-[21px] text-white tenor_Sans  w-full text-center uppercase"
                 >
                   {item.label}
                 </Link>
@@ -80,7 +80,7 @@ const SlideMenu = ({ isMenuOpen, onCLick, openModal }: subMenuProps) => {
                       <Link
                         key={subItem.label}
                         href={subItem.url}
-                        className="block text-sm text-gray-700"
+                        className="block text-sm text-white/70 tracking-[2px] uppercase"
                       >
                         {subItem.label}
                       </Link>
@@ -90,11 +90,11 @@ const SlideMenu = ({ isMenuOpen, onCLick, openModal }: subMenuProps) => {
               </span>
             );
           })}
-          <span className="py-3 text-[21px] text-black tenor_Sans border-b w-full text-center">
+          <span className="py-3 text-[21px] text-white tenor_Sans border-b border-white/15 w-full text-center">
             <Link
               onClick={openModal}
               href={"#"}
-              className="py-3 text-[21px] text-black tenor_Sans  w-full text-center uppercase"
+              className="py-3 text-[21px] text-white tenor_Sans  w-full text-center uppercase"
             >
               {"Let's"} Connect
             </Link>

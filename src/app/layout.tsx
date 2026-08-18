@@ -84,7 +84,7 @@ export default async function RootLayout({
       </head>
       <ApolloWrapper>
         <body
-          className={`${montserrat.variable} ${tenor_Sans.variable} ${montserrat.className} montserrat`}
+          className={`${montserrat.variable} ${tenor_Sans.variable} ${montserrat.className} montserrat bg-black text-white`}
         >
           {/* Google Tag Manager (noscript) */}
           <noscript>

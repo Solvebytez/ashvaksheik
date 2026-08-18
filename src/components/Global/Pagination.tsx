@@ -13,7 +13,7 @@ const Pagination = ({totalPages,currentPage,setCurrentPage}:PaginationProps) => 
   return (
     <div className="flex items-center space-x-4">
     <button
-      className={`p-2 ${currentPage === 1 ? 'text-gray-400' : 'text-black'}`}
+      className={`p-2 ${currentPage === 1 ? 'text-white/30' : 'text-white'}`}
       onClick={() => setCurrentPage(currentPage - 1)}
       disabled={currentPage === 1}
     >
@@ -24,7 +24,7 @@ const Pagination = ({totalPages,currentPage,setCurrentPage}:PaginationProps) => 
       return (
         <button
           key={page}
-          className={`p-2 font-bold ${currentPage === page ? 'bg-black text-white px-5' : 'text-black'}`}
+          className={`p-2 font-bold tracking-[2px] ${currentPage === page ? 'bg-white text-black px-5' : 'text-white'}`}
           onClick={() => setCurrentPage(page)}
         >
           {page}
@@ -32,7 +32,7 @@ const Pagination = ({totalPages,currentPage,setCurrentPage}:PaginationProps) => 
       );
     })}
     <button
-      className={`p-2 ${currentPage === totalPages ? 'text-gray-400' : 'text-black'}`}
+      className={`p-2 ${currentPage === totalPages ? 'text-white/30' : 'text-white'}`}
       onClick={() => setCurrentPage(currentPage + 1)}
       disabled={currentPage === totalPages}
     >

@@ -45,7 +45,7 @@ const GuideDownloadForm = ({ guideName }: { guideName: string }) => {
 
   if (submitted) {
     return (
-      <p className="text-black font-semibold tracking-[1px]">
+      <p className="text-white font-tenor_Sans tracking-[2px] uppercase">
         Thank you. I will email the {guideName} shortly.
       </p>
     );
@@ -56,26 +56,26 @@ const GuideDownloadForm = ({ guideName }: { guideName: string }) => {
       <input
         type="text"
         placeholder="Name"
-        className="w-full bg-white border border-black p-2 text-black mb-4 focus:outline-none h-[4rem]"
+        className="w-full bg-transparent border-b border-white/40 p-2 text-white mb-6 focus:outline-none focus:border-white h-[4rem] placeholder:text-white/40"
         {...register("name", { required: true })}
       />
       <input
         type="email"
         placeholder="Email Address"
-        className="w-full bg-white border border-black p-2 text-black mb-4 focus:outline-none h-[4rem]"
+        className="w-full bg-transparent border-b border-white/40 p-2 text-white mb-6 focus:outline-none focus:border-white h-[4rem] placeholder:text-white/40"
         {...register("email", { required: true })}
       />
-      <div className="text-xs text-black mb-4">
+      <div className="text-xs text-white/70 mb-6">
         <label className="flex items-start gap-2">
           <input
             type="checkbox"
-            className="mr-2 mt-1"
+            className="mr-2 mt-1 accent-white"
             {...register("terms", { required: true })}
           />
-          <span className="!text-justify">
+          <span className="!text-justify tracking-[1px] leading-5">
             By providing Ashvak Sheik your contact information, you acknowledge
             and agree to our{" "}
-            <Link href="/privacy" className="underline">
+            <Link href="/privacy" className="underline text-white">
               Privacy Policy
             </Link>{" "}
             and consent to receiving marketing communications, including through
@@ -85,11 +85,7 @@ const GuideDownloadForm = ({ guideName }: { guideName: string }) => {
           </span>
         </label>
       </div>
-      <SubmitButton
-        btnText="Send"
-        className="!border-black text-black"
-        disabled={isPending}
-      />
+      <SubmitButton btnText="Send" disabled={isPending} />
     </form>
   );
 };

@@ -6,7 +6,7 @@ import TestimonialPaginations from "@/components/Testimonials/TestimonialPaginat
 
 const TestimonialsPage = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-black text-white">
       <BreadcumBanner
         pageTitle="Testimonials"
         description="Browse what my clients have to say about me."

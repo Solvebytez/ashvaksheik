@@ -80,7 +80,7 @@ const BlogCard = () => {
       {blogs?.map((blog) => (
         <div
   key={blog.documentId}
-  className="relative group overflow-hidden shadow-md bg-white"
+  className="relative group overflow-hidden border border-white/15 bg-black"
 >
   <div className="w-full overflow-hidden">
     {(() => {
@@ -98,7 +98,7 @@ const BlogCard = () => {
       className="w-full h-auto object-contain"
     />
       ) : (
-        <div className="flex aspect-[8/5] w-full items-center justify-center bg-neutral-200 text-sm text-neutral-600">
+        <div className="flex aspect-[8/5] w-full items-center justify-center bg-white/5 text-sm text-white/60">
           No image
         </div>
       );
@@ -106,26 +106,26 @@ const BlogCard = () => {
   </div>
 
   {/* Info Section */}
-  <div className="p-10 relative z-1 bg-white text-center flex flex-col items-center justify-center space-y-2">
-    <h3 className="text-2xl tracking-[2px] font-tenor_Sans text-black">
+  <div className="p-10 relative z-1 bg-black text-center flex flex-col items-center justify-center space-y-2">
+    <h3 className="text-2xl tracking-[2px] font-tenor_Sans text-white">
       {blog.title}
     </h3>
-    <p className="text-sm text-black font-bold tracking-[1px]">
+    <p className="text-sm text-white/70 font-bold tracking-[1px]">
       {(blog.ShortDescription ?? "").slice(0, 100)}
     </p>
     {blog.publishedAt && (
-      <p className="text-sm mt-2 tracking-[2px] text-black">
+      <p className="text-sm mt-2 tracking-[2px] text-white/50">
         Publish at: {formatDate(blog.publishedAt)}
       </p>
     )}
   </div>
 
   {/* Hover Overlay */}
-  <div className="absolute inset-0 bg-white/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
     <LinkButton
       href={`/blog/${blog.slug}`}
       btnText="View Post"
-      className="border-2 !border-black px-4 py-2 font-semibold bg-black transition-colors duration-300 transform translate-y-full group-hover:translate-y-0 hover:bg-black"
+      className="border-2 border-white px-4 py-2 font-semibold bg-transparent transition-colors duration-300 transform translate-y-full group-hover:translate-y-0 hover:bg-white hover:text-black"
     />
   </div>
 </div>

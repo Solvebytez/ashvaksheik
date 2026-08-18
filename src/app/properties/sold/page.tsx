@@ -11,10 +11,10 @@ const SoldProperties = () => {
         bgLogo="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ay4wxtapckx0qwydoh5v/img_2129"
       />
 
-      <div className="bg-white pb-20 pt-12">
+      <div className="bg-black pb-20 pt-12">
         <Container>
-          <div className="text-black text-center space-y-6 py-10">
-            <p className="max-w-2xl mx-auto">
+          <div className="text-white text-center space-y-6 py-10">
+            <p className="max-w-2xl mx-auto text-white/80">
               Want to see recent GTA results or get a home valuation? Reach out
               and I will walk you through comparable sales in your neighbourhood.
             </p>
@@ -22,12 +22,10 @@ const SoldProperties = () => {
               <LinkButton
                 href="/home-valuation"
                 btnText="Home Valuation"
-                className="!border-black text-black"
               />
               <LinkButton
                 href="/home-search"
                 btnText="Search Homes"
-                className="!border-black text-black"
               />
             </div>
           </div>

@@ -25,7 +25,7 @@ export default function TestimonialsPagination() {
 
   return (
     <div>      
-  <div className="bg-white-100 py-8 px-4 md:px-8 lg:px-16 xl:px-36 2xl:px-72 flex flex-col justify-center items-center">
+  <div className="bg-black py-8 px-4 md:px-8 lg:px-16 xl:px-36 2xl:px-72 flex flex-col justify-center items-center">
         <Container className="">
           {currentTestimonials.map((testimonial) => (
             <TestimonialCard

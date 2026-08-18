@@ -80,7 +80,7 @@ const buyersSteps = [
 
 const SellersPage = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-black text-white">
       <BreadcumBanner
         pageTitle="Seller's Guide"
         description="Everything you need to know about putting your home on the market, accepting an offer, and closing on your home."
@@ -118,13 +118,13 @@ const SellersPage = () => {
                   index % 2 === 0 ? "lg:pl-28" : "lg:pr-28"
                 }`}
               >
-                <h2 className="text-2xl text-black tracking-[4px] font-tenor_Sans uppercase">
+                <h2 className="text-2xl text-white tracking-[4px] font-tenor_Sans uppercase">
                   STEP {step.id}:
                 </h2>
-                <h3 className="text-4xl text-black tracking-[4px] font-tenor_Sans uppercase">
+                <h3 className="text-4xl text-white tracking-[4px] font-tenor_Sans uppercase">
                   {step.title}
                 </h3>
-                <p className="text-black">{step.description}</p>
+                <p className="text-white/80 leading-7">{step.description}</p>
               </div>
             </div>
           ))}
@@ -160,7 +160,7 @@ const SellersPage = () => {
         <div className="flex flex-col justify-center">
           <div className="lg:grid grid-cols-10 pb-10 items-center justify-center gap-20">
             <div className="col-span-5">
-              <h2 className="text-3xl uppercase tracking-[5px] text-black font-tenor_Sans mb-8">
+              <h2 className="text-3xl uppercase tracking-[5px] text-white font-tenor_Sans mb-8">
                 Please complete the following form to download our Home Seller{"'"}s
                 Guide.
               </h2>

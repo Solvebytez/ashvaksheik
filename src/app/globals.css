@@ -1,42 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Tenor+Sans&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
- 
-}
-
-:root {
-  --font-montserrat: 'Montserrat', sans-serif;
-  --font-tenor-sans: 'Tenor Sans', sans-serif;
-}
-
-.font-tenor_Sans{
-  font-family: "Tenor Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-} */
-
-body {
-  font-family: var(--font-montserrat), sans-serif; /* Or switch to --font-tenor-sans */
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #000000;
+  --foreground: #f5f5f5;
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #000000;
+  font-family: var(--font-montserrat), sans-serif;
 }
 
 @layer utilities {
@@ -163,4 +137,24 @@ body {
 
 .single__single-value {
   color: #fff!important;
+}
+
+.legal-copy {
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.85;
+  letter-spacing: 0.02em;
+}
+
+.legal-copy h1,
+.legal-copy h2,
+.legal-copy h3 {
+  color: #ffffff;
+  font-family: var(--font-tenor-sans);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.legal-copy a {
+  color: #ffffff;
 }
