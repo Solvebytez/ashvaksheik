@@ -9,7 +9,7 @@ const Copyright = () => {
       <div className="flex flex-col md:flex-row justify-between items-center">
         
         <div className="text-gray-400 text-sm mt-4 md:mt-0">
-          <span>Copyright © 2025 | </span>
+          <span>Copyright © 2026 | </span>
           <Link href="/privacy" className="text-white hover:underline font-semibold">
             Privacy Policy
           </Link>

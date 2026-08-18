@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import BreadcumBanner from "@/components/Global/BreadcumBanner";
 import Container from "@/components/Global/Container";
-import SubmitButton from "@/components/Global/SubmitButton";
 import Clwantail from "@/components/Home/Clwantail";
 import WorkWith from "@/components/Home/WorkWith";
 import ImageCard1 from "@/components/ImageCard1";
 import Image from "next/image";
 import StepForm from "@/components/Form/Step-Form/StepForm";
 import { seTtingsData } from "@/lib/Data/SettingSData";
+import GuideDownloadForm from "@/components/Form/GuideDownloadForm";
 
 
 
@@ -163,40 +163,10 @@ const SellersPage = () => {
           <div className="lg:grid grid-cols-10 pb-10 items-center justify-center gap-20">
             <div className="col-span-5">
               <h2 className="text-3xl uppercase tracking-[5px] text-black font-tenor_Sans mb-8">
-                Please complete the following form to download our Home {"Buyer's"}
+                Please complete the following form to download our Home Seller{"'"}s
                 Guide.
               </h2>
-              <form>
-                <input
-                  type="email"
-                  placeholder="Name"
-                  className="w-full bg-white border border-black  p-2 text-black mb-4 focus:outline-none h-[4rem]"
-                />
-                <input
-                  type="email"
-                  placeholder="Email Address"
-                  className="w-full bg-white border border-black  p-2 text-black mb-4 focus:outline-none h-[4rem]"
-                />
-                <div className="text-xs text-black mb-4">
-                  <input type="checkbox" className="mr-2" />
-                  <span className="!text-justify">
-                    By providing  Ashvak Sheik your contact information, you
-                    acknowledge and agree to our{" "}
-                    <a href="/privacy-policy" className=" underline">
-                      Privacy Policy
-                    </a>{" "}
-                    and consent to receiving marketing communications, including
-                    through automated calls, texts, and emails, some of which
-                    may use artificial or prerecorded voices. This consent isn’t
-                    necessary for purchasing any products or services and you
-                    may opt out at any time. To opt out from texts, you can
-                    reply, ‘stop’ at any time. To opt out from emails, you can
-                    click on the unsubscribe link in the emails. Message and
-                    data rates may apply.
-                  </span>
-                </div>
-                <SubmitButton btnText="Send" className="!border-black text-black" />
-              </form>
+              <GuideDownloadForm guideName="Home Seller's Guide" />
             </div>
             <div className="col-span-4">
               <div

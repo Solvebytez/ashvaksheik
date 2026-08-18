@@ -23,12 +23,12 @@ const ContactWidget = () => {
         <p className="text-gray-700 text-xs mt-1 text-center">
           Call or text today, we are here to help!
         </p>
-        <div className="flex items-center text-blue-500 font-bold mt-2 justify-center">
+        <a href="tel:6478900982" className="flex items-center text-blue-500 font-bold mt-2 justify-center">
           <Phone className="h-5 w-5 mr-1" />
-          <span> 647-890-0982</span>
-        </div>
+          <span>647-890-0982</span>
+        </a>
         <p className="text-gray-500 text-[10px] mt-2 text-center">
-          I agree to be contacted by theultragroup via text, call & email. To opt-out, reply {'stop'} or click unsubscribe.
+          I agree to be contacted by Ashvak Sheik, Re/Max President Realty Brokerage via text, call & email. To opt-out, reply {'stop'} or click unsubscribe.
         </p>
       </div>
     ):(

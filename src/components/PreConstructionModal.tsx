@@ -33,18 +33,17 @@ const ContactModal = ({prijectName}:{prijectName:string}) => {
         },
         body: JSON.stringify(data),
       });
-      if (response.status === 200) {
-        const result = await response.json();
-        console.log("API Response:", result);
-        setIspending(false); // Handle success, e.g., show a success message or move to the next step
+      if (response.ok) {
         setisShowForm(true);
         toast("Thank You for your Interest!");
       } else {
-        console.error("API call failed:", response.statusText);
-        // Handle failure, e.g., show an error message
+        toast("Something went wrong. Please try again or call 647-890-0982.");
       }
     } catch (error) {
       console.error("Error submitting form:", error);
+      toast("Something went wrong. Please try again or call 647-890-0982.");
+    } finally {
+      setIspending(false);
     }
   };
 
@@ -71,9 +70,12 @@ const ContactModal = ({prijectName}:{prijectName:string}) => {
                 <p className="text-sm tracking-[2px] font-bold uppercase text-center md:text-left">
                   PHONE NUMBER
                 </p>
-                <p className="text-sm tracking-[2px] font-bold uppercase underline text-center md:text-left">
+                <a
+                  href="tel:6478900982"
+                  className="text-sm tracking-[2px] font-bold uppercase underline text-center md:text-left"
+                >
                 647-890-0982
-                </p>
+                </a>
               </div>
             </div>
             <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start  gap-4">
@@ -85,13 +87,16 @@ const ContactModal = ({prijectName}:{prijectName:string}) => {
                 <p className="text-sm tracking-[2px] font-bold uppercase text-center md:text-left">
                   EMAIL
                 </p>
-                <p className="text-sm tracking-[2px] font-bold uppercase underline text-center md:text-left">
+                <a
+                  href="mailto:ashvak.realtor07@gmail.com"
+                  className="text-sm tracking-[2px] font-bold uppercase underline text-center md:text-left"
+                >
                 ashvak.realtor07@gmail.com
-                </p>
+                </a>
               </div>
             </div>
             <h3 className="text-2xl tracking-[4px] font-tenor_Sans uppercase text-center md:text-left">
-            The Alliance Realty Group | Century 21 Property Zone Realty Inc
+            Re/Max President Realty Brokerage
             </h3>
 
             <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start  gap-4">
@@ -128,7 +133,7 @@ const ContactModal = ({prijectName}:{prijectName:string}) => {
                 </label>
                 <input
                   type="text"
-                  id="propertyname"
+                  id="precon-name"
                   {...register("name", { required: true })}
                   className={` bg-transparent border-b border-white text-white focus:border-white focus:outline-none leading-[4rem] focus:bg-transparent h-9`}
                 />
@@ -138,8 +143,8 @@ const ContactModal = ({prijectName}:{prijectName:string}) => {
                   EMAIL ADDRESS:
                 </label>
                 <input
-                  type="text"
-                  id="propertyname"
+                  type="email"
+                  id="precon-email"
                   {...register("email", { required: true })}
                   className={` bg-transparent border-b border-white text-white focus:border-white focus:outline-none leading-[4rem] focus:bg-transparent h-9`}
                 />
@@ -149,8 +154,8 @@ const ContactModal = ({prijectName}:{prijectName:string}) => {
                   PHONE NUMBER:
                 </label>
                 <input
-                  type="text"
-                  id="propertyname"
+                  type="tel"
+                  id="precon-phone"
                   {...register("phone", { required: true })}
                   className={` bg-transparent border-b border-white text-white focus:border-white focus:outline-none leading-[4rem] focus:bg-transparent h-9`}
                 />
@@ -177,7 +182,7 @@ const ContactModal = ({prijectName}:{prijectName:string}) => {
                     {...register("terms", { required: true })}
                   />
                   <span className="font-bold !text-justify">
-                  By providing Ashvak with your contact information, you acknowledge and agree to our <Link className="underline" href="#">Privacy Policy</Link> and consent to receive marketing communications, including automated calls, texts, and emails. You may opt out at any time. To stop receiving texts, reply ‘STOP’ at any time. Message and data rates may apply.
+                  By providing Ashvak with your contact information, you acknowledge and agree to our <Link className="underline" href="/privacy">Privacy Policy</Link> and consent to receive marketing communications, including automated calls, texts, and emails. You may opt out at any time. To stop receiving texts, reply ‘STOP’ at any time. Message and data rates may apply.
                   </span>
                 </div>
               </div>

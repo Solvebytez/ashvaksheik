@@ -36,18 +36,17 @@ const UseNewslaterForm = () => {
        },
        body: JSON.stringify(data),
      });
-     if (response.status === 200) {
-       const result = await response.json();
-       console.log('API Response:', result);
-       setIspending(false);       // Handle success, e.g., show a success message or move to the next step
+     if (response.ok) {
        setisShowForm(true)
        toast("Thank You for your Interest!");
      } else {
-       console.error('API call failed:', response.statusText);
-       // Handle failure, e.g., show an error message
+       toast("Something went wrong. Please try again or call 647-890-0982.");
      }
     } catch (error) {
      console.error('Error submitting form:', error);
+     toast("Something went wrong. Please try again or call 647-890-0982.");
+    } finally {
+      setIspending(false);
     }
   };
 
@@ -91,7 +90,7 @@ const UseNewslaterForm = () => {
             </div>
             <span className="flex-1">
             By providing Ashvak with your contact information, you acknowledge and agree to our{' '}
-              <Link href="#" className="underline">Privacy Policy</Link>and consent to receive marketing communications, including automated calls, texts, and emails. You may opt out at any time. To stop receiving texts, reply ‘STOP’ at any time. Message and data rates may apply.
+              <Link href="/privacy" className="underline">Privacy Policy</Link> and consent to receive marketing communications, including automated calls, texts, and emails. You may opt out at any time. To stop receiving texts, reply ‘STOP’ at any time. Message and data rates may apply.
             </span>
           </label>
         </div>
@@ -104,7 +103,7 @@ const UseNewslaterForm = () => {
                 you soon!
               </h1>
               <div className="md:flex gap-4 w-full items-center justify-center">
-                <LinkButton href="#" btnText="VIEW LISTINGS FOR SALE"/>
+                <LinkButton href="/home-search" btnText="VIEW LISTINGS FOR SALE"/>
               </div>
             </div>)
         }

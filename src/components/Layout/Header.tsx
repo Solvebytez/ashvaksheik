@@ -114,7 +114,8 @@ const Header = () => {
                   </li>
                   <li onClick={openModal}>
                     <Link
-                      href="#features"
+                      href="#"
+                      onClick={(e) => e.preventDefault()}
                       className="block md:px-4 transition hover:underline text-white tracking-[3px]"
                     >
                       <span>{"Let's"} Connect</span>

@@ -82,7 +82,7 @@ const HomeNews = () => {
         </div>
       </div>
       <div className="flex justify-center items-center mb-[5rem]">
-        <LinkButton href="/blog" btnText="Veiw All" className="text-white mt-14" />
+        <LinkButton href="/blog" btnText="View All" className="text-white mt-14" />
       </div>
     </div>
       </Container>     */}

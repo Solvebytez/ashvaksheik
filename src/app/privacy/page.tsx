@@ -18,7 +18,7 @@ const PrivacyPage = () => {
         <div className="">
       <h1 className="text-2xl font-bold mb-4">Privacy Policy</h1>
       <p className="mb-6">
-        This Privacy Policy outlines the practices of Ashvak Sheik, a real estate professional with <strong>CENTURY 21 Property Zone Realty Inc.</strong> ({"we,"} {"us," }or{ "our"}), regarding the collection, use, and disclosure of your personal information when you interact with Ashvak Sheik’s website (the “Site”) and services.
+        This Privacy Policy outlines the practices of Ashvak Sheik, a real estate professional with <strong>Re/Max President Realty Brokerage</strong> ({"we,"} {"us," }or{ "our"}), regarding the collection, use, and disclosure of your personal information when you interact with Ashvak Sheik’s website (the “Site”) and services.
       </p>
 
       <h2 className="text-2xl font-semibold mb-3">Personal Information We Collect</h2>
@@ -55,7 +55,7 @@ const PrivacyPage = () => {
 
       <h2 className="text-2xl font-semibold mb-3">How We Share Your Personal Information</h2>
       <ul className="list-disc list-inside mb-6 space-y-2">
-        <li><strong>With CENTURY 21 Property Zone Realty Inc.:</strong> For real estate interactions and services.</li>
+        <li><strong>With Re/Max President Realty Brokerage:</strong> For real estate interactions and services.</li>
         <li><strong>Service Providers:</strong> Companies that assist in operating our business, like hosting and analytics providers.</li>
         <li><strong>Professional Advisors:</strong> Shared as necessary for services by advisors like attorneys and auditors.</li>
         <li><strong>Compliance, Fraud Prevention, and Safety:</strong> As required to meet these purposes.</li>
@@ -81,8 +81,8 @@ const PrivacyPage = () => {
       <ul className="list-disc list-inside mb-6 space-y-2 pb-[6rem]">
         <li><strong>Ashvak Sheik</strong></li>
         <li>Re/Max President Realty Brokerage</li>
-        <li>Email: ashvak.realtor07@gmail.com</li>
-        <li>Phone: 647-890-0982</li>
+        <li>Email: <a href="mailto:ashvak.realtor07@gmail.com" className="underline">ashvak.realtor07@gmail.com</a></li>
+        <li>Phone: <a href="tel:6478900982" className="underline">647-890-0982</a></li>
       </ul>
     </div>
       </Container>

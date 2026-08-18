@@ -52,7 +52,7 @@ const AreaExpertise = () => {
         ))}
       </div>
       <div className="flex justify-center items-center">
-        <LinkButton href="#" btnText="Veiw All" className="text-white mt-14" />
+        <LinkButton href="/neighborhoods" btnText="View All" className="text-white mt-14" />
       </div>
     </div>
   );

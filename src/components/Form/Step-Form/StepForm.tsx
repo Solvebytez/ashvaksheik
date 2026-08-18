@@ -67,19 +67,17 @@ const StepForm = () => {
         },
         body: JSON.stringify(data),
       });
-      if (response.status === 200) {
-        const result = await response.json();
-        console.log("API Response:", result);
-        setIspending(false);
-        // Handle success, e.g., show a success message or move to the next step
+      if (response.ok) {
         setCurrentStep(STEPS.LAST_MESSAGE);
         toast("Thank You for your Interest!");
       } else {
-        console.error("API call failed:", response.statusText);
-        // Handle failure, e.g., show an error message
+        toast("Something went wrong. Please try again or call 647-890-0982.");
       }
     } catch (error) {
       console.error("Error submitting form:", error);
+      toast("Something went wrong. Please try again or call 647-890-0982.");
+    } finally {
+      setIspending(false);
     }
   };
 
@@ -202,7 +200,7 @@ const StepForm = () => {
                       By providing Ashvak Sheik your contact information, you
                       acknowledge and agree to our{" "}
                       <a
-                        href="/privacy-policy"
+                        href="/privacy"
                         className="text-gray-300 underline"
                       >
                         Privacy Policy
@@ -234,7 +232,7 @@ const StepForm = () => {
                 you soon!
               </h1>
               <div className="md:flex gap-4 w-full items-center justify-center">
-                <LinkButton href="#" btnText=" Thank You" />
+                <LinkButton href="/home-search" btnText="Search Homes" />
               </div>
             </div>
           )}

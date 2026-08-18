@@ -83,19 +83,17 @@ const HomeSearchForm = () => {
         },
         body: JSON.stringify(data),
       });
-      if (response.status === 200) {
-        const result = await response.json();
-        console.log("API Response:", result);
-        setIspending(false);
-        // Handle success, e.g., show a success message or move to the next step
-        reset()
+      if (response.ok) {
+        reset();
         toast("Thank You for your Interest!");
       } else {
-        console.error("API call failed:", response.statusText);
-        // Handle failure, e.g., show an error message
+        toast("Something went wrong. Please try again or call 647-890-0982.");
       }
     } catch (error) {
       console.error("Error submitting form:", error);
+      toast("Something went wrong. Please try again or call 647-890-0982.");
+    } finally {
+      setIspending(false);
     }
   };
 
@@ -199,7 +197,7 @@ const HomeSearchForm = () => {
           <div className="w-full">
             <label className="text-lg font-bold flex gap-3 items-center text-white">
               Bathroom:{" "}
-              {errors.bedroom?.type === "required" && (
+              {errors.bathroom?.type === "required" && (
                 <p role="alert" className="text-sm font-normal text-red-600">
                   Required
                 </p>

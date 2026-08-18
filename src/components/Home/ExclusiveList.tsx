@@ -34,13 +34,13 @@ const ExclusiveList = () => {
         />
          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4">
       {properties.map((property, index) => (
-        <PropertyCard key={index} {...property} proPertylink="#" />
+        <PropertyCard key={index} {...property} proPertylink="/home-search" />
       ))}
     </div>
       </Container>
      
       <div className="flex justify-center items-center">
-        <LinkButton href="#" btnText="Veiw All" className="text-white mt-14" />
+        <LinkButton href="/home-search" btnText="View All" className="text-white mt-14" />
       </div>
     </div>
   )

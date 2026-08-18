@@ -35,18 +35,16 @@ const Footer = () => {
        },
        body: JSON.stringify(data),
      });
-     if (response.status === 200) {
-       const result = await response.json();
-       console.log('API Response:', result);
-       toast("Thank Your for your Interest!");
-       setIspending(false);       // Handle success, e.g., show a success message or move to the next step   
-       
+     if (response.ok) {
+       toast("Thank You for your Interest!");
      } else {
-       console.error('API call failed:', response.statusText);
-       // Handle failure, e.g., show an error message
+       toast("Something went wrong. Please try again or call 647-890-0982.");
      }
     } catch (error) {
      console.error('Error submitting form:', error);
+     toast("Something went wrong. Please try again or call 647-890-0982.");
+    } finally {
+      setIspending(false);
     }
   };
 
@@ -78,9 +76,9 @@ const Footer = () => {
                 <p className="text-sm tracking-[2px] font-bold uppercase">
                   EMAIL
                 </p>
-                <p className="text-sm tracking-[2px] font-bold uppercase underline">
+                <a href="mailto:ashvak.realtor07@gmail.com" className="text-sm tracking-[2px] font-bold uppercase underline">
                 ashvak.realtor07@gmail.com
-                </p>
+                </a>
               </div>
             </div>
             <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start space-x-2 gap-4 w-full md:w-auto">
@@ -92,9 +90,9 @@ const Footer = () => {
                 <p className="text-sm tracking-[2px] font-bold uppercase">
                   PHONE NUMBER
                 </p>
-                <p className="text-sm tracking-[2px] font-bold uppercase underline">
+                <a href="tel:6478900982" className="text-sm tracking-[2px] font-bold uppercase underline">
                 647-890-0982
-                </p>
+                </a>
               </div>
             </div>
             <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start space-x-2 gap-4 w-full md:w-auto">
@@ -142,10 +140,10 @@ const Footer = () => {
           
         </div>
         <div className="flex items-center gap-4 mt-[7rem]">
-          <Image src="/REMAX_logo.png" width={180} height={250} priority alt="century 21 logo" />
+          <Image src="/REMAX_logo.png" width={180} height={250} priority alt="RE/MAX logo" />
          <div className="space-y-3">
          <p>All information deemed reliable but not guaranteed and should be independently reviewed and verified.</p>
-         <Image src="/Realtor-logo.png" width={40} height={250} priority alt="century 21 logo" />
+         <Image src="/Realtor-logo.png" width={40} height={250} priority alt="Realtor logo" />
          </div>
         </div>
         <Copyright />

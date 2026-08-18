@@ -26,18 +26,18 @@ const ContactCard = ({cardType}:{cardType?:string}) => {
         <div>
           <h2 className={`font-bold ${IsWhite} font-tenor_Sans`}>REALTOR</h2>
           <p className={`text-sm font-bold ${IsWhite} font-tenor_Sans mb-2`}>Ashvak Sheik </p>
-          <p className="text-white text-xs">The Alliance Realty Group | Re/Max President Realty Brokerage</p>
+          <p className={`text-xs ${IsWhite}`}>Re/Max President Realty Brokerage</p>
         </div>
       </div>     
       <hr className="my-2 border-white/10"  />
       <div className="flex justify-between mb-0 py-2">
         <span className={`text-xs ${IsWhite}`}>Mobile number:</span>
-        <span className={`text-xs ${IsWhite}`}>647-890-0982</span>
+        <a href="tel:6478900982" className={`text-xs ${IsWhite} underline`}>647-890-0982</a>
       </div>
      
       <div className="mb-0 py-2 flex justify-between">
         <span className={`text-xs ${IsWhite}`}>Email:</span>
-        <p className={`text-xs ${IsWhite}`}>ashvak.realtor07@gmail.com</p>
+        <a href="mailto:ashvak.realtor07@gmail.com" className={`text-xs ${IsWhite} underline`}>ashvak.realtor07@gmail.com</a>
       </div>
       <div className="mb-4 py-2 flex justify-between">
         <span className={`text-xs ${IsWhite}`}>Address:</span>

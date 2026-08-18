@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     absolute: "Ashvak Sheik",
   },
   description:
-    "Serving the Greater Toronto Area (GTA), including Peel, Durham, Halton, York, and other surrounding regions.",
+    "Ashvak Sheik, Realtor with Re/Max President Realty Brokerage. Serving the Greater Toronto Area, including Peel, Durham, Halton, York, and surrounding regions.",
   keywords: [
     "Hyderabadi realtor in Mississauga,  Experienced Hyderabadi realtor in Mississauga, Telugu realtor in Mississauga, Telugu realtor in Brampton,  Best South Indian property consultant in Mississauga, Telugu realtor in Burlington, Telugu realtor in Milton, Telugu realtor in Oakville, Top Telugu realtor in GTA, Best Hyderabadi real estate agent in GTA, Top Telugu realtor in Durham Region, Telugu realtor in Whitby, Hyderabadi real estate agent in Whitby, Telugu realtor in Oshawa",
   ],
@@ -41,7 +41,7 @@ export default async function RootLayout({
 }>) {
   // Fetching the messages server-side
   return (
-    <html>
+    <html lang="en">
       <head>
         {/* Google Tag Manager - Head */}
         <meta
