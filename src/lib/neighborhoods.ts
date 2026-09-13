@@ -522,19 +522,28 @@ export function neighborhoodDescription(area: NeighborhoodGuide) {
 }
 
 export function neighborhoodKeywords(area: NeighborhoodGuide) {
-  return [
+  const base = [
     `${area.name} real estate`,
     `${area.name} realtor`,
     `realtor in ${area.name}`,
     `${area.name} homes for sale`,
     `${area.city} realtor`,
   ];
+  if (area.kind === "city") {
+    return [
+      ...base,
+      `Telugu realtor ${area.name}`,
+      `Muslim realtor ${area.name}`,
+      `${area.name} pre-construction`,
+    ];
+  }
+  return base;
 }
 
 export function neighborhoodFaqs(area: NeighborhoodGuide) {
   const place =
     area.kind === "neighborhood" ? `${area.name}, ${area.city}` : area.name;
-  return [
+  const faqs = [
     {
       question: `What is ${area.name} like to buy in?`,
       answer: area.intro,
@@ -543,5 +552,24 @@ export function neighborhoodFaqs(area: NeighborhoodGuide) {
       question: `Who is a realtor in ${area.name}?`,
       answer: `Ashvak Sheik is a realtor with Re/Max Millennium Real Estate who helps buyers and sellers in ${place} and across the Greater Toronto Area. Start at ashvaksheik.com/home-search or call 647-890-0982.`,
     },
+    {
+      question: `How do I sell a home in ${area.name}?`,
+      answer: `Start with a pricing proposal at ashvaksheik.com/home-valuation, then prepare, market, and negotiate. Ashvak Sheik lists and markets ${place} homes through Re/Max Millennium Real Estate. Call 647-890-0982.`,
+    },
   ];
+
+  if (area.kind === "city") {
+    faqs.push(
+      {
+        question: `Is there a Telugu realtor in ${area.name}?`,
+        answer: `Yes. Ashvak Sheik is a Telugu-speaking realtor who helps buyers and sellers in ${area.name} and the GTA. See ashvaksheik.com/telugu-realtor or call 647-890-0982.`,
+      },
+      {
+        question: `Is there a Muslim or Hyderabadi realtor for ${area.name}?`,
+        answer: `Ashvak Sheik is a Hyderabadi Muslim realtor with Re/Max Millennium Real Estate who works in ${area.name}. See ashvaksheik.com/muslim-realtor and ashvaksheik.com/hyderabadi-realtor.`,
+      }
+    );
+  }
+
+  return faqs;
 }
