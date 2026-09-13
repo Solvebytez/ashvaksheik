@@ -1,58 +1,13 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import Image from "next/image";
 import LinkButton from "./Global/Button";
 import { formatDate } from "@/lib/utils";
+import { getBlogs, type Blog, type BlogResponse } from "@/lib/blogs";
 import { BASE_URL } from "@/env";
 
-export interface BlogResponse {
-  data: Blog[];
-  meta: {
-    pagination: {
-      page: number;
-      pageSize: number;
-      pageCount: number;
-      total: number;
-    };
-  };
-}
-
-export interface Blog {
-  id: number;
-  documentId: string;
-  title: string;
-  slug: string;
-  ShortDescription: string;
-  content: any[];
-  createdAt: string;
-  updatedAt: string;
-  publishedAt: string;
-  thumbnail: {
-    url: string;
-    id: number;
-    formats: {
-      medium: {
-        url: string;
-      };
-    };
-    alternativeText: string | null;
-  }[];
-  categories: any[];
-}
+export type { Blog, BlogResponse };
 
 const BlogCard = async () => {
-  let blogs: Blog[] = [];
-  try {
-    const response = await fetch(`${BASE_URL}/api/blogs?populate=*`, {
-      next: { revalidate: 3600 },
-    });
-    if (response.ok) {
-      const data: BlogResponse = await response.json();
-      const list = Array.isArray(data.data) ? data.data : [];
-      blogs = [...list].reverse();
-    }
-  } catch (err) {
-    console.error("Error fetching blogs:", err);
-  }
+  const blogs = await getBlogs();
 
   if (!blogs.length) {
     return <p className="text-white/70">No posts published yet.</p>;

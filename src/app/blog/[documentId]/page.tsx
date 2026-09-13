@@ -1,16 +1,14 @@
 import { BASE_URL } from "@/env";
 import JsonLd from "@/components/seo/JsonLd";
+import { getBlog, getBlogs } from "@/lib/blogs";
 import { articleGraph, pageMetadata, SITE_URL } from "@/lib/seo";
 import BlogDetails from "./Detail";
 
-async function getPost(slug: string) {
-  const res = await fetch(
-    `${process.env.NEXT_PUBLIC_STRAPI_BASE_URL}/api/blogs?filters[slug][$eq]=${slug}&populate=*`,
-    { next: { revalidate: 3600 } }
-  );
-  if (!res.ok) return undefined;
-  const jsonData = await res.json();
-  return Array.isArray(jsonData.data) ? jsonData.data[0] : undefined;
+export async function generateStaticParams() {
+  const posts = await getBlogs();
+  return posts
+    .filter((post) => post.slug)
+    .map((post) => ({ documentId: post.slug }));
 }
 
 export async function generateMetadata({
@@ -18,7 +16,7 @@ export async function generateMetadata({
 }: {
   params: { documentId: string };
 }) {
-  const post = await getPost(params.documentId);
+  const post = await getBlog(params.documentId);
   const thumbRaw =
     post?.thumbnail?.[0]?.formats?.medium?.url ?? post?.thumbnail?.[0]?.url;
   const ogImage =
@@ -47,7 +45,7 @@ const BlogDetailsPage = async ({
 }: {
   params: { documentId: string };
 }) => {
-  const post = await getPost(params.documentId);
+  const post = await getBlog(params.documentId);
   const thumbRaw =
     post?.thumbnail?.[0]?.formats?.medium?.url ?? post?.thumbnail?.[0]?.url;
   const image =

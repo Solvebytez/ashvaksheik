@@ -1,5 +1,4 @@
-import { BlogResponse } from "@/components/BlogCard";
-import { BASE_URL } from "@/env";
+import { getBlogs } from "@/lib/blogs";
 import { neighborhoodGuides, neighborhoodPath } from "@/lib/neighborhoods";
 import { SITE_URL } from "@/lib/seo";
 import type { MetadataRoute } from "next";
@@ -33,24 +32,15 @@ const staticRoutes: MetadataRoute.Sitemap = [
 ];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  try {
-    const response = await fetch(`${BASE_URL}/api/blogs?populate=*`);
-    if (!response.ok) {
-      return staticRoutes;
-    }
-    const data: BlogResponse = await response.json();
-    const posts = Array.isArray(data.data) ? data.data : [];
-    const postEntries: MetadataRoute.Sitemap = posts
-      .filter((post) => post.slug)
-      .map((post) => ({
-        url: `${SITE_URL}/blog/${post.slug}`,
-        lastModified: post.updatedAt ? new Date(post.updatedAt) : new Date(),
-        changeFrequency: "weekly",
-        priority: 0.5,
-      }));
+  const posts = await getBlogs();
+  const postEntries: MetadataRoute.Sitemap = posts
+    .filter((post) => post.slug)
+    .map((post) => ({
+      url: `${SITE_URL}/blog/${post.slug}`,
+      lastModified: post.updatedAt ? new Date(post.updatedAt) : new Date(),
+      changeFrequency: "weekly",
+      priority: 0.5,
+    }));
 
-    return [...staticRoutes, ...postEntries];
-  } catch {
-    return staticRoutes;
-  }
+  return [...staticRoutes, ...postEntries];
 }

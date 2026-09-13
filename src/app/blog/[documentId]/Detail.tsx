@@ -2,7 +2,7 @@ import Breadcrumb from "@/components/Global/BreadcrumbLinks";
 import LinkButton from "@/components/Global/Button";
 import Sidebar from "@/components/Global/Sidebar";
 import ReceiveInbox from "@/components/Home/ReceiveInbox";
-import type { Blog } from "@/components/BlogCard";
+import type { Blog } from "@/lib/blogs";
 import { BASE_URL } from "@/env";
 import { formatDate } from "@/lib/utils";
 import Image from "next/image";
