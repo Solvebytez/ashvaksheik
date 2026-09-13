@@ -167,7 +167,7 @@ export function siteGraph() {
         url: SITE_URL,
         name: ENTITY.name,
         description:
-          "GTA realtor helping buyers and sellers across Peel, Durham, Halton, and York.",
+          "Telugu-speaking Hyderabadi Muslim realtor in the GTA with Re/Max Millennium Real Estate. Helps buyers and sellers in Brampton, Mississauga, Toronto, Peel, Durham, Halton, and York.",
         publisher: { "@id": id },
         inLanguage: "en-CA",
       },
@@ -184,6 +184,45 @@ export function breadcrumbGraph(items: { name: string; path: string }[]) {
       position: index + 1,
       name: item.name,
       item: item.path === "/" ? SITE_URL : `${SITE_URL}${item.path}`,
+    })),
+  };
+}
+
+export function itemListGraph(
+  name: string,
+  items: { name: string; path: string }[]
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      url: `${SITE_URL}${item.path}`,
+    })),
+  };
+}
+
+export function reviewsGraph(
+  reviews: { name: string; quote: string }[]
+) {
+  return {
+    "@context": "https://schema.org",
+    "@graph": reviews.map((review, index) => ({
+      "@type": "Review",
+      "@id": `${SITE_URL}/testimonials#review-${index + 1}`,
+      author: {
+        "@type": "Person",
+        name: review.name,
+      },
+      reviewBody: review.quote,
+      itemReviewed: {
+        "@type": "RealEstateAgent",
+        name: ENTITY.name,
+        url: SITE_URL,
+      },
     })),
   };
 }

@@ -1,11 +1,13 @@
 import BreadcumBanner from "@/components/Global/BreadcumBanner";
 import ImageCard2 from "@/components/ImageCard2";
+import JsonLd from "@/components/seo/JsonLd";
 import {
   cityGuides,
   communityGuides,
   neighborhoodPath,
+  neighborhoodTitle,
 } from "@/lib/neighborhoods";
-import { pageMetadata } from "@/lib/seo";
+import { itemListGraph, pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "GTA Neighborhoods",
@@ -15,8 +17,16 @@ export const metadata = pageMetadata({
 });
 
 const NeighborhoodsPage = () => {
+  const cities = cityGuides();
+  const neighborhoods = communityGuides();
+  const listItems = [...cities, ...neighborhoods].map((area) => ({
+    name: neighborhoodTitle(area),
+    path: neighborhoodPath(area.slug),
+  }));
+
   return (
     <div>
+      <JsonLd data={itemListGraph("GTA real estate guides by Ashvak Sheik", listItems)} />
       <BreadcumBanner
         pageTitle="Neighborhoods"
         description="City and neighborhood guides for buyers comparing Brampton, Mississauga, Toronto, and the rest of the GTA."
@@ -29,7 +39,7 @@ const NeighborhoodsPage = () => {
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
-          {cityGuides().map((area) => (
+          {cities.map((area) => (
             <ImageCard2
               key={area.slug}
               imageSrc={area.image}
@@ -45,7 +55,7 @@ const NeighborhoodsPage = () => {
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
-          {communityGuides().map((area) => (
+          {neighborhoods.map((area) => (
             <ImageCard2
               key={area.slug}
               imageSrc={area.image}
