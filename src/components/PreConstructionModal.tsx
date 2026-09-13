@@ -55,9 +55,9 @@ const ContactModal = ({prijectName}:{prijectName:string}) => {
         <div className="md:max-w-6xl w-full grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16 py-6 md:py-12">
           {/* Contact Details Section */}
           <div className="space-y-8 col-span-6">
-            <h1 className="text-2xl md:text-4xl font-tenor_Sans tracking-[2px] md:tracking-[4px] mb-4 pt-4 lg:pt-0 text-center md:text-left">
+            <h2 className="text-2xl md:text-4xl font-tenor_Sans tracking-[2px] md:tracking-[4px] mb-4 pt-4 lg:pt-0 text-center md:text-left">
               CONTACT DETAILS
-            </h1>
+            </h2>
             <h2 className="text-xl md:text-2xl font-tenor_Sans tracking-[2px] md:tracking-[5px] mb-8 uppercase text-center md:text-left">
             Ashvak Sheik
             </h2>
@@ -120,9 +120,9 @@ const ContactModal = ({prijectName}:{prijectName:string}) => {
 
           {/* Submit a Message Section */}
           <div className="col-span-6 px-0 md:px-11 modalForm relative">
-            <h1 className="text-2xl md:text-4xl font-tenor_Sans tracking-[2px] md:tracking-[4px] mb-4 pt-4 lg:pt-0 text-center">
+            <h2 className="text-2xl md:text-4xl font-tenor_Sans tracking-[2px] md:tracking-[4px] mb-4 pt-4 lg:pt-0 text-center">
               SUBMIT A MESSAGE
-            </h1>
+            </h2>
             <form
               className="flex flex-col mt-9"
               onSubmit={handleSubmit(formHandleSubmit)}
@@ -199,9 +199,9 @@ const ContactModal = ({prijectName}:{prijectName:string}) => {
          <h3 className="text-xl font-bold tracking-[4px] uppercase">
           Thank You for Your Interest!
           </h3>
-          <h1 className="text-xl font-tenor_Sans tracking-[4px] uppercase my-1 text-center">
+          <h2 className="text-xl font-tenor_Sans tracking-[4px] uppercase my-1 text-center">
           Thank you for expressing interest in <b className="underline">{prijectName}</b>. We’ve received your request, and our team will contact you shortly with personalized details and next steps. Keep an eye on your inbox or phone for updates!
-          </h1>
+          </h2>
           <div className="md:flex gap-4 w-full items-center justify-center italic">
           If you have any further questions, feel free to reach out directly.
 

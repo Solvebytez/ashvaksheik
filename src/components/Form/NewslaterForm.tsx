@@ -98,10 +98,10 @@ const UseNewslaterForm = () => {
               <h3 className="text-xl font-bold tracking-[4px] uppercase">
                 Thank You
               </h3>
-              <h1 className="text-xl font-tenor_Sans tracking-[4px] uppercase my-1 text-center">
+              <h2 className="text-xl font-tenor_Sans tracking-[4px] uppercase my-1 text-center">
                 I’m gathering your property information. I will be in touch with
                 you soon!
-              </h1>
+              </h2>
               <div className="md:flex gap-4 w-full items-center justify-center">
                 <LinkButton href="/home-search" btnText="VIEW LISTINGS FOR SALE"/>
               </div>

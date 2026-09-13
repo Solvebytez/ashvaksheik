@@ -40,7 +40,7 @@ const AboutHome = ({openModal}:{openModal:()=>void;}) => {
           </p>
           <div className="flex flex-col relative">
             <Image
-              alt=""
+              alt="Ashvak Sheik signature"
               className="object-cover"
               width={300}
               height={200}

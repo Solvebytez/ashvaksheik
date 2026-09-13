@@ -53,9 +53,9 @@ const ContactModal = () => {
         <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16 py-6 md:py-12">
           {/* Contact Details Section */}
           <div className="space-y-8 col-span-6">
-            <h1 className="text-2xl md:text-4xl font-tenor_Sans tracking-[2px] md:tracking-[4px] mb-4 pt-4 lg:pt-0 text-center md:text-left">
+            <h2 className="text-2xl md:text-4xl font-tenor_Sans tracking-[2px] md:tracking-[4px] mb-4 pt-4 lg:pt-0 text-center md:text-left">
               CONTACT DETAILS
-            </h1>
+            </h2>
             <h2 className="text-xl md:text-2xl font-tenor_Sans tracking-[2px] md:tracking-[5px] mb-8 uppercase text-center md:text-left">
             Ashvak Sheik
             </h2>
@@ -116,9 +116,9 @@ const ContactModal = () => {
 
           {/* Submit a Message Section */}
           <div className="col-span-6 px-0 md:px-11 modalForm relative">
-            <h1 className="text-2xl md:text-4xl font-tenor_Sans tracking-[2px] md:tracking-[4px] mb-4 pt-4 lg:pt-0">
+            <h2 className="text-2xl md:text-4xl font-tenor_Sans tracking-[2px] md:tracking-[4px] mb-4 pt-4 lg:pt-0">
               SUBMIT A MESSAGE
-            </h1>
+            </h2>
             <form
               className="flex flex-col mt-9"
               onSubmit={handleSubmit(formHandleSubmit)}
@@ -192,10 +192,10 @@ const ContactModal = () => {
           <h3 className="text-xl font-bold tracking-[2px] md:tracking-[4px] uppercase">
             Thank You
           </h3>
-          <h1 className="text-lg md:text-xl font-tenor_Sans tracking-[2px] md:tracking-[4px] uppercase my-1 text-center">
+          <h2 className="text-lg md:text-xl font-tenor_Sans tracking-[2px] md:tracking-[4px] uppercase my-1 text-center">
             I’m gathering your property information. I will be in touch with you
             soon!
-          </h1>
+          </h2>
           <div className="md:flex gap-4 w-full items-center justify-center">
             <LinkButton href="/home-search" btnText="VIEW LISTINGS FOR SALE" />
           </div>

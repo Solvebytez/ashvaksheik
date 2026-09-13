@@ -9,6 +9,9 @@ interface GooglePlacesAutocompleteProps {
 
 const libraries: ("places")[] = ["places"];
 
+const inputClassName =
+  'bg-transparent border-b border-white text-white focus:border-white focus:outline-none leading-[4rem] focus:bg-transparent h-9 w-full';
+
 const GooglePlacesAutocomplete: React.FC<GooglePlacesAutocompleteProps> = ({ onPlaceSelected }) => {
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY as string,
@@ -24,19 +27,41 @@ const GooglePlacesAutocomplete: React.FC<GooglePlacesAutocompleteProps> = ({ onP
   const onPlaceChanged = () => {
     const place = autocompleteRef.current?.getPlace();
     if (place?.formatted_address) {
-      onPlaceSelected(place.formatted_address);      
+      onPlaceSelected(place.formatted_address);
     }
   };
 
-  if (loadError) return <p>Error loading Google Maps API</p>;
-  if (!isLoaded) return <p>Loading...</p>;
+  if (loadError) {
+    return (
+      <input
+        type="text"
+        placeholder="Enter your address"
+        className={inputClassName}
+        onBlur={(e) => {
+          if (e.target.value.trim()) onPlaceSelected(e.target.value.trim());
+        }}
+      />
+    );
+  }
+
+  if (!isLoaded) {
+    return (
+      <input
+        type="text"
+        placeholder="Enter your address"
+        className={inputClassName}
+        aria-busy="true"
+        disabled
+      />
+    );
+  }
 
   return (
     <Autocomplete onLoad={onLoad} onPlaceChanged={onPlaceChanged}>
       <input
         type="text"
         placeholder="Enter your address"
-        className='bg-transparent border-b border-white text-white focus:border-white focus:outline-none leading-[4rem] focus:bg-transparent h-9 w-full'
+        className={inputClassName}
       />
     </Autocomplete>
   );
