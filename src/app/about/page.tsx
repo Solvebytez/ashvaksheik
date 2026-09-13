@@ -96,7 +96,16 @@ const AboutPage = () => {
             <Link href="/hyderabadi-realtor" className="underline">Hyderabadi realtor</Link>,{" "}
             <Link href="/muslim-realtor" className="underline">Muslim realtor</Link>, or{" "}
             <Link href="/desi-realtor" className="underline">Indian / Desi realtor</Link>{" "}
-            in Toronto, Brampton, or Mississauga can work with me in Telugu or English.
+            in Toronto, Brampton, or Mississauga can work with me in Telugu or English. I am listed on{" "}
+            <a
+              href="https://www.realtor.ca/agent/2199715/ashvak-sajidh-pash-sheik-81-zenway-blvd-25a-woodbridge-ontario-l4h0s5"
+              className="underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              realtor.ca as Ashvak Sajidh Pash Sheik
+            </a>
+            .
             </p>
             <p className="mb-4">
             As a dedicated realtor in the Greater Toronto Area, I’ve had the privilege of witnessing our vibrant city grow and evolve, attracting families, professionals, and newcomers from all walks of life. I’m honored to be part of this journey, helping clients find not just a property, but a place they can truly call home.

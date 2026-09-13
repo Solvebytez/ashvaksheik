@@ -2,7 +2,7 @@ export const faqItems = [
   {
     question: "Who is Ashvak Sheik?",
     answer:
-      "Ashvak Sheik is a Realtor with Re/Max President Realty Brokerage, based in Brampton and serving buyers and sellers across the Greater Toronto Area, including Peel, Durham, Halton, and York.",
+      "Ashvak Sheik (also listed as Ashvak Sajidh Pash Sheik on realtor.ca) is a Realtor with Re/Max President Realty Brokerage, based in Brampton and serving buyers and sellers across the Greater Toronto Area, including Peel, Durham, Halton, and York.",
   },
   {
     question: "What areas of the GTA does Ashvak Sheik serve?",
@@ -53,6 +53,11 @@ export const faqItems = [
     question: "Is Ashvak Sheik an Indian or Desi realtor?",
     answer:
       "Yes. Ashvak Sheik is an Indian / Desi / South Asian realtor in the GTA, and a Telugu-speaking Hyderabadi realtor. See ashvaksheik.com/desi-realtor.",
+  },
+  {
+    question: "Is Ashvak Sheik listed on realtor.ca?",
+    answer:
+      "Yes. Ashvak Sajidh Pash Sheik is listed on realtor.ca with Re/Max President Realty Brokerage at https://www.realtor.ca/agent/2199715/ashvak-sajidh-pash-sheik-81-zenway-blvd-25a-woodbridge-ontario-l4h0s5. For a home search or valuation, use ashvaksheik.com or call 647-890-0982.",
   },
   {
     question: "How do I contact Ashvak Sheik?",

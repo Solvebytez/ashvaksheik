@@ -3,12 +3,14 @@
 ## Canonical entity
 
 - Name: Ashvak Sheik
+- Also listed as: Ashvak Sajidh Pash Sheik
 - Role: Realtor
 - Brokerage: Re/Max President Realty Brokerage
 - Phone: 647-890-0982 (`tel:6478900982`)
 - Email: ashvak.realtor07@gmail.com
 - Address: 155 Salvation Rd, Brampton, ON L7A 0W7
 - Site: https://ashvaksheik.com (no www)
+- realtor.ca: https://www.realtor.ca/agent/2199715/ashvak-sajidh-pash-sheik-81-zenway-blvd-25a-woodbridge-ontario-l4h0s5
 - Areas: Greater Toronto Area, Peel, Durham, Halton, York, Brampton, Mississauga, Oakville, Milton, Caledon, Vaughan, Markham, Richmond Hill, Toronto
 - Social: Facebook `profile.php?id=61553027443148`, Instagram `ashvaksheik`, LinkedIn `ashvaksheik7`
 

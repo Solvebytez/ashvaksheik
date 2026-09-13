@@ -2,12 +2,16 @@ import type { Metadata } from "next";
 
 export const SITE_URL = "https://ashvaksheik.com";
 
+export const REALTOR_CA_URL =
+  "https://www.realtor.ca/agent/2199715/ashvak-sajidh-pash-sheik-81-zenway-blvd-25a-woodbridge-ontario-l4h0s5";
+
 export const ENTITY = {
   name: "Ashvak Sheik",
   jobTitle: "Realtor",
   description:
     "Telugu-speaking Hyderabadi Muslim realtor in the Greater Toronto Area with Re/Max President Realty Brokerage. Helps Telugu, Hyderabadi, Muslim, Indian, and Desi buyers and sellers in Brampton, Mississauga, Toronto, and the GTA.",
   alternateNames: [
+    "Ashvak Sajidh Pash Sheik",
     "Telugu realtor GTA",
     "Hyderabadi realtor Toronto",
     "Muslim realtor Brampton",
@@ -27,6 +31,7 @@ export const ENTITY = {
   country: "CA",
   image: "/profile.jpeg",
   sameAs: [
+    REALTOR_CA_URL,
     "https://www.facebook.com/profile.php?id=61553027443148",
     "https://www.instagram.com/ashvaksheik/",
     "https://www.linkedin.com/in/ashvaksheik7/",
@@ -167,6 +172,19 @@ export function siteGraph() {
         inLanguage: "en-CA",
       },
     ],
+  };
+}
+
+export function breadcrumbGraph(items: { name: string; path: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: item.path === "/" ? SITE_URL : `${SITE_URL}${item.path}`,
+    })),
   };
 }
 
