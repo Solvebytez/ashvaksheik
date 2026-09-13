@@ -20,9 +20,15 @@ const HomeValidation = () => {
       }}
     >
       <div className="bg-black bg-opacity-70 text-white py-[4rem] flex flex-col justify-center items-center h-full px-4">
-      <div className="flex flex-col items-center justify-center h-full mt-[80px] md:mt-[120px] w-full">
-        <StepForm />
-      </div>
+        <div className="flex flex-col items-center justify-center h-full mt-[80px] md:mt-[120px] w-full max-w-4xl">
+          <h1 className="text-2xl md:text-5xl font-tenor_Sans tracking-[2px] md:tracking-[5px] uppercase text-center leading-tight mb-4 md:mb-6">
+            Home Valuation in the GTA
+          </h1>
+          <p className="text-center text-sm md:text-base text-white/80 max-w-2xl mb-8 md:mb-10 leading-7 px-2">
+            Ashvak Sheik prepares a custom pricing proposal for Brampton, Mississauga, Toronto, and the GTA — not a generic online estimate. Enter your address below or call 647-890-0982.
+          </p>
+          <StepForm />
+        </div>
       </div>
     </div>
   );
