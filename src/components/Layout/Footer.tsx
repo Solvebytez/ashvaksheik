@@ -155,6 +155,9 @@ const Footer = () => {
           <Link href="/hyderabadi-realtor" className="hover:underline">Hyderabadi Realtor</Link>
           <Link href="/muslim-realtor" className="hover:underline">Muslim Realtor</Link>
           <Link href="/desi-realtor" className="hover:underline">Desi Realtor</Link>
+          <Link href="/brampton-realtor" className="hover:underline">Brampton Realtor</Link>
+          <Link href="/mississauga-realtor" className="hover:underline">Mississauga Realtor</Link>
+          <Link href="/toronto-realtor" className="hover:underline">Toronto Realtor</Link>
           <Link href="/blog" className="hover:underline">Blog</Link>
           <Link href="/testimonials" className="hover:underline">Testimonials</Link>
         </nav>

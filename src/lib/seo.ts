@@ -15,6 +15,9 @@ export const ENTITY = {
     "Telugu realtor GTA",
     "Hyderabadi realtor Toronto",
     "Muslim realtor Brampton",
+    "Brampton realtor",
+    "Mississauga realtor",
+    "Toronto realtor",
   ],
   languages: [
     { name: "English", code: "en" },

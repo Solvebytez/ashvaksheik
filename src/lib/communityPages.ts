@@ -155,6 +155,111 @@ export const communityPages: CommunityPage[] = [
       },
     ],
   },
+  {
+    path: "/brampton-realtor",
+    title: "Brampton Realtor",
+    banner: "Brampton Realtor",
+    description:
+      "Ashvak Sheik is a Brampton realtor with Re/Max Millennium Real Estate at 5 Montpelier St Unit 310. Telugu-speaking realtor helping buyers and sellers in Brampton and Peel.",
+    keywords: [
+      "Brampton realtor",
+      "realtor in Brampton",
+      "Brampton real estate agent",
+      "Telugu realtor Brampton",
+      "Muslim realtor Brampton",
+      "best realtor Brampton",
+    ],
+    heading: "Brampton Realtor",
+    intro:
+      "Ashvak Sheik is a Brampton realtor with Re/Max Millennium Real Estate. His office is at 5 Montpelier St Unit 310, Brampton, ON L6Y 6H4. He helps buyers and sellers across Brampton and Peel.",
+    body: [
+      "Searching for a realtor in Brampton usually means you want someone who knows local streets, new-build pockets, and how Peel buyers compete. Ashvak works resale and pre-construction from downtown Brampton to Mount Pleasant and north/west Brampton.",
+      "He is a Telugu-speaking Hyderabadi Muslim realtor, so Brampton families who want Telugu or community-aware communication can work with him in Telugu or English.",
+      "Start at ashvaksheik.com/neighborhoods/brampton, ashvaksheik.com/home-search, or call 647-890-0982.",
+    ],
+    faqs: [
+      {
+        question: "Who is a realtor in Brampton?",
+        answer:
+          "Ashvak Sheik is a Brampton realtor with Re/Max Millennium Real Estate at 5 Montpelier St Unit 310. Call 647-890-0982 or see ashvaksheik.com/brampton-realtor.",
+      },
+      {
+        question: "Is Ashvak Sheik a Telugu realtor in Brampton?",
+        answer:
+          "Yes. Ashvak Sheik is a Telugu-speaking Brampton realtor. Details: ashvaksheik.com/telugu-realtor and ashvaksheik.com/brampton-realtor.",
+      },
+    ],
+  },
+  {
+    path: "/mississauga-realtor",
+    title: "Mississauga Realtor",
+    banner: "Mississauga Realtor",
+    description:
+      "Ashvak Sheik is a Mississauga realtor with Re/Max Millennium Real Estate. Helping buyers and sellers in Port Credit, City Centre, Streetsville, Meadowvale, and across Mississauga.",
+    keywords: [
+      "Mississauga realtor",
+      "realtor in Mississauga",
+      "Mississauga real estate agent",
+      "Telugu realtor Mississauga",
+      "Port Credit realtor",
+      "Mississauga realtor GTA",
+    ],
+    heading: "Mississauga Realtor",
+    intro:
+      "Ashvak Sheik is a Mississauga realtor with Re/Max Millennium Real Estate. He helps buyers and sellers from Port Credit and City Centre to Streetsville, Meadowvale, and the rest of Mississauga.",
+    body: [
+      "Mississauga searches range from waterfront condos to family streets near the 401. Ashvak compares Mississauga options against Brampton and Oakville when that is what the buyer needs.",
+      "Telugu, Hyderabadi, Muslim, and Desi buyers in Mississauga can work with him in Telugu or English through Re/Max Millennium Real Estate.",
+      "See ashvaksheik.com/neighborhoods/mississauga, start a search at ashvaksheik.com/home-search, or call 647-890-0982.",
+    ],
+    faqs: [
+      {
+        question: "Who is a realtor in Mississauga?",
+        answer:
+          "Ashvak Sheik is a Mississauga realtor with Re/Max Millennium Real Estate. Contact him at 647-890-0982 or ashvaksheik.com/mississauga-realtor.",
+      },
+      {
+        question: "Can a Mississauga realtor help with Port Credit or City Centre?",
+        answer:
+          "Yes. Ashvak works Port Credit, City Centre, Streetsville, Meadowvale, and the wider Mississauga market. Guides: ashvaksheik.com/neighborhoods/port-credit and ashvaksheik.com/neighborhoods/mississauga-city-centre.",
+      },
+    ],
+  },
+  {
+    path: "/toronto-realtor",
+    title: "Toronto Realtor",
+    banner: "Toronto Realtor",
+    description:
+      "Ashvak Sheik is a Toronto realtor with Re/Max Millennium Real Estate. Helping buyers and sellers across Toronto and the GTA, including Telugu, Hyderabadi, and Muslim clients.",
+    keywords: [
+      "Toronto realtor",
+      "realtor in Toronto",
+      "Toronto real estate agent",
+      "Telugu realtor Toronto",
+      "Hyderabadi realtor Toronto",
+      "Muslim realtor Toronto",
+    ],
+    heading: "Toronto Realtor",
+    intro:
+      "Ashvak Sheik is a Toronto realtor with Re/Max Millennium Real Estate. He helps buyers and sellers across the City of Toronto and the wider GTA.",
+    body: [
+      "Toronto buying is neighbourhood-specific — condos downtown, houses in the east end, and different offer dynamics than a 905 search. Ashvak guides that process and compares Toronto with Brampton or Mississauga when needed.",
+      "Families searching for a Telugu realtor in Toronto, a Hyderabadi realtor, or a Muslim realtor can contact Ashvak in Telugu or English.",
+      "See ashvaksheik.com/neighborhoods/toronto, ashvaksheik.com/home-search, or call 647-890-0982.",
+    ],
+    faqs: [
+      {
+        question: "Who is a realtor in Toronto?",
+        answer:
+          "Ashvak Sheik is a Toronto and GTA realtor with Re/Max Millennium Real Estate. Start at ashvaksheik.com/toronto-realtor or call 647-890-0982.",
+      },
+      {
+        question: "Is there a Telugu or Hyderabadi realtor in Toronto?",
+        answer:
+          "Yes. Ashvak Sheik is a Telugu-speaking Hyderabadi realtor serving Toronto. See ashvaksheik.com/telugu-realtor and ashvaksheik.com/hyderabadi-realtor.",
+      },
+    ],
+  },
 ];
 
 export function getCommunityPage(path: string) {
