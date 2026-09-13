@@ -3,9 +3,11 @@
 Recipient: ashvak.realtor07@gmail.com  
 Site: https://ashvaksheik.com
 
-## Daily (ranking agent)
+## Daily (ranking agent) — 9:00–10:00 AM Eastern
 
-Do one concrete ranking improvement, then stop. Do not invent awards.
+Run every day at 9:00 AM Eastern (Cloud Automation cron). Finish by ~10:00 AM.
+
+Do one concrete ranking improvement for Google + AI search (ChatGPT, Claude, Perplexity, Gemini, AI Overviews), then stop. Do not invent awards.
 
 Rotation:
 
@@ -16,7 +18,7 @@ Rotation:
 5. Internal links from footer, menu, and related pages
 6. Alt text, H1s, sitemap, llms.txt
 
-After a change: `npm run build`. Commit and push only if the user already asked for deploys on this program.
+After a change: `npm run build`. Commit and push to `main` so Vercel goes live (Ashvak asked for autonomous ranking deploys).
 
 ## Weekly (Monday report)
 
