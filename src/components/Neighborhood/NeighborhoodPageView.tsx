@@ -17,6 +17,9 @@ const cityRealtorPaths: Record<string, string> = {
   brampton: "/brampton-realtor",
   mississauga: "/mississauga-realtor",
   toronto: "/toronto-realtor",
+  oakville: "/oakville-realtor",
+  vaughan: "/vaughan-realtor",
+  markham: "/markham-realtor",
 };
 
 const NeighborhoodPageView = ({ area }: { area: NeighborhoodGuide }) => {

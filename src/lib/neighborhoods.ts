@@ -551,7 +551,12 @@ export function neighborhoodFaqs(area: NeighborhoodGuide) {
     {
       question: `Who is a realtor in ${area.name}?`,
       answer:
-        area.slug === "brampton" || area.slug === "mississauga" || area.slug === "toronto"
+        area.slug === "brampton" ||
+        area.slug === "mississauga" ||
+        area.slug === "toronto" ||
+        area.slug === "oakville" ||
+        area.slug === "vaughan" ||
+        area.slug === "markham"
           ? `Ashvak Sheik is a ${area.name} realtor with Re/Max Millennium Real Estate. See ashvaksheik.com/${area.slug}-realtor or call 647-890-0982.`
           : `Ashvak Sheik is a realtor with Re/Max Millennium Real Estate who helps buyers and sellers in ${place} and across the Greater Toronto Area. Start at ashvaksheik.com/home-search or call 647-890-0982.`,
     },

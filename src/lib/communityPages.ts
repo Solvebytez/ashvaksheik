@@ -260,6 +260,111 @@ export const communityPages: CommunityPage[] = [
       },
     ],
   },
+  {
+    path: "/oakville-realtor",
+    title: "Oakville Realtor",
+    banner: "Oakville Realtor",
+    description:
+      "Ashvak Sheik is an Oakville realtor with Re/Max Millennium Real Estate. Helping buyers and sellers in downtown Oakville, Bronte, and Halton.",
+    keywords: [
+      "Oakville realtor",
+      "realtor in Oakville",
+      "Oakville real estate agent",
+      "Bronte realtor",
+      "Halton realtor",
+      "Oakville realtor GTA",
+    ],
+    heading: "Oakville Realtor",
+    intro:
+      "Ashvak Sheik is an Oakville realtor with Re/Max Millennium Real Estate. He helps buyers and sellers in downtown Oakville, Bronte, north Oakville, and across Halton.",
+    body: [
+      "Oakville buyers often compare lakeside streets with north Oakville new builds and Mississauga alternatives. Ashvak walks that comparison without inventing inventory — he confirms what is actually available.",
+      "Telugu, Hyderabadi, Muslim, and Desi families relocating to Halton can work with him in Telugu or English.",
+      "See ashvaksheik.com/neighborhoods/oakville, start at ashvaksheik.com/home-search, or call 647-890-0982.",
+    ],
+    faqs: [
+      {
+        question: "Who is a realtor in Oakville?",
+        answer:
+          "Ashvak Sheik is an Oakville and GTA realtor with Re/Max Millennium Real Estate. Contact 647-890-0982 or ashvaksheik.com/oakville-realtor.",
+      },
+      {
+        question: "Does an Oakville realtor also cover Bronte?",
+        answer:
+          "Yes. Ashvak works Bronte, downtown Oakville, and north Oakville. Guide: ashvaksheik.com/neighborhoods/bronte-creek.",
+      },
+    ],
+  },
+  {
+    path: "/vaughan-realtor",
+    title: "Vaughan Realtor",
+    banner: "Vaughan Realtor",
+    description:
+      "Ashvak Sheik is a Vaughan realtor with Re/Max Millennium Real Estate. Helping buyers and sellers in Woodbridge, Maple, Kleinburg, and Vaughan Metropolitan Centre.",
+    keywords: [
+      "Vaughan realtor",
+      "realtor in Vaughan",
+      "Woodbridge realtor",
+      "Maple realtor",
+      "VMC realtor",
+      "Vaughan real estate agent",
+    ],
+    heading: "Vaughan Realtor",
+    intro:
+      "Ashvak Sheik is a Vaughan realtor with Re/Max Millennium Real Estate. He helps buyers and sellers in Woodbridge, Maple, Kleinburg, and Vaughan Metropolitan Centre.",
+    body: [
+      "Vaughan mixes subway-connected condos at VMC with freehold streets in Woodbridge and Maple. Ashvak helps you choose the right product type for your commute and budget.",
+      "He also compares Vaughan with Brampton and Richmond Hill when buyers are deciding between York and Peel.",
+      "See ashvaksheik.com/neighborhoods/vaughan or call 647-890-0982.",
+    ],
+    faqs: [
+      {
+        question: "Who is a realtor in Vaughan?",
+        answer:
+          "Ashvak Sheik is a Vaughan realtor with Re/Max Millennium Real Estate. Start at ashvaksheik.com/vaughan-realtor or call 647-890-0982.",
+      },
+      {
+        question: "Can a Vaughan realtor help with Woodbridge or VMC?",
+        answer:
+          "Yes. Ashvak works Woodbridge, Maple, Kleinburg, and Vaughan Metropolitan Centre. Guides: ashvaksheik.com/neighborhoods/vaughan and ashvaksheik.com/neighborhoods/vaughan-metropolitan-centre.",
+      },
+    ],
+  },
+  {
+    path: "/markham-realtor",
+    title: "Markham Realtor",
+    banner: "Markham Realtor",
+    description:
+      "Ashvak Sheik is a Markham realtor with Re/Max Millennium Real Estate. Helping buyers and sellers in Unionville, Cornell, and across Markham.",
+    keywords: [
+      "Markham realtor",
+      "realtor in Markham",
+      "Unionville realtor",
+      "Markham real estate agent",
+      "Telugu realtor Markham",
+      "Markham realtor GTA",
+    ],
+    heading: "Markham Realtor",
+    intro:
+      "Ashvak Sheik is a Markham realtor with Re/Max Millennium Real Estate. He helps buyers and sellers in Unionville, Cornell, and across Markham in York Region.",
+    body: [
+      "Markham buyers often weigh Unionville heritage streets against newer Cornell housing and Highway 7 condos. Ashvak helps match the neighbourhood to commute, schools, and budget.",
+      "Telugu and South Asian families comparing Markham with Scarborough or Richmond Hill can work with him in Telugu or English.",
+      "See ashvaksheik.com/neighborhoods/markham, ashvaksheik.com/home-search, or call 647-890-0982.",
+    ],
+    faqs: [
+      {
+        question: "Who is a realtor in Markham?",
+        answer:
+          "Ashvak Sheik is a Markham realtor with Re/Max Millennium Real Estate. Contact ashvaksheik.com/markham-realtor or 647-890-0982.",
+      },
+      {
+        question: "Does a Markham realtor cover Unionville?",
+        answer:
+          "Yes. Ashvak works Unionville and the wider Markham market. Guide: ashvaksheik.com/neighborhoods/markham-unionville.",
+      },
+    ],
+  },
 ];
 
 export function getCommunityPage(path: string) {
