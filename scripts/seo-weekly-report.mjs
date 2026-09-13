@@ -6,7 +6,11 @@
 
 const SITE_URL = (process.env.SITE_URL || "https://ashvaksheik.com").replace(/\/$/, "");
 const REPORT_TO = process.env.REPORT_TO || "ashvak.realtor07@gmail.com";
-const REPORT_FROM = process.env.REPORT_FROM || "Ashvak SEO Agent <beth.t@example.com>";
+const FROM_CANDIDATES = [
+  process.env.REPORT_FROM,
+  "Ashvak Sheik <reports@ashvaksheik.com>",
+  "Ashvak Sheik <reports@inthefinals.ai>",
+].filter((value, index, list) => value && list.indexOf(value) === index);
 
 const pages = [
   "/",
@@ -154,24 +158,32 @@ async function main() {
   }
 
   if (process.env.RESEND_API_KEY) {
-    const emailResponse = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        from: REPORT_FROM,
-        to: [REPORT_TO],
-        subject: `Ashvak weekly GEO/SEO report — ${date}`,
-        text: report,
-      }),
-    });
-    if (!emailResponse.ok) {
-      const body = await emailResponse.text();
-      throw new Error(`Resend failed (${emailResponse.status}): ${body}`);
+    let lastError = "No sender addresses to try.";
+    let sentFrom = "";
+    for (const from of FROM_CANDIDATES) {
+      const emailResponse = await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from,
+          to: [REPORT_TO],
+          subject: `Ashvak weekly GEO/SEO report — ${date}`,
+          text: report,
+        }),
+      });
+      if (emailResponse.ok) {
+        sentFrom = from;
+        break;
+      }
+      lastError = await emailResponse.text();
     }
-    console.log(`Emailed report to ${REPORT_TO}`);
+    if (!sentFrom) {
+      throw new Error(`Resend failed: ${lastError}`);
+    }
+    console.log(`Emailed report to ${REPORT_TO} from ${sentFrom}`);
   } else {
     console.log("RESEND_API_KEY not set — report printed only.");
   }
