@@ -20,14 +20,16 @@ Rotation:
 
 After a change: `npm run build`. Commit and push to `main` so Vercel goes live (Ashvak asked for autonomous ranking deploys).
 
-## Weekly (Monday report)
+## Weekly (Monday report only)
 
-Run:
+**Email Ashvak once per week — Mondays only.** Do not email mid-week when doing daily ranking work. Mid-week audits may print locally; they must not send mail unless Ashvak asked.
+
+Run on Monday (or with `SEND_EMAIL=1` only if he asked for a one-off):
 
 ```bash
 SITE_URL=https://ashvaksheik.com REPORT_TO=ashvak.realtor07@gmail.com node scripts/seo-weekly-report.mjs
 ```
 
-Email the output to ashvak.realtor07@gmail.com. If `RESEND_API_KEY` is set, the script sends it. GitHub Action `.github/workflows/seo-weekly-report.yml` runs this every Monday at 9 AM Eastern.
+If `RESEND_API_KEY` is set, the script emails only on Mondays Eastern (or when `SEND_EMAIL=1`). GitHub Action `.github/workflows/seo-weekly-report.yml` is meant for Mondays at 9 AM Eastern.
 
 Report must include: pages checked, missing titles/descriptions/canonicals, H1 counts, JSON-LD presence, sitemap/robots/llms.txt status, and next week's 5 priorities.

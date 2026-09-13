@@ -166,7 +166,15 @@ async function main() {
     await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, `\`\`\`\n${report}\n\`\`\`\n`);
   }
 
-  if (process.env.RESEND_API_KEY) {
+  const weekdayEt = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/Toronto",
+    weekday: "short",
+  }).format(new Date());
+  const forceEmail = process.env.SEND_EMAIL === "1" || process.env.SEND_EMAIL === "true";
+  const isMonday = weekdayEt === "Mon";
+  const shouldEmail = forceEmail || isMonday;
+
+  if (process.env.RESEND_API_KEY && shouldEmail) {
     let lastError = "No sender addresses to try.";
     let sentFrom = "";
     for (const from of FROM_CANDIDATES) {
@@ -193,6 +201,10 @@ async function main() {
       throw new Error(`Resend failed: ${lastError}`);
     }
     console.log(`Emailed report to ${REPORT_TO} from ${sentFrom}`);
+  } else if (process.env.RESEND_API_KEY && !shouldEmail) {
+    console.log(
+      "Report printed only (email sends on Mondays Eastern, or with SEND_EMAIL=1)."
+    );
   } else {
     console.log("RESEND_API_KEY not set — report printed only.");
   }
