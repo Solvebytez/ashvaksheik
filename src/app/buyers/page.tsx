@@ -9,6 +9,7 @@ import { seTtingsData } from "@/lib/Data/SettingSData";
 import Image from "next/image";
 import GuideDownloadForm from "@/components/Form/GuideDownloadForm";
 import { pageMetadata } from "@/lib/seo";
+import Link from "next/link";
 
 export const metadata = pageMetadata({
   title: "First-Time Buyer Guide",
@@ -119,11 +120,14 @@ const BuyersPage = () => {
             A Step-by-Step First Time <br className="hidden md:block" /> {"Buyer's"} Guide
           </h2>
           <p className="px-2 md:px-10 my-8 md:my-10 text-sm md:text-base leading-7">
-            Buying a home is one of the most exciting milestones of your life.
-            To prepare yourself for this moment, you need to know what to expect
-            during the process. This step-by-step first time buyer’s guide
-            created by your agent will help reduce the stress of buying a home
-            and help you enjoy the journey as much as possible.
+            Buying a home in{" "}
+            <Link href="/neighborhoods/brampton" className="underline">Brampton</Link>,{" "}
+            <Link href="/neighborhoods/mississauga" className="underline">Mississauga</Link>, or{" "}
+            <Link href="/neighborhoods/toronto" className="underline">Toronto</Link>{" "}
+            is easier when you know the Ontario process. This first-time buyer’s guide from Ashvak Sheik at Re/Max Millennium Real Estate walks you through each step. Telugu, Hyderabadi, Muslim, and Desi buyers can also start at{" "}
+            <Link href="/telugu-realtor" className="underline">/telugu-realtor</Link>,{" "}
+            <Link href="/faq" className="underline">/faq</Link>, or{" "}
+            <Link href="/home-search" className="underline">/home-search</Link>.
           </p>
         </Container>
       </div>

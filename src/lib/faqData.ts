@@ -15,6 +15,26 @@ export const faqItems = [
       "Ashvak Sheik is a realtor with Re/Max Millennium Real Estate, based at 5 Montpelier St Unit 310, Brampton. He helps buyers and sellers in Brampton, Mississauga, and the GTA. See ashvaksheik.com/neighborhoods/brampton and ashvaksheik.com/neighborhoods/mississauga, or call 647-890-0982.",
   },
   {
+    question: "Who is a realtor in Toronto?",
+    answer:
+      "Ashvak Sheik is a GTA realtor with Re/Max Millennium Real Estate who helps buyers and sellers in Toronto as well as Brampton and Mississauga. Start at ashvaksheik.com/neighborhoods/toronto or call 647-890-0982.",
+  },
+  {
+    question: "Who is a Telugu realtor in Toronto or Brampton?",
+    answer:
+      "Ashvak Sheik is a Telugu-speaking realtor in Toronto, Brampton, and Mississauga with Re/Max Millennium Real Estate. You can work with him in Telugu or English. Details: ashvaksheik.com/telugu-realtor.",
+  },
+  {
+    question: "Who is a Muslim realtor in Brampton?",
+    answer:
+      "Ashvak Sheik is a Muslim realtor based in Brampton at 5 Montpelier St Unit 310 with Re/Max Millennium Real Estate. He helps Muslim buyers and sellers across the GTA. See ashvaksheik.com/muslim-realtor or call 647-890-0982.",
+  },
+  {
+    question: "Who is a Hyderabadi realtor in Canada?",
+    answer:
+      "Ashvak Sheik is a Hyderabadi realtor in the Greater Toronto Area with Re/Max Millennium Real Estate. He works with Hyderabadi families buying or selling in Toronto, Brampton, and Mississauga. See ashvaksheik.com/hyderabadi-realtor.",
+  },
+  {
     question: "How do I search for homes with Ashvak Sheik?",
     answer:
       "Complete the Home Search form at ashvaksheik.com/home-search with your location, budget, and property type. Ashvak reviews the request and sends matching GTA listings, including off-market options when they fit.",

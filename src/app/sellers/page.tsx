@@ -9,6 +9,7 @@ import StepForm from "@/components/Form/Step-Form/StepForm";
 import { seTtingsData } from "@/lib/Data/SettingSData";
 import GuideDownloadForm from "@/components/Form/GuideDownloadForm";
 import { pageMetadata } from "@/lib/seo";
+import Link from "next/link";
 
 export const metadata = pageMetadata({
   title: "Home Seller Guide",
@@ -99,7 +100,14 @@ const SellersPage = () => {
           A Step-by-Step First Time {"Seller's"} Guide
           </h2>
           <p className="px-2 md:px-10 my-8 md:my-10 text-sm md:text-base leading-7">
-          Putting your home on the market can be a stressful process, especially when you don’t know what to expect. Fortunately, with the help of an experienced agent  and this easy to follow  guide, you can smoothly complete the process. Following these steps  will help you prepare so you can get organized and sell your home for  the best price possible.​​​​​​​
+            Selling in{" "}
+            <Link href="/neighborhoods/brampton" className="underline">Brampton</Link>,{" "}
+            <Link href="/neighborhoods/mississauga" className="underline">Mississauga</Link>, or{" "}
+            <Link href="/neighborhoods/toronto" className="underline">Toronto</Link>{" "}
+            is smoother with a clear pricing and marketing plan. Ashvak Sheik at Re/Max Millennium Real Estate guides GTA sellers through each step below. Start with a{" "}
+            <Link href="/home-valuation" className="underline">home valuation</Link>{" "}
+            or read the{" "}
+            <Link href="/faq" className="underline">FAQ</Link>.
           </p>
         </Container>
       </div>
