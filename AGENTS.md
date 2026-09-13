@@ -14,6 +14,6 @@ Do not invent awards, license numbers, or press mentions. Run `npm run build` af
 
 ## Schedule
 
-- Daily: one ranking improvement from `.cursor/skills/geo-seo/schedule.md`
+- Daily 9:00–10:00 AM Eastern: Cloud Automation runs one ranking improvement from `.cursor/skills/geo-seo/schedule.md` for Google + ChatGPT/Claude/Perplexity/Gemini
 - Monday: run `scripts/seo-weekly-report.mjs` and email ashvak.realtor07@gmail.com
-- GitHub Action: `.github/workflows/seo-weekly-report.yml` (needs `RESEND_API_KEY` to send the email)
+- GitHub Action: `.github/workflows/seo-weekly-report.yml` (needs `RESEND_API_KEY`; file may need manual add if OAuth lacks `workflow` scope)
