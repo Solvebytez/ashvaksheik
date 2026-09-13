@@ -3,6 +3,7 @@ import Container from "../Global/Container";
 import SectionTitle from "../Global/SectionTitle";
 import Image from "next/image";
 import LinkButton from "../Global/Button";
+import Link from "next/link";
 
 const AboutHome = ({openModal}:{openModal:()=>void;}) => {
   return (
@@ -25,7 +26,13 @@ const AboutHome = ({openModal}:{openModal:()=>void;}) => {
         </div>
         <div className="flex flex-col items-center justify-center text-center space-y-5 text-white px-1 md:px-8">
           <p className="text-[15px] md:text-[16px] leading-7 tracking-wide">
-          Ashvak prides himself on being highly resourceful and deeply attuned to his {"clients'"} unique needs and aspirations. With a meticulous focus on every detail that matters most, he ensures a seamless experience from start to finish. Dedication, integrity, and honesty are the cornerstones of Ashvak’s business, guiding him in providing exceptional care and building long-lasting relationships with clients.{" "}
+          Ashvak Sheik is a Telugu-speaking Hyderabadi Muslim realtor with Re/Max Millennium Real Estate in Brampton. Families looking for a{" "}
+          <Link href="/telugu-realtor" className="underline">Telugu realtor</Link>,{" "}
+          <Link href="/muslim-realtor" className="underline">Muslim realtor</Link>, or a realtor in{" "}
+          <Link href="/neighborhoods/brampton" className="underline">Brampton</Link>,{" "}
+          <Link href="/neighborhoods/mississauga" className="underline">Mississauga</Link>, or{" "}
+          <Link href="/neighborhoods/toronto" className="underline">Toronto</Link>{" "}
+          can work with him in Telugu or English.
           </p>
           <p className="text-[15px] md:text-[16px] leading-7 tracking-wide">
           With over a decade of experience in IT and real estate, Ashvak brings a unique blend of technical expertise and market insight. His analytical skills, honed through years in data-driven roles, empower his clients with informed decisions and innovative solutions. {"Ashvak’s"} transition into real estate was a natural progression, allowing him to leverage his strengths to deliver exceptional results for every client.

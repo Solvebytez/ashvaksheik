@@ -1,10 +1,8 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Image from "next/image";
 import LinkButton from "./Global/Button";
-import { useEffect, useState } from "react";
 import { formatDate } from "@/lib/utils";
-import { API_TOKEN, BASE_URL } from "@/env";
+import { BASE_URL } from "@/env";
 
 export interface BlogResponse {
   data: Blog[];
@@ -41,39 +39,24 @@ export interface Blog {
   categories: any[];
 }
 
-const BlogCard = () => {
-  const [blogs, setBlogs] = useState<Blog[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
+const BlogCard = async () => {
+  let blogs: Blog[] = [];
+  try {
+    const response = await fetch(`${BASE_URL}/api/blogs?populate=*`, {
+      next: { revalidate: 3600 },
+    });
+    if (response.ok) {
+      const data: BlogResponse = await response.json();
+      const list = Array.isArray(data.data) ? data.data : [];
+      blogs = [...list].reverse();
+    }
+  } catch (err) {
+    console.error("Error fetching blogs:", err);
+  }
 
-  useEffect(() => {
-    const fetchBlogs = async () => {
-      try {
-        const response = await fetch(`${BASE_URL}/api/blogs?populate=*`,{
-          // headers: {
-          //   "Authorization": `Bearer ${API_TOKEN}`, // Include the JWT token in the Authorization header
-          //   "Content-Type": "application/json", // Optional, but good practice
-          // },
-        });
-        if (!response.ok) {
-          throw new Error("Failed to fetch blogs");
-        }
-        const data: BlogResponse = await response.json();
-        const list = Array.isArray(data.data) ? data.data : [];
-        setBlogs([...list].reverse());
-      } catch (err) {
-        setError((err as Error).message);
-        console.error('Error fetching blogs:', err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchBlogs();
-  }, []);
-
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error}</p>;
+  if (!blogs.length) {
+    return <p className="text-white/70">No posts published yet.</p>;
+  }
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

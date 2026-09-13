@@ -67,7 +67,7 @@ const BlogDetailsPage = async ({
           })}
         />
       )}
-      <BlogDetails params={params} />
+      <BlogDetails post={post} />
     </>
   );
 };

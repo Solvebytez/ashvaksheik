@@ -1,24 +1,19 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-'use client'
-import React from 'react';
 
 const RenderContent = ({ content }: { content: any[] }) => {
-
-    console.log("content",content)
-
   return (
     <div>
       {content.map((block, index) => {
         switch (block.type) {
-          case 'paragraph':
+          case "paragraph":
             return (
               <p key={index}>
                 {block.children.map((child: any, childIndex: number) => (
                   <span
                     key={childIndex}
                     style={{
-                      fontWeight: child.bold ? 'bold' : 'normal',
-                      fontStyle: child.italic ? 'italic' : 'normal',
+                      fontWeight: child.bold ? "bold" : "normal",
+                      fontStyle: child.italic ? "italic" : "normal",
                     }}
                   >
                     {child.text}
@@ -27,23 +22,17 @@ const RenderContent = ({ content }: { content: any[] }) => {
               </p>
             );
 
-          case 'heading':
-            const HeadingTag = `h${block.level}` as keyof JSX.IntrinsicElements;
+          case "heading": {
+            const level = Math.min(Math.max(Number(block.level) || 2, 2), 4);
+            const HeadingTag = `h${level}` as keyof JSX.IntrinsicElements;
             return (
-              <HeadingTag key={index} className='text-md'>
+              <HeadingTag key={index} className="text-md">
                 {block.children.map((child: any, childIndex: number) => (
-                  <span
-                    key={childIndex}
-                    style={{
-                      fontWeight: child.bold ? 'normal' : 'normal',
-                      fontStyle: child.italic ? 'italic' : 'normal',
-                    }}
-                  >
-                    {child.text}
-                  </span>
+                  <span key={childIndex}>{child.text}</span>
                 ))}
               </HeadingTag>
             );
+          }
 
           default:
             return null;

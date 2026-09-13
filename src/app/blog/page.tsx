@@ -1,17 +1,16 @@
-'use client'
 import BlogCard from "@/components/BlogCard";
 import BreadcumBanner from "@/components/Global/BreadcumBanner";
 import Container from "@/components/Global/Container";
 import Sidebar from "@/components/Global/Sidebar";
 import ReceiveInbox from "@/components/Home/ReceiveInbox";
-import { Suspense } from "react";
 
 const BlogPage = () => {
-
-
   return (
     <div>
-      <BreadcumBanner pageTitle="Blog" bgLogo="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/gg5lqgxfs8n9uajak0pp/portfolio" />
+      <BreadcumBanner
+        pageTitle="Blog"
+        bgLogo="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/gg5lqgxfs8n9uajak0pp/portfolio"
+      />
       <div className="flex flex-col justify-center py-10 items-center ">
         <h2 className="text-center text-2xl md:text-5xl font-tenor_Sans tracking-[2px] md:tracking-[5px] text-white py-6 md:py-10 px-4">
           Featured Posts
@@ -20,16 +19,14 @@ const BlogPage = () => {
       <Container>
         <div className="lg:grid lg:grid-cols-12 gap-5 mb-10">
           <div className="col-span-8 text-white">
-            <Suspense fallback={'Loading.........'}>
             <BlogCard />
-            </Suspense>
           </div>
           <div className="col-span-4">
-            <Sidebar/>
+            <Sidebar />
           </div>
         </div>
       </Container>
-      <ReceiveInbox/>
+      <ReceiveInbox />
     </div>
   );
 };

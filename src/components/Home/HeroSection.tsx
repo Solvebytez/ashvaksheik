@@ -13,7 +13,7 @@ const HeroSection = () => {
             Re/Max Millennium Real Estate
           </strong>
           <p className="my-4 md:my-6 text-center text-sm md:text-base px-2">
-            Setting the standard in Real Estate. Just as intended.
+            Telugu-speaking Hyderabadi Muslim realtor in Brampton and the GTA.
           </p>
           <LinkButton btnText="Home Search" href="/home-search" className="mt-8 md:mt-14" />
         </div>

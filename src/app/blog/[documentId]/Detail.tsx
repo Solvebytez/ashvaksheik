@@ -1,162 +1,72 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable @typescript-eslint/no-explicit-any */
-'use client'
-
 import Breadcrumb from "@/components/Global/BreadcrumbLinks";
 import LinkButton from "@/components/Global/Button";
 import Sidebar from "@/components/Global/Sidebar";
 import ReceiveInbox from "@/components/Home/ReceiveInbox";
-import { API_TOKEN, BASE_URL } from "@/env";
+import type { Blog } from "@/components/BlogCard";
+import { BASE_URL } from "@/env";
 import { formatDate } from "@/lib/utils";
 import Image from "next/image";
-// import Markdown from "react-markdown";
-import { useEffect, useState } from "react";
 import RenderContent from "./renderContent";
 
-const BlogDetails = ({ params }: { params: { documentId: string } }) => {
-  const { documentId } = params;
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-  const [data, setData] = useState<any>(null);
-
-
-
-  useEffect(() => {
-    const fetchBlogPost = async () => {
-      try {
-        setLoading(true);
-        // Using the exact API endpoint structure
-        const response = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_BASE_URL}/api/blogs?filters[slug][$eq]=${params.documentId}&populate=*`,{
-                  // headers: {
-                  //   "Authorization": `Bearer ${API_TOKEN}`, // Include the JWT token in the Authorization header
-                  //   "Content-Type": "application/json", // Optional, but good practice
-                  // },
-                });
-        
-        if (!response.ok) {
-          throw new Error(`Failed to fetch blog post: ${response.statusText}`);
-        }
-        
-        const jsonData = await response.json();      
-        // Check if we have data
-        if (!jsonData.data || jsonData.data.length === 0) {
-          throw new Error('Blog post not found');
-        }
-        setData(jsonData.data)
-        // const post = jsonData.data[0]; // Get the first post since we're querying by ID
-        // const blogData = {
-        //   blog: {
-        //     data: {
-        //       id: post.id,
-        //       attributes: {
-        //         Title: post.title,
-        //         Content: post.content,
-        //         ShortDescription: post.ShortDescription,
-        //         Slug: post.slug,
-        //         publishedAt: post.publishedAt,
-        //         Thumbnail: {
-        //           data: {
-        //             id: post.thumbnail?.[0]?.id,
-        //             attributes: {
-        //               url: post.thumbnail?.[0]?.formats?.medium?.url || post.thumbnail?.[0]?.url,
-        //               alternativeText: post.thumbnail?.[0]?.alternativeText
-        //             }
-        //           }
-        //         }
-        //       }
-        //     }
-        //   }
-        // };
-
-        // console.log('Transformed Blog Data:', blogData);
-        // setData(blogData);
-        
-      } catch (err) {
-        console.error('Error fetching blog:', err);
-        setError(err instanceof Error ? err.message : 'An error occurred');
-      } finally {
-        setLoading(false);
-      }
-    };
-  
-    fetchBlogPost();
-  }, [documentId, params.documentId]);
-
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error}</p>;
-
-
-
-  if (!data.length) return (
-    <div className="h-[calc(90vh-50px)] relative z-0 px-4 md:px-8 lg:px-16 xl:px-36 2xl:px-72 lg:pt-32 overflow-hidden">
-      <div className="flex flex-col items-center h-full justify-center text-white gap-4">
-        Blog post not found.
-        <LinkButton btnText="Go to Blog Page" href="/blog"/>
+const BlogDetails = ({ post }: { post?: Blog }) => {
+  if (!post) {
+    return (
+      <div className="h-[calc(90vh-50px)] relative z-0 px-4 md:px-8 lg:px-16 xl:px-36 2xl:px-72 lg:pt-32 overflow-hidden">
+        <div className="flex flex-col items-center h-full justify-center text-white gap-4">
+          Blog post not found.
+          <LinkButton btnText="Go to Blog Page" href="/blog" />
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 
-  const breadrcum = [
-    {
-      name: "Home",
-      href: "/",
-    },
-    {
-      name: "Blog",
-      href: "/blog",
-    },
-    {
-      name: data[0].title,
-      href: "#",   
-    },
-  ];
-
-
+  const raw = post.thumbnail?.[0]?.formats?.medium?.url ?? post.thumbnail?.[0]?.url;
+  const imageSrc = raw && (raw.startsWith("http") ? raw : `${BASE_URL}${raw}`);
 
   return (
     <>
       <div className="min-h-[55vh] md:h-[calc(90vh-50px)] relative z-0 px-4 md:px-8 lg:px-16 xl:px-36 2xl:px-72 pt-24 md:pt-32 pb-8 overflow-hidden">
-        <Breadcrumb LinkItem={breadrcum} />
+        <Breadcrumb
+          LinkItem={[
+            { name: "Home", href: "/" },
+            { name: "Blog", href: "/blog" },
+            { name: post.title, href: "#" },
+          ]}
+        />
         <h1 className="text-white font-tenor_Sans text-2xl md:text-4xl tracking-[1px] md:tracking-[2px] mt-6 md:mt-8 leading-tight">
-          {data[0].title}
+          {post.title}
         </h1>
-        <p className="text-white my-5">
-          {data[0].ShortDescription}
-        </p>
+        <p className="text-white my-5">{post.ShortDescription}</p>
         <div className="h-full xl:w-full xl:h-full relative">
-  {data[0]?.thumbnail?.[0]?.url && (
-    <Image
-      src={
-        data[0].thumbnail[0].url.startsWith('http')
-          ? data[0].thumbnail[0].url
-          : `${BASE_URL}${data[0].thumbnail[0].url}`
-      }
-      fill
-      priority
-      className="object-cover"
-      alt={data[0]?.title || ""}
-    />
-  )}
-</div>
+          {imageSrc && (
+            <Image
+              src={imageSrc}
+              fill
+              priority
+              className="object-cover"
+              alt={post.title || "Ashvak Sheik GTA real estate article"}
+            />
+          )}
+        </div>
       </div>
       <div className="lg:grid lg:grid-cols-12 gap-5 mb-10  px-4 md:px-8 lg:px-14 xl:px-32 2xl:px-64 lg:pt-[2rem]">
         <div className="col-span-8 pl-0 md:pl-7">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-6">
-              <p className="text-xs text-white">{formatDate(data[0].publishedAt)}</p>
+              <p className="text-xs text-white">{formatDate(post.publishedAt)}</p>
               <p className="text-xs text-white">by Ashvak Sheik</p>
             </div>
           </div>
           <hr className="my-2 border-white/10 mt-4 font-tenor_Sans"></hr>
           <div className="BlogDetails">
-          {data[0].content && <RenderContent content={data[0].content} />} 
+            {post.content && <RenderContent content={post.content} />}
           </div>
         </div>
         <div className="col-span-4">
           <Sidebar />
         </div>
       </div>
-      <ReceiveInbox/>
+      <ReceiveInbox />
     </>
   );
 };
