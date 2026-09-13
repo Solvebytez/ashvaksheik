@@ -9,6 +9,8 @@ import { ToastContainer } from "react-toastify";
 import { Metadata } from "next";
 import { ApolloWrapper } from "./ApolloProvider";
 import Script from "next/script";
+import JsonLd from "@/components/seo/JsonLd";
+import { SITE_URL, siteGraph } from "@/lib/seo";
 
 const montserrat = Montserrat({
   subsets: ["latin", "cyrillic", "latin-ext"],
@@ -23,18 +25,25 @@ const tenor_Sans = Tenor_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ashvaksheik.com"),
+  metadataBase: new URL(SITE_URL),
   title: {
     template: "%s | Ashvak Sheik",
     absolute: "Ashvak Sheik | Re/Max President Realty Brokerage",
   },
   description:
-    "Ashvak Sheik, Realtor with Re/Max President Realty Brokerage. Serving the Greater Toronto Area, including Peel, Durham, Halton, York, and surrounding regions.",
+    "Ashvak Sheik is a Telugu-speaking Hyderabadi Muslim realtor with Re/Max President Realty Brokerage in the Greater Toronto Area, including Peel, Durham, Halton, and York.",
+  alternates: {
+    canonical: SITE_URL,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     title: "Ashvak Sheik | Re/Max President Realty Brokerage",
     description:
       "GTA realtor helping buyers and sellers across Peel, Durham, Halton, and York.",
-    url: "https://ashvaksheik.com",
+    url: SITE_URL,
     siteName: "Ashvak Sheik",
     images: [
       {
@@ -63,7 +72,7 @@ export default async function RootLayout({
 }>) {
   // Fetching the messages server-side
   return (
-    <html lang="en">
+    <html lang="en-CA">
       <head>
         {/* Google Tag Manager - Head */}
         <meta
@@ -97,6 +106,7 @@ export default async function RootLayout({
           </noscript>
           {/* End Google Tag Manager (noscript) */}
           <div className="bg-black ">
+            <JsonLd data={siteGraph()} />
             <Header />
             {children}
             <Footer />

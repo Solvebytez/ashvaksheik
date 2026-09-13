@@ -1,6 +1,14 @@
 import BreadcumBanner from '@/components/Global/BreadcumBanner'
 import Container from '@/components/Global/Container'
+import { pageMetadata } from '@/lib/seo'
 import React from 'react'
+
+export const metadata = pageMetadata({
+  title: "Press and Media",
+  description:
+    "Press inquiries for Ashvak Sheik, Realtor with Re/Max President Realty Brokerage. Email ashvak.realtor07@gmail.com.",
+  path: "/press",
+});
 
 const PressMediaPage = () => {
   return (

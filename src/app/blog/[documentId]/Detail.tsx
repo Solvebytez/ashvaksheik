@@ -144,7 +144,7 @@ const BlogDetails = ({ params }: { params: { documentId: string } }) => {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-6">
               <p className="text-xs text-white">{formatDate(data[0].publishedAt)}</p>
-              <p className="text-xs text-white">by Admin</p>
+              <p className="text-xs text-white">by Ashvak Sheik</p>
             </div>
           </div>
           <hr className="my-2 border-white/10 mt-4 font-tenor_Sans"></hr>

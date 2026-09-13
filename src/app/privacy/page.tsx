@@ -1,6 +1,14 @@
 import BreadcumBanner from "@/components/Global/BreadcumBanner";
 import Container from "@/components/Global/Container";
+import { pageMetadata } from "@/lib/seo";
 import React from "react";
+
+export const metadata = pageMetadata({
+  title: "Privacy Policy",
+  description:
+    "Privacy policy for Ashvak Sheik, Realtor with Re/Max President Realty Brokerage, covering how contact information is collected and used.",
+  path: "/privacy",
+});
 
 const PrivacyPage = () => {
   return (

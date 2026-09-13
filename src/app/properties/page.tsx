@@ -1,6 +1,14 @@
 import BreadcumBanner from "@/components/Global/BreadcumBanner";
 import Container from "@/components/Global/Container";
 import LinkButton from "@/components/Global/Button";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "GTA Homes for Sale",
+  description:
+    "Search GTA homes with Ashvak Sheik, Realtor at Re/Max President Realty Brokerage. Listings change quickly — request matches including off-market options.",
+  path: "/properties",
+});
 
 const ProPertiesPage = () => {
   return (

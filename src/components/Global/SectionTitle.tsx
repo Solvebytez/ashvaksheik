@@ -38,9 +38,9 @@ const SectionTitle = ({  description, title,titleNumber }: SectionTitleProps) =>
       </div>
 
       {/* Main heading */}
-      <h1 className="text-2xl sm:text-3xl md:text-[43px] font-light tracking-[2px] md:tracking-[6px] uppercase mb-4 tenor_Sans leading-tight">
+      <h2 className="text-2xl sm:text-3xl md:text-[43px] font-light tracking-[2px] md:tracking-[6px] uppercase mb-4 tenor_Sans leading-tight">
         {title}
-      </h1>
+      </h2>
     </div>
 
   );

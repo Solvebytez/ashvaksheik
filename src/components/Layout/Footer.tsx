@@ -52,9 +52,9 @@ const Footer = () => {
     <div className="bg-black text-white  p-0 md:p-8">
     
       <Container>
-        <h1 className="text-3xl text-center md:text-left my-14 font-tenor_Sans tracking-[2px] uppercase">
+        <p className="text-3xl text-center md:text-left my-14 font-tenor_Sans tracking-[2px] uppercase">
         Ashvak Sheik
-        </h1>
+        </p>
         <div className="flex flex-col items-center md:flex-row md:justify-between md:items-start">
           {/* Left Section */}
           <div className="mb-8 md:mb-0 w-full text-center md:text-left md:w-1/4 font-tenor_Sans">
@@ -139,6 +139,22 @@ const Footer = () => {
             </div>
           
         </div>
+        <nav className="flex flex-wrap justify-center md:justify-start gap-x-5 gap-y-2 mt-12 text-xs tracking-[2px] uppercase">
+          <Link href="/about" className="hover:underline">About</Link>
+          <Link href="/home-search" className="hover:underline">Home Search</Link>
+          <Link href="/home-valuation" className="hover:underline">Home Valuation</Link>
+          <Link href="/pre-construction" className="hover:underline">Pre-Construction</Link>
+          <Link href="/neighborhoods" className="hover:underline">Neighborhoods</Link>
+          <Link href="/buyers" className="hover:underline">Buyers</Link>
+          <Link href="/sellers" className="hover:underline">Sellers</Link>
+          <Link href="/faq" className="hover:underline">FAQ</Link>
+          <Link href="/telugu-realtor" className="hover:underline">Telugu Realtor</Link>
+          <Link href="/hyderabadi-realtor" className="hover:underline">Hyderabadi Realtor</Link>
+          <Link href="/muslim-realtor" className="hover:underline">Muslim Realtor</Link>
+          <Link href="/desi-realtor" className="hover:underline">Desi Realtor</Link>
+          <Link href="/blog" className="hover:underline">Blog</Link>
+          <Link href="/testimonials" className="hover:underline">Testimonials</Link>
+        </nav>
         <div className="flex flex-col md:flex-row items-center md:items-start gap-4 mt-12 md:mt-[7rem] pb-24 md:pb-0 text-center md:text-left">
           <Image src="/REMAX_logo.png" width={180} height={250} priority alt="RE/MAX logo" className="h-auto w-[140px] md:w-[180px]" />
          <div className="space-y-3">

@@ -1,8 +1,14 @@
 import BreadcumBanner from "@/components/Global/BreadcumBanner";
-
 import WorkWith from "@/components/Home/WorkWith";
 import TestimonialPaginations from "@/components/Testimonials/TestimonialPaginations";
+import { pageMetadata } from "@/lib/seo";
 
+export const metadata = pageMetadata({
+  title: "Client Testimonials",
+  description:
+    "Read what GTA buyers and sellers say about working with Ashvak Sheik, Realtor at Re/Max President Realty Brokerage.",
+  path: "/testimonials",
+});
 
 const TestimonialsPage = () => {
   return (

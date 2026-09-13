@@ -1,5 +1,13 @@
 import StepForm from "@/components/Form/Step-Form/StepForm";
+import { pageMetadata } from "@/lib/seo";
 import React from "react";
+
+export const metadata = pageMetadata({
+  title: "Home Valuation in the GTA",
+  description:
+    "Request a custom home valuation from Ashvak Sheik, Realtor with Re/Max President Realty Brokerage, for properties across the Greater Toronto Area.",
+  path: "/home-valuation",
+});
 
 const HomeValidation = () => {
   return (

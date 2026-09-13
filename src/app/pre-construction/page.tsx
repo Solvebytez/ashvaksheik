@@ -1,5 +1,13 @@
 import Container from "@/components/Global/Container";
 import PreConstruction from "@/components/PreConstruction/PreConstruction";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "GTA Pre-Construction Homes",
+  description:
+    "Browse GTA pre-construction projects with Ashvak Sheik, Realtor at Re/Max President Realty Brokerage. Confirm availability and request packages.",
+  path: "/pre-construction",
+});
 
 const PreConstructionPage = () => {
   const sectionStyle = {

@@ -4,8 +4,22 @@ import SocialProfile from "@/components/Global/SocialProfile";
 import Brand from "@/components/Home/Brand";
 import Builders from "@/components/Home/Builders";
 import WorkWith from "@/components/Home/WorkWith";
+import { pageMetadata } from "@/lib/seo";
 import Image from "next/image";
+import Link from "next/link";
 
+export const metadata = pageMetadata({
+  title: "GTA Realtor",
+  description:
+    "Ashvak Sheik is a Telugu-speaking Hyderabadi Muslim realtor in the GTA with Re/Max President Realty Brokerage. Helping buyers and sellers in Brampton, Mississauga, and Toronto.",
+  keywords: [
+    "Telugu realtor GTA",
+    "Hyderabadi realtor Toronto",
+    "Muslim realtor Brampton",
+    "Indian realtor GTA",
+  ],
+  path: "/about",
+});
 
 const AboutPage = () => {
   return (
@@ -21,7 +35,7 @@ const AboutPage = () => {
           <div className="col-span-5 ">
             <div className="relative w-full" style={{ aspectRatio: "16 / 20" }}>
               <Image
-                alt=""
+                alt="Ashvak Sheik, Realtor at Re/Max President Realty Brokerage"
                 src={"/profile.jpeg"}
                 layout="fill"
                 className="object-cover"
@@ -29,9 +43,9 @@ const AboutPage = () => {
             </div>
           </div>
           <div className="col-span-6 text-white">
-            <h1 className="text-3xl md:text-5xl font-tenor_Sans tracking-[2px] md:tracking-[4px] mb-4 pt-8 lg:pt-0 uppercase">
+            <h2 className="text-3xl md:text-5xl font-tenor_Sans tracking-[2px] md:tracking-[4px] mb-4 pt-8 lg:pt-0 uppercase">
             Ashvak Sheik
-            </h1>
+            </h2>
             <h2 className="text-lg font-tenor_Sans tracking-[3px] mb-8">
             REALTOR
             </h2>
@@ -71,11 +85,19 @@ const AboutPage = () => {
         </div>
 
         <div className="text-white">
-          <h1 className="text-2xl md:text-4xl font-tenor_Sans tracking-[2px] md:tracking-[6px] mb-4 uppercase">
+          <h2 className="text-2xl md:text-4xl font-tenor_Sans tracking-[2px] md:tracking-[6px] mb-4 uppercase">
             Get To Know Me
-          </h1>
+          </h2>
           <hr className=" border-white/10 my-6" />
           <div>
+            <p className="mb-4">
+            I am a Telugu-speaking, Hyderabadi Muslim realtor in the Greater Toronto Area with Re/Max President Realty Brokerage. Families searching for a{" "}
+            <Link href="/telugu-realtor" className="underline">Telugu realtor</Link>,{" "}
+            <Link href="/hyderabadi-realtor" className="underline">Hyderabadi realtor</Link>,{" "}
+            <Link href="/muslim-realtor" className="underline">Muslim realtor</Link>, or{" "}
+            <Link href="/desi-realtor" className="underline">Indian / Desi realtor</Link>{" "}
+            in Toronto, Brampton, or Mississauga can work with me in Telugu or English.
+            </p>
             <p className="mb-4">
             As a dedicated realtor in the Greater Toronto Area, I’ve had the privilege of witnessing our vibrant city grow and evolve, attracting families, professionals, and newcomers from all walks of life. I’m honored to be part of this journey, helping clients find not just a property, but a place they can truly call home.
 
@@ -109,6 +131,9 @@ const AboutPage = () => {
               <div className="text-sm font-bold">RELOCATION</div>
               <div className="text-sm font-bold">RENTALS</div>
               <div className="text-sm font-bold">RESIDENTIAL ACREAGES</div>
+              <div className="text-sm font-bold">TELUGU-SPEAKING CLIENTS</div>
+              <div className="text-sm font-bold">HYDERABADI FAMILIES</div>
+              <div className="text-sm font-bold">MUSLIM BUYERS AND SELLERS</div>
             </div>
           </div>
         </div>

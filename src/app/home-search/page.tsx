@@ -1,6 +1,14 @@
 import BreadcumBanner from "@/components/Global/BreadcumBanner";
 import Container from "@/components/Global/Container";
+import { pageMetadata } from "@/lib/seo";
 import HomeSearchForm from "./HomeSearchForm";
+
+export const metadata = pageMetadata({
+  title: "Home Search in the GTA",
+  description:
+    "Tell Ashvak Sheik what you want to buy. He will send matching Greater Toronto Area homes, including off-market listings when they fit.",
+  path: "/home-search",
+});
 
 const HomeSearchpage = () => {
   return (

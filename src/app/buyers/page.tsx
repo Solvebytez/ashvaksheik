@@ -8,7 +8,14 @@ import ImageCard1 from "@/components/ImageCard1";
 import { seTtingsData } from "@/lib/Data/SettingSData";
 import Image from "next/image";
 import GuideDownloadForm from "@/components/Form/GuideDownloadForm";
+import { pageMetadata } from "@/lib/seo";
 
+export const metadata = pageMetadata({
+  title: "First-Time Buyer Guide",
+  description:
+    "A step-by-step Ontario buyer guide from Ashvak Sheik, Realtor at Re/Max President Realty Brokerage, covering the GTA home purchase process.",
+  path: "/buyers",
+});
 
 const buyersSteps = [
   {

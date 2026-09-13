@@ -13,9 +13,9 @@ const BlogPage = () => {
     <div>
       <BreadcumBanner pageTitle="Blog" bgLogo="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/gg5lqgxfs8n9uajak0pp/portfolio" />
       <div className="flex flex-col justify-center py-10 items-center ">
-        <h2 className="text-center text-2xl md:text-5xl font-tenor_Sans tracking-[2px] md:tracking-[5px] text-white py-6 md:py-10 px-4">
+        <h1 className="text-center text-2xl md:text-5xl font-tenor_Sans tracking-[2px] md:tracking-[5px] text-white py-6 md:py-10 px-4">
           Featured Posts
-        </h2>
+        </h1>
       </div>
       <Container>
         <div className="lg:grid lg:grid-cols-12 gap-5 mb-10">

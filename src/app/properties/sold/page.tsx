@@ -1,6 +1,14 @@
 import BreadcumBanner from "@/components/Global/BreadcumBanner";
 import Container from "@/components/Global/Container";
 import LinkButton from "@/components/Global/Button";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Past GTA Transactions",
+  description:
+    "Ask Ashvak Sheik about recent GTA results and comparable sales. Realtor with Re/Max President Realty Brokerage.",
+  path: "/properties/sold",
+});
 
 const SoldProperties = () => {
   return (

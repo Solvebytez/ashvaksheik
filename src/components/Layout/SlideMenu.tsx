@@ -15,6 +15,11 @@ const pages = [
     subMenu: [
       { url: "/buyers", label: "BUYER'S GUIDE" },
       { url: "/sellers", label: "SELLER'S GUIDE" },
+      { url: "/faq", label: "FAQ" },
+      { url: "/telugu-realtor", label: "TELUGU REALTOR" },
+      { url: "/hyderabadi-realtor", label: "HYDERABADI REALTOR" },
+      { url: "/muslim-realtor", label: "MUSLIM REALTOR" },
+      { url: "/desi-realtor", label: "DESI REALTOR" },
     ],
   },
   { url: "/blog", label: "Blog" },

@@ -1,5 +1,13 @@
 import BreadcumBanner from "@/components/Global/BreadcumBanner";
 import ImageCard2 from "@/components/ImageCard2";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "GTA Neighborhoods",
+  description:
+    "Explore GTA neighborhoods Ashvak Sheik knows well, including Mississauga, Brampton, Port Credit, Vaughan, Markham, and more.",
+  path: "/neighborhoods",
+});
 
 type NeighborhoodsTypes={
   title: string;
