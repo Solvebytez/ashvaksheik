@@ -96,7 +96,11 @@ const AboutPage = () => {
             <Link href="/hyderabadi-realtor" className="underline">Hyderabadi realtor</Link>,{" "}
             <Link href="/muslim-realtor" className="underline">Muslim realtor</Link>, or{" "}
             <Link href="/desi-realtor" className="underline">Indian / Desi realtor</Link>{" "}
-            in Toronto, Brampton, or Mississauga can work with me in Telugu or English. I am listed on{" "}
+            in{" "}
+            <Link href="/neighborhoods/toronto" className="underline">Toronto</Link>,{" "}
+            <Link href="/neighborhoods/brampton" className="underline">Brampton</Link>, or{" "}
+            <Link href="/neighborhoods/mississauga" className="underline">Mississauga</Link>{" "}
+            can work with me in Telugu or English. I am listed on{" "}
             <a
               href="https://www.realtor.ca/agent/2199715/ashvak-sajidh-pash-sheik-81-zenway-blvd-25a-woodbridge-ontario-l4h0s5"
               className="underline"

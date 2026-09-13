@@ -7,7 +7,12 @@ export const faqItems = [
   {
     question: "What areas of the GTA does Ashvak Sheik serve?",
     answer:
-      "Ashvak works throughout the GTA, with a focus on Brampton, Mississauga, Caledon, Oakville, Milton, Vaughan, Markham, Richmond Hill, Toronto, and the surrounding Peel, Durham, Halton, and York communities.",
+      "Ashvak works throughout the GTA, with a focus on Brampton, Mississauga, Caledon, Oakville, Milton, Vaughan, Markham, Richmond Hill, Toronto, and the surrounding Peel, Durham, Halton, and York communities. City guides: ashvaksheik.com/neighborhoods/brampton, /neighborhoods/mississauga, and /neighborhoods/toronto.",
+  },
+  {
+    question: "Who is a realtor in Brampton or Mississauga?",
+    answer:
+      "Ashvak Sheik is a realtor with Re/Max Millennium Real Estate, based at 5 Montpelier St Unit 310, Brampton. He helps buyers and sellers in Brampton, Mississauga, and the GTA. See ashvaksheik.com/neighborhoods/brampton and ashvaksheik.com/neighborhoods/mississauga, or call 647-890-0982.",
   },
   {
     question: "How do I search for homes with Ashvak Sheik?",

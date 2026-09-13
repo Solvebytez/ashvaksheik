@@ -145,6 +145,9 @@ const Footer = () => {
           <Link href="/home-valuation" className="hover:underline">Home Valuation</Link>
           <Link href="/pre-construction" className="hover:underline">Pre-Construction</Link>
           <Link href="/neighborhoods" className="hover:underline">Neighborhoods</Link>
+          <Link href="/neighborhoods/brampton" className="hover:underline">Brampton</Link>
+          <Link href="/neighborhoods/mississauga" className="hover:underline">Mississauga</Link>
+          <Link href="/neighborhoods/toronto" className="hover:underline">Toronto</Link>
           <Link href="/buyers" className="hover:underline">Buyers</Link>
           <Link href="/sellers" className="hover:underline">Sellers</Link>
           <Link href="/faq" className="hover:underline">FAQ</Link>

@@ -98,9 +98,9 @@ const StepForm = () => {
         <form className="w-full px-4" onSubmit={handleSubmit(onSubmit)}>
           {currentStep === STEPS.LOCATION_SEARCH && (
             <div className="flex flex-col mt-8 md:mt-[4rem] space-y-8 md:space-y-16 justify-center items-center">
-              <h1 className="text-2xl md:text-4xl font-tenor_Sans tracking-[2px] md:tracking-[4px] uppercase text-center leading-tight px-2">
+              <h2 className="text-2xl md:text-4xl font-tenor_Sans tracking-[2px] md:tracking-[4px] uppercase text-center leading-tight px-2">
                 Custom Tailored Pricing Proposal
-              </h1>
+              </h2>
               <div className="md:flex gap-4 w-full items-center justify-center">
                 <div className="md:w-2/4 flex-col flex">
                   <label className="uppercase text-white text-lg font-bold">
@@ -135,9 +135,9 @@ const StepForm = () => {
               <h3 className="text-lg md:text-xl font-bold tracking-[2px] md:tracking-[4px] uppercase">
                 CONTACT INFORMATION
               </h3>
-              <h1 className="text-2xl md:text-4xl font-tenor_Sans tracking-[2px] md:tracking-[4px] uppercase my-6 md:my-8 text-center leading-tight px-2">
+              <h2 className="text-2xl md:text-4xl font-tenor_Sans tracking-[2px] md:tracking-[4px] uppercase my-6 md:my-8 text-center leading-tight px-2">
                 Almost There! You’re 1 Step Away
-              </h1>
+              </h2>
               <div className="md:flex flex-col space-y-6 gap-4 w-full items-center justify-center !mt-10">
                 <div className="md:w-2/4 flex-col flex">
                   <label className="uppercase text-white text-md font-bold">
@@ -227,10 +227,10 @@ const StepForm = () => {
               {/* <h3 className="text-xl font-bold tracking-[4px] uppercase">
                 Thank You
               </h3> */}
-              <h1 className="text-xl md:text-4xl font-tenor_Sans tracking-[2px] md:tracking-[4px] uppercase my-1 text-center leading-tight px-2">
+              <h2 className="text-xl md:text-4xl font-tenor_Sans tracking-[2px] md:tracking-[4px] uppercase my-1 text-center leading-tight px-2">
                 I’m gathering your property information. I will be in touch with
                 you soon!
-              </h1>
+              </h2>
               <div className="md:flex gap-4 w-full items-center justify-center">
                 <LinkButton href="/home-search" btnText="Search Homes" />
               </div>

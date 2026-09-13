@@ -1,5 +1,6 @@
 import { BlogResponse } from "@/components/BlogCard";
 import { BASE_URL } from "@/env";
+import { neighborhoodGuides, neighborhoodPath } from "@/lib/neighborhoods";
 import { SITE_URL } from "@/lib/seo";
 import type { MetadataRoute } from "next";
 
@@ -23,6 +24,12 @@ const staticRoutes: MetadataRoute.Sitemap = [
   { url: `${SITE_URL}/properties/sold`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.4 },
   { url: `${SITE_URL}/press`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
   { url: `${SITE_URL}/privacy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
+  ...neighborhoodGuides.map((area) => ({
+    url: `${SITE_URL}${neighborhoodPath(area.slug)}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: area.kind === "city" ? 0.75 : 0.55,
+  })),
 ];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
