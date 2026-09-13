@@ -11,6 +11,17 @@ const pages = [
   { url: "/home-valuation", label: "HOME VALUATION" },
   { url: "/neighborhoods", label: "NEIGHBORHOODS" },
   {
+    label: "GTA CITIES",
+    subMenu: [
+      { url: "/neighborhoods/brampton", label: "BRAMPTON" },
+      { url: "/neighborhoods/mississauga", label: "MISSISSAUGA" },
+      { url: "/neighborhoods/toronto", label: "TORONTO" },
+      { url: "/neighborhoods/oakville", label: "OAKVILLE" },
+      { url: "/neighborhoods/vaughan", label: "VAUGHAN" },
+      { url: "/neighborhoods/markham", label: "MARKHAM" },
+    ],
+  },
+  {
     label: "RESOURCES",
     subMenu: [
       { url: "/buyers", label: "BUYER'S GUIDE" },

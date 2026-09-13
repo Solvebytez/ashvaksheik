@@ -84,6 +84,22 @@ const NeighborhoodPageView = ({ area }: { area: NeighborhoodGuide }) => {
             <Link href="/telugu-realtor" className="underline text-white">
               Telugu realtor
             </Link>
+            {" · "}
+            <Link href="/muslim-realtor" className="underline text-white">
+              Muslim realtor
+            </Link>
+            {" · "}
+            <Link href="/hyderabadi-realtor" className="underline text-white">
+              Hyderabadi realtor
+            </Link>
+            {" · "}
+            <Link href="/desi-realtor" className="underline text-white">
+              Desi realtor
+            </Link>
+            {" · "}
+            <Link href="/faq" className="underline text-white">
+              FAQ
+            </Link>
           </p>
         </article>
       </Container>
