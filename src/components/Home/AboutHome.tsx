@@ -28,10 +28,10 @@ const AboutHome = ({openModal}:{openModal:()=>void;}) => {
           <p className="text-[15px] md:text-[16px] leading-7 tracking-wide">
           Ashvak Sheik is a Telugu-speaking Hyderabadi Muslim realtor with Re/Max Millennium Real Estate in Brampton. Families looking for a{" "}
           <Link href="/telugu-realtor" className="underline">Telugu realtor</Link>,{" "}
-          <Link href="/muslim-realtor" className="underline">Muslim realtor</Link>, or a realtor in{" "}
-          <Link href="/neighborhoods/brampton" className="underline">Brampton</Link>,{" "}
-          <Link href="/neighborhoods/mississauga" className="underline">Mississauga</Link>, or{" "}
-          <Link href="/neighborhoods/toronto" className="underline">Toronto</Link>{" "}
+          <Link href="/muslim-realtor" className="underline">Muslim realtor</Link>,{" "}
+          <Link href="/brampton-realtor" className="underline">Brampton realtor</Link>,{" "}
+          <Link href="/mississauga-realtor" className="underline">Mississauga realtor</Link>, or{" "}
+          <Link href="/toronto-realtor" className="underline">Toronto realtor</Link>{" "}
           can work with him in Telugu or English.
           </p>
           <p className="text-[15px] md:text-[16px] leading-7 tracking-wide">

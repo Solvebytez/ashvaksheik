@@ -13,9 +13,16 @@ import {
 import { breadcrumbGraph, faqGraph } from "@/lib/seo";
 import Link from "next/link";
 
+const cityRealtorPaths: Record<string, string> = {
+  brampton: "/brampton-realtor",
+  mississauga: "/mississauga-realtor",
+  toronto: "/toronto-realtor",
+};
+
 const NeighborhoodPageView = ({ area }: { area: NeighborhoodGuide }) => {
   const faqs = neighborhoodFaqs(area);
   const related = cityGuides().filter((item) => item.slug !== area.slug).slice(0, 6);
+  const realtorPath = cityRealtorPaths[area.slug];
 
   return (
     <div className="bg-black text-white">
@@ -47,6 +54,15 @@ const NeighborhoodPageView = ({ area }: { area: NeighborhoodGuide }) => {
             <span>{area.name}</span>
           </nav>
           <p className="text-white/80 leading-7">{area.intro}</p>
+          {realtorPath && (
+            <p className="text-white/80 leading-7">
+              Looking for a{" "}
+              <Link href={realtorPath} className="underline text-white">
+                {area.name} realtor
+              </Link>
+              ? Ashvak Sheik with Re/Max Millennium Real Estate helps buyers and sellers here — call 647-890-0982.
+            </p>
+          )}
           <h2 className="text-2xl md:text-3xl font-tenor_Sans tracking-[2px] uppercase leading-tight pt-4">
             Housing in {area.name}
           </h2>
@@ -58,7 +74,11 @@ const NeighborhoodPageView = ({ area }: { area: NeighborhoodGuide }) => {
           <p className="text-white/80 leading-7">Nearby areas: {area.nearby}</p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <LinkButton href="/home-search" btnText="Home Search" />
-            <LinkButton href="/home-valuation" btnText="Home Valuation" />
+            {realtorPath ? (
+              <LinkButton href={realtorPath} btnText={`${area.name} Realtor`} />
+            ) : (
+              <LinkButton href="/home-valuation" btnText="Home Valuation" />
+            )}
           </div>
           <div className="pt-10 space-y-8">
             {faqs.map((item) => (
@@ -80,6 +100,14 @@ const NeighborhoodPageView = ({ area }: { area: NeighborhoodGuide }) => {
                 {index < related.length - 1 ? " · " : ""}
               </span>
             ))}
+            {realtorPath && (
+              <>
+                {" · "}
+                <Link href={realtorPath} className="underline text-white">
+                  {area.name} realtor
+                </Link>
+              </>
+            )}
             {" · "}
             <Link href="/telugu-realtor" className="underline text-white">
               Telugu realtor

@@ -31,17 +31,17 @@ const HomeSearchpage = () => {
           Request Your Property
         </h2>
         <p className="text-center text-white/75 text-sm md:text-base max-w-3xl px-6 leading-7 mb-2">
-          Looking for a realtor in{" "}
-          <Link href="/neighborhoods/brampton" className="underline text-white">
-            Brampton
+          Looking for a{" "}
+          <Link href="/brampton-realtor" className="underline text-white">
+            Brampton realtor
           </Link>
           ,{" "}
-          <Link href="/neighborhoods/mississauga" className="underline text-white">
-            Mississauga
+          <Link href="/mississauga-realtor" className="underline text-white">
+            Mississauga realtor
           </Link>
           , or{" "}
-          <Link href="/neighborhoods/toronto" className="underline text-white">
-            Toronto
+          <Link href="/toronto-realtor" className="underline text-white">
+            Toronto realtor
           </Link>
           ? Complete the form and Ashvak Sheik at Re/Max Millennium Real Estate will send matching GTA listings. Telugu, Hyderabadi, Muslim, and Desi buyers can also see{" "}
           <Link href="/telugu-realtor" className="underline text-white">
