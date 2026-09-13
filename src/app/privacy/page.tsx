@@ -6,7 +6,7 @@ import React from "react";
 export const metadata = pageMetadata({
   title: "Privacy Policy",
   description:
-    "Privacy policy for Ashvak Sheik, Realtor with Re/Max President Realty Brokerage, covering how contact information is collected and used.",
+    "Privacy policy for Ashvak Sheik, Realtor with Re/Max Millennium Real Estate, covering how contact information is collected and used.",
   path: "/privacy",
 });
 
@@ -27,7 +27,7 @@ const PrivacyPage = () => {
           <p className="mb-10">
             This Privacy Policy outlines the practices of Ashvak Sheik, a real
             estate professional with{" "}
-            <strong className="text-white">Re/Max President Realty Brokerage</strong>{" "}
+            <strong className="text-white">Re/Max Millennium Real Estate</strong>{" "}
             ({"we,"} {"us,"} or {"our"}), regarding the collection, use, and
             disclosure of your personal information when you interact with
             Ashvak Sheik’s website (the “Site”) and services.
@@ -124,7 +124,7 @@ const PrivacyPage = () => {
           <ul className="list-disc list-inside mb-10 space-y-2">
             <li>
               <strong className="text-white">
-                With Re/Max President Realty Brokerage:
+                With Re/Max Millennium Real Estate:
               </strong>{" "}
               For real estate interactions and services.
             </li>
@@ -189,7 +189,7 @@ const PrivacyPage = () => {
             <li className="font-tenor_Sans tracking-[1px] md:tracking-[3px] uppercase">
               Ashvak Sheik
             </li>
-            <li>Re/Max President Realty Brokerage</li>
+            <li>Re/Max Millennium Real Estate</li>
             <li>
               Email:{" "}
               <a

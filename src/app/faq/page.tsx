@@ -8,7 +8,7 @@ import Link from "next/link";
 export const metadata = pageMetadata({
   title: "GTA Real Estate FAQ",
   description:
-    "Answers about buying, selling, and pre-construction in the GTA with Ashvak Sheik, Realtor at Re/Max President Realty Brokerage.",
+    "Answers about buying, selling, and pre-construction in the GTA with Ashvak Sheik, Realtor at Re/Max Millennium Real Estate.",
   path: "/faq",
 });
 

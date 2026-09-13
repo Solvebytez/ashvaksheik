@@ -28,7 +28,7 @@ const ContactWidget = () => {
           <span>647-890-0982</span>
         </a>
         <p className="text-white/40 text-[10px] mt-3 text-center leading-4">
-          I agree to be contacted by Ashvak Sheik, Re/Max President Realty Brokerage via text, call & email. To opt-out, reply {'stop'} or click unsubscribe.
+          I agree to be contacted by Ashvak Sheik, Re/Max Millennium Real Estate via text, call & email. To opt-out, reply {'stop'} or click unsubscribe.
         </p>
       </div>
     ):(

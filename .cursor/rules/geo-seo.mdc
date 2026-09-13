@@ -9,7 +9,7 @@ When changing pages, copy, metadata, or crawl files, follow `.cursor/skills/geo-
 
 - Unique title, description, and canonical on every public route (`src/lib/seo.ts`)
 - One H1 per page; never use H1 in the footer or section labels
-- Keep NAP identical: Ashvak Sheik, Re/Max President Realty Brokerage, 647-890-0982, ashvak.realtor07@gmail.com, 155 Salvation Rd, Brampton, ON L7A 0W7
+- Keep NAP identical: Ashvak Sheik, Re/Max Millennium Real Estate, 647-890-0982, ashvak.realtor07@gmail.com, 5 Montpelier St Unit 310, Brampton, ON L6Y 6H4
 - Add new routes to `src/app/sitemap.ts` and `public/llms.txt`
 - Prefer server-rendered HTML for anything that should rank
 - Do not invent awards, license numbers, or press mentions

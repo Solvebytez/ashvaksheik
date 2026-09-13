@@ -26,7 +26,7 @@ const ContactCard = ({cardType}:{cardType?:string}) => {
         <div>
           <h2 className={`font-bold ${IsWhite} font-tenor_Sans`}>REALTOR</h2>
           <p className={`text-sm font-bold ${IsWhite} font-tenor_Sans mb-2`}>Ashvak Sheik </p>
-          <p className={`text-xs ${IsWhite}`}>Re/Max President Realty Brokerage</p>
+          <p className={`text-xs ${IsWhite}`}>Re/Max Millennium Real Estate</p>
         </div>
       </div>     
       <hr className="my-2 border-white/10"  />
@@ -42,7 +42,7 @@ const ContactCard = ({cardType}:{cardType?:string}) => {
       <div className="mb-4 py-2 flex flex-col gap-1 sm:flex-row sm:justify-between">
         <span className={`text-xs ${IsWhite}`}>Address:</span>
         <p className={`text-xs ${IsWhite} sm:text-right`}>
-        155 Salvation Rd, Brampton, ON L7A 0W7
+        5 Montpelier St Unit 310, Brampton, ON L6Y 6H4
           </p>
       </div>
       <hr className="my-2 border-white/10"  />

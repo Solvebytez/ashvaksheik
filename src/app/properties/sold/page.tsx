@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Past GTA Transactions",
   description:
-    "Ask Ashvak Sheik about recent GTA results and comparable sales. Realtor with Re/Max President Realty Brokerage.",
+    "Ask Ashvak Sheik about recent GTA results and comparable sales. Realtor with Re/Max Millennium Real Estate.",
   path: "/properties/sold",
 });
 
@@ -15,7 +15,7 @@ const SoldProperties = () => {
     <div>
       <BreadcumBanner
         pageTitle="PAST TRANSACTIONS"
-        description="Proudly representing buyers and sellers across the Greater Toronto Area with Re/Max President Realty Brokerage."
+        description="Proudly representing buyers and sellers across the Greater Toronto Area with Re/Max Millennium Real Estate."
         bgLogo="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ay4wxtapckx0qwydoh5v/img_2129"
       />
 

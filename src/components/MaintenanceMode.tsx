@@ -89,7 +89,7 @@ const MaintenanceMode = () => {
               <div className="text-sm text-gray-400">
                 <p>Thank you for your patience.</p>
                 <p className="mt-2">
-                  Ashvak Sheik | Re/Max President Realty Brokerage
+                  Ashvak Sheik | Re/Max Millennium Real Estate
                 </p>
               </div>
             </div>

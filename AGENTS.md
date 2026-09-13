@@ -1,6 +1,6 @@
 # Agents
 
-This site is Ashvak Sheik’s GTA real estate website (Re/Max President Realty Brokerage).
+This site is Ashvak Sheik’s GTA real estate website (Re/Max Millennium Real Estate).
 
 ## Ranking agents
 

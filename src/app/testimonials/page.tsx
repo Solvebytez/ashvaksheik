@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Client Testimonials",
   description:
-    "Read what GTA buyers and sellers say about working with Ashvak Sheik, Realtor at Re/Max President Realty Brokerage.",
+    "Read what GTA buyers and sellers say about working with Ashvak Sheik, Realtor at Re/Max Millennium Real Estate.",
   path: "/testimonials",
 });
 

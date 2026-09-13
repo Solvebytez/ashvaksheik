@@ -96,7 +96,7 @@ const ContactModal = ({prijectName}:{prijectName:string}) => {
               </div>
             </div>
             <h3 className="text-xl md:text-2xl tracking-[2px] md:tracking-[4px] font-tenor_Sans uppercase text-center md:text-left">
-            Re/Max President Realty Brokerage
+            Re/Max Millennium Real Estate
             </h3>
 
             <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start  gap-4">
@@ -108,7 +108,7 @@ const ContactModal = ({prijectName}:{prijectName:string}) => {
                   ADDRESS
                 </p>
                 <p className="text-sm tracking-[2px] font-bold uppercase text-center md:text-left">
-                155 Salvation Rd, Brampton, ON L7A 0W7
+                5 Montpelier St Unit 310, Brampton, ON L6Y 6H4
                 </p>
               </div>
             </div>

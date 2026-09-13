@@ -5,7 +5,7 @@ import React from "react";
 export const metadata = pageMetadata({
   title: "Home Valuation in the GTA",
   description:
-    "Request a custom home valuation from Ashvak Sheik, Realtor with Re/Max President Realty Brokerage, for properties across the Greater Toronto Area.",
+    "Request a custom home valuation from Ashvak Sheik, Realtor with Re/Max Millennium Real Estate, for properties across the Greater Toronto Area.",
   path: "/home-valuation",
 });
 

@@ -28,10 +28,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     template: "%s | Ashvak Sheik",
-    absolute: "Ashvak Sheik | Re/Max President Realty Brokerage",
+    absolute: "Ashvak Sheik | Re/Max Millennium Real Estate",
   },
   description:
-    "Ashvak Sheik is a Telugu-speaking Hyderabadi Muslim realtor with Re/Max President Realty Brokerage in the Greater Toronto Area, including Peel, Durham, Halton, and York.",
+    "Ashvak Sheik is a Telugu-speaking Hyderabadi Muslim realtor with Re/Max Millennium Real Estate in the Greater Toronto Area, including Peel, Durham, Halton, and York.",
   alternates: {
     canonical: SITE_URL,
   },
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: "Ashvak Sheik | Re/Max President Realty Brokerage",
+    title: "Ashvak Sheik | Re/Max Millennium Real Estate",
     description:
       "GTA realtor helping buyers and sellers across Peel, Durham, Halton, and York.",
     url: SITE_URL,
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
         url: "/profile.jpeg",
         width: 800,
         height: 1000,
-        alt: "Ashvak Sheik, Realtor at Re/Max President Realty Brokerage",
+        alt: "Ashvak Sheik, Realtor at Re/Max Millennium Real Estate",
       },
     ],
     locale: "en_CA",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ashvak Sheik | Re/Max President Realty Brokerage",
+    title: "Ashvak Sheik | Re/Max Millennium Real Estate",
     description:
       "GTA realtor helping buyers and sellers across Peel, Durham, Halton, and York.",
     images: ["/profile.jpeg"],

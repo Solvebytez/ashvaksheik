@@ -104,7 +104,7 @@ const Footer = () => {
                   ADDRESS
                 </p>
                 <p className="text-sm tracking-[2px] font-bold uppercase">
-                155 Salvation Rd, Brampton, ON L7A 0W7
+                5 Montpelier St Unit 310, Brampton, ON L6Y 6H4
                 </p>
               </div>
             </div>

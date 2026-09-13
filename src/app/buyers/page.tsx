@@ -13,7 +13,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "First-Time Buyer Guide",
   description:
-    "A step-by-step Ontario buyer guide from Ashvak Sheik, Realtor at Re/Max President Realty Brokerage, covering the GTA home purchase process.",
+    "A step-by-step Ontario buyer guide from Ashvak Sheik, Realtor at Re/Max Millennium Real Estate, covering the GTA home purchase process.",
   path: "/buyers",
 });
 

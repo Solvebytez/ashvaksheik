@@ -13,7 +13,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Home Seller Guide",
   description:
-    "How to price, prepare, and close a GTA home sale with Ashvak Sheik, Realtor at Re/Max President Realty Brokerage.",
+    "How to price, prepare, and close a GTA home sale with Ashvak Sheik, Realtor at Re/Max Millennium Real Estate.",
   path: "/sellers",
 });
 

@@ -5,7 +5,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "GTA Pre-Construction Homes",
   description:
-    "Browse GTA pre-construction projects with Ashvak Sheik, Realtor at Re/Max President Realty Brokerage. Confirm availability and request packages.",
+    "Browse GTA pre-construction projects with Ashvak Sheik, Realtor at Re/Max Millennium Real Estate. Confirm availability and request packages.",
   path: "/pre-construction",
 });
 

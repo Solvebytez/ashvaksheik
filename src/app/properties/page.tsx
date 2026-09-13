@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "GTA Homes for Sale",
   description:
-    "Search GTA homes with Ashvak Sheik, Realtor at Re/Max President Realty Brokerage. Listings change quickly — request matches including off-market options.",
+    "Search GTA homes with Ashvak Sheik, Realtor at Re/Max Millennium Real Estate. Listings change quickly — request matches including off-market options.",
   path: "/properties",
 });
 
@@ -15,7 +15,7 @@ const ProPertiesPage = () => {
     <div>
       <BreadcumBanner
         pageTitle="Portfolio"
-        description="Serving buyers and sellers across the Greater Toronto Area with Re/Max President Realty Brokerage."
+        description="Serving buyers and sellers across the Greater Toronto Area with Re/Max Millennium Real Estate."
         bgLogo="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/gg5lqgxfs8n9uajak0pp/portfolio"
       />
       <div className="flex flex-col justify-center py-10 items-center ">

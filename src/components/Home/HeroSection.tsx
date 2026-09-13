@@ -10,7 +10,7 @@ const HeroSection = () => {
             Ashvak Sheik
           </h1>
           <strong className="italic text-center text-sm md:text-base px-2">
-            Re/Max President Realty Brokerage
+            Re/Max Millennium Real Estate
           </strong>
           <p className="my-4 md:my-6 text-center text-sm md:text-base px-2">
             Setting the standard in Real Estate. Just as intended.

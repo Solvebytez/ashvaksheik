@@ -11,7 +11,7 @@ import Link from "next/link";
 export const metadata = pageMetadata({
   title: "GTA Realtor",
   description:
-    "Ashvak Sheik is a Telugu-speaking Hyderabadi Muslim realtor in the GTA with Re/Max President Realty Brokerage. Helping buyers and sellers in Brampton, Mississauga, and Toronto.",
+    "Ashvak Sheik is a Telugu-speaking Hyderabadi Muslim realtor in the GTA with Re/Max Millennium Real Estate. Helping buyers and sellers in Brampton, Mississauga, and Toronto.",
   keywords: [
     "Telugu realtor GTA",
     "Hyderabadi realtor Toronto",
@@ -35,7 +35,7 @@ const AboutPage = () => {
           <div className="col-span-5 ">
             <div className="relative w-full" style={{ aspectRatio: "16 / 20" }}>
               <Image
-                alt="Ashvak Sheik, Realtor at Re/Max President Realty Brokerage"
+                alt="Ashvak Sheik, Realtor at Re/Max Millennium Real Estate"
                 src={"/profile.jpeg"}
                 layout="fill"
                 className="object-cover"
@@ -77,7 +77,7 @@ const AboutPage = () => {
             <div className="mb-14">
               <h3 className="text-md tracking-wider mb-1">ADDRESS</h3>
               <p className="text-lg font-bold">
-              155 Salvation Rd, Brampton, ON L7A 0W7
+              5 Montpelier St Unit 310, Brampton, ON L6Y 6H4
               </p>
             </div>
             <SocialProfile />
@@ -91,7 +91,7 @@ const AboutPage = () => {
           <hr className=" border-white/10 my-6" />
           <div>
             <p className="mb-4">
-            I am a Telugu-speaking, Hyderabadi Muslim realtor in the Greater Toronto Area with Re/Max President Realty Brokerage. Families searching for a{" "}
+            I am a Telugu-speaking, Hyderabadi Muslim realtor in the Greater Toronto Area with Re/Max Millennium Real Estate. Families searching for a{" "}
             <Link href="/telugu-realtor" className="underline">Telugu realtor</Link>,{" "}
             <Link href="/hyderabadi-realtor" className="underline">Hyderabadi realtor</Link>,{" "}
             <Link href="/muslim-realtor" className="underline">Muslim realtor</Link>, or{" "}

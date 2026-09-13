@@ -27,7 +27,7 @@ export async function generateMetadata({
     title: post?.title ?? "Blog",
     description:
       post?.ShortDescription ??
-      "GTA real estate insight from Ashvak Sheik, Realtor at Re/Max President Realty Brokerage.",
+      "GTA real estate insight from Ashvak Sheik, Realtor at Re/Max Millennium Real Estate.",
     path: `/blog/${params.documentId}`,
     image: ogImage,
   });

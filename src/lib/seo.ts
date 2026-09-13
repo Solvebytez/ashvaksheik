@@ -9,7 +9,7 @@ export const ENTITY = {
   name: "Ashvak Sheik",
   jobTitle: "Realtor",
   description:
-    "Telugu-speaking Hyderabadi Muslim realtor in the Greater Toronto Area with Re/Max President Realty Brokerage. Helps Telugu, Hyderabadi, Muslim, Indian, and Desi buyers and sellers in Brampton, Mississauga, Toronto, and the GTA.",
+    "Telugu-speaking Hyderabadi Muslim realtor in the Greater Toronto Area with Re/Max Millennium Real Estate. Helps Telugu, Hyderabadi, Muslim, Indian, and Desi buyers and sellers in Brampton, Mississauga, Toronto, and the GTA.",
   alternateNames: [
     "Ashvak Sajidh Pash Sheik",
     "Telugu realtor GTA",
@@ -20,14 +20,14 @@ export const ENTITY = {
     { name: "English", code: "en" },
     { name: "Telugu", code: "te" },
   ],
-  brokerage: "Re/Max President Realty Brokerage",
+  brokerage: "Re/Max Millennium Real Estate",
   phoneDisplay: "647-890-0982",
   phone: "+1-647-890-0982",
   email: "ashvak.realtor07@gmail.com",
-  street: "155 Salvation Rd",
+  street: "5 Montpelier St Unit 310",
   city: "Brampton",
   region: "ON",
-  postal: "L7A 0W7",
+  postal: "L6Y 6H4",
   country: "CA",
   image: "/profile.jpeg",
   sameAs: [

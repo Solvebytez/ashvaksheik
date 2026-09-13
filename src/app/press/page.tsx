@@ -6,7 +6,7 @@ import React from 'react'
 export const metadata = pageMetadata({
   title: "Press and Media",
   description:
-    "Press inquiries for Ashvak Sheik, Realtor with Re/Max President Realty Brokerage. Email ashvak.realtor07@gmail.com.",
+    "Press inquiries for Ashvak Sheik, Realtor with Re/Max Millennium Real Estate. Email ashvak.realtor07@gmail.com.",
   path: "/press",
 });
 
