@@ -157,7 +157,12 @@ const Footer = () => {
           <Link href="/telugu-realtor" className="hover:underline">Telugu Realtor</Link>
           <Link href="/hyderabadi-realtor" className="hover:underline">Hyderabadi Realtor</Link>
           <Link href="/muslim-realtor" className="hover:underline">Muslim Realtor</Link>
+          <Link href="/hyderabadi-muslim-realtor" className="hover:underline">Hyderabadi Muslim Realtor</Link>
+          <Link href="/halal-mortgage-realtor" className="hover:underline">Halal Mortgage Realtor</Link>
           <Link href="/desi-realtor" className="hover:underline">Desi Realtor</Link>
+          <Link href="/trusted-realtor-gta" className="hover:underline">Trusted Realtor GTA</Link>
+          <Link href="/first-time-home-buyer-realtor" className="hover:underline">First-Time Buyer Realtor</Link>
+          <Link href="/investment-property-realtor" className="hover:underline">Investment Property Realtor</Link>
           <Link href="/brampton-realtor" className="hover:underline">Brampton Realtor</Link>
           <Link href="/mississauga-realtor" className="hover:underline">Mississauga Realtor</Link>
           <Link href="/toronto-realtor" className="hover:underline">Toronto Realtor</Link>

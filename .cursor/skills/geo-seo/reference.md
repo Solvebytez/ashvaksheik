@@ -29,6 +29,14 @@ Use `pageMetadata({ title, description, path })`. Root title template already ap
 | `/buyers` | First-Time Buyer Guide \| GTA | Buying process |
 | `/sellers` | Home Seller Guide \| GTA | Selling process |
 | `/faq` | GTA Real Estate FAQ | Citable answers |
+| `/muslim-realtor` | Muslim Realtor in the GTA | Muslim buyers/sellers + Caledon |
+| `/telugu-realtor` | Telugu Realtor in the GTA | Telugu identity |
+| `/hyderabadi-realtor` | Hyderabadi Realtor in Toronto and the GTA | Hyderabadi identity |
+| `/hyderabadi-muslim-realtor` | Hyderabadi Muslim Realtor GTA | Combo entity |
+| `/halal-mortgage-realtor` | Halal Mortgage Realtor GTA | Muslim home-buying; not a lender |
+| `/trusted-realtor-gta` | Trusted Realtor GTA | Trusted / reliable / careful “best” intent |
+| `/first-time-home-buyer-realtor` | First-Time Home Buyer Realtor GTA | First-time buyers |
+| `/investment-property-realtor` | Investment Property Realtor GTA | Investors |
 | `/blog` | GTA Real Estate Blog | Market articles |
 | `/testimonials` | Client Testimonials | Reviews |
 | `/privacy` | Privacy Policy | Legal |

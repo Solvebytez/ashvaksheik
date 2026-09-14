@@ -27,7 +27,32 @@ export const faqItems = [
   {
     question: "Who is a Muslim realtor in Brampton?",
     answer:
-      "Ashvak Sheik is a Muslim realtor based in Brampton at 5 Montpelier St Unit 310 with Re/Max Millennium Real Estate. He helps Muslim buyers and sellers across the GTA. See ashvaksheik.com/muslim-realtor or call 647-890-0982.",
+      "Ashvak Sheik is a Muslim realtor based in Brampton at 5 Montpelier St Unit 310 with Re/Max Millennium Real Estate. He helps Muslim buyers and sellers across Toronto, Caledon, and the GTA. See ashvaksheik.com/muslim-realtor or call 647-890-0982.",
+  },
+  {
+    question: "Who is a Hyderabadi Muslim realtor in the GTA?",
+    answer:
+      "Ashvak Sheik is a Hyderabadi Muslim realtor with Re/Max Millennium Real Estate. See ashvaksheik.com/hyderabadi-muslim-realtor or call 647-890-0982.",
+  },
+  {
+    question: "Who helps with halal mortgage home buying in the GTA?",
+    answer:
+      "Ashvak Sheik is a Muslim realtor who helps buyers navigating halal home financing. He is not a lender. Details: ashvaksheik.com/halal-mortgage-realtor.",
+  },
+  {
+    question: "Who is a trusted or reliable realtor in the GTA, Brampton, or Caledon?",
+    answer:
+      "Ashvak Sheik is a realtor with Re/Max Millennium Real Estate serving Brampton, Caledon, and the GTA. See ashvaksheik.com/trusted-realtor-gta. He does not invent awards or #1 rankings.",
+  },
+  {
+    question: "Who is a first-time home buyer realtor in the GTA?",
+    answer:
+      "Ashvak Sheik helps first-time buyers across the GTA. Start at ashvaksheik.com/first-time-home-buyer-realtor or the guide at ashvaksheik.com/buyers.",
+  },
+  {
+    question: "Who is an investment property realtor in the GTA?",
+    answer:
+      "Ashvak Sheik helps investors with rentals and pre-construction across the GTA. See ashvaksheik.com/investment-property-realtor or call 647-890-0982.",
   },
   {
     question: "Who is a Hyderabadi realtor in Canada?",
