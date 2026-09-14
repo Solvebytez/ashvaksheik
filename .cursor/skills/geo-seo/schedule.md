@@ -7,7 +7,9 @@ Site: https://ashvaksheik.com
 
 Run every day at 9:00 AM Eastern (Cloud Automation cron). Finish by ~10:00 AM.
 
-Do one concrete ranking improvement for Google + AI search (ChatGPT, Claude, Perplexity, Gemini, AI Overviews), then stop. Do not invent awards.
+Do **one** concrete ranking improvement for Google + AI search (ChatGPT, Claude, Perplexity, Gemini, AI Overviews), then **stop**. Do not invent awards.
+
+**Credit guard:** At most one ranking code change per Eastern calendar day unless Ashvak explicitly asks for more. If today’s change is already pushed, verify it is live and stop — do not start a second feature the same day. Goal wake-ups do not authorize extra work.
 
 Rotation:
 
