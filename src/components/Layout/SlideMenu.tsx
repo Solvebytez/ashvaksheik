@@ -37,6 +37,8 @@ const pages = [
       { url: "/oakville-realtor", label: "OAKVILLE REALTOR" },
       { url: "/vaughan-realtor", label: "VAUGHAN REALTOR" },
       { url: "/markham-realtor", label: "MARKHAM REALTOR" },
+      { url: "/milton-realtor", label: "MILTON REALTOR" },
+      { url: "/caledon-realtor", label: "CALEDON REALTOR" },
     ],
   },
   { url: "/blog", label: "Blog" },

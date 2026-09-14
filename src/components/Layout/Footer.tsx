@@ -161,6 +161,8 @@ const Footer = () => {
           <Link href="/oakville-realtor" className="hover:underline">Oakville Realtor</Link>
           <Link href="/vaughan-realtor" className="hover:underline">Vaughan Realtor</Link>
           <Link href="/markham-realtor" className="hover:underline">Markham Realtor</Link>
+          <Link href="/milton-realtor" className="hover:underline">Milton Realtor</Link>
+          <Link href="/caledon-realtor" className="hover:underline">Caledon Realtor</Link>
           <Link href="/blog" className="hover:underline">Blog</Link>
           <Link href="/testimonials" className="hover:underline">Testimonials</Link>
         </nav>

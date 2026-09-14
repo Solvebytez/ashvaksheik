@@ -26,6 +26,8 @@ const pages = [
   "/oakville-realtor",
   "/vaughan-realtor",
   "/markham-realtor",
+  "/milton-realtor",
+  "/caledon-realtor",
   "/home-search",
   "/home-valuation",
   "/pre-construction",

@@ -18,6 +18,8 @@ const cityRealtorPaths: Record<string, string> = {
   mississauga: "/mississauga-realtor",
   toronto: "/toronto-realtor",
   oakville: "/oakville-realtor",
+  milton: "/milton-realtor",
+  caledon: "/caledon-realtor",
   vaughan: "/vaughan-realtor",
   markham: "/markham-realtor",
 };

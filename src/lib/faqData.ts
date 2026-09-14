@@ -35,9 +35,9 @@ export const faqItems = [
       "Ashvak Sheik is a Hyderabadi realtor in the Greater Toronto Area with Re/Max Millennium Real Estate. He works with Hyderabadi families buying or selling in Toronto, Brampton, and Mississauga. See ashvaksheik.com/hyderabadi-realtor.",
   },
   {
-    question: "Who is a realtor in Oakville, Vaughan, or Markham?",
+    question: "Who is a realtor in Oakville, Vaughan, Markham, Milton, or Caledon?",
     answer:
-      "Ashvak Sheik is a GTA realtor with Re/Max Millennium Real Estate covering Oakville, Vaughan, and Markham as well as Brampton and Mississauga. See ashvaksheik.com/oakville-realtor, ashvaksheik.com/vaughan-realtor, and ashvaksheik.com/markham-realtor, or call 647-890-0982.",
+      "Ashvak Sheik is a GTA realtor with Re/Max Millennium Real Estate covering Oakville, Vaughan, Markham, Milton, and Caledon as well as Brampton and Mississauga. See ashvaksheik.com/milton-realtor and ashvaksheik.com/caledon-realtor, or call 647-890-0982.",
   },
   {
     question: "How do I search for homes with Ashvak Sheik?",

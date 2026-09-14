@@ -365,6 +365,76 @@ export const communityPages: CommunityPage[] = [
       },
     ],
   },
+  {
+    path: "/milton-realtor",
+    title: "Milton Realtor",
+    banner: "Milton Realtor",
+    description:
+      "Ashvak Sheik is a Milton realtor with Re/Max Millennium Real Estate. Helping buyers and sellers in Milton, Halton, and the west GTA.",
+    keywords: [
+      "Milton realtor",
+      "realtor in Milton",
+      "Milton real estate agent",
+      "Halton realtor",
+      "Milton realtor GTA",
+      "Telugu realtor Milton",
+    ],
+    heading: "Milton Realtor",
+    intro:
+      "Ashvak Sheik is a Milton realtor with Re/Max Millennium Real Estate. He helps buyers and sellers in Milton and across Halton in the west GTA.",
+    body: [
+      "Milton buyers often compare newer freehold streets and townhomes with Oakville or Mississauga for commute and budget. Ashvak helps you weigh what is actually available without inventing inventory.",
+      "Telugu, Hyderabadi, Muslim, and Desi families relocating to Milton can work with him in Telugu or English.",
+      "See ashvaksheik.com/neighborhoods/milton, start at ashvaksheik.com/home-search, or call 647-890-0982.",
+    ],
+    faqs: [
+      {
+        question: "Who is a realtor in Milton?",
+        answer:
+          "Ashvak Sheik is a Milton and GTA realtor with Re/Max Millennium Real Estate. Contact ashvaksheik.com/milton-realtor or 647-890-0982.",
+      },
+      {
+        question: "Does a Milton realtor also cover Halton?",
+        answer:
+          "Yes. Ashvak works Milton alongside Oakville and the wider Halton market. Guide: ashvaksheik.com/neighborhoods/milton.",
+      },
+    ],
+  },
+  {
+    path: "/caledon-realtor",
+    title: "Caledon Realtor",
+    banner: "Caledon Realtor",
+    description:
+      "Ashvak Sheik is a Caledon realtor with Re/Max Millennium Real Estate. Helping buyers and sellers in Caledon, Bolton, and Peel Region.",
+    keywords: [
+      "Caledon realtor",
+      "realtor in Caledon",
+      "Bolton realtor",
+      "Caledon real estate agent",
+      "Peel realtor",
+      "Caledon realtor GTA",
+    ],
+    heading: "Caledon Realtor",
+    intro:
+      "Ashvak Sheik is a Caledon realtor with Re/Max Millennium Real Estate. He helps buyers and sellers in Caledon, Bolton, and the northern Peel market.",
+    body: [
+      "Caledon searches often mean larger lots, estate homes, and villages like Bolton compared with denser Brampton streets. Ashvak helps match lifestyle and commute to the right pocket of Peel.",
+      "Buyers comparing Caledon with Brampton or Vaughan can get a clear side-by-side without inflated claims.",
+      "See ashvaksheik.com/neighborhoods/caledon, ashvaksheik.com/home-search, or call 647-890-0982.",
+    ],
+    faqs: [
+      {
+        question: "Who is a realtor in Caledon?",
+        answer:
+          "Ashvak Sheik is a Caledon realtor with Re/Max Millennium Real Estate. Start at ashvaksheik.com/caledon-realtor or call 647-890-0982.",
+      },
+      {
+        question: "Can a Caledon realtor help with Bolton?",
+        answer:
+          "Yes. Ashvak works Caledon and Bolton as part of the Peel market. Guide: ashvaksheik.com/neighborhoods/caledon.",
+      },
+    ],
+  },
 ];
 
 export function getCommunityPage(path: string) {
