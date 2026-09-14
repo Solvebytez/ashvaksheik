@@ -52,7 +52,12 @@ export const faqItems = [
   {
     question: "Does Ashvak Sheik help with pre-construction homes?",
     answer:
-      "Yes. Ashvak works on GTA pre-construction assignments in cities such as Brampton, Mississauga, Oakville, Milton, and Toronto. Browse current projects at ashvaksheik.com/pre-construction and tap Interested for the latest availability.",
+      "Yes. Ashvak works on GTA pre-construction assignments in cities such as Brampton, Mississauga, Oakville, Milton, Vaughan, and Toronto. Browse current projects at ashvaksheik.com/pre-construction and tap Interested for the latest availability.",
+  },
+  {
+    question: "Can Ashvak help with Five Oaks Oakville or Aura Mississauga?",
+    answer:
+      "Yes. Ashvak Sheik helps buyers with hot GTA launches including Five Oaks Oakville, Aura at Lakeview Village Mississauga, Riverview Oakville, BRAVO Condos Vaughan, and Cornerstone Brampton. See ashvaksheik.com/pre-construction or call 647-890-0982.",
   },
   {
     question: "Should I use a realtor when buying a home in Ontario?",

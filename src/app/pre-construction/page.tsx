@@ -1,19 +1,24 @@
 import Container from "@/components/Global/Container";
 import PreConstruction from "@/components/PreConstruction/PreConstruction";
+import { preconProjectPath, preconProjects } from "@/lib/preconProjects";
 import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 
 export const metadata = pageMetadata({
   title: "GTA Pre-Construction Homes",
   description:
-    "Browse GTA pre-construction in Brampton, Mississauga, Oakville, Milton, and Toronto with Ashvak Sheik, Realtor at Re/Max Millennium Real Estate.",
+    "Browse hot GTA pre-construction including Five Oaks Oakville, Aura Lakeview Village Mississauga, Riverview Oakville, BRAVO Vaughan, and Cornerstone Brampton with Ashvak Sheik, Realtor at Re/Max Millennium Real Estate.",
   path: "/pre-construction",
   keywords: [
     "GTA pre-construction",
+    "Five Oaks Oakville",
+    "Aura Lakeview Village",
+    "Riverview Oakville",
+    "BRAVO Condos Vaughan",
+    "Cornerstone Brampton",
     "Brampton pre-construction",
     "Mississauga pre-construction",
-    "Toronto pre-construction realtor",
-    "Hyderabadi realtor pre-construction",
+    "Oakville pre-construction",
   ],
 });
 
@@ -81,6 +86,30 @@ const PreConstructionPage = () => {
           premier pre-construction projects across the GTA from trusted builders.
         </p>
       </div>
+      <Container>
+        <div className="pb-12">
+          <h2 className="text-center text-xl md:text-3xl font-tenor_Sans tracking-[2px] md:tracking-[4px] text-white uppercase mb-8">
+            Trending now
+          </h2>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto">
+            {preconProjects.map((project) => (
+              <Link
+                key={project.slug}
+                href={preconProjectPath(project.slug)}
+                className="border border-white/15 p-5 hover:border-white/40 transition-colors"
+              >
+                <p className="text-xs tracking-[2px] uppercase text-white/50 mb-2">
+                  {project.city} · {project.builder}
+                </p>
+                <p className="font-tenor_Sans text-lg tracking-[1px] uppercase text-white mb-2">
+                  {project.name}
+                </p>
+                <p className="text-sm text-white/70 leading-6">{project.homeTypes}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </Container>
       <div>
         <Container>
           <PreConstruction />

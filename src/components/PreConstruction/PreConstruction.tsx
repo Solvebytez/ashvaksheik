@@ -19,6 +19,11 @@ const PreConstruction = () => {
     const { closeModal, isOpen, openModal } = useFullscreenhook();
     
     const preProject:PreContructionProps[] = [
+      { projectName: "FIVE OAKS", builder: "Caivan", occupancy: "2027-2028", type: "Towns and Detached", location: "OAKVILLE" },
+      { projectName: "AURA LAKEVIEW VILLAGE", builder: "Caivan", occupancy: "2027-2028", type: "Urban Towns", location: "MISSISSAUGA" },
+      { projectName: "RIVERVIEW", builder: "Caivan", occupancy: "2026-2027", type: "Towns and Detached", location: "OAKVILLE" },
+      { projectName: "BRAVO / ENCORE AT BRAVO", builder: "Menkes & QuadReal", occupancy: "2028-2029", type: "Condos", location: "VAUGHAN" },
+      { projectName: "CORNERSTONE", builder: "Primont", occupancy: "2026+", type: "Towns and Detached", location: "BRAMPTON" },
       { projectName: "AMIRA", builder: "Treasure Hill", occupancy: "2025", type: "Detached / Estate Homes", location: "BRAMPTON" },
       { projectName: "ARBOR WEST", builder: "Caivan", occupancy: "2025", type: "Detached and Towns", location: "BRAMPTON" },
       { projectName: "THE CASTLEMILE", builder: "Arista, Deco, Opus", occupancy: "2025/2026", type: "Detached Homes and Towns", location: "BRAMPTON" },
@@ -65,7 +70,6 @@ const PreConstruction = () => {
       { projectName: "SHEPPARD", builder: "National Homes", occupancy: "2027", type: "Condos", location: "SCARBOROUGH" },
       { projectName: "SXSW", builder: "Primont", occupancy: "2026", type: "Condos", location: "WOODBRIDGE" },
       { projectName: "CASTLEMORE CROSSINGS", builder: "Royalpine Homes", occupancy: "Q1 2028", type: "Detached", location: "VAUGHAN" },
-      { projectName: "ENCORE AT BRAVO", builder: "Menkes", occupancy: "2029", type: "Condos", location: "VAUGHAN" },
       { projectName: "BURNET RISE & ROSE", builder: "Rise Developments", occupancy: "2025", type: "Condos", location: "RICHMOND HILL" },
       { projectName: "DUNCAN HILLS", builder: "Arkfield", occupancy: "2026", type: "Semi and Detached", location: "RICHMOND HILL" },
       { projectName: "IVYLEA TOWNS", builder: "Marlin Spring", occupancy: "2025-2026", type: "Townhomes", location: "RICHMOND HILL" },

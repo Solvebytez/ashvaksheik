@@ -1,5 +1,6 @@
 import { getBlogs } from "@/lib/blogs";
 import { neighborhoodGuides, neighborhoodPath } from "@/lib/neighborhoods";
+import { preconProjectPath, preconProjects } from "@/lib/preconProjects";
 import { SITE_URL } from "@/lib/seo";
 import type { MetadataRoute } from "next";
 
@@ -36,6 +37,12 @@ const staticRoutes: MetadataRoute.Sitemap = [
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: area.kind === "city" ? 0.75 : 0.55,
+  })),
+  ...preconProjects.map((project) => ({
+    url: `${SITE_URL}${preconProjectPath(project.slug)}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.9,
   })),
 ];
 
