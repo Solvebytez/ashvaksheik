@@ -3,8 +3,8 @@ import LinkButton from "../Global/Button";
 const HeroSection = () => {
   return (
     <div className="relative overflow-hidden min-h-[100svh] md:h-[calc(90vh-50px)]" id="home">
-      <div className="absolute inset-0 z-10 flex items-center justify-center px-6">
-        <div className="flex flex-col justify-center items-center text-white max-w-3xl">
+      <div className="absolute inset-0 z-[1] flex items-center justify-center px-6 pointer-events-none">
+        <div className="flex flex-col justify-center items-center text-white max-w-3xl pointer-events-auto">
           <h3 className="text-xs md:text-base tracking-[3px]">WELCOME TO</h3>
           <h1 className="text-[32px] leading-tight sm:text-[40px] md:text-[70px] tenor_Sans tracking-[2px] md:tracking-[6px] text-center my-3 md:my-8 uppercase">
             Ashvak Sheik

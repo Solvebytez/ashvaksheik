@@ -44,12 +44,12 @@ const Header = () => {
   return (
     <>
       <header
-        className={`z-10 fixed w-full top-0 transition-transform duration-300 ${
+        className={`z-50 fixed w-full top-0 transition-transform duration-300 ${
           currentScroll > 0 ? "translate-y-[-100px]" : ""
         } ${showHeader ? "translate-y-[0px]" : ""}`}
       >
         <nav
-          className={`z-10 w-full absolute px-4 md:px-6 top-0 md:top-0 ${
+          className={`z-50 w-full absolute px-4 md:px-6 top-0 md:top-0 ${
             showHeader ? "bg-black/40" : "md:top-6"
           }`}
         >
