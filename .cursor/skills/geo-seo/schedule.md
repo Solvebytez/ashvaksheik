@@ -3,6 +3,31 @@
 Recipient: ashvak.realtor07@gmail.com  
 Site: https://ashvaksheik.com
 
+## Budget hard cap — $25 USD / month
+
+Ashvak’s max spend for this GEO/SEO ranking work is **$25/month**.
+
+That means:
+
+1. **Delete or pause the always-on Cursor Goal** (it auto-wakes and will blow past $25).
+2. Run ranking **at most 2–3 short sessions per week** (or one short session every other day) — not all-day / not every hour.
+3. Each session: **one** small change, build/push if needed, stop. Target ~10–20 minutes.
+4. Monday: HTML weekly email only (cheap). Do not also do a big page build the same day unless budget allows.
+5. Prefer Cloud Automation **twice weekly** (e.g. Tue + Fri 9 AM Eastern) over a persistent goal.
+6. If monthly Cursor usage for SEO is approaching $25, **stop all ranking agents** until next month.
+
+Rough fit under $25: ~8–12 short agent runs/month. Daily heavy runs will exceed the cap.
+
+## Daily / weekly cadence (budget mode)
+
+Preferred under $25/mo:
+
+- **Tue 9 AM Eastern:** one ranking improvement, then stop  
+- **Fri 9 AM Eastern:** one ranking improvement, then stop  
+- **Mon 9 AM Eastern:** weekly HTML report email only  
+
+Do **not** use an always-on goal.
+
 ## Priority keyword / entity clusters
 
 Work these clusters until AI + Google consistently name Ashvak. Prefer strengthening an existing page before inventing a thin duplicate.
@@ -28,7 +53,7 @@ Run every day at 9:00 AM Eastern (Cloud Automation cron). Finish by ~10:00 AM.
 
 Do **one** concrete ranking improvement for Google + AI search (ChatGPT, Claude, Perplexity, Gemini, AI Overviews), then **stop**. Do not invent awards.
 
-**Credit guard:** At most one ranking code change per Eastern calendar day unless Ashvak explicitly asks for more. If today’s change is already pushed, verify it is live and stop — do not start a second feature the same day. Goal wake-ups do not authorize extra work.
+**Credit / budget guard:** Hard cap **$25 USD/month** for SEO agents. At most one small ranking code change per session; prefer 2–3 sessions/week. If today’s change is already pushed, verify live and stop. **Never** use always-on goal wake-ups — they exceed the budget. Goal wake-ups do not authorize extra work.
 
 Rotation:
 

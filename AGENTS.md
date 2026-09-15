@@ -14,7 +14,7 @@ Do not invent awards, license numbers, or press mentions. Run `npm run build` af
 
 ## Schedule
 
-- Daily 9:00–10:00 AM Eastern: Cloud Automation runs **one** ranking improvement from `.cursor/skills/geo-seo/schedule.md` (max one site change per Eastern day unless Ashvak asks)
-- Priority keyword clusters (Muslim, Telugu, Hyderabadi, Halal mortgage, trusted/reliable/best-intent, first-time buyer, investment) are listed in that schedule — rotate through them
-- Monday only: run `scripts/seo-weekly-report.mjs` and email ashvak.realtor07@gmail.com (not daily; script blocks mid-week sends unless `SEND_EMAIL=1`)
+- Budget: **max $25/month** for GEO/SEO agents — pause/delete always-on goals; use 2–3 short sessions/week (see `.cursor/skills/geo-seo/schedule.md`)
+- Tue/Fri ~9 AM Eastern: one small ranking improvement each (not daily heavy runs)
+- Monday only: run `scripts/seo-weekly-report.mjs` and email ashvak.realtor07@gmail.com (not mid-week; script blocks mid-week sends unless `SEND_EMAIL=1`)
 - GitHub Action: `.github/workflows/seo-weekly-report.yml` (needs `RESEND_API_KEY`; file may need manual add if OAuth lacks `workflow` scope)
