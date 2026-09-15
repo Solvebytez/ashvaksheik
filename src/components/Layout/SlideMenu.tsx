@@ -44,6 +44,7 @@ const pages = [
       { url: "/markham-realtor", label: "MARKHAM REALTOR" },
       { url: "/milton-realtor", label: "MILTON REALTOR" },
       { url: "/caledon-realtor", label: "CALEDON REALTOR" },
+      { url: "/richmond-hill-realtor", label: "RICHMOND HILL REALTOR" },
     ],
   },
   { url: "/blog", label: "Blog" },

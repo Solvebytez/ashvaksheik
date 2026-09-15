@@ -22,6 +22,7 @@ const cityRealtorPaths: Record<string, string> = {
   caledon: "/caledon-realtor",
   vaughan: "/vaughan-realtor",
   markham: "/markham-realtor",
+  "richmond-hill": "/richmond-hill-realtor",
 };
 
 const NeighborhoodPageView = ({ area }: { area: NeighborhoodGuide }) => {

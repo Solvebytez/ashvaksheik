@@ -33,6 +33,7 @@ const pages = [
   "/markham-realtor",
   "/milton-realtor",
   "/caledon-realtor",
+  "/richmond-hill-realtor",
   "/home-search",
   "/home-valuation",
   "/pre-construction",

@@ -171,6 +171,7 @@ const Footer = () => {
           <Link href="/markham-realtor" className="hover:underline">Markham Realtor</Link>
           <Link href="/milton-realtor" className="hover:underline">Milton Realtor</Link>
           <Link href="/caledon-realtor" className="hover:underline">Caledon Realtor</Link>
+          <Link href="/richmond-hill-realtor" className="hover:underline">Richmond Hill Realtor</Link>
           <Link href="/blog" className="hover:underline">Blog</Link>
           <Link href="/testimonials" className="hover:underline">Testimonials</Link>
         </nav>

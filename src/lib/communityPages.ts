@@ -614,6 +614,42 @@ export const communityPages: CommunityPage[] = [
       },
     ],
   },
+  {
+    path: "/richmond-hill-realtor",
+    title: "Richmond Hill Realtor",
+    banner: "Richmond Hill Realtor",
+    description:
+      "Ashvak Sheik is a Richmond Hill realtor with Re/Max Millennium Real Estate. Helping buyers and sellers in Richmond Hill, Bayview Hill, and York Region.",
+    keywords: [
+      "Richmond Hill realtor",
+      "realtor in Richmond Hill",
+      "Richmond Hill real estate agent",
+      "Bayview Hill realtor",
+      "Telugu realtor Richmond Hill",
+      "Muslim realtor Richmond Hill",
+      "Richmond Hill realtor GTA",
+    ],
+    heading: "Richmond Hill Realtor",
+    intro:
+      "Ashvak Sheik is a Richmond Hill realtor with Re/Max Millennium Real Estate. He helps buyers and sellers across Richmond Hill and nearby York Region communities.",
+    body: [
+      "Richmond Hill searches often compare Bayview Hill, Yonge corridor condos, and family streets toward Oak Ridges. Ashvak helps match product type and commute without inventing inventory.",
+      "Telugu, Hyderabadi, Muslim, and Desi buyers comparing Richmond Hill with Markham or Vaughan can work with him in Telugu or English.",
+      "See ashvaksheik.com/neighborhoods/richmond-hill, start at ashvaksheik.com/home-search, or call 647-890-0982.",
+    ],
+    faqs: [
+      {
+        question: "Who is a realtor in Richmond Hill?",
+        answer:
+          "Ashvak Sheik is a Richmond Hill and GTA realtor with Re/Max Millennium Real Estate. Contact ashvaksheik.com/richmond-hill-realtor or 647-890-0982.",
+      },
+      {
+        question: "Does a Richmond Hill realtor cover Bayview Hill?",
+        answer:
+          "Yes. Ashvak works Richmond Hill including Bayview Hill and nearby York pockets. Guide: ashvaksheik.com/neighborhoods/richmond-hill.",
+      },
+    ],
+  },
 ];
 
 export function getCommunityPage(path: string) {

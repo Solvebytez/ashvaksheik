@@ -31,6 +31,7 @@ const staticRoutes: MetadataRoute.Sitemap = [
   { url: `${SITE_URL}/markham-realtor`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },
   { url: `${SITE_URL}/milton-realtor`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },
   { url: `${SITE_URL}/caledon-realtor`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },
+  { url: `${SITE_URL}/richmond-hill-realtor`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },
   { url: `${SITE_URL}/blog`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.7 },
   { url: `${SITE_URL}/testimonials`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.5 },
   { url: `${SITE_URL}/properties`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.5 },
