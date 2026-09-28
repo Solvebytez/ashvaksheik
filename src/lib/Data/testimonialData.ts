@@ -1,52 +1,52 @@
 export const testimonials = [
   {
+    name: "FATIMA & AHMED",
+    quote:
+      "We sold our Brampton townhouse with Ashvak. He walked my parents through the offers in plain language and did not rush us. Pricing and showings were clear from the start.",
+  },
+  {
+    name: "YUSUF",
+    quote:
+      "First home in Mississauga. I wanted a halal mortgage, and Ashvak was upfront that he is the realtor, not the lender. He lined up the search around the financing timeline so I was not looking at homes I could not close on.",
+  },
+  {
+    name: "AMINA",
+    quote:
+      "Bought in Brampton with my sister. Evening showings worked around our schedule, and Ashvak answered questions the same day. No pressure to waive conditions we were not comfortable with.",
+  },
+  {
+    name: "IMRAN",
+    quote:
+      "Listed our semi in Brampton. Photos, open house, and the offer summary were straightforward. We knew what each offer included before we signed anything.",
+  },
+  {
     name: "ANNA & DAVID",
     quote:
-      "As first-time buyers in the GTA real estate market, we needed someone knowledgeable and patient. Ashvak guided us every step of the way, from understanding our budget to finding the perfect property. His dedication and transparency made us feel at ease. We couldn’t be happier with our new home!",
-  },
-  {
-    name: "KATE",
-    quote:
-      "Ashvak has a deep understanding of the Peel and Durham real estate markets, which was essential in helping us find our ideal home. He listened to our needs, offered honest advice, and helped us navigate every challenge with ease. We highly recommend Ashvak to anyone buying in the Greater Toronto Area.",
-  },
-  {
-    name: "MARK",
-    quote:
-      "Ashvak’s market expertise and client-focused approach were a game-changer for us. He knew exactly what we were looking for and went above and beyond to secure the best deal. If you’re looking for a dedicated realtor in Toronto, Ashvak is your go-to!",
-  },
-  {
-    name: "EMILY",
-    quote:
-      "My experience with Ashvak was exceptional. He understood the nuances of the Toronto housing market and helped us find a beautiful home in York Region. His negotiation skills are top-notch, and he genuinely cares about his clients.",
-  },
-  {
-    name: "TOM & LISA",
-    quote:
-      "From start to finish, Ashvak provided incredible support and insight. His in-depth knowledge of the GTA market helped us make informed decisions. With his guidance, we found our dream home in Halton Region.",
+      "First-time buyers in Mississauga. Ashvak stuck to our budget and explained closing costs before we put in an offer. We did not feel rushed.",
   },
   {
     name: "RAJ",
     quote:
-      "Ashvak’s expertise in Toronto real estate and his calm, reassuring demeanor made our buying experience smooth and enjoyable. He was always available to answer our questions and went the extra mile to ensure our satisfaction.",
+      "We were comparing Brampton and Mississauga. He sent a short list that actually matched commute and budget instead of a pile of random listings.",
   },
   {
-    name: "LISA & JOHN",
+    name: "KATE",
     quote:
-      "Ashvak's attention to detail and strong negotiation skills helped us secure our dream home at a great price. His knowledge of the Greater Toronto Area was invaluable, and he made the entire process stress-free.",
+      "Sold in Durham and bought closer to work. Ashvak kept both timelines in one place and told us when a house was not worth stretching for.",
   },
   {
-    name: "SOPHIE",
+    name: "MARK",
     quote:
-      "Finding a home in Peel Region felt overwhelming, but Ashvak’s expertise and dedication made it easy. He was professional, honest, and extremely resourceful in finding properties that matched our criteria.",
+      "Bought a condo in Toronto. He flagged maintenance fees and what was included before we booked a second visit. Communication was direct.",
+  },
+  {
+    name: "NOOR",
+    quote:
+      "My husband and I were buying in Caledon and needed the process explained for family back home. Ashvak was patient on calls and did not talk us into a bigger mortgage.",
   },
   {
     name: "MICHAEL",
     quote:
-      "Ashvak genuinely cares about his clients and is committed to helping them make the best choice. His guidance through the entire process was invaluable. Thank you, Ashvak, for making our journey enjoyable and successful!",
-  },
-  {
-    name: "JESSICA & PAUL",
-    quote:
-      "Ashvak helped us find a property in Durham Region, and his market insights and client-first approach were truly impressive. He was always available, answering every question we had and ensuring we were comfortable with each step.",
+      "Investor looking at a Mississauga rental. He separated what was livable now from what needed work, and we passed on two places that did not cash-flow.",
   },
 ];
