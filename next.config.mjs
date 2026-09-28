@@ -1,5 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    async redirects() {
+      return [
+        {
+          source: "/blog/7-costly-mistakes-bubuyer-mistakes-gta-home-purchase-guide",
+          destination: "/blog/7-costly-mistakes-gta-buyers-home-purchase-guide",
+          permanent: true,
+        },
+      ];
+    },
     images: {
       domains: ['rl-backend-6c6af7ff6474.herokuapp.com'],
       
