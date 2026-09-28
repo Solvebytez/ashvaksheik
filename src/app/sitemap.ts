@@ -17,6 +17,7 @@ const staticRoutes: MetadataRoute.Sitemap = [
   { url: `${SITE_URL}/telugu-realtor`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },
   { url: `${SITE_URL}/hyderabadi-realtor`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },
   { url: `${SITE_URL}/muslim-realtor`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },
+  { url: `${SITE_URL}/muslim-realtor-brampton`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.95 },
   { url: `${SITE_URL}/desi-realtor`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
   { url: `${SITE_URL}/hyderabadi-muslim-realtor`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
   { url: `${SITE_URL}/halal-mortgage-realtor`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
