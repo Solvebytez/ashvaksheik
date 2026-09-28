@@ -19,6 +19,7 @@ const pages = [
   "/telugu-realtor",
   "/hyderabadi-realtor",
   "/muslim-realtor",
+  "/muslim-realtor-brampton",
   "/hyderabadi-muslim-realtor",
   "/halal-mortgage-realtor",
   "/desi-realtor",

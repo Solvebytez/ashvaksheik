@@ -14,8 +14,15 @@ import Link from "next/link";
 export const metadata = pageMetadata({
   title: "Home Seller Guide",
   description:
-    "How to price, prepare, and close a GTA home sale with Ashvak Sheik, Realtor at Re/Max Millennium Real Estate.",
+    "Sell your home in Brampton and the GTA with Ashvak Sheik, Muslim realtor at Re/Max Millennium Real Estate. Pricing, prep, marketing, and closing guidance.",
   path: "/sellers",
+  keywords: [
+    "sell home Brampton",
+    "Brampton home seller",
+    "Muslim realtor sell home Brampton",
+    "GTA home seller guide",
+    "home valuation Brampton",
+  ],
 });
 
 const buyersSteps = [
@@ -104,9 +111,13 @@ const SellersPage = () => {
             <Link href="/neighborhoods/brampton" className="underline">Brampton</Link>,{" "}
             <Link href="/neighborhoods/mississauga" className="underline">Mississauga</Link>, or{" "}
             <Link href="/neighborhoods/toronto" className="underline">Toronto</Link>{" "}
-            is smoother with a clear pricing and marketing plan. Ashvak Sheik at Re/Max Millennium Real Estate guides GTA sellers through each step below. Start with a{" "}
-            <Link href="/home-valuation" className="underline">home valuation</Link>{" "}
-            or read the{" "}
+            is smoother with a clear pricing and marketing plan. Ashvak Sheik at Re/Max Millennium Real Estate guides GTA sellers through each step below — including Muslim families in Brampton looking for a trusted local agent. Start with a{" "}
+            <Link href="/home-valuation" className="underline">home valuation</Link>
+            , see{" "}
+            <Link href="/muslim-realtor-brampton" className="underline">Muslim realtor Brampton</Link>
+            , read{" "}
+            <Link href="/testimonials" className="underline">reviews</Link>
+            , or the{" "}
             <Link href="/faq" className="underline">FAQ</Link>.
           </p>
         </Container>

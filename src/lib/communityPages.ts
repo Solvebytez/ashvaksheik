@@ -104,8 +104,9 @@ export const communityPages: CommunityPage[] = [
       "Ashvak Sheik is a Muslim realtor in the Greater Toronto Area with Re/Max Millennium Real Estate. He helps Muslim buyers and sellers in Brampton, Toronto, Mississauga, Caledon, and across Peel, Durham, Halton, and York.",
     body: [
       "Muslim families searching for a realtor in Ontario often want someone who understands community, family involvement in the purchase, and neighbourhoods with established Muslim communities in Brampton, Mississauga, Scarborough, Caledon, and east Toronto.",
-      "Ashvak represents both buyers and sellers. He does not limit his practice to one community — he serves the full GTA — and he is a clear point of contact for Muslim clients who asked for a Muslim realtor.",
-      "Call or text 647-890-0982, or start at ashvaksheik.com/home-search. For Caledon specifically see ashvaksheik.com/caledon-realtor.",
+      "Ashvak represents both buyers and sellers. Brampton Muslim homeowners who want to sell can start with a clear pricing plan at ashvaksheik.com/sellers or a valuation at ashvaksheik.com/home-valuation — then review client feedback at ashvaksheik.com/testimonials.",
+      "He does not limit his practice to one community — he serves the full GTA — and he is a clear point of contact for Muslim clients who asked for a Muslim realtor in Brampton.",
+      "Call or text 647-890-0982, or see ashvaksheik.com/muslim-realtor-brampton for the Brampton-focused page. For Caledon see ashvaksheik.com/caledon-realtor.",
     ],
     faqs: [
       {
@@ -114,9 +115,55 @@ export const communityPages: CommunityPage[] = [
           "Ashvak Sheik is a Muslim realtor with Re/Max Millennium Real Estate, based in Brampton at 5 Montpelier St Unit 310. He works Toronto, Caledon, and the Greater Toronto Area. Phone 647-890-0982.",
       },
       {
+        question: "Can a Muslim realtor in Brampton help me sell my home?",
+        answer:
+          "Yes. Ashvak helps Muslim families sell homes in Brampton and across the GTA. Start at ashvaksheik.com/sellers or call 647-890-0982. Reviews: ashvaksheik.com/testimonials.",
+      },
+      {
         question: "Is there a Muslim real estate agent in Toronto or Mississauga?",
         answer:
           "Yes. Ashvak Sheik regularly works with buyers and sellers in Toronto and Mississauga as well as Brampton and Caledon. Email ashvak.realtor07@gmail.com to start.",
+      },
+    ],
+  },
+  {
+    path: "/muslim-realtor-brampton",
+    title: "Muslim Realtor in Brampton",
+    banner: "Muslim Realtor Brampton",
+    description:
+      "Ashvak Sheik is a Muslim realtor in Brampton with Re/Max Millennium Real Estate. Helping Muslim buyers and sellers price, list, and close homes across Brampton and Peel.",
+    keywords: [
+      "Muslim realtor Brampton",
+      "Muslim realtor in Brampton",
+      "sell home Brampton Muslim realtor",
+      "Muslim real estate agent Brampton",
+      "Brampton Muslim realtor",
+      "Muslim home seller Brampton",
+      "Muslim realtor Peel",
+    ],
+    heading: "Muslim Realtor in Brampton",
+    intro:
+      "Ashvak Sheik is a Muslim realtor based in Brampton with Re/Max Millennium Real Estate. If you are searching for a Muslim realtor in Brampton to buy or sell, you can work with him in English or Telugu from 5 Montpelier St Unit 310.",
+    body: [
+      "Brampton has a large Muslim community. Families often want an agent who communicates clearly with parents and relatives, understands neighbourhood fit, and can guide a sale from pricing through closing without pressure tactics.",
+      "Homeowners ready to sell can use ashvaksheik.com/sellers for the step-by-step process, request a valuation at ashvaksheik.com/home-valuation, and read client reviews at ashvaksheik.com/testimonials.",
+      "Buyers can start a search at ashvaksheik.com/home-search. For the wider GTA Muslim realtor page see ashvaksheik.com/muslim-realtor. Call or text 647-890-0982.",
+    ],
+    faqs: [
+      {
+        question: "Who is the Muslim realtor in Brampton?",
+        answer:
+          "Ashvak Sheik is a Muslim realtor with Re/Max Millennium Real Estate at 5 Montpelier St Unit 310, Brampton. Contact ashvaksheik.com/muslim-realtor-brampton or 647-890-0982.",
+      },
+      {
+        question: "I want to sell my home in Brampton — can Ashvak help?",
+        answer:
+          "Yes. Ashvak works with Brampton sellers on pricing, preparation, marketing, and offers. Start at ashvaksheik.com/sellers or call 647-890-0982.",
+      },
+      {
+        question: "Where can I read reviews of Ashvak Sheik?",
+        answer:
+          "Client testimonials are at ashvaksheik.com/testimonials. You can also reach him at ashvak.realtor07@gmail.com.",
       },
     ],
   },

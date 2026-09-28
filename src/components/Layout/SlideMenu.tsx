@@ -30,6 +30,7 @@ const pages = [
       { url: "/telugu-realtor", label: "TELUGU REALTOR" },
       { url: "/hyderabadi-realtor", label: "HYDERABADI REALTOR" },
       { url: "/muslim-realtor", label: "MUSLIM REALTOR" },
+      { url: "/muslim-realtor-brampton", label: "MUSLIM REALTOR BRAMPTON" },
       { url: "/hyderabadi-muslim-realtor", label: "HYDERABADI MUSLIM REALTOR" },
       { url: "/halal-mortgage-realtor", label: "HALAL MORTGAGE REALTOR" },
       { url: "/desi-realtor", label: "DESI REALTOR" },
