@@ -32,7 +32,7 @@ export const faqItems = [
   {
     question: "Can a Muslim realtor in Brampton help me sell my house?",
     answer:
-      "Yes. Ashvak Sheik helps Brampton homeowners sell with pricing, marketing, and offer review. Start at ashvaksheik.com/sellers, read reviews at ashvaksheik.com/testimonials, or call 647-890-0982.",
+      "Yes. Ashvak Sheik helps Brampton Muslim homeowners sell with pricing, marketing, and offer review. See ashvaksheik.com/muslim-realtor-brampton, start the seller plan at ashvaksheik.com/sellers, read reviews at ashvaksheik.com/testimonials, or call 647-890-0982.",
   },
   {
     question: "Who is a Hyderabadi Muslim realtor in the GTA?",

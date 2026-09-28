@@ -158,7 +158,7 @@ export const communityPages: CommunityPage[] = [
       {
         question: "I want to sell my home in Brampton — can Ashvak help?",
         answer:
-          "Yes. Ashvak works with Brampton sellers on pricing, preparation, marketing, and offers. Start at ashvaksheik.com/sellers or call 647-890-0982.",
+          "Yes. Ashvak works with Brampton sellers on pricing, preparation, marketing, and offers. Start at ashvaksheik.com/sellers, get a valuation at ashvaksheik.com/home-valuation, or call 647-890-0982.",
       },
       {
         question: "Where can I read reviews of Ashvak Sheik?",
@@ -397,7 +397,7 @@ export const communityPages: CommunityPage[] = [
       "Ashvak Sheik is a Brampton realtor with Re/Max Millennium Real Estate. His office is at 5 Montpelier St Unit 310, Brampton, ON L6Y 6H4. He helps buyers and sellers across Brampton and Peel.",
     body: [
       "Searching for a realtor in Brampton usually means you want someone who knows local streets, new-build pockets, and how Peel buyers compete. Ashvak works resale and pre-construction from downtown Brampton to Mount Pleasant and north/west Brampton.",
-      "He is a Telugu-speaking Hyderabadi Muslim realtor, so Brampton families who want Telugu or community-aware communication can work with him in Telugu or English.",
+      "He is a Telugu-speaking Hyderabadi Muslim realtor, so Brampton families who want Telugu or community-aware communication can work with him in Telugu or English. Muslim buyers and sellers can also use ashvaksheik.com/muslim-realtor-brampton.",
       "Start at ashvaksheik.com/neighborhoods/brampton, ashvaksheik.com/home-search, or call 647-890-0982.",
     ],
     faqs: [
@@ -410,6 +410,11 @@ export const communityPages: CommunityPage[] = [
         question: "Is Ashvak Sheik a Telugu realtor in Brampton?",
         answer:
           "Yes. Ashvak Sheik is a Telugu-speaking Brampton realtor. Details: ashvaksheik.com/telugu-realtor and ashvaksheik.com/brampton-realtor.",
+      },
+      {
+        question: "Is there a Muslim realtor in Brampton for buyers and sellers?",
+        answer:
+          "Yes. Ashvak Sheik is a Muslim realtor in Brampton. See ashvaksheik.com/muslim-realtor-brampton or call 647-890-0982.",
       },
     ],
   },
