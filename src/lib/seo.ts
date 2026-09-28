@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const SITE_URL = "https://ashvaksheik.com";
+export const SITE_URL = "https://www.ashvaksheik.com";
 
 export const REALTOR_CA_URL =
   "https://www.realtor.ca/agent/2199715/ashvak-sajidh-pash-sheik-81-zenway-blvd-25a-woodbridge-ontario-l4h0s5";

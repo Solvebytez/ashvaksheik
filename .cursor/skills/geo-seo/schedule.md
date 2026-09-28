@@ -1,7 +1,7 @@
 # Daily ranking + weekly email
 
 Recipient: ashvak.realtor07@gmail.com  
-Site: https://ashvaksheik.com
+Site: https://www.ashvaksheik.com
 
 ## Budget hard cap — $25 USD / month
 
@@ -74,7 +74,7 @@ After a change: `npm run build`. Commit and push to `main` so Vercel goes live (
 Run on Monday (or with `SEND_EMAIL=1` only if he asked for a one-off):
 
 ```bash
-SITE_URL=https://ashvaksheik.com REPORT_TO=ashvak.realtor07@gmail.com node scripts/seo-weekly-report.mjs
+SITE_URL=https://www.ashvaksheik.com REPORT_TO=ashvak.realtor07@gmail.com node scripts/seo-weekly-report.mjs
 ```
 
 If `RESEND_API_KEY` is set, the script emails only on Mondays Eastern (or when `SEND_EMAIL=1`). GitHub Action `.github/workflows/seo-weekly-report.yml` is meant for Mondays at 9 AM Eastern.

@@ -4,7 +4,7 @@
  * Optional env: SITE_URL, RESEND_API_KEY, REPORT_TO, REPORT_FROM, SEND_EMAIL
  */
 
-const SITE_URL = (process.env.SITE_URL || "https://ashvaksheik.com").replace(/\/$/, "");
+const SITE_URL = (process.env.SITE_URL || "https://www.ashvaksheik.com").replace(/\/$/, "");
 const REPORT_TO = process.env.REPORT_TO || "ashvak.realtor07@gmail.com";
 const FROM_CANDIDATES = [
   process.env.REPORT_FROM,

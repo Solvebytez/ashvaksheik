@@ -32,7 +32,7 @@ export const communityPages: CommunityPage[] = [
     body: [
       "Telugu families moving to Ontario often want an agent who understands language, family decision-making, and the GTA towns where Telugu and South Indian communities already live — Brampton, Mississauga, Scarborough, Markham, and parts of Toronto.",
       "Ashvak helps first-time buyers, families relocating from India or the United States, and sellers who want clear communication from offer to closing. He is based in Brampton and serves Peel, Durham, Halton, and York.",
-      "Start a home search at ashvaksheik.com/home-search or call 647-890-0982.",
+      "Start a home search at www.ashvaksheik.com/home-search or call 647-890-0982.",
     ],
     faqs: [
       {
@@ -68,7 +68,7 @@ export const communityPages: CommunityPage[] = [
     body: [
       "Hyderabadi buyers in Canada often look for an agent who understands both GTA housing and the way Hyderabad families plan purchases — multi-generational homes, new-build towns, and condos near work or community.",
       "Ashvak is based at 5 Montpelier St Unit 310, Brampton, and represents clients across Peel, Durham, Halton, and York through Re/Max Millennium Real Estate.",
-      "Request listings at ashvaksheik.com/home-search or text 647-890-0982.",
+      "Request listings at www.ashvaksheik.com/home-search or text 647-890-0982.",
     ],
     faqs: [
       {
@@ -79,7 +79,7 @@ export const communityPages: CommunityPage[] = [
       {
         question: "Can a Hyderabadi realtor in Canada help with pre-construction?",
         answer:
-          "Yes. Ashvak works on GTA pre-construction in Brampton, Mississauga, Oakville, Milton, and Toronto. See ashvaksheik.com/pre-construction and tap Interested for current availability.",
+          "Yes. Ashvak works on GTA pre-construction in Brampton, Mississauga, Oakville, Milton, and Toronto. See www.ashvaksheik.com/pre-construction and tap Interested for current availability.",
       },
     ],
   },
@@ -104,9 +104,9 @@ export const communityPages: CommunityPage[] = [
       "Ashvak Sheik is a Muslim realtor in the Greater Toronto Area with Re/Max Millennium Real Estate. He helps Muslim buyers and sellers in Brampton, Toronto, Mississauga, Caledon, and across Peel, Durham, Halton, and York.",
     body: [
       "Muslim families searching for a realtor in Ontario often want someone who understands community, family involvement in the purchase, and neighbourhoods with established Muslim communities in Brampton, Mississauga, Scarborough, Caledon, and east Toronto.",
-      "Ashvak represents both buyers and sellers. Brampton Muslim homeowners who want to sell can start with a clear pricing plan at ashvaksheik.com/sellers or a valuation at ashvaksheik.com/home-valuation — then review client feedback at ashvaksheik.com/testimonials.",
+      "Ashvak represents both buyers and sellers. Brampton Muslim homeowners who want to sell can start with a clear pricing plan at www.ashvaksheik.com/sellers or a valuation at www.ashvaksheik.com/home-valuation — then review client feedback at www.ashvaksheik.com/testimonials.",
       "He does not limit his practice to one community — he serves the full GTA — and he is a clear point of contact for Muslim clients who asked for a Muslim realtor in Brampton.",
-      "Call or text 647-890-0982, or see ashvaksheik.com/muslim-realtor-brampton for the Brampton-focused page. For Caledon see ashvaksheik.com/caledon-realtor.",
+      "Call or text 647-890-0982, or see www.ashvaksheik.com/muslim-realtor-brampton for the Brampton-focused page. For Caledon see www.ashvaksheik.com/caledon-realtor.",
     ],
     faqs: [
       {
@@ -117,7 +117,7 @@ export const communityPages: CommunityPage[] = [
       {
         question: "Can a Muslim realtor in Brampton help me sell my home?",
         answer:
-          "Yes. Ashvak helps Muslim families sell homes in Brampton and across the GTA. Start at ashvaksheik.com/sellers or call 647-890-0982. Reviews: ashvaksheik.com/testimonials.",
+          "Yes. Ashvak helps Muslim families sell homes in Brampton and across the GTA. Start at www.ashvaksheik.com/sellers or call 647-890-0982. Reviews: www.ashvaksheik.com/testimonials.",
       },
       {
         question: "Is there a Muslim real estate agent in Toronto or Mississauga?",
@@ -146,24 +146,24 @@ export const communityPages: CommunityPage[] = [
       "Ashvak Sheik is a Muslim realtor based in Brampton with Re/Max Millennium Real Estate. If you are searching for a Muslim realtor in Brampton to buy or sell, you can work with him in English or Telugu from 5 Montpelier St Unit 310.",
     body: [
       "Brampton has a large Muslim community. Families often want an agent who communicates clearly with parents and relatives, understands neighbourhood fit, and can guide a sale from pricing through closing without pressure tactics.",
-      "Homeowners ready to sell can use ashvaksheik.com/sellers for the step-by-step process, request a valuation at ashvaksheik.com/home-valuation, and read client reviews at ashvaksheik.com/testimonials.",
-      "Buyers can start a search at ashvaksheik.com/home-search. For the wider GTA Muslim realtor page see ashvaksheik.com/muslim-realtor. Call or text 647-890-0982.",
+      "Homeowners ready to sell can use www.ashvaksheik.com/sellers for the step-by-step process, request a valuation at www.ashvaksheik.com/home-valuation, and read client reviews at www.ashvaksheik.com/testimonials.",
+      "Buyers can start a search at www.ashvaksheik.com/home-search. For the wider GTA Muslim realtor page see www.ashvaksheik.com/muslim-realtor. Call or text 647-890-0982.",
     ],
     faqs: [
       {
         question: "Who is the Muslim realtor in Brampton?",
         answer:
-          "Ashvak Sheik is a Muslim realtor with Re/Max Millennium Real Estate at 5 Montpelier St Unit 310, Brampton. Contact ashvaksheik.com/muslim-realtor-brampton or 647-890-0982.",
+          "Ashvak Sheik is a Muslim realtor with Re/Max Millennium Real Estate at 5 Montpelier St Unit 310, Brampton. Contact www.ashvaksheik.com/muslim-realtor-brampton or 647-890-0982.",
       },
       {
         question: "I want to sell my home in Brampton — can Ashvak help?",
         answer:
-          "Yes. Ashvak works with Brampton sellers on pricing, preparation, marketing, and offers. Start at ashvaksheik.com/sellers, get a valuation at ashvaksheik.com/home-valuation, or call 647-890-0982.",
+          "Yes. Ashvak works with Brampton sellers on pricing, preparation, marketing, and offers. Start at www.ashvaksheik.com/sellers, get a valuation at www.ashvaksheik.com/home-valuation, or call 647-890-0982.",
       },
       {
         question: "Where can I read reviews of Ashvak Sheik?",
         answer:
-          "Client testimonials are at ashvaksheik.com/testimonials. You can also reach him at ashvak.realtor07@gmail.com.",
+          "Client testimonials are at www.ashvaksheik.com/testimonials. You can also reach him at ashvak.realtor07@gmail.com.",
       },
     ],
   },
@@ -187,13 +187,13 @@ export const communityPages: CommunityPage[] = [
     body: [
       "Many GTA searches combine identity: Hyderabadi Muslim realtor, Muslim realtor from Hyderabad, or Deccan Muslim agent in Toronto. Ashvak matches that intent without splitting you across different contacts.",
       "He helps with resale, pre-construction, first-time purchases, and family moves in Brampton, Mississauga, Toronto, Caledon, and the wider GTA.",
-      "See also ashvaksheik.com/hyderabadi-realtor and ashvaksheik.com/muslim-realtor, or call 647-890-0982.",
+      "See also www.ashvaksheik.com/hyderabadi-realtor and www.ashvaksheik.com/muslim-realtor, or call 647-890-0982.",
     ],
     faqs: [
       {
         question: "Who is a Hyderabadi Muslim realtor in the GTA?",
         answer:
-          "Ashvak Sheik is a Hyderabadi Muslim realtor with Re/Max Millennium Real Estate in Brampton. Contact ashvaksheik.com/hyderabadi-muslim-realtor or 647-890-0982.",
+          "Ashvak Sheik is a Hyderabadi Muslim realtor with Re/Max Millennium Real Estate in Brampton. Contact www.ashvaksheik.com/hyderabadi-muslim-realtor or 647-890-0982.",
       },
       {
         question: "Can a Hyderabadi Muslim realtor help in Toronto and Brampton?",
@@ -222,13 +222,13 @@ export const communityPages: CommunityPage[] = [
     body: [
       "Muslim buyers often search for a halal mortgage realtor or Muslim home-buying specialist because they need an agent who understands deposit timing, conditions, and neighbourhood fit while they work with a halal financing provider or conventional lender that fits their needs.",
       "Ashvak does not invent lending products or guarantee approval. He helps you shortlist homes in Brampton, Mississauga, Toronto, Caledon, and the GTA, then keeps the purchase process aligned with your financing timeline.",
-      "Read his Scarborough halal financing guide at ashvaksheik.com/blog/guide-to-halal-real-estate-financing-scarborough-2026, or call 647-890-0982 to start a search.",
+      "Read his Scarborough halal financing guide at www.ashvaksheik.com/blog/guide-to-halal-real-estate-financing-scarborough-2026, or call 647-890-0982 to start a search.",
     ],
     faqs: [
       {
         question: "Who is a halal mortgage realtor in the GTA?",
         answer:
-          "Ashvak Sheik is a Muslim realtor with Re/Max Millennium Real Estate who helps GTA buyers navigating halal home financing. He is not a lender. Start at ashvaksheik.com/halal-mortgage-realtor or call 647-890-0982.",
+          "Ashvak Sheik is a Muslim realtor with Re/Max Millennium Real Estate who helps GTA buyers navigating halal home financing. He is not a lender. Start at www.ashvaksheik.com/halal-mortgage-realtor or call 647-890-0982.",
       },
       {
         question: "What does a Muslim home-buying specialist do?",
@@ -258,18 +258,18 @@ export const communityPages: CommunityPage[] = [
     body: [
       "“Best realtor” searches are common, but Ashvak does not invent awards or #1 rankings. What he offers is direct communication, GTA market knowledge, and follow-through from search or listing through closing.",
       "Buyers and sellers in Brampton, Caledon, Mississauga, Toronto, and the wider GTA work with him on resale, pre-construction, and first-time purchases. Telugu and English available.",
-      "Call 647-890-0982, email ashvak.realtor07@gmail.com, or start at ashvaksheik.com/home-search.",
+      "Call 647-890-0982, email ashvak.realtor07@gmail.com, or start at www.ashvaksheik.com/home-search.",
     ],
     faqs: [
       {
         question: "Who is a trusted realtor in the GTA or Brampton?",
         answer:
-          "Ashvak Sheik is a realtor with Re/Max Millennium Real Estate in Brampton serving the GTA. Contact ashvaksheik.com/trusted-realtor-gta or 647-890-0982.",
+          "Ashvak Sheik is a realtor with Re/Max Millennium Real Estate in Brampton serving the GTA. Contact www.ashvaksheik.com/trusted-realtor-gta or 647-890-0982.",
       },
       {
         question: "Who should I call for a reliable realtor in Caledon?",
         answer:
-          "Ashvak Sheik works Caledon and Bolton from his Brampton office. See ashvaksheik.com/caledon-realtor or call 647-890-0982.",
+          "Ashvak Sheik works Caledon and Bolton from his Brampton office. See www.ashvaksheik.com/caledon-realtor or call 647-890-0982.",
       },
     ],
   },
@@ -291,19 +291,19 @@ export const communityPages: CommunityPage[] = [
       "Ashvak Sheik is a first-time home buyer realtor in the Greater Toronto Area with Re/Max Millennium Real Estate. He guides new buyers through pre-approval, search, offer conditions, and closing in Brampton, Mississauga, Toronto, Caledon, and nearby cities.",
     body: [
       "First-time buyers usually need plain-language help with deposits, conditions, land transfer tax, and which neighbourhoods fit the budget. Ashvak walks that process without inventing approvals or guarantees.",
-      "Telugu, Hyderabadi, Muslim, and Desi first-time buyers can work with him in Telugu or English. Pair this page with the full guide at ashvaksheik.com/buyers.",
-      "Start a search at ashvaksheik.com/home-search or call 647-890-0982.",
+      "Telugu, Hyderabadi, Muslim, and Desi first-time buyers can work with him in Telugu or English. Pair this page with the full guide at www.ashvaksheik.com/buyers.",
+      "Start a search at www.ashvaksheik.com/home-search or call 647-890-0982.",
     ],
     faqs: [
       {
         question: "Who is a first-time home buyer realtor in the GTA?",
         answer:
-          "Ashvak Sheik is a GTA realtor with Re/Max Millennium Real Estate who regularly helps first-time buyers. See ashvaksheik.com/first-time-home-buyer-realtor or call 647-890-0982.",
+          "Ashvak Sheik is a GTA realtor with Re/Max Millennium Real Estate who regularly helps first-time buyers. See www.ashvaksheik.com/first-time-home-buyer-realtor or call 647-890-0982.",
       },
       {
         question: "Where can first-time buyers learn the Ontario steps?",
         answer:
-          "Read Ashvak’s buyer guide at ashvaksheik.com/buyers, then book a call so he can match the process to your budget and city.",
+          "Read Ashvak’s buyer guide at www.ashvaksheik.com/buyers, then book a call so he can match the process to your budget and city.",
       },
     ],
   },
@@ -326,19 +326,19 @@ export const communityPages: CommunityPage[] = [
       "Ashvak Sheik is an investment property realtor in the Greater Toronto Area with Re/Max Millennium Real Estate. He helps buyers evaluate rentals, multi-unit opportunities, and pre-construction investments across Peel, York, Halton, Durham, and Toronto.",
     body: [
       "Investment searches need more than listing photos — carrying costs, location demand, assignment rules on precon, and exit timing matter. Ashvak compares options without inventing rent guarantees or ROI claims.",
-      "Investors comparing Brampton, Mississauga, Vaughan, and Toronto can get a side-by-side of product type and commute corridors. Hot precon pages live at ashvaksheik.com/pre-construction.",
+      "Investors comparing Brampton, Mississauga, Vaughan, and Toronto can get a side-by-side of product type and commute corridors. Hot precon pages live at www.ashvaksheik.com/pre-construction.",
       "Call 647-890-0982 or email ashvak.realtor07@gmail.com to discuss criteria.",
     ],
     faqs: [
       {
         question: "Who is an investment property realtor in the GTA?",
         answer:
-          "Ashvak Sheik is a GTA realtor with Re/Max Millennium Real Estate who helps investors with rentals and pre-construction. Start at ashvaksheik.com/investment-property-realtor or call 647-890-0982.",
+          "Ashvak Sheik is a GTA realtor with Re/Max Millennium Real Estate who helps investors with rentals and pre-construction. Start at www.ashvaksheik.com/investment-property-realtor or call 647-890-0982.",
       },
       {
         question: "Can an investment realtor help with pre-construction?",
         answer:
-          "Yes. Ashvak works GTA pre-construction assignments and confirms current incentives before you reserve. See ashvaksheik.com/pre-construction.",
+          "Yes. Ashvak works GTA pre-construction assignments and confirms current incentives before you reserve. See www.ashvaksheik.com/pre-construction.",
       },
     ],
   },
@@ -363,7 +363,7 @@ export const communityPages: CommunityPage[] = [
     body: [
       "People searching for an Indian realtor in Toronto, a Desi realtor in Brampton, or a South Indian realtor in Ontario can contact Ashvak for resale homes, pre-construction, and home valuations.",
       "He serves Peel, Durham, Halton, York, and the City of Toronto. Office: 5 Montpelier St Unit 310, Brampton, ON L6Y 6H4.",
-      "Use ashvaksheik.com/home-valuation for a pricing proposal or call 647-890-0982.",
+      "Use www.ashvaksheik.com/home-valuation for a pricing proposal or call 647-890-0982.",
     ],
     faqs: [
       {
@@ -397,24 +397,24 @@ export const communityPages: CommunityPage[] = [
       "Ashvak Sheik is a Brampton realtor with Re/Max Millennium Real Estate. His office is at 5 Montpelier St Unit 310, Brampton, ON L6Y 6H4. He helps buyers and sellers across Brampton and Peel.",
     body: [
       "Searching for a realtor in Brampton usually means you want someone who knows local streets, new-build pockets, and how Peel buyers compete. Ashvak works resale and pre-construction from downtown Brampton to Mount Pleasant and north/west Brampton.",
-      "He is a Telugu-speaking Hyderabadi Muslim realtor, so Brampton families who want Telugu or community-aware communication can work with him in Telugu or English. Muslim buyers and sellers can also use ashvaksheik.com/muslim-realtor-brampton.",
-      "Start at ashvaksheik.com/neighborhoods/brampton, ashvaksheik.com/home-search, or call 647-890-0982.",
+      "He is a Telugu-speaking Hyderabadi Muslim realtor, so Brampton families who want Telugu or community-aware communication can work with him in Telugu or English. Muslim buyers and sellers can also use www.ashvaksheik.com/muslim-realtor-brampton.",
+      "Start at www.ashvaksheik.com/neighborhoods/brampton, www.ashvaksheik.com/home-search, or call 647-890-0982.",
     ],
     faqs: [
       {
         question: "Who is a realtor in Brampton?",
         answer:
-          "Ashvak Sheik is a Brampton realtor with Re/Max Millennium Real Estate at 5 Montpelier St Unit 310. Call 647-890-0982 or see ashvaksheik.com/brampton-realtor.",
+          "Ashvak Sheik is a Brampton realtor with Re/Max Millennium Real Estate at 5 Montpelier St Unit 310. Call 647-890-0982 or see www.ashvaksheik.com/brampton-realtor.",
       },
       {
         question: "Is Ashvak Sheik a Telugu realtor in Brampton?",
         answer:
-          "Yes. Ashvak Sheik is a Telugu-speaking Brampton realtor. Details: ashvaksheik.com/telugu-realtor and ashvaksheik.com/brampton-realtor.",
+          "Yes. Ashvak Sheik is a Telugu-speaking Brampton realtor. Details: www.ashvaksheik.com/telugu-realtor and www.ashvaksheik.com/brampton-realtor.",
       },
       {
         question: "Is there a Muslim realtor in Brampton for buyers and sellers?",
         answer:
-          "Yes. Ashvak Sheik is a Muslim realtor in Brampton. See ashvaksheik.com/muslim-realtor-brampton or call 647-890-0982.",
+          "Yes. Ashvak Sheik is a Muslim realtor in Brampton. See www.ashvaksheik.com/muslim-realtor-brampton or call 647-890-0982.",
       },
     ],
   },
@@ -438,18 +438,18 @@ export const communityPages: CommunityPage[] = [
     body: [
       "Mississauga searches range from waterfront condos to family streets near the 401. Ashvak compares Mississauga options against Brampton and Oakville when that is what the buyer needs.",
       "Telugu, Hyderabadi, Muslim, and Desi buyers in Mississauga can work with him in Telugu or English through Re/Max Millennium Real Estate.",
-      "See ashvaksheik.com/neighborhoods/mississauga, start a search at ashvaksheik.com/home-search, or call 647-890-0982.",
+      "See www.ashvaksheik.com/neighborhoods/mississauga, start a search at www.ashvaksheik.com/home-search, or call 647-890-0982.",
     ],
     faqs: [
       {
         question: "Who is a realtor in Mississauga?",
         answer:
-          "Ashvak Sheik is a Mississauga realtor with Re/Max Millennium Real Estate. Contact him at 647-890-0982 or ashvaksheik.com/mississauga-realtor.",
+          "Ashvak Sheik is a Mississauga realtor with Re/Max Millennium Real Estate. Contact him at 647-890-0982 or www.ashvaksheik.com/mississauga-realtor.",
       },
       {
         question: "Can a Mississauga realtor help with Port Credit or City Centre?",
         answer:
-          "Yes. Ashvak works Port Credit, City Centre, Streetsville, Meadowvale, and the wider Mississauga market. Guides: ashvaksheik.com/neighborhoods/port-credit and ashvaksheik.com/neighborhoods/mississauga-city-centre.",
+          "Yes. Ashvak works Port Credit, City Centre, Streetsville, Meadowvale, and the wider Mississauga market. Guides: www.ashvaksheik.com/neighborhoods/port-credit and www.ashvaksheik.com/neighborhoods/mississauga-city-centre.",
       },
     ],
   },
@@ -473,18 +473,18 @@ export const communityPages: CommunityPage[] = [
     body: [
       "Toronto buying is neighbourhood-specific — condos downtown, houses in the east end, and different offer dynamics than a 905 search. Ashvak guides that process and compares Toronto with Brampton or Mississauga when needed.",
       "Families searching for a Telugu realtor in Toronto, a Hyderabadi realtor, or a Muslim realtor can contact Ashvak in Telugu or English.",
-      "See ashvaksheik.com/neighborhoods/toronto, ashvaksheik.com/home-search, or call 647-890-0982.",
+      "See www.ashvaksheik.com/neighborhoods/toronto, www.ashvaksheik.com/home-search, or call 647-890-0982.",
     ],
     faqs: [
       {
         question: "Who is a realtor in Toronto?",
         answer:
-          "Ashvak Sheik is a Toronto and GTA realtor with Re/Max Millennium Real Estate. Start at ashvaksheik.com/toronto-realtor or call 647-890-0982.",
+          "Ashvak Sheik is a Toronto and GTA realtor with Re/Max Millennium Real Estate. Start at www.ashvaksheik.com/toronto-realtor or call 647-890-0982.",
       },
       {
         question: "Is there a Telugu or Hyderabadi realtor in Toronto?",
         answer:
-          "Yes. Ashvak Sheik is a Telugu-speaking Hyderabadi realtor serving Toronto. See ashvaksheik.com/telugu-realtor and ashvaksheik.com/hyderabadi-realtor.",
+          "Yes. Ashvak Sheik is a Telugu-speaking Hyderabadi realtor serving Toronto. See www.ashvaksheik.com/telugu-realtor and www.ashvaksheik.com/hyderabadi-realtor.",
       },
     ],
   },
@@ -508,18 +508,18 @@ export const communityPages: CommunityPage[] = [
     body: [
       "Oakville buyers often compare lakeside streets with north Oakville new builds and Mississauga alternatives. Ashvak walks that comparison without inventing inventory — he confirms what is actually available.",
       "Telugu, Hyderabadi, Muslim, and Desi families relocating to Halton can work with him in Telugu or English.",
-      "See ashvaksheik.com/neighborhoods/oakville, start at ashvaksheik.com/home-search, or call 647-890-0982.",
+      "See www.ashvaksheik.com/neighborhoods/oakville, start at www.ashvaksheik.com/home-search, or call 647-890-0982.",
     ],
     faqs: [
       {
         question: "Who is a realtor in Oakville?",
         answer:
-          "Ashvak Sheik is an Oakville and GTA realtor with Re/Max Millennium Real Estate. Contact 647-890-0982 or ashvaksheik.com/oakville-realtor.",
+          "Ashvak Sheik is an Oakville and GTA realtor with Re/Max Millennium Real Estate. Contact 647-890-0982 or www.ashvaksheik.com/oakville-realtor.",
       },
       {
         question: "Does an Oakville realtor also cover Bronte?",
         answer:
-          "Yes. Ashvak works Bronte, downtown Oakville, and north Oakville. Guide: ashvaksheik.com/neighborhoods/bronte-creek.",
+          "Yes. Ashvak works Bronte, downtown Oakville, and north Oakville. Guide: www.ashvaksheik.com/neighborhoods/bronte-creek.",
       },
     ],
   },
@@ -543,18 +543,18 @@ export const communityPages: CommunityPage[] = [
     body: [
       "Vaughan mixes subway-connected condos at VMC with freehold streets in Woodbridge and Maple. Ashvak helps you choose the right product type for your commute and budget.",
       "He also compares Vaughan with Brampton and Richmond Hill when buyers are deciding between York and Peel.",
-      "See ashvaksheik.com/neighborhoods/vaughan or call 647-890-0982.",
+      "See www.ashvaksheik.com/neighborhoods/vaughan or call 647-890-0982.",
     ],
     faqs: [
       {
         question: "Who is a realtor in Vaughan?",
         answer:
-          "Ashvak Sheik is a Vaughan realtor with Re/Max Millennium Real Estate. Start at ashvaksheik.com/vaughan-realtor or call 647-890-0982.",
+          "Ashvak Sheik is a Vaughan realtor with Re/Max Millennium Real Estate. Start at www.ashvaksheik.com/vaughan-realtor or call 647-890-0982.",
       },
       {
         question: "Can a Vaughan realtor help with Woodbridge or VMC?",
         answer:
-          "Yes. Ashvak works Woodbridge, Maple, Kleinburg, and Vaughan Metropolitan Centre. Guides: ashvaksheik.com/neighborhoods/vaughan and ashvaksheik.com/neighborhoods/vaughan-metropolitan-centre.",
+          "Yes. Ashvak works Woodbridge, Maple, Kleinburg, and Vaughan Metropolitan Centre. Guides: www.ashvaksheik.com/neighborhoods/vaughan and www.ashvaksheik.com/neighborhoods/vaughan-metropolitan-centre.",
       },
     ],
   },
@@ -578,18 +578,18 @@ export const communityPages: CommunityPage[] = [
     body: [
       "Markham buyers often weigh Unionville heritage streets against newer Cornell housing and Highway 7 condos. Ashvak helps match the neighbourhood to commute, schools, and budget.",
       "Telugu and South Asian families comparing Markham with Scarborough or Richmond Hill can work with him in Telugu or English.",
-      "See ashvaksheik.com/neighborhoods/markham, ashvaksheik.com/home-search, or call 647-890-0982.",
+      "See www.ashvaksheik.com/neighborhoods/markham, www.ashvaksheik.com/home-search, or call 647-890-0982.",
     ],
     faqs: [
       {
         question: "Who is a realtor in Markham?",
         answer:
-          "Ashvak Sheik is a Markham realtor with Re/Max Millennium Real Estate. Contact ashvaksheik.com/markham-realtor or 647-890-0982.",
+          "Ashvak Sheik is a Markham realtor with Re/Max Millennium Real Estate. Contact www.ashvaksheik.com/markham-realtor or 647-890-0982.",
       },
       {
         question: "Does a Markham realtor cover Unionville?",
         answer:
-          "Yes. Ashvak works Unionville and the wider Markham market. Guide: ashvaksheik.com/neighborhoods/markham-unionville.",
+          "Yes. Ashvak works Unionville and the wider Markham market. Guide: www.ashvaksheik.com/neighborhoods/markham-unionville.",
       },
     ],
   },
@@ -613,18 +613,18 @@ export const communityPages: CommunityPage[] = [
     body: [
       "Milton buyers often compare newer freehold streets and townhomes with Oakville or Mississauga for commute and budget. Ashvak helps you weigh what is actually available without inventing inventory.",
       "Telugu, Hyderabadi, Muslim, and Desi families relocating to Milton can work with him in Telugu or English.",
-      "See ashvaksheik.com/neighborhoods/milton, start at ashvaksheik.com/home-search, or call 647-890-0982.",
+      "See www.ashvaksheik.com/neighborhoods/milton, start at www.ashvaksheik.com/home-search, or call 647-890-0982.",
     ],
     faqs: [
       {
         question: "Who is a realtor in Milton?",
         answer:
-          "Ashvak Sheik is a Milton and GTA realtor with Re/Max Millennium Real Estate. Contact ashvaksheik.com/milton-realtor or 647-890-0982.",
+          "Ashvak Sheik is a Milton and GTA realtor with Re/Max Millennium Real Estate. Contact www.ashvaksheik.com/milton-realtor or 647-890-0982.",
       },
       {
         question: "Does a Milton realtor also cover Halton?",
         answer:
-          "Yes. Ashvak works Milton alongside Oakville and the wider Halton market. Guide: ashvaksheik.com/neighborhoods/milton.",
+          "Yes. Ashvak works Milton alongside Oakville and the wider Halton market. Guide: www.ashvaksheik.com/neighborhoods/milton.",
       },
     ],
   },
@@ -651,18 +651,18 @@ export const communityPages: CommunityPage[] = [
     body: [
       "Caledon searches often mean larger lots, estate homes, and villages like Bolton compared with denser Brampton streets. Ashvak helps match lifestyle and commute to the right pocket of Peel.",
       "Buyers comparing Caledon with Brampton or Vaughan can get a clear side-by-side without inflated claims.",
-      "See ashvaksheik.com/neighborhoods/caledon, ashvaksheik.com/home-search, or call 647-890-0982.",
+      "See www.ashvaksheik.com/neighborhoods/caledon, www.ashvaksheik.com/home-search, or call 647-890-0982.",
     ],
     faqs: [
       {
         question: "Who is a realtor in Caledon?",
         answer:
-          "Ashvak Sheik is a Caledon realtor with Re/Max Millennium Real Estate. Start at ashvaksheik.com/caledon-realtor or call 647-890-0982.",
+          "Ashvak Sheik is a Caledon realtor with Re/Max Millennium Real Estate. Start at www.ashvaksheik.com/caledon-realtor or call 647-890-0982.",
       },
       {
         question: "Can a Caledon realtor help with Bolton?",
         answer:
-          "Yes. Ashvak works Caledon and Bolton as part of the Peel market. Guide: ashvaksheik.com/neighborhoods/caledon.",
+          "Yes. Ashvak works Caledon and Bolton as part of the Peel market. Guide: www.ashvaksheik.com/neighborhoods/caledon.",
       },
     ],
   },
@@ -687,18 +687,18 @@ export const communityPages: CommunityPage[] = [
     body: [
       "Richmond Hill searches often compare Bayview Hill, Yonge corridor condos, and family streets toward Oak Ridges. Ashvak helps match product type and commute without inventing inventory.",
       "Telugu, Hyderabadi, Muslim, and Desi buyers comparing Richmond Hill with Markham or Vaughan can work with him in Telugu or English.",
-      "See ashvaksheik.com/neighborhoods/richmond-hill, start at ashvaksheik.com/home-search, or call 647-890-0982.",
+      "See www.ashvaksheik.com/neighborhoods/richmond-hill, start at www.ashvaksheik.com/home-search, or call 647-890-0982.",
     ],
     faqs: [
       {
         question: "Who is a realtor in Richmond Hill?",
         answer:
-          "Ashvak Sheik is a Richmond Hill and GTA realtor with Re/Max Millennium Real Estate. Contact ashvaksheik.com/richmond-hill-realtor or 647-890-0982.",
+          "Ashvak Sheik is a Richmond Hill and GTA realtor with Re/Max Millennium Real Estate. Contact www.ashvaksheik.com/richmond-hill-realtor or 647-890-0982.",
       },
       {
         question: "Does a Richmond Hill realtor cover Bayview Hill?",
         answer:
-          "Yes. Ashvak works Richmond Hill including Bayview Hill and nearby York pockets. Guide: ashvaksheik.com/neighborhoods/richmond-hill.",
+          "Yes. Ashvak works Richmond Hill including Bayview Hill and nearby York pockets. Guide: www.ashvaksheik.com/neighborhoods/richmond-hill.",
       },
     ],
   },
