@@ -68,16 +68,33 @@ body {
   
 }
 
+.BlogDetails h2,
+.BlogDetails h3,
+.BlogDetails h4 {
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
 .BlogDetails h2 {
   margin-top: 32px;
   margin-bottom: 8px;
   font-size: 40px;
 }
 
+.BlogDetails h3 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
 @media (max-width: 767px) {
   .BlogDetails h2 {
     font-size: 24px;
     letter-spacing: 0.04em;
+  }
+
+  .BlogDetails h3 {
+    font-size: 20px;
   }
 
   .slick-slider .slick-prev {
