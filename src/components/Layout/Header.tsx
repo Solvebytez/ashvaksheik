@@ -7,8 +7,10 @@ import { AlignRight } from "lucide-react";
 import FullScreenModal from "../Global/Modal";
 import useFullscreenhook from "../Hook/useFullscreenhook";
 import ContactModal from "../ContactModal";
+import MarketRateBar from "../MarketRateBar";
+import type { MarketRate } from "@/lib/marketRates";
 
-const Header = () => {
+const Header = ({ rates = [] }: { rates?: MarketRate[] }) => {
   const [showHeader, setShowHeader] = useState(false);
   const [currentScroll, setCurrentScroll] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,12 +47,13 @@ const Header = () => {
     <>
       <header
         className={`z-50 fixed w-full top-0 transition-transform duration-300 ${
-          currentScroll > 0 ? "translate-y-[-100px]" : ""
-        } ${showHeader ? "translate-y-[0px]" : ""}`}
+          currentScroll > 0 && !showHeader ? "-translate-y-[240px]" : "translate-y-0"
+        }`}
       >
+        <MarketRateBar rates={rates} />
         <nav
-          className={`z-50 w-full absolute px-4 md:px-6 top-0 md:top-0 ${
-            showHeader ? "bg-black/40" : "md:top-6"
+          className={`z-50 w-full px-4 md:px-6 ${
+            showHeader ? "bg-black/40" : ""
           }`}
         >
           <div className="flex items-center justify-between py-2 gap-6 md:py-4 md:gap-0 relative">

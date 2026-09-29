@@ -11,6 +11,7 @@ import { ApolloWrapper } from "./ApolloProvider";
 import Script from "next/script";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL, siteGraph } from "@/lib/seo";
+import { getMarketRates } from "@/lib/marketRates";
 
 const montserrat = Montserrat({
   subsets: ["latin", "cyrillic", "latin-ext"],
@@ -70,7 +71,7 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Fetching the messages server-side
+  const rates = await getMarketRates();
   return (
     <html lang="en-CA">
       <head>
@@ -107,7 +108,7 @@ export default async function RootLayout({
           {/* End Google Tag Manager (noscript) */}
           <div className="bg-black ">
             <JsonLd data={siteGraph()} />
-            <Header />
+            <Header rates={rates ?? []} />
             {children}
             <Footer />
           </div>
