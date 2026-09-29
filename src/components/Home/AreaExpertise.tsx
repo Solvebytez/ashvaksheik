@@ -8,9 +8,9 @@ const featuredSlugs = [
   "brampton",
   "mississauga",
   "toronto",
-  "port-credit",
-  "brampton-downtown",
   "oakville",
+  "caledon",
+  "milton",
 ];
 
 const AreaExpertise = () => {

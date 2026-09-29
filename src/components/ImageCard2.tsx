@@ -1,5 +1,5 @@
 import Image from "next/image";
-import LinkButton from "./Global/Button";
+import Link from "next/link";
 
 const ImageCard2 = ({
   imageSrc,
@@ -13,27 +13,29 @@ const ImageCard2 = ({
   href?: string;
 }) => {
   return (
-    <div className="group relative overflow-hidden h-96">
+    <Link
+      href={href}
+      className="group relative block h-96 overflow-hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-white"
+    >
       <Image
         src={imageSrc}
         alt={title}
         fill
-        className="transition-transform duration-500 ease-in-out transform group-hover:scale-110 object-cover"
+        className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
       />
-      <div className="absolute inset-0 bg-black bg-opacity-50 opacity-70 md:opacity-50 md:group-hover:opacity-100 transition duration-500 ease-in-out"></div>
-      <div className="absolute inset-0 flex flex-col justify-center items-center transition duration-500 ease-in-out text-center px-5 md:px-12">
-        <h2 className="text-white text-xl md:text-3xl mb-3 md:mb-4 transform md:group-hover:translate-y-[-30px] transition duration-500 tenor_Sans tracking-[2px] md:tracking-[6px] leading-snug">
+      <div className="absolute inset-0 bg-black/55 transition duration-500 group-hover:bg-black/65" />
+      <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
+        <h2 className="tenor_Sans text-xl leading-snug tracking-[2px] text-white md:text-3xl">
           {title}
-          <span className="text-white text-sm md:text-lg block mt-2 tracking-normal font-normal normal-case leading-6">{description}</span>
         </h2>
-       
-        <LinkButton
-          href={href}
-          btnText="Learn More"
-          className="text-white border border-white py-2 px-4 opacity-100 md:opacity-0 md:group-hover:opacity-100 hover:bg-white hover:text-black transform md:group-hover:translate-y-[-30px] transition duration-500"
-        ></LinkButton>
+        <p className="mt-3 max-w-xs text-sm leading-6 text-white md:max-w-sm md:text-base">
+          {description}
+        </p>
+        <span className="mt-6 inline-flex items-center justify-center border border-white px-6 py-3 text-[12px] font-bold uppercase tracking-[1.5px] text-white transition group-hover:bg-white group-hover:text-black">
+          Learn More
+        </span>
       </div>
-    </div>
+    </Link>
   );
 };
 

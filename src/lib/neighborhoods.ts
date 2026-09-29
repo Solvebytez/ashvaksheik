@@ -51,7 +51,7 @@ export const neighborhoodGuides: NeighborhoodGuide[] = [
     city: "Toronto",
     region: "Toronto",
     kind: "city",
-    cardDescription: "Condo cores, east-end houses, and midtown streets across the City of Toronto.",
+    cardDescription: "Condo cores, east-end houses, and midtown streets.",
     image: "https://images.pexels.com/photos/667221/pexels-photo-667221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     intro:
       "Toronto buying is neighbourhood-specific: condos downtown and midtown, houses in the east end and North York, and a different process than a 905 detached search. Ashvak Sheik works Toronto files alongside Peel, York, Durham, and Halton.",
@@ -177,7 +177,7 @@ export const neighborhoodGuides: NeighborhoodGuide[] = [
     city: "Mississauga",
     region: "Peel",
     kind: "neighborhood",
-    cardDescription: "A beautiful lakeside community with a charming, small-town feel and a popular waterfront.",
+    cardDescription: "Lakeside village with a boardwalk, GO to Union, and condos beside older houses.",
     image: "https://images.pexels.com/photos/1643384/pexels-photo-1643384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     intro:
       "Port Credit is Mississauga’s lakeside village — boardwalk, GO station, and a tighter street grid than Meadowvale or Streetsville. Inventory is a mix of condos, older houses, and infill.",
@@ -219,7 +219,7 @@ export const neighborhoodGuides: NeighborhoodGuide[] = [
     city: "Brampton",
     region: "Peel",
     kind: "neighborhood",
-    cardDescription: "A rapidly growing urban area with diverse communities and cultural events.",
+    cardDescription: "Garden Square and the GO core, with older streets and mid-rise near Queen and Main.",
     image: "https://images.pexels.com/photos/7937225/pexels-photo-7937225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     intro:
       "Downtown Brampton is the older civic core around Garden Square and the GO station, with more mid-rise and rental/condo plans than the city’s north subdivisions.",
