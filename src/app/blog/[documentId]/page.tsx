@@ -1,6 +1,5 @@
-import { BASE_URL } from "@/env";
 import JsonLd from "@/components/seo/JsonLd";
-import { getBlog, getBlogs } from "@/lib/blogs";
+import { blogView, getBlog, getBlogs } from "@/lib/blogs";
 import { articleGraph, pageMetadata, SITE_URL } from "@/lib/seo";
 import BlogDetails from "./Detail";
 
@@ -17,25 +16,29 @@ export async function generateMetadata({
   params: { documentId: string };
 }) {
   const post = await getBlog(params.documentId);
-  const thumbRaw =
-    post?.thumbnail?.[0]?.formats?.medium?.url ?? post?.thumbnail?.[0]?.url;
-  const ogImage =
-    thumbRaw && (thumbRaw.startsWith("http") ? thumbRaw : `${BASE_URL}${thumbRaw}`);
+  const view = post ? blogView(post) : undefined;
+  const path = `/blog/${params.documentId}`;
   const meta = pageMetadata({
-    title: post?.title ?? "Blog",
+    title: view?.title ?? "Blog",
     description:
-      post?.ShortDescription ??
+      view?.description ??
       "GTA real estate insight from Ashvak Sheik, Realtor at Re/Max Millennium Real Estate.",
-    path: `/blog/${params.documentId}`,
-    image: ogImage,
+    path,
+    image: view?.image,
+    keywords: view && view.keywords.length ? view.keywords : undefined,
   });
+  const url = view?.canonical ?? `${SITE_URL}${path}`;
 
   return {
     ...meta,
+    robots: view?.robots,
+    alternates: { canonical: url },
     openGraph: {
       ...meta.openGraph,
       type: "article",
-      url: `${SITE_URL}/blog/${params.documentId}`,
+      url,
+      title: view?.socialTitle ?? meta.openGraph?.title,
+      description: view?.socialDescription ?? meta.openGraph?.description,
     },
   };
 }
@@ -46,25 +49,23 @@ const BlogDetailsPage = async ({
   params: { documentId: string };
 }) => {
   const post = await getBlog(params.documentId);
-  const thumbRaw =
-    post?.thumbnail?.[0]?.formats?.medium?.url ?? post?.thumbnail?.[0]?.url;
-  const image =
-    thumbRaw && (thumbRaw.startsWith("http") ? thumbRaw : `${BASE_URL}${thumbRaw}`);
+  const view = post ? blogView(post) : undefined;
 
   return (
     <>
-      {post && (
+      {post && view && (
         <JsonLd
           data={articleGraph({
             title: post.title,
-            description: post.ShortDescription,
+            description: view.description,
             slug: post.slug ?? params.documentId,
-            image,
+            image: view.image,
             datePublished: post.publishedAt,
             dateModified: post.updatedAt,
           })}
         />
       )}
+      {view?.structuredData && <JsonLd data={view.structuredData} />}
       <BlogDetails post={post} />
     </>
   );

@@ -2,8 +2,7 @@ import Breadcrumb from "@/components/Global/BreadcrumbLinks";
 import LinkButton from "@/components/Global/Button";
 import Sidebar from "@/components/Global/Sidebar";
 import ReceiveInbox from "@/components/Home/ReceiveInbox";
-import type { Blog } from "@/lib/blogs";
-import { BASE_URL } from "@/env";
+import { mediaUrl, type Blog } from "@/lib/blogs";
 import { formatDate } from "@/lib/utils";
 import Image from "next/image";
 import RenderContent from "./renderContent";
@@ -20,12 +19,13 @@ const BlogDetails = ({ post }: { post?: Blog }) => {
     );
   }
 
-  const raw = post.thumbnail?.[0]?.formats?.medium?.url ?? post.thumbnail?.[0]?.url;
-  const imageSrc = raw && (raw.startsWith("http") ? raw : `${BASE_URL}${raw}`);
+  const imageSrc = mediaUrl(post.thumbnail?.[0]);
+  const imageAlt =
+    post.thumbnail?.[0]?.alternativeText || post.title || "Ashvak Sheik GTA real estate article";
 
   return (
     <>
-      <div className="min-h-[55vh] md:h-[calc(90vh-50px)] relative z-0 px-4 md:px-8 lg:px-16 xl:px-36 2xl:px-72 pt-24 md:pt-32 pb-8 overflow-hidden">
+      <div className="relative z-0 px-4 md:px-8 lg:px-16 xl:px-36 2xl:px-72 pt-24 md:pt-32 pb-8">
         <Breadcrumb
           LinkItem={[
             { name: "Home", href: "/" },
@@ -37,17 +37,18 @@ const BlogDetails = ({ post }: { post?: Blog }) => {
           {post.title}
         </h1>
         <p className="text-white my-5">{post.ShortDescription}</p>
-        <div className="h-full xl:w-full xl:h-full relative">
-          {imageSrc && (
+        {imageSrc && (
+          <div className="relative mt-2 aspect-[16/9] w-full overflow-hidden">
             <Image
               src={imageSrc}
+              alt={imageAlt}
               fill
               priority
+              sizes="(min-width: 1280px) 960px, 100vw"
               className="object-cover"
-              alt={post.title || "Ashvak Sheik GTA real estate article"}
             />
-          )}
-        </div>
+          </div>
+        )}
       </div>
       <div className="lg:grid lg:grid-cols-12 gap-5 mb-10  px-4 md:px-8 lg:px-14 xl:px-32 2xl:px-64 lg:pt-[2rem]">
         <div className="col-span-8 pl-0 md:pl-7">
