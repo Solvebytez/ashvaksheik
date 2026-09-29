@@ -70,23 +70,33 @@ const SlideMenu = ({ isMenuOpen, onCLick, openModal }: subMenuProps) => {
     return () => document.body.classList.remove("overflow-hidden");
   }, [isMenuOpen]);
 
+  useEffect(() => {
+    if (!isMenuOpen) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") onCLick();
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [isMenuOpen, onCLick]);
+
   return (
     <div className="relative">
       {isMenuOpen && (
         <button
           type="button"
           aria-label="Close menu overlay"
-          className="fixed inset-0 z-30 bg-black/60"
+          className="fixed inset-0 z-[60] bg-black/60"
           onClick={onCLick}
         />
       )}
       <div
         className={`fixed top-0 right-0 h-full w-full max-w-[320px] sm:max-w-[400px] bg-black text-white border-l border-white/20 transform transition-transform duration-300 ease-in-out overflow-y-auto ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } z-40`}
+        } z-[70]`}
       >
         <button
-          className="p-4 bg-transparent text-white absolute top-2 right-2"
+          type="button"
+          className="absolute right-2 top-3 z-10 flex h-11 w-11 items-center justify-center bg-transparent text-white"
           onClick={onCLick}
           aria-label="Close menu"
         >
