@@ -1,4 +1,5 @@
 import HomePage from "@/components/Home/HomePage";
+import MarketRates from "@/components/MarketRates";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
@@ -15,5 +16,5 @@ export const metadata = pageMetadata({
 });
 
 export default function Home() {
-  return <HomePage />;
+  return <HomePage rates={<MarketRates />} />;
 }
