@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 export type CheckboxOption = {
   id: string;
@@ -9,55 +9,56 @@ export type CheckboxOption = {
   checked?: boolean;
 };
 
-
-type checkboxOptionsProps={
+type checkboxOptionsProps = {
   checkboxOptions: CheckboxOption[];
   value: string[];
-  onChangeSelect:(value:string[]) => void;
-}
+  legend?: string;
+  onChangeSelect: (value: string[]) => void;
+};
 
-const CheckboxList = ({checkboxOptions,value,onChangeSelect}:checkboxOptionsProps) => {
-    // const [checkedValues, setCheckedValues] = useState<CheckboxOption[]>([]);
-console.log("communicationMethodValue",value)
-  const handleCheckboxChange = (option:CheckboxOption, event: React.ChangeEvent<HTMLInputElement>) => {
-
+const CheckboxList = ({
+  checkboxOptions,
+  value,
+  legend = "Preferred contact method",
+  onChangeSelect,
+}: checkboxOptionsProps) => {
+  const handleCheckboxChange = (
+    option: CheckboxOption,
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
     if (event.target.checked) {
       onChangeSelect([...value, option.value]);
     } else {
-      onChangeSelect(value.filter((v) => v !== option.value));
+      onChangeSelect(value.filter((item) => item !== option.value));
     }
   };
 
- 
   return (
-    <fieldset>
-      <legend className="sr-only">Checkbox variants</legend>
-      {checkboxOptions.map((option) => (
-        <div key={option.id} className="flex items-center mb-4 mt-3">
-          <input
-            id={option.id}
-            type="checkbox"
-            value={option.value}
-            checked={value.includes(option.value)}
-            onChange={(e)=>handleCheckboxChange(option,e)}
-            disabled={option.disabled}
-            className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-          />
+    <fieldset className="mt-3 grid gap-2">
+      <legend className="sr-only">{legend}</legend>
+      {checkboxOptions.map((option) => {
+        const checked = value.includes(option.value);
+        return (
           <label
+            key={option.id}
             htmlFor={option.id}
-            className={`ms-2 text-sm font-medium ${
-              option.disabled ? 'text-gray-400 dark:text-gray-500' : 'text-white dark:text-gray-300'
-            }`}
+            className={`flex min-h-11 cursor-pointer items-center gap-3 border px-4 text-sm ${
+              checked ? "border-white bg-white text-black" : "border-white/25 text-white"
+            } ${option.disabled ? "cursor-not-allowed opacity-40" : ""}`}
           >
+            <input
+              id={option.id}
+              type="checkbox"
+              value={option.value}
+              checked={checked}
+              onChange={(event) => handleCheckboxChange(option, event)}
+              disabled={option.disabled}
+              className="h-4 w-4 shrink-0"
+            />
             {option.label}
           </label>
-          {option.description && (
-            <p id={`${option.id}-text`} className="ms-2 text-xs font-normal text-gray-500 dark:text-gray-400">
-              {option.description}
-            </p>
-          )}
-        </div>
-      ))}
+        );
+      })}
     </fieldset>
   );
 };

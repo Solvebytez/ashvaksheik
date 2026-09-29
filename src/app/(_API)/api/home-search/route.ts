@@ -11,33 +11,34 @@ export const POST = async (req: Request) => {
     const email = formData.email || "";
     const phone = formData.phone || "For Email Subscribe";
 
+    const labelOf = (value: any) => {
+      if (value == null || value === "") return "Not specified";
+      if (Array.isArray(value)) {
+        const text = value
+          .map((item) => (item && typeof item === "object" ? item.label : item))
+          .filter(Boolean)
+          .join(", ");
+        return text || "Not specified";
+      }
+      if (typeof value === "object" && "label" in value) {
+        return value.label || "Not specified";
+      }
+      return String(value);
+    };
+
     const formattedData = `
     Property Details
-    - Location: ${formData.location
-      .map((loc: { label: any }) => loc.label)
-      .join(", ")}
-    - Property Type: ${formData.property
-      .map((prop: { label: any }) => prop.label)
-      .join(", ")}
-    - Bedrooms: ${formData.bedroom
-      .map((bed: { label: any }) => bed.label)
-      .join(", ")}
-    - Bathrooms: ${formData.bathroom
-      .map((bath: { label: any }) => bath.label)
-      .join(", ")}
-    - Square Footage: ${formData.squareFootage
-      .map((sf: { label: any }) => sf.label)
-      .join(", ")}
-    - Price Range: ${formData.priceRange
-      .map((price: { label: any }) => price.label)
-      .join(", ")}
-    - Planning to Buy: ${formData.planningToBuy
-      .map((plan: { label: any }) => plan.label)
-      .join(", ")}
-    - Purpose for Buying: ${formData.purposeForBuying.label}
-    - Mortgage Approval: ${formData.mortgageApproval}
-    - Communication Method: ${formData.communicationMethod.join(", ")}
-    - Realtor Assistance: ${formData.realtor}
+    - Location: ${labelOf(formData.location)}
+    - Property Type: ${labelOf(formData.property)}
+    - Bedrooms: ${labelOf(formData.bedroom)}
+    - Bathrooms: ${labelOf(formData.bathroom)}
+    - Square Footage: ${labelOf(formData.squareFootage)}
+    - Price Range: ${labelOf(formData.priceRange)}
+    - Planning to Buy: ${labelOf(formData.planningToBuy)}
+    - Purpose for Buying: ${labelOf(formData.purposeForBuying)}
+    - Mortgage Approval: ${labelOf(formData.mortgageApproval)}
+    - Communication Method: ${labelOf(formData.communicationMethod)}
+    - Realtor Assistance: ${labelOf(formData.realtor)}
     `;
 
     // Sending request to FollowUpBoss

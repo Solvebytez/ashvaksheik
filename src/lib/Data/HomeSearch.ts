@@ -3,30 +3,13 @@ import { OptionType1 } from "@/app/home-search/MultiSelectComponent";
 import { RedioOption } from "@/app/home-search/RadioOptions";
 
 export const propertyTypeOptions:OptionType1[] = [
-    { value: 'detached_house', label: 'Detached House' },
-    { value: 'semi_detached_house', label: 'Semi-Detached House' },
+    { value: 'detached_house', label: 'Detached' },
+    { value: 'semi_detached_house', label: 'Semi-detached' },
     { value: 'townhouse', label: 'Townhouse' },
-    { value: 'condo_condominium', label: 'Condo/Condominium' },
-    { value: 'duplex', label: 'Duplex' },
-    { value: 'triplex', label: 'Triplex' },
-    { value: 'fourplex', label: 'Fourplex' },
+    { value: 'condo_condominium', label: 'Condo' },
     { value: 'bungalow', label: 'Bungalow' },
-    { value: 'cottage_cabin', label: 'Cottage/Cabin' },
-    { value: 'mansion', label: 'Mansion' },
-    { value: 'luxury_home', label: 'Luxury Home' },
-    { value: 'multi_family_home', label: 'Multi-Family Home' },
-    { value: 'apartment_building', label: 'Apartment Building' },
-    { value: 'condo_building', label: 'Condo Building' },
-    { value: 'farm_ranch', label: 'Farm/Ranch' },
-    { value: 'vacant_land', label: 'Vacant Land' },
-    { value: 'commercial_property', label: 'Commercial Property' },
-    { value: 'industrial_property', label: 'Industrial Property' },
-    { value: 'mixed_use_property', label: 'Mixed-Use Property' },
-    { value: 'rental_property', label: 'Rental Property' },
-    { value: 'vacation_rental', label: 'Vacation Rental' },
-    { value: 'fixer_upper', label: 'Fixer-Upper' },
-    { value: 'student_housing', label: 'Student Housing' },
-    { value: 'retirement_home', label: 'Retirement Home' }
+    { value: 'multi_family_home', label: 'Multi-family' },
+    { value: 'vacant_land', label: 'Land' },
   ];
 
   // Our data structure
@@ -105,7 +88,6 @@ export const locationOption: OptionType1[] = [
         { label: 'Bradford West Gwillimbury', value: 'bradford_west_gwillimbury' },
         { label: 'Innisfil', value: 'innisfil' },
         { label: 'New Tecumseth', value: 'new_tecumseth' },
-        { label: 'Caledon', value: 'caledon' },
         { label: 'Shelburne', value: 'shelburne' },
       ],
     },

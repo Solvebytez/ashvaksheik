@@ -17,12 +17,37 @@ import {
   realtorOptions,
 } from "@/lib/Data/HomeSearch";
 import RadioOptions from "./RadioOptions";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import CheckboxList from "./CheckBox";
 import { toast } from "react-toastify";
 
+const inputClass =
+  "mt-2 w-full border border-white/35 bg-transparent px-3 py-3 text-white placeholder:text-white/40 focus:border-white focus:outline-none";
+
+const FieldLabel = ({
+  htmlFor,
+  children,
+  required,
+  error,
+}: {
+  htmlFor: string;
+  children: string;
+  required?: boolean;
+  error?: boolean;
+}) => (
+  <label htmlFor={htmlFor} className="block text-sm tracking-[1px] text-white/80 uppercase">
+    {children}
+    {required ? <span className="text-white"> *</span> : null}
+    {error ? (
+      <span role="alert" className="ml-2 text-xs normal-case tracking-normal text-red-400">
+        Required
+      </span>
+    ) : null}
+  </label>
+);
+
 const HomeSearchForm = () => {
-  const [isPending, setIspending] = useState(false as boolean);
+  const [isPending, setIspending] = useState(false);
   const {
     register,
     handleSubmit,
@@ -50,7 +75,7 @@ const HomeSearchForm = () => {
   });
 
   const citiesValue = watch("location");
-  const locationValue = watch("property");
+  const propertyValue = watch("property");
   const bedroomValue = watch("bedroom");
   const bathroomValue = watch("bathroom");
   const squareFootageValue = watch("squareFootage");
@@ -61,18 +86,23 @@ const HomeSearchForm = () => {
   const communicationMethodValue = watch("communicationMethod");
   const realtorValue = watch("realtor");
 
-  const handleRadioChange = useCallback(
-    (type: any, value: string) => {
-      setValue(type, value, {
+  useEffect(() => {
+    register("location", { required: true });
+    register("property", { required: true });
+    register("priceRange", { required: true });
+  }, [register]);
+
+  const setField = useCallback(
+    (name: any, value: any) => {
+      setValue(name, value, {
         shouldValidate: true,
         shouldDirty: true,
         shouldTouch: true,
       });
     },
-    [setValue] // Add dependencies if needed, like [setValue] if it's from props or context
+    [setValue]
   );
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const onSubmit = async (data: any) => {
     setIspending(true);
     try {
@@ -85,7 +115,7 @@ const HomeSearchForm = () => {
       });
       if (response.ok) {
         reset();
-        toast("Thank You for your Interest!");
+        toast("Ashvak has your search. He will be in touch.");
       } else {
         toast("Something went wrong. Please try again or call 647-890-0982.");
       }
@@ -98,284 +128,196 @@ const HomeSearchForm = () => {
   };
 
   return (
-    <div className="space-y-10 ">
-      <form
-        className="flex flex-col space-y-10 "
-        onSubmit={handleSubmit(onSubmit)}
-      >
-        <div className="w-full flex md:flex-row flex-col  gap-6 justify-between">
-          <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center text-white">
-              Name:{" "}
-              {errors.name?.type === "required" && (
-                <p role="alert" className="text-sm font-normal text-red-600">
-                  Required
-                </p>
-              )}
-            </label>
+    <form className="mx-auto max-w-4xl space-y-10 pb-16" onSubmit={handleSubmit(onSubmit)}>
+      <section className="space-y-6">
+        <h2 className="text-xl font-tenor_Sans uppercase tracking-[2px]">How to reach you</h2>
+        <div className="grid gap-6 md:grid-cols-2">
+          <div>
+            <FieldLabel htmlFor="search-name" required error={errors.name?.type === "required"}>
+              Name
+            </FieldLabel>
             <input
-              placeholder="Name"
+              id="search-name"
+              placeholder="Your name"
+              autoComplete="name"
               {...register("name", { required: true })}
-              className="w-full bg-transparent border border-white  p-2 text-white mb-4 focus:outline-none"
-              type="name"
+              className={inputClass}
+              type="text"
             />
           </div>
-          <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center text-white">
-              Email:{" "}
-              {errors.email?.type === "required" && (
-                <p role="alert" className="text-sm font-normal text-red-600">
-                  Required
-                </p>
-              )}
-            </label>
+          <div>
+            <FieldLabel htmlFor="search-phone" required error={errors.phone?.type === "required"}>
+              Phone
+            </FieldLabel>
             <input
-              placeholder="example@gmail.com"
+              id="search-phone"
+              placeholder="647-000-0000"
+              autoComplete="tel"
+              inputMode="tel"
+              {...register("phone", { required: true })}
+              className={inputClass}
+              type="tel"
+            />
+          </div>
+          <div className="md:col-span-2">
+            <FieldLabel htmlFor="search-email" required error={errors.email?.type === "required"}>
+              Email
+            </FieldLabel>
+            <input
+              id="search-email"
+              placeholder="you@email.com"
+              autoComplete="email"
               {...register("email", { required: true })}
-              className="w-full bg-transparent border border-white  p-2 text-white mb-4 focus:outline-none"
+              className={inputClass}
               type="email"
             />
           </div>
         </div>
-        <div className="w-full flex md:flex-row flex-col  gap-6 justify-between">
-          <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center text-white">
-              Location:{" "}
-              {errors.location?.type === "required" && (
-                <p role="alert" className="text-sm font-normal text-red-600">
-                  Required
-                </p>
-              )}
-            </label>
+      </section>
+
+      <section className="space-y-6 border-t border-white/15 pt-10">
+        <h2 className="text-xl font-tenor_Sans uppercase tracking-[2px]">The home</h2>
+        <div className="grid gap-6 md:grid-cols-2">
+          <div>
+            <FieldLabel htmlFor="search-location" required error={Boolean(errors.location)}>
+              City
+            </FieldLabel>
             <MultiSelectOptions
+              inputId="search-location"
               value={citiesValue}
-              onChangeSelect={(value) => setValue("location", value)}
+              onChangeSelect={(value) => setField("location", value)}
               isMultiOption={true}
               allMultiOptions={locationOption}
-              {...register("location", { required: true })}
-              placeholder="Select Location"
+              placeholder="Brampton, Mississauga, Toronto..."
             />
           </div>
-          <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center text-white">
-              Property:{" "}
-              {errors.property?.type === "required" && (
-                <p role="alert" className="text-sm font-normal text-red-600">
-                  Required
-                </p>
-              )}
-            </label>
+          <div>
+            <FieldLabel htmlFor="search-property" required error={Boolean(errors.property)}>
+              Home type
+            </FieldLabel>
             <MultiSelectOptions
+              inputId="search-property"
               isMultiOption={true}
               allMultiOptions={propertyTypeOptions}
-              {...register("property", { required: true })}
-              value={locationValue}
-              onChangeSelect={(value) => setValue("property", value)}
-              placeholder="Select Property"
+              value={propertyValue}
+              onChangeSelect={(value) => setField("property", value)}
+              placeholder="Detached, condo, townhouse..."
             />
           </div>
-        </div>
-        <div className="w-full flex md:flex-row flex-col  gap-6 justify-between">
-          <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center text-white">
-              Bedroom:{" "}
-              {errors.bedroom?.type === "required" && (
-                <p role="alert" className="text-sm font-normal text-red-600">
-                  Required
-                </p>
-              )}
-            </label>
+          <div>
+            <FieldLabel htmlFor="search-price" required error={Boolean(errors.priceRange)}>
+              Budget
+            </FieldLabel>
             <MultiSelectOptions
-              value={bedroomValue}
-              onChangeSelect={(value) => setValue("bedroom", value)}
-              isMultiOption={true}
-              allMultiOptions={bedroomOptions}
-              {...register("bedroom", { required: true })}
-              placeholder="Select Bedroom"
-            />
-          </div>
-          <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center text-white">
-              Bathroom:{" "}
-              {errors.bathroom?.type === "required" && (
-                <p role="alert" className="text-sm font-normal text-red-600">
-                  Required
-                </p>
-              )}
-            </label>
-            <MultiSelectOptions
-              isMultiOption={true}
-              allMultiOptions={bathroomOptions}
-              {...register("bathroom", { required: true })}
-              value={bathroomValue}
-              onChangeSelect={(value) => setValue("bathroom", value)}
-              placeholder="Select Bathroom"
-            />
-          </div>
-        </div>
-        <div className="w-full flex md:flex-row flex-col  gap-6 justify-between">
-          <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center text-white">
-              Square Footage (Sq Ft):{" "}
-              {errors.squareFootage?.type === "required" && (
-                <p role="alert" className="text-sm font-normal text-red-600">
-                  Required
-                </p>
-              )}
-            </label>
-            <MultiSelectOptions
-              value={squareFootageValue}
-              onChangeSelect={(value) => setValue("squareFootage", value)}
-              isMultiOption={true}
-              allMultiOptions={squareFootageOptions}
-              {...register("squareFootage", { required: true })}
-              placeholder="Select Square Footage (Sq Ft)"
-            />
-          </div>
-          <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center text-white">
-              Price Range:{" "}
-              {errors.priceRange?.type === "required" && (
-                <p role="alert" className="text-sm font-normal text-red-600">
-                  Required
-                </p>
-              )}
-            </label>
-            <MultiSelectOptions
+              inputId="search-price"
               isMultiOption={true}
               allMultiOptions={priceRangeOptions}
-              {...register("priceRange", { required: true })}
               value={priceRangeValue}
-              onChangeSelect={(value) => setValue("priceRange", value)}
-              placeholder="Select Price Range"
+              onChangeSelect={(value) => setField("priceRange", value)}
+              placeholder="Select a price range"
+            />
+          </div>
+          <div>
+            <FieldLabel htmlFor="search-beds">Bedrooms</FieldLabel>
+            <MultiSelectOptions
+              inputId="search-beds"
+              value={bedroomValue}
+              onChangeSelect={(value) => setField("bedroom", value)}
+              isMultiOption={true}
+              allMultiOptions={bedroomOptions}
+              placeholder="Optional"
+            />
+          </div>
+          <div>
+            <FieldLabel htmlFor="search-baths">Bathrooms</FieldLabel>
+            <MultiSelectOptions
+              inputId="search-baths"
+              isMultiOption={true}
+              allMultiOptions={bathroomOptions}
+              value={bathroomValue}
+              onChangeSelect={(value) => setField("bathroom", value)}
+              placeholder="Optional"
+            />
+          </div>
+          <div>
+            <FieldLabel htmlFor="search-size">Size</FieldLabel>
+            <MultiSelectOptions
+              inputId="search-size"
+              value={squareFootageValue}
+              onChangeSelect={(value) => setField("squareFootage", value)}
+              isMultiOption={true}
+              allMultiOptions={squareFootageOptions}
+              placeholder="Optional"
             />
           </div>
         </div>
-        <div className="w-full flex md:flex-row flex-col  gap-6 justify-between">
-          <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center text-white">
-              {" "}
-              How Soon Are You Planning to Buy?{" "}
-              {errors.planningToBuy?.type === "required" && (
-                <p role="alert" className="text-sm font-normal text-red-600">
-                  Required
-                </p>
-              )}
-            </label>
+      </section>
+
+      <section className="space-y-6 border-t border-white/15 pt-10">
+        <h2 className="text-xl font-tenor_Sans uppercase tracking-[2px]">Timing</h2>
+        <div className="grid gap-6 md:grid-cols-2">
+          <div>
+            <FieldLabel htmlFor="search-when">How soon</FieldLabel>
             <MultiSelectOptions
+              inputId="search-when"
+              isMultiOption={false}
+              regularOption={planningToBuyOptions}
               value={planningToBuyValue}
-              onChangeSelect={(value) => setValue("planningToBuy", value)}
-              isMultiOption={true}
-              allMultiOptions={planningToBuyOptions}
-              {...register("planningToBuy", { required: true })}
-              placeholder="Select Plan"
+              onChangeSelect={(value) => setField("planningToBuy", value)}
+              placeholder="Optional"
             />
           </div>
-          <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center text-white">
-              {" "}
-              What’s Your Purpose for Buying?{" "}
-              {errors.purposeForBuying?.type === "required" && (
-                <p role="alert" className="text-sm font-normal text-red-600">
-                  Required
-                </p> 
-              )}
-            </label>
+          <div>
+            <FieldLabel htmlFor="search-purpose">Purpose</FieldLabel>
             <MultiSelectOptions
+              inputId="search-purpose"
               isMultiOption={false}
               regularOption={purposeForBuyingOptions}
-              {...register("purposeForBuying", { required: true })}
               value={purposeForBuyingValue}
-              onChangeSelect={(value) => setValue("purposeForBuying", value)}
-              placeholder="Select Purpose"
+              onChangeSelect={(value) => setField("purposeForBuying", value)}
+              placeholder="Optional"
             />
           </div>
-        </div>
-        <div className="w-full flex md:flex-row flex-col  gap-6 justify-between">
-          <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center text-white">
-              {" "}
-              Have You Been Pre-Approved for a Mortgage?{" "}
-              {errors.mortgageApproval?.type === "required" && (
-                <p role="alert" className="text-sm font-normal text-red-600">
-                  Required
-                </p>
-              )}
-            </label>
+          <div>
+            <p className="text-sm uppercase tracking-[1px] text-white/80">Mortgage</p>
             <RadioOptions
-              onChangeRadio={(value) =>
-                handleRadioChange("mortgageApproval", value)
-              }
+              onChangeRadio={(value) => setField("mortgageApproval", value)}
               value={mortgageApprovalValue}
               allRadioOptions={mortgageApprovalOptions}
-              {...register("mortgageApproval", { required: true })}
             />
           </div>
-          <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center text-white">
-              {" "}
-              Preferred Communication Method:{" "}
-              {errors.communicationMethod?.type === "required" && (
-                <p role="alert" className="text-sm font-normal text-red-600">
-                  Required
-                </p>
-              )}
-            </label>
+          <div>
+            <p className="text-sm uppercase tracking-[1px] text-white/80">Reach you by</p>
             <CheckboxList
               value={communicationMethodValue}
               checkboxOptions={checkboxOptions}
-              {...register("communicationMethod", { required: true })}
-              onChangeSelect={(value: string[]) =>
-                setValue("communicationMethod", value)
-              }
+              onChangeSelect={(value: string[]) => setField("communicationMethod", value)}
             />
           </div>
-        </div>
-        <div className="w-full flex md:flex-row flex-col  gap-6 justify-between">
-          <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center text-white">
-              {" "}
-              Are You Working with a Realtor?{" "}
-              {errors.realtor?.type === "required" && (
-                <p role="alert" className="text-sm font-normal text-red-600">
-                  Required
-                </p>
-              )}
-            </label>
+          <div className="md:col-span-2">
+            <p className="text-sm uppercase tracking-[1px] text-white/80">
+              Already working with a realtor?
+            </p>
             <RadioOptions
-              onChangeRadio={(value) => handleRadioChange("realtor", value)}
+              onChangeRadio={(value) => setField("realtor", value)}
               value={realtorValue}
               allRadioOptions={realtorOptions}
-              {...register("realtor", { required: true })}
-            />
-          </div>
-          <div className="w-full">
-            <label className="text-lg font-bold flex gap-3 items-center text-white">
-              {" "}
-              Phone:{" "}
-              {errors.phone?.type === "required" && (
-                <p role="alert" className="text-sm font-normal text-red-600">
-                  Required
-                </p>
-              )}
-            </label>
-            <input
-              placeholder="000-000-0000"
-              {...register("phone", { required: true })}
-              className="w-full bg-transparent border border-white  p-2 text-white mb-4 focus:outline-none"
-              type="text"
             />
           </div>
         </div>
-        <div className="w-full flex flex-col gap-6 justify-between pb-8">
-          <SubmitButton
-            btnText="Submit Your QUERIES"
-            className="!bottom-black text-white"
-            disabled={isPending}
-          />
-        </div>
-      </form>
-    </div>
+      </section>
+
+      <div className="flex flex-col items-start gap-4 border-t border-white/15 pt-10">
+        <SubmitButton btnText={isPending ? "Sending" : "Request homes"} disabled={isPending} />
+        <p className="text-sm text-white/60">
+          Or call{" "}
+          <a className="text-white underline" href="tel:6478900982">
+            647-890-0982
+          </a>
+          . Fields marked * are required.
+        </p>
+      </div>
+    </form>
   );
 };
 

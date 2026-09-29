@@ -43,11 +43,11 @@ const HomeSearchpage = () => {
           <Link href="/toronto-realtor" className="underline text-white">
             Toronto realtor
           </Link>
-          ? Complete the form and Ashvak Sheik at Re/Max Millennium Real Estate will send matching GTA listings. Telugu, Hyderabadi, Muslim, and Desi buyers can also see{" "}
+          ? Tell him the city, home type, and budget. He will send matching GTA listings. Telugu, Hyderabadi, Muslim, and Desi buyers can also start at the{" "}
           <Link href="/telugu-realtor" className="underline text-white">
-            /telugu-realtor
+            Telugu realtor
           </Link>{" "}
-          or call 647-890-0982.
+          page or call 647-890-0982.
         </p>
       </div>
       <Container>
