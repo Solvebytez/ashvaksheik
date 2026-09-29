@@ -6,6 +6,7 @@ import WorkWith from "@/components/Home/WorkWith";
 import { communityPages, type CommunityPage } from "@/lib/communityPages";
 import { faqGraph, pageMetadata } from "@/lib/seo";
 import Link from "next/link";
+import MarketRates from "@/components/MarketRates";
 
 export function communityMetadata(page: CommunityPage) {
   return pageMetadata({
@@ -32,6 +33,8 @@ const CommunityPageView = ({ page }: { page: CommunityPage }) => {
           <h2 className="text-2xl md:text-3xl font-tenor_Sans tracking-[2px] uppercase leading-tight">
             {page.heading}
           </h2>
+          {(page.path === "/halal-mortgage-realtor" ||
+            page.path === "/first-time-home-buyer-realtor") && <MarketRates />}
           {page.body.map((paragraph) => (
             <p key={paragraph} className="text-white/80 leading-7">
               {paragraph}

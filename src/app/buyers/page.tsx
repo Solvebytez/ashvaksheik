@@ -10,6 +10,7 @@ import Image from "next/image";
 import GuideDownloadForm from "@/components/Form/GuideDownloadForm";
 import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
+import MarketRates from "@/components/MarketRates";
 
 export const metadata = pageMetadata({
   title: "First-Time Buyer Guide",
@@ -129,6 +130,9 @@ const BuyersPage = () => {
             <Link href="/faq" className="underline">/faq</Link>, or{" "}
             <Link href="/home-search" className="underline">/home-search</Link>.
           </p>
+          <div className="px-2 md:px-10 text-left">
+            <MarketRates />
+          </div>
         </Container>
       </div>
       <Container>
