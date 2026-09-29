@@ -3,6 +3,7 @@ import Link from "next/link";
 import SlideMenu from "./SlideMenu";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 import { AlignRight } from "lucide-react";
 import FullScreenModal from "../Global/Modal";
 import useFullscreenhook from "../Hook/useFullscreenhook";
@@ -16,6 +17,7 @@ const Header = ({ rates = [] }: { rates?: MarketRate[] }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const prevScrollY = useRef(0);
   const { closeModal, isOpen, openModal } = useFullscreenhook();
+  const onHome = usePathname() === "/";
   // Function to toggle the menu
 
   useEffect(() => {
@@ -47,13 +49,21 @@ const Header = ({ rates = [] }: { rates?: MarketRate[] }) => {
     <>
       <header
         className={`z-50 fixed w-full top-0 transition-transform duration-300 ${
-          currentScroll > 0 && !showHeader ? "-translate-y-[240px]" : "translate-y-0"
+          onHome
+            ? currentScroll > 0 && !showHeader
+              ? "-translate-y-[240px]"
+              : "translate-y-0"
+            : `${currentScroll > 0 ? "translate-y-[-100px]" : ""} ${showHeader ? "translate-y-[0px]" : ""}`
         }`}
       >
-        <MarketRateBar rates={rates} />
+        {onHome ? <MarketRateBar rates={rates} /> : null}
         <nav
           className={`z-50 w-full px-4 md:px-6 ${
-            showHeader ? "bg-black/40" : ""
+            onHome
+              ? showHeader
+                ? "bg-black/40"
+                : ""
+              : `absolute top-0 ${showHeader ? "bg-black/40" : "md:top-6"}`
           }`}
         >
           <div className="flex items-center justify-between py-2 gap-6 md:py-4 md:gap-0 relative">
