@@ -1,0 +1,41 @@
+{
+  "updated": "2026-09-29",
+  "purpose": "Pull these feeds, keep housing headlines, and hand the newest items to the blogger before a post is chosen.",
+  "feeds": [
+    {
+      "id": "financial-post",
+      "name": "Financial Post real estate",
+      "url": "https://financialpost.com/category/real-estate/feed"
+    },
+    {
+      "id": "globe",
+      "name": "Globe and Mail real estate",
+      "url": "https://www.theglobeandmail.com/arc/outboundfeeds/rss/category/real-estate/?outputType=xml"
+    },
+    {
+      "id": "storeys",
+      "name": "Storeys",
+      "url": "https://storeys.com/feed/"
+    },
+    {
+      "id": "rem",
+      "name": "Real Estate Magazine",
+      "url": "https://realestatemagazine.ca/feed/"
+    },
+    {
+      "id": "cbc-business",
+      "name": "CBC Business",
+      "url": "https://www.cbc.ca/webfeed/rss/rss-business"
+    },
+    {
+      "id": "bank-of-canada",
+      "name": "Bank of Canada",
+      "url": "https://www.bankofcanada.ca/feed/"
+    },
+    {
+      "id": "crea",
+      "name": "CREA",
+      "url": "https://www.crea.ca/feed/"
+    }
+  ]
+}
