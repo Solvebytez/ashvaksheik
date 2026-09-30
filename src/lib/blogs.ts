@@ -100,13 +100,23 @@ const revalidate = 3600;
 
 export async function getBlogs(): Promise<Blog[]> {
   try {
-    const response = await fetch(`${BASE_URL}/api/blogs?populate=*`, {
-      next: { revalidate },
-    });
-    if (!response.ok) return [];
-    const data: BlogResponse = await response.json();
-    const list = Array.isArray(data.data) ? data.data : [];
-    return [...list].reverse();
+    const pageSize = 100;
+    const all: Blog[] = [];
+    let page = 1;
+    while (page < 20) {
+      const response = await fetch(
+        `${BASE_URL}/api/blogs?populate=*&pagination[page]=${page}&pagination[pageSize]=${pageSize}`,
+        { next: { revalidate } }
+      );
+      if (!response.ok) return [...all].reverse();
+      const data: BlogResponse = await response.json();
+      const list = Array.isArray(data.data) ? data.data : [];
+      all.push(...list);
+      const pageCount = data.meta?.pagination?.pageCount ?? 1;
+      if (page >= pageCount || list.length === 0) break;
+      page += 1;
+    }
+    return [...all].reverse();
   } catch {
     return [];
   }
