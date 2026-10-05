@@ -9,6 +9,7 @@ const BlogPage = () => {
     <div>
       <BreadcumBanner
         pageTitle="Blog"
+        description="Buying and selling notes for Brampton, Mississauga, Caledon, and the rest of the GTA, from Ashvak Sheik at Re/Max Millennium Real Estate."
         bgLogo="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/gg5lqgxfs8n9uajak0pp/portfolio"
       />
       <div className="flex flex-col justify-center py-10 items-center ">

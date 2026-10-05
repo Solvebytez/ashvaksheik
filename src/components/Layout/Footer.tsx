@@ -174,6 +174,10 @@ const Footer = () => {
           <Link href="/caledon-realtor" className="hover:underline">Caledon Realtor</Link>
           <Link href="/richmond-hill-realtor" className="hover:underline">Richmond Hill Realtor</Link>
           <Link href="/blog" className="hover:underline">Blog</Link>
+          <Link href="/blog/southfields-village-public-school" className="hover:underline">Southfields School</Link>
+          <Link href="/blog/buying-a-home-in-southfields-village-caledon" className="hover:underline">Southfields Village</Link>
+          <Link href="/blog/rent-vs-buy-gta-2025" className="hover:underline">Rent vs Buy</Link>
+          <Link href="/blog/guide-to-halal-real-estate-financing-scarborough-2026" className="hover:underline">Halal Financing Scarborough</Link>
           <Link href="/testimonials" className="hover:underline">Testimonials</Link>
         </nav>
         <div className="flex flex-col md:flex-row items-center md:items-start gap-4 mt-12 md:mt-[7rem] pb-24 md:pb-0 text-center md:text-left">

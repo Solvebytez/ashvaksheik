@@ -33,9 +33,6 @@ export const metadata: Metadata = {
   },
   description:
     "Ashvak Sheik is a Telugu-speaking Hyderabadi Muslim realtor with Re/Max Millennium Real Estate in the Greater Toronto Area, including Peel, Durham, Halton, and York.",
-  alternates: {
-    canonical: SITE_URL,
-  },
   robots: {
     index: true,
     follow: true,
