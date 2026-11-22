@@ -52,13 +52,13 @@ Hours: Mon–Sat 9:00 AM – 9:00 PM; Sun 9:00 AM – 5:00 PM
 
 ---
 
-### A2 — AgentProfile.ca (unclaimed · stale brokerage)
+### A2 — AgentProfile.ca (unclaimed · stale brokerage) — WAITING OWNER
 
 - **URL:** https://agentprofile.ca/agents/ashvak-sajidh-pash-sheik
-- **Live now:** Unclaimed · shows **President Realty Inc.**, 80 Maritime Ontario Blvd Unit 246, Brampton · verified against public register **2026-08-20** · valid to 2027-09-24
-- **Problem:** Still publishes old brokerage; conflicts with realtor.ca (Millennium) and the live site
-- **Action after approval:** Claim profile → set brokerage/NAP to Millennium + Montpelier **only if** RECO currently shows Millennium. If RECO still shows President, fix RECO/brokerage transfer first, then claim.
-- **Needs from owner:** (1) Check RECO public register for current brokerage. (2) Approve claim. (3) Confirm email used for claim.
+- **Live now:** Unclaimed · still shows **President Realty Inc.** (scrape verified 2026-08-20)
+- **RECO live (2026-11-22):** **RE/MAX MILLENNIUM REAL ESTATE** — AgentProfile is stale; claim + fix is safe once you approve
+- **Action after approval:** Claim profile → set brokerage/NAP to Millennium + Montpelier
+- **Needs from owner:** Approve or reject claim (RECO already checked)
 
 **Claim / bio copy (paste after claim):**
 
