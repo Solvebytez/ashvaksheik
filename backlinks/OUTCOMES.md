@@ -48,14 +48,31 @@ Updated: Nov 22, 2026. Researcher prepares; owner approves; Rio executes. **Send
 
 ---
 
-## Citations / backlinks — batch 1 (DRAFTS)
+## Citations / backlinks — batch 1
 
 | Item | Status | Notes | Needs from owner |
 |---|---|---|---|
-| A1 MuslimLink NAP cleanup | `READY FOR OWNER` | Salvation → Montpelier; Millennium | Approve paste in SUGGESTIONS.md A1; confirm listing access |
-| A2 AgentProfile.ca claim + NAP | `READY FOR OWNER` | Still shows President Realty Inc. | Check RECO first; then approve claim |
-| A3 Rate My Agent company fix | `READY FOR OWNER` | Shows “Future Nest Realty” | Approve company/website update; confirm login |
+| A1 MuslimLink NAP cleanup | `DONE BY RIO` | Submitted Nov 22 via Contact Owner form → “Message sent” | Wait for listing NAP to update; then mark `LINK LIVE` |
+| A2 AgentProfile.ca claim + NAP | `WAITING OWNER` | **RECO live = Millennium** (see log). AgentProfile scrape still President — claim/fix OK once approved | Approve or reject claim after reading RECO report |
+| A3 Rate My Agent company fix | `APPROVED` | Owner approved Nov 22 — **company name only**; do not touch reviews | Rate My Agent login (owner or Rio) to set Company = Re/Max Millennium Real Estate + website |
 | Tier B/C outreach | `PARKED` | After citation batch | Nothing |
+
+### RECO live check (2026-11-22) — registrantsearch.reco.on.ca
+
+| Field | Value |
+|---|---|
+| Legal name | Ashvak Sajidh Pash Sheik |
+| Category | Salesperson |
+| Registration number | 5045753 |
+| Status | REGISTERED |
+| Expiry | 2027/09/24 |
+| Brokerage (legal) | MILLENNIUM REAL ESTATE INC. |
+| Brokerage trade name | **RE/MAX MILLENNIUM REAL ESTATE** |
+| Brokerage address | 81 Zenway Boulevard Unit 25, Woodbridge, ON L4H 0S5 |
+| Brokerage phone | 905-265-2200 |
+| Conditions / discipline | None |
+
+**Implication for A2:** AgentProfile.ca is **stale** (still President Realty Inc. from an Aug 2026 scrape). RECO now matches realtor.ca / site → Millennium. Safe to claim + correct once you approve.
 
 ---
 
@@ -75,8 +92,10 @@ Updated: Nov 22, 2026. Researcher prepares; owner approves; Rio executes. **Send
 | Date | Item | Result | Link / reply | Follow-up |
 |---|---|---|---|---|
 | 2026-11-22 | GBP reviews ownership check | Confirmed: 10 Google reviews sit on **Ashvak Sheik Realtor** (Salvation Rd) listing controlled by ashvak.realtor07@gmail.com | Maps CID 5109232481317010290 | Re-check next week after owner GBP edit |
-| 2026-11-22 | Citation batch 1 drafts | MuslimLink + AgentProfile + Rate My Agent | See SUGGESTIONS.md | Waiting owner APPROVED |
-| — | Outreach sent | None | — | — |
+| 2026-11-22 | RECO live check | REGISTERED salesperson 5045753 · brokerage **RE/MAX MILLENNIUM REAL ESTATE** (MILLENNIUM REAL ESTATE INC.) · expiry 2027/09/24 · no discipline | registrantsearch.reco.on.ca | Unlocks A2 claim once owner approves |
+| 2026-11-22 | A1/A3 owner decisions | A1 + A3 APPROVED; A2 wait for RECO report | — | — |
+| 2026-11-22 | A1 MuslimLink send | Contact Owner form submitted; site confirmed “Message sent” / forwarded | https://muslimlink.com/ca/directory/organization/team-ashvak-sheik-7707 | Check if Salvation → Montpelier live; then `LINK LIVE` |
+| 2026-11-22 | A3 Rate My Agent | APPROVED — company name only; needs dashboard login | https://www.rate-my-agent.com/Ashvak-Sajidh-Pash-Sheik-ratings-Caledon-ON-120104 | Owner/Rio login → Company = Re/Max Millennium Real Estate |
 
 ---
 

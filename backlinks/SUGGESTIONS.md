@@ -26,13 +26,13 @@ Linkable pages to cite: `/` · `/about` · `/faq` · `/telugu-realtor` · `/musl
 
 ## Tier A — citation cleanup (batch 1) — READY FOR OWNER
 
-### A1 — MuslimLink directory (stale NAP + mirrors old GBP)
+### A1 — MuslimLink directory (stale NAP + mirrors old GBP) — SENT 2026-11-22
 
 - **URL:** https://muslimlink.com/ca/directory/organization/team-ashvak-sheik-7707
-- **Live now:** “Team Ashvak Sheik Realty” · **155 Salvation Rd** · phone 6478900982 · shows **5.0 (10 reviews) on Google**
+- **Status:** `DONE BY RIO` — Contact Owner form submitted; confirmation: “Message sent”
+- **Live now (pre-edit):** “Team Ashvak Sheik Realty” · **155 Salvation Rd** · phone 6478900982 · shows **5.0 (10 reviews) on Google**
 - **Problem:** Address + branding lag the current Millennium / Montpelier NAP; scrapes pull the old Salvation GBP
-- **Action after approval:** Owner (or Rio) uses “Contact Owner” / MuslimLink edit path to update fields below
-- **Needs from owner:** Approve text; confirm you still control this MuslimLink listing (or ask MuslimLink support to edit)
+- **Needs from owner:** Nothing — watch for listing update; optional: log in to MuslimLink if you have direct edit access
 
 **Updated listing copy (paste):**
 
@@ -76,13 +76,14 @@ Bio: Ashvak Sheik is a Telugu-speaking Hyderabadi Muslim realtor with Re/Max Mil
 
 ---
 
-### A3 — Rate My Agent (wrong company name)
+### A3 — Rate My Agent (wrong company name) — APPROVED 2026-11-22
 
 - **URL:** https://www.rate-my-agent.com/Ashvak-Sajidh-Pash-Sheik-ratings-Caledon-ON-120104
+- **Status:** `APPROVED` — **company name (and website/phone) only; do not touch reviews**
 - **Live now:** 8 reviews @ 5.00 · **Company listed as “Future Nest Realty”** · response rate ~14%
 - **Problem:** Wrong company string; weak entity match to Millennium + ashvaksheik.com
-- **Action after approval:** Owner logs into Rate My Agent agent dashboard → update Company = Re/Max Millennium Real Estate, website = https://www.ashvaksheik.com/, phone = 647-890-0982
-- **Needs from owner:** Confirm you control this Rate My Agent profile login; approve the company/website change
+- **Action:** Owner/Rio logs into Rate My Agent agent dashboard → Company = Re/Max Millennium Real Estate, website = https://www.ashvaksheik.com/, phone = 647-890-0982
+- **Needs from owner:** Dashboard login (this agent cannot access Rate My Agent without your credentials)
 
 **Profile fields (paste):**
 
