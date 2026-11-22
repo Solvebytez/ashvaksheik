@@ -13,21 +13,21 @@ const Numbers = () => {
     <div className='bg-black bg-opacity-70'>
     <Container>
     <div className=" text-white py-[3rem] md:py-[4rem] flex flex-col justify-center items-center text-center">
-      <h2 className="text-2xl md:text-4xl mb-4 tenor_Sans tracking-[2px] md:tracking-[6px]">BY THE NUMBERS</h2>
-      <p className="text-sm md:text-md mb-8 mt-4 px-1">Ashvak is known for his dedication, professionalism, and exceptional negotiation skills. Clients value his integrity, persistence, and commitment to achieving the best results.
+      <h2 className="text-2xl md:text-4xl mb-4 tenor_Sans tracking-[2px] md:tracking-[6px]">HOW I WORK</h2>
+      <p className="text-sm md:text-md mb-8 mt-4 px-1">Ashvak Sheik is a Telugu-speaking Hyderabadi Muslim realtor with Re/Max Millennium Real Estate in Brampton, serving buyers and sellers across the GTA.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-4 w-full max-w-3xl">
         <div className="text-center ">
-          <h2 className="text-3xl md:text-4xl mb-2 tenor_Sans">#1</h2>
-          <p className="text-sm md:text-md">GTA Realtor 2023    </p>
+          <h2 className="text-3xl md:text-4xl mb-2 tenor_Sans">GTA</h2>
+          <p className="text-sm md:text-md">Brampton base · Peel, Halton, York, Durham, Toronto</p>
         </div>
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl mb-2 tenor_Sans">$10M</h2>
-          <p className="text-sm md:text-md">Sales Volume 2024</p>
+          <h2 className="text-3xl md:text-4xl mb-2 tenor_Sans">2</h2>
+          <p className="text-sm md:text-md">Languages · Telugu and English</p>
         </div>
         <div className="text-center ">
-          <h2 className="text-3xl md:text-4xl mb-2 tenor_Sans">#1</h2>
-          <p className="text-sm md:text-md">Brokerage in Canada</p>
+          <h2 className="text-3xl md:text-4xl mb-2 tenor_Sans">RE/MAX</h2>
+          <p className="text-sm md:text-md">Millennium Real Estate</p>
         </div>
       </div>
     </div>
