@@ -26,7 +26,12 @@ Statuses: `RESEARCHED` → `READY FOR OWNER` → `APPROVED` → `DONE BY RIO` �
 ## Linkable pages (cite these when drafting)
 
 - https://www.ashvaksheik.com/
+- https://www.ashvaksheik.com/about
 - https://www.ashvaksheik.com/faq
 - https://www.ashvaksheik.com/pre-construction
 - https://www.ashvaksheik.com/telugu-realtor
 - https://www.ashvaksheik.com/muslim-realtor
+
+## Nov 22 pause
+
+No new neighborhood/blog pages until `/about`, `/pre-construction`, `/neighborhoods`, `/properties` improve in Google’s index. Citation cleanup + GBP NAP first.
