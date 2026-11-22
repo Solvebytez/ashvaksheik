@@ -18,6 +18,7 @@ Updated: Nov 22, 2026. Researcher prepares; owner approves; Rio executes. **Send
 | Owner this week: GBP → Millennium + Montpelier; GSC Request Indexing for the 4 URLs | `OWNER DOING` — do not re-ask daily |
 | Next week: agent re-checks GBP for stale President/Salvation | `SCHEDULED` |
 | Weekly report = RESULTS only (GSC + 38-sample indexed count) | `ACTIVE` |
+| A2 AgentProfile weekly: report date if flipped to Millennium; after 2 weeks still President → free removal | `ACTIVE` |
 
 ---
 
@@ -53,7 +54,7 @@ Updated: Nov 22, 2026. Researcher prepares; owner approves; Rio executes. **Send
 | Item | Status | Notes | Needs from owner |
 |---|---|---|---|
 | A1 MuslimLink NAP cleanup | `DONE BY RIO` | Submitted Nov 22 via Contact Owner form → “Message sent” | Wait for listing NAP to update; then mark `LINK LIVE` |
-| A2 AgentProfile.ca claim + NAP | `APPROVED — BLOCKED ON SPEND` | Claim path is **Enhanced Profile $9/month** (Stripe). Form needs RECO #5045753 + email → “Continue to payment”. Page still shows President (stale scrape; site claims daily RECO refresh). **No card entered.** | Explicit yes to **$9/mo** spend, or choose free **removal request**, or wait for their RECO refresh |
+| A2 AgentProfile.ca claim + NAP | `WAITING — RECO REFRESH` | Owner chose **Option 3: WAIT**. No $9/mo, no card. Track weekly until brokerage flips to Millennium. After **2 failed weekly checks** still showing President → switch to Option 2 free removal/correction | Nothing until flip or week-2 fail |
 | A3 Rate My Agent company fix | `APPROVED` | Owner approved Nov 22 — **company name only**; do not touch reviews | Rate My Agent login (owner or Rio) to set Company = Re/Max Millennium Real Estate + website |
 | Tier B/C outreach | `PARKED` | After citation batch | Nothing |
 
@@ -96,7 +97,8 @@ Updated: Nov 22, 2026. Researcher prepares; owner approves; Rio executes. **Send
 | 2026-11-22 | A1/A3 owner decisions | A1 + A3 APPROVED; A2 wait for RECO report | — | — |
 | 2026-11-22 | A1 MuslimLink send | Contact Owner form submitted; site confirmed “Message sent” / forwarded | https://muslimlink.com/ca/directory/organization/team-ashvak-sheik-7707 | Check if Salvation → Montpelier live; then `LINK LIVE` |
 | 2026-11-22 | A3 Rate My Agent | APPROVED — company name only; needs dashboard login | https://www.rate-my-agent.com/Ashvak-Sajidh-Pash-Sheik-ratings-Caledon-ON-120104 | Owner/Rio login → Company = Re/Max Millennium Real Estate |
-| 2026-11-22 | A2 AgentProfile claim | Owner APPROVED; claim opens Stripe **$9/month** Enhanced Profile — stopped before payment | https://agentprofile.ca/agents/ashvak-sajidh-pash-sheik | Need spend yes / removal / wait |
+| 2026-11-22 | A2 AgentProfile claim | Owner APPROVED; claim opens Stripe **$9/month** — stopped before payment | https://agentprofile.ca/agents/ashvak-sajidh-pash-sheik | — |
+| 2026-11-22 | A2 owner decision | **Option 3 WAIT** — no pay, no card. Weekly: check if AgentProfile shows Millennium. After 2 weekly fails still President → Option 2 free removal | Still shows President Realty Inc. as of this date | Week 1 check next weekly report |
 
 ---
 

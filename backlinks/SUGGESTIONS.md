@@ -52,13 +52,19 @@ Hours: Mon–Sat 9:00 AM – 9:00 PM; Sun 9:00 AM – 5:00 PM
 
 ---
 
-### A2 — AgentProfile.ca (unclaimed · stale brokerage) — WAITING OWNER
+### A2 — AgentProfile.ca — WAITING RECO REFRESH (Option 3)
 
 - **URL:** https://agentprofile.ca/agents/ashvak-sajidh-pash-sheik
-- **Live now:** Unclaimed · still shows **President Realty Inc.** (scrape verified 2026-08-20)
-- **RECO live (2026-11-22):** **RE/MAX MILLENNIUM REAL ESTATE** — AgentProfile is stale; claim + fix is safe once you approve
-- **Action after approval:** Claim profile → set brokerage/NAP to Millennium + Montpelier
-- **Needs from owner:** Approve or reject claim (RECO already checked)
+- **Owner decision (2026-11-22):** WAIT — **do not pay $9/mo**, do not enter card
+- **Baseline:** Still shows **President Realty Inc.** (checked 2026-11-22). RECO live = Millennium
+- **Weekly:** Report whether AgentProfile flipped to Millennium + date. After **2 weekly checks** still President → Option 2 free removal/correction
+- **Check log:**
+
+| Check # | Date | Brokerage shown | Action |
+|---|---|---|---|
+| Baseline | 2026-11-22 | President Realty Inc. | Wait |
+| Week 1 | _pending_ | | |
+| Week 2 | _pending_ | | If still President → free removal |
 
 **Claim / bio copy (paste after claim):**
 
