@@ -13,6 +13,10 @@ const Copyright = () => {
           <Link href="/privacy" className="text-white hover:underline font-semibold">
             Privacy Policy
           </Link>
+          <span> | </span>
+          <Link href="/terms" className="text-white hover:underline font-semibold">
+            Terms
+          </Link>
         </div>
         <SocialProfile/>
       </div>

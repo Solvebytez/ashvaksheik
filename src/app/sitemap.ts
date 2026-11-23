@@ -39,6 +39,7 @@ const staticRoutes: MetadataRoute.Sitemap = [
   { url: `${SITE_URL}/properties/sold`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.4 },
   { url: `${SITE_URL}/press`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
   { url: `${SITE_URL}/privacy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
+  { url: `${SITE_URL}/terms`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
   ...neighborhoodGuides.map((area) => ({
     url: `${SITE_URL}${neighborhoodPath(area.slug)}`,
     lastModified: new Date(),

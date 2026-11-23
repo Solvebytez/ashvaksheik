@@ -21,7 +21,7 @@ const PrivacyPage = () => {
             Estate Services
           </h2>
           <p className="mb-12 text-white/60 text-sm tracking-[2px] uppercase">
-            Last Updated: November 12, 2024
+            Last Updated: November 23, 2026
           </p>
           <h3 className="text-xl mb-4">Introduction</h3>
           <p className="mb-10">
@@ -173,6 +173,18 @@ const PrivacyPage = () => {
           <p className="mb-10">
             We take measures to secure personal information, but no system is
             foolproof. We cannot guarantee the security of all data.
+          </p>
+
+          <h2 className="text-2xl mb-4">SMS / Text Messaging</h2>
+          <p className="mb-4">
+            Phone numbers are used to communicate about real estate services,
+            appointments, and reminders.
+          </p>
+          <p className="mb-4">
+            Data will not be sold or shared with third parties for marketing or promotional purposes.
+          </p>
+          <p className="mb-10">
+            Reply &quot;STOP&quot; to opt out. Reply &quot;HELP&quot; for assistance. Message and data rates may apply. Message frequency may vary.
           </p>
 
           <h2 className="text-2xl mb-4">Changes to This Privacy Policy</h2>
