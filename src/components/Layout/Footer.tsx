@@ -9,6 +9,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {  toast } from 'react-toastify';
 import ContactWidget from "../Global/ContactWidget";
+import { SmsConsentCopy } from "../Form/SmsConsent";
 
 type FormValue = {
   email: string;
@@ -127,11 +128,10 @@ const Footer = () => {
                 <input
                   type="checkbox"
                   className="mr-2"
-                  required
-                  {...register("terms", { required: true })}
+                  {...register("terms")}
                 />
                 <p className="font-semibold !text-left text-[13px] leading-5 tracking-[0.5px] md:tracking-[2px] text-white">
-                By providing Ashvak with your contact information, you acknowledge and agree to our <Link className="underline" href="/privacy">Privacy Policy</Link> and consent to receive marketing communications, including automated calls, texts, and emails. You may opt out at any time. To stop receiving texts, reply ‘STOP’ at any time. Message and data rates may apply.
+                <SmsConsentCopy />
                 </p>
               </div>
               <SubmitButton btnText="Subscribe" disabled={isPending} />

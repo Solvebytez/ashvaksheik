@@ -3,8 +3,8 @@
 import { Mail, NotebookTabs, Map } from "lucide-react";
 import SocialProfile from "./Global/SocialProfile";
 import SubmitButton from "./Global/SubmitButton";
-import Link from "next/link";
 import { useState } from "react";
+import { SmsConsentCopy } from "./Form/SmsConsent";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import Container from "./Global/Container";
@@ -21,7 +21,9 @@ const ContactModal = ({prijectName}:{prijectName:string}) => {
   const [isPending, setIspending] = useState(false as boolean);
   const [isShowForm, setisShowForm] = useState(false as boolean);
 
-  const { register, handleSubmit } = useForm<FormValues>();
+  const { register, handleSubmit } = useForm<FormValues>({
+    defaultValues: { terms: false },
+  });
 
   const formHandleSubmit = async (data: FormValues) => {
     setIspending(true);
@@ -156,7 +158,7 @@ const ContactModal = ({prijectName}:{prijectName:string}) => {
                 <input
                   type="tel"
                   id="precon-phone"
-                  {...register("phone", { required: true })}
+                  {...register("phone")}
                   className={` bg-transparent border-b border-white text-white focus:border-white focus:outline-none leading-[4rem] focus:bg-transparent h-9`}
                 />
               </div>
@@ -178,11 +180,10 @@ const ContactModal = ({prijectName}:{prijectName:string}) => {
                   <input
                     type="checkbox"
                     className="mr-2"
-                    required
-                    {...register("terms", { required: true })}
+                    {...register("terms")}
                   />
                   <span className="font-bold !text-justify">
-                  By providing Ashvak with your contact information, you acknowledge and agree to our <Link className="underline" href="/privacy">Privacy Policy</Link> and consent to receive marketing communications, including automated calls, texts, and emails. You may opt out at any time. To stop receiving texts, reply ‘STOP’ at any time. Message and data rates may apply.
+                    <SmsConsentCopy />
                   </span>
                 </div>
               </div>

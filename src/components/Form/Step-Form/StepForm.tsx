@@ -9,6 +9,7 @@ import { useState } from "react";
 import { useForm, SubmitHandler, FieldValues } from "react-hook-form";
 import GooglePlacesAutocomplete from "../MapAddress";
 import { toast } from "react-toastify";
+import { SmsConsentCopy } from "../SmsConsent";
 
 const options = [
   { value: "now", label: "I want to sell my home now" },
@@ -168,7 +169,7 @@ const StepForm = () => {
                     PHONE NUMBER:
                   </label>
                   <input
-                    {...register("phone", { required: true })}
+                    {...register("phone")}
                     type="text"
                     id="phone"
                     name="phone"
@@ -193,26 +194,10 @@ const StepForm = () => {
                     <input
                       type="checkbox"
                       className="mr-2"
-                      required
-                      {...register("terms", { required: true })}
+                      {...register("terms")}
                     />
                     <span className="font-bold !text-justify">
-                      By providing Ashvak Sheik your contact information, you
-                      acknowledge and agree to our{" "}
-                      <a
-                        href="/privacy"
-                        className="text-gray-300 underline"
-                      >
-                        Privacy Policy
-                      </a>{" "}
-                      and consent to receiving marketing communications,
-                      including through automated calls, texts, and emails, some
-                      of which may use artificial or prerecorded voices. This
-                      consent isn’t necessary for purchasing any products or
-                      services and you may opt out at any time. To opt out from
-                      texts, you can reply, ‘stop’ at any time. To opt out from
-                      emails, you can click on the unsubscribe link in the
-                      emails. Message and data rates may apply.
+                      <SmsConsentCopy />
                     </span>
                   </div>
                 </div>

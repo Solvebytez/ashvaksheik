@@ -6,7 +6,7 @@ import SubmitButton from "../Global/SubmitButton";
 import { useState } from "react";
 import LinkButton from "../Global/Button";
 import { toast } from "react-toastify";
-import Link from "next/link";
+import { SmsConsentCopy } from "./SmsConsent";
 
 interface FormValue {
   name: string;
@@ -89,8 +89,7 @@ const UseNewslaterForm = () => {
               </div>
             </div>
           <span className="flex-1 text-[13px] leading-5 tracking-[0.4px]">
-            By providing Ashvak with your contact information, you acknowledge and agree to our{' '}
-              <Link href="/privacy" className="underline">Privacy Policy</Link> and consent to receive marketing communications, including automated calls, texts, and emails. You may opt out at any time. To stop receiving texts, reply ‘STOP’ at any time. Message and data rates may apply.
+            <SmsConsentCopy />
             </span>
           </label>
         </div>

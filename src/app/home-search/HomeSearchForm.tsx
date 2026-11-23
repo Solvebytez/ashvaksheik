@@ -20,6 +20,7 @@ import RadioOptions from "./RadioOptions";
 import { useCallback, useEffect, useState } from "react";
 import CheckboxList from "./CheckBox";
 import { toast } from "react-toastify";
+import { SmsConsentCopy } from "@/components/Form/SmsConsent";
 
 const inputClass =
   "mt-2 w-full border border-white/35 bg-transparent px-3 py-3 text-white placeholder:text-white/40 focus:border-white focus:outline-none";
@@ -71,6 +72,7 @@ const HomeSearchForm = () => {
       communicationMethod: ["email"],
       realtor: "",
       phone: "",
+      terms: false,
     },
   });
 
@@ -146,7 +148,7 @@ const HomeSearchForm = () => {
             />
           </div>
           <div>
-            <FieldLabel htmlFor="search-phone" required error={errors.phone?.type === "required"}>
+            <FieldLabel htmlFor="search-phone">
               Phone
             </FieldLabel>
             <input
@@ -154,7 +156,7 @@ const HomeSearchForm = () => {
               placeholder="647-000-0000"
               autoComplete="tel"
               inputMode="tel"
-              {...register("phone", { required: true })}
+              {...register("phone")}
               className={inputClass}
               type="tel"
             />
@@ -308,6 +310,10 @@ const HomeSearchForm = () => {
       </section>
 
       <div className="flex flex-col items-start gap-4 border-t border-white/15 pt-10">
+        <label className="flex items-start gap-2 text-xs leading-5 text-white/70">
+          <input type="checkbox" className="mt-1" {...register("terms")} />
+          <SmsConsentCopy />
+        </label>
         <SubmitButton btnText={isPending ? "Sending" : "Request homes"} disabled={isPending} />
         <p className="text-sm text-white/60">
           Or call{" "}

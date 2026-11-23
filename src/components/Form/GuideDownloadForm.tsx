@@ -3,8 +3,8 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
-import Link from "next/link";
 import SubmitButton from "@/components/Global/SubmitButton";
+import { SmsConsentCopy } from "./SmsConsent";
 
 type FormValue = {
   name: string;
@@ -15,7 +15,9 @@ type FormValue = {
 const GuideDownloadForm = ({ guideName }: { guideName: string }) => {
   const [isPending, setIsPending] = useState(false);
   const [submitted, setSubmitted] = useState(false);
-  const { register, handleSubmit, reset } = useForm<FormValue>();
+  const { register, handleSubmit, reset } = useForm<FormValue>({
+    defaultValues: { name: "", email: "", terms: false },
+  });
 
   const onSubmit = async (data: FormValue) => {
     setIsPending(true);
@@ -70,18 +72,10 @@ const GuideDownloadForm = ({ guideName }: { guideName: string }) => {
           <input
             type="checkbox"
             className="mr-2 mt-1 accent-white"
-            {...register("terms", { required: true })}
+            {...register("terms")}
           />
           <span className="!text-justify tracking-[1px] leading-5">
-            By providing Ashvak Sheik your contact information, you acknowledge
-            and agree to our{" "}
-            <Link href="/privacy" className="underline text-white">
-              Privacy Policy
-            </Link>{" "}
-            and consent to receiving marketing communications, including through
-            automated calls, texts, and emails. You may opt out at any time. To
-            opt out from texts, reply STOP at any time. Message and data rates
-            may apply.
+            <SmsConsentCopy />
           </span>
         </label>
       </div>
