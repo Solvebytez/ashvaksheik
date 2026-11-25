@@ -146,7 +146,7 @@ export function siteGraph() {
         sameAs: ENTITY.sameAs,
       },
       {
-        "@type": ["RealEstateAgent", "LocalBusiness"],
+        "@type": ["RealEstateAgent", "LocalBusiness", "Organization"],
         "@id": brokerageId,
         name: ENTITY.brokerage,
         url: SITE_URL,
